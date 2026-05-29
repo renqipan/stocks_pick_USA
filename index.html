@@ -1,0 +1,1284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-Driven Semiconductor Market Intelligence</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #141922;
+      --muted: #667085;
+      --soft: #f5f7fb;
+      --paper: #ffffff;
+      --line: #d9e0eb;
+      --blue: #1457d9;
+      --teal: #008c7e;
+      --green: #13844b;
+      --amber: #9a6500;
+      --red: #b42318;
+      --violet: #6d43c4;
+      --shadow: 0 14px 36px rgba(20, 25, 34, .08);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, #ffffff 0%, #f5f7fb 46%, #ffffff 100%);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--blue); }
+
+    .shell {
+      width: min(1240px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(217, 224, 235, .84);
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 72px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 220px;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid #9bb7ff;
+      border-radius: 8px;
+      background: #eef4ff;
+      color: var(--blue);
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.15;
+      letter-spacing: .01em;
+    }
+
+    .brand-sub {
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding: 14px 0;
+      overscroll-behavior-x: contain;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar { display: none; }
+
+    .nav a {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 8px 11px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      color: #344054;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .nav a:hover {
+      border-color: var(--line);
+      background: var(--soft);
+      color: var(--ink);
+    }
+
+    main { padding-bottom: 64px; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr);
+      gap: 28px;
+      align-items: stretch;
+      padding: 34px 0 28px;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 18px;
+      min-height: 440px;
+    }
+
+    .eyebrow {
+      width: fit-content;
+      padding: 5px 9px;
+      border: 1px solid #b9c6da;
+      border-radius: 6px;
+      color: #475467;
+      background: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(35px, 6vw, 72px);
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .hero-text {
+      max-width: 760px;
+      margin: 0;
+      color: #475467;
+      font-size: clamp(15px, 1.8vw, 18px);
+    }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      max-width: 790px;
+    }
+
+    .status-pill {
+      min-height: 76px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .kicker {
+      margin: 0 0 4px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .status-value {
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 850;
+    }
+
+    .visual-panel {
+      position: relative;
+      min-height: 440px;
+      padding: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(20, 87, 217, .10), transparent 42%),
+        linear-gradient(315deg, rgba(0, 140, 126, .10), transparent 42%),
+        #ffffff;
+      box-shadow: var(--shadow);
+    }
+
+    .map-title {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .map-title h2 {
+      margin: 0;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    .source-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eef4ff;
+      color: #1457d9;
+      font-size: 11px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .flow-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .legend {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #475467;
+      font-size: 12px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      flex: 0 0 auto;
+    }
+
+    .dot.blue { background: var(--blue); }
+    .dot.teal { background: var(--teal); }
+    .dot.amber { background: var(--amber); }
+    .dot.violet { background: var(--violet); }
+
+    section {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(23px, 3vw, 34px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .section-head p {
+      max-width: 680px;
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .stamp {
+      flex: 0 0 auto;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: #475467;
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .cards-4,
+    .cards-3,
+    .cards-2 {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cards-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(148px, 1fr));
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      overscroll-behavior-x: contain;
+    }
+
+    .quote-card {
+      min-height: 126px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .quote-symbol {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .quote-price {
+      margin-bottom: 3px;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .quote-meta {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .decision-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .decision-card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .decision-card h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .decision-card p {
+      margin: 0;
+      color: #475467;
+      font-size: 13px;
+    }
+
+    .card {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 8px 24px rgba(20, 25, 34, .04);
+    }
+
+    .card.pad { padding: 18px; }
+
+    .metric-big {
+      margin: 4px 0 2px;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .metric-caption {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .accent-blue { border-top: 3px solid var(--blue); }
+    .accent-teal { border-top: 3px solid var(--teal); }
+    .accent-green { border-top: 3px solid var(--green); }
+    .accent-amber { border-top: 3px solid var(--amber); }
+    .accent-red { border-top: 3px solid var(--red); }
+    .accent-violet { border-top: 3px solid var(--violet); }
+
+    .bar-stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 108px minmax(0, 1fr) 86px;
+      gap: 12px;
+      align-items: center;
+      font-size: 13px;
+    }
+
+    .bar-label { font-weight: 800; }
+
+    .bar-track {
+      height: 12px;
+      border-radius: 999px;
+      background: #edf1f7;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--teal));
+    }
+
+    .bar-value {
+      color: #475467;
+      font-size: 12px;
+      font-weight: 750;
+      text-align: right;
+    }
+
+    .chain {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(168px, 1fr));
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      overscroll-behavior-x: contain;
+    }
+
+    .chain-card {
+      min-height: 230px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .chain-card h3 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .chain-card ul {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: #475467;
+      font-size: 13px;
+    }
+
+    .ticker-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .ticker {
+      color: var(--blue);
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 11px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .tag.buy { background: #ecfdf3; color: var(--green); border-color: #abefc6; }
+    .tag.watch { background: #eef4ff; color: var(--blue); border-color: #b9c6ff; }
+    .tag.caution { background: #fff6ed; color: var(--amber); border-color: #fedf89; }
+    .tag.risk { background: #fef3f2; color: var(--red); border-color: #fecdca; }
+    .tag.data { background: #f4f3ff; color: var(--violet); border-color: #d9d6fe; }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .mini {
+      padding: 9px 10px;
+      border: 1px solid #e6ebf2;
+      border-radius: 8px;
+      background: #fbfcff;
+      min-width: 0;
+    }
+
+    .mini-label {
+      margin: 0 0 2px;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .mini-value {
+      overflow-wrap: anywhere;
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .thesis {
+      margin: 0;
+      color: #475467;
+      font-size: 13px;
+    }
+
+    .risk-line {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      color: #667085;
+      font-size: 12px;
+    }
+
+    .risk-meter {
+      display: flex;
+      gap: 3px;
+    }
+
+    .risk-meter span {
+      width: 18px;
+      height: 5px;
+      border-radius: 999px;
+      background: #e6ebf2;
+    }
+
+    .risk-meter .on { background: var(--amber); }
+    .risk-meter.high .on { background: var(--red); }
+
+    .table-wrap {
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      min-width: 850px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 13px;
+    }
+
+    th {
+      color: #475467;
+      background: #f8fafc;
+      font-size: 11px;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .source-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .source-item {
+      display: flex;
+      gap: 10px;
+      min-height: 84px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .source-num {
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #eef4ff;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .source-item h3 {
+      margin: 0 0 3px;
+      font-size: 14px;
+    }
+
+    .source-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .disclaimer {
+      padding: 18px;
+      border: 1px solid #fecdca;
+      border-radius: 8px;
+      background: #fff8f7;
+      color: #7a271a;
+      font-size: 13px;
+    }
+
+    .footer {
+      padding: 24px 0 44px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .topbar-inner { align-items: flex-start; flex-direction: column; gap: 0; padding: 12px 0 0; }
+      .brand { min-width: 0; }
+      .nav { width: 100%; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { min-height: auto; padding-top: 10px; }
+      .visual-panel { min-height: 360px; }
+      .status-grid,
+      .cards-4,
+      .cards-3,
+      .cards-2,
+      .decision-strip,
+      .source-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .section-head { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 640px) {
+      .shell { width: min(100% - 22px, 1240px); }
+      .status-grid,
+      .cards-4,
+      .cards-3,
+      .cards-2,
+      .decision-strip,
+      .source-list,
+      .mini-grid,
+      .legend { grid-template-columns: 1fr; }
+      h1 { font-size: 39px; }
+      .bar-row { grid-template-columns: 88px minmax(0, 1fr); }
+      .bar-value { grid-column: 2; text-align: left; }
+      .visual-panel { padding: 14px; min-height: 320px; }
+      .chain { grid-template-columns: repeat(5, 78vw); }
+      .stamp { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="AI semiconductor intelligence home">
+        <span class="brand-mark">AI</span>
+        <span>
+          <strong class="brand-title">Semiconductor Market Intelligence</strong>
+          <span class="brand-sub">AI data center investment screen</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Report sections">
+        <a href="#capital">Capital Flow</a>
+        <a href="#prices">Price Tape</a>
+        <a href="#chain">Industry Chain</a>
+        <a href="#longterm">10x Screen</a>
+        <a href="#today">Today</a>
+        <a href="#filings">Filings</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-label="Dashboard overview">
+      <div class="hero-copy">
+        <span class="eyebrow">Research date: 2026-05-28</span>
+        <h1>AI-Driven Semiconductor Market Intelligence</h1>
+        <p class="hero-text">
+          A sourced dashboard for tracking hyperscaler capital flow, AI data center supply-chain constraints,
+          semiconductor fundamentals, long-term asymmetric candidates, and today's buy-vs-caution watchlist.
+        </p>
+      <div class="status-grid">
+          <div class="status-pill">
+            <p class="kicker">Top-9 CSP Capex</p>
+            <div class="status-value">US$830B</div>
+            <div class="metric-caption">TrendForce 2026 estimate</div>
+          </div>
+          <div class="status-pill">
+            <p class="kicker">Fab Equipment</p>
+            <div class="status-value">US$133B</div>
+            <div class="metric-caption">SEMI 300mm front-end, 2026</div>
+          </div>
+          <div class="status-pill">
+            <p class="kicker">Live Quote Check</p>
+            <div class="status-value">14 US Tickers</div>
+            <div class="metric-caption">Stooq delayed quote pass, 2026-05-28</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="visual-panel" aria-label="AI data center semiconductor capital flow map">
+        <div class="map-title">
+          <h2>Capital Flow Map</h2>
+          <span class="source-chip">Capex -> silicon -> racks</span>
+        </div>
+        <svg class="flow-svg" viewBox="0 0 620 430" role="img" aria-label="Capital flows from cloud providers into compute, memory, packaging, optics, power and cooling">
+          <defs>
+            <linearGradient id="coreGrad" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0%" stop-color="#1457d9"/>
+              <stop offset="100%" stop-color="#008c7e"/>
+            </linearGradient>
+            <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#141922" flood-opacity=".16"/>
+            </filter>
+          </defs>
+          <rect x="20" y="28" width="170" height="72" rx="8" fill="#eef4ff" stroke="#9bb7ff"/>
+          <text x="105" y="58" text-anchor="middle" fill="#1457d9" font-size="15" font-weight="800">Hyperscaler</text>
+          <text x="105" y="80" text-anchor="middle" fill="#475467" font-size="12">Capex budgets</text>
+
+          <rect x="225" y="172" width="170" height="86" rx="8" fill="url(#coreGrad)" filter="url(#softShadow)"/>
+          <text x="310" y="204" text-anchor="middle" fill="#fff" font-size="18" font-weight="900">AI Compute Core</text>
+          <text x="310" y="229" text-anchor="middle" fill="#e6f2ff" font-size="12">GPU, ASIC, HBM, CoWoS</text>
+
+          <rect x="430" y="28" width="170" height="72" rx="8" fill="#f4f3ff" stroke="#bdb4fe"/>
+          <text x="515" y="58" text-anchor="middle" fill="#6d43c4" font-size="15" font-weight="800">Advanced Nodes</text>
+          <text x="515" y="80" text-anchor="middle" fill="#475467" font-size="12">N3, N2, packaging</text>
+
+          <rect x="20" y="318" width="170" height="72" rx="8" fill="#ecfdf3" stroke="#abefc6"/>
+          <text x="105" y="348" text-anchor="middle" fill="#13844b" font-size="15" font-weight="800">Rack Systems</text>
+          <text x="105" y="370" text-anchor="middle" fill="#475467" font-size="12">GB/VR, OAM, servers</text>
+
+          <rect x="430" y="318" width="170" height="72" rx="8" fill="#fff6ed" stroke="#fedf89"/>
+          <text x="515" y="348" text-anchor="middle" fill="#9a6500" font-size="15" font-weight="800">Power + Thermal</text>
+          <text x="515" y="370" text-anchor="middle" fill="#475467" font-size="12">PSU, CDU, grid gear</text>
+
+          <path d="M190 64 C250 70, 250 170, 225 198" fill="none" stroke="#1457d9" stroke-width="6" stroke-linecap="round"/>
+          <path d="M430 64 C370 70, 370 170, 395 198" fill="none" stroke="#6d43c4" stroke-width="6" stroke-linecap="round"/>
+          <path d="M225 230 C170 250, 160 305, 190 348" fill="none" stroke="#13844b" stroke-width="6" stroke-linecap="round"/>
+          <path d="M395 230 C450 250, 460 305, 430 348" fill="none" stroke="#9a6500" stroke-width="6" stroke-linecap="round"/>
+          <path d="M190 354 C250 322, 370 322, 430 354" fill="none" stroke="#008c7e" stroke-width="4" stroke-dasharray="8 8" stroke-linecap="round"/>
+          <circle cx="310" cy="215" r="8" fill="#ffffff"/>
+          <circle cx="105" cy="64" r="5" fill="#1457d9"/>
+          <circle cx="515" cy="64" r="5" fill="#6d43c4"/>
+          <circle cx="105" cy="354" r="5" fill="#13844b"/>
+          <circle cx="515" cy="354" r="5" fill="#9a6500"/>
+        </svg>
+        <div class="legend">
+          <div class="legend-item"><span class="dot blue"></span>Cloud capex and AI platform orders</div>
+          <div class="legend-item"><span class="dot violet"></span>Foundry, HBM, and advanced packaging constraints</div>
+          <div class="legend-item"><span class="dot teal"></span>Networking, optics, and storage attach</div>
+          <div class="legend-item"><span class="dot amber"></span>Power delivery and liquid cooling bottlenecks</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="capital">
+      <div class="section-head">
+        <div>
+          <h2>Part One: Capital Flow Of Major Technology Companies</h2>
+          <p>Public-source capex tracking shows the AI trade is no longer only a chip story. Dollars are flowing from cloud budgets into GPU and ASIC clusters, HBM, foundry capacity, rack-scale systems, optics, SSDs, liquid cooling, and grid equipment.</p>
+        </div>
+        <div class="stamp">T0 = 2026-05-28</div>
+      </div>
+
+      <div class="cards-4">
+        <article class="card pad accent-blue">
+          <p class="kicker">CSP Buildout</p>
+          <div class="metric-big">US$830B</div>
+          <p class="metric-caption">TrendForce says North American AI data center expansion drives 2026 capex of the top nine CSPs to US$830 billion. Stock screening below uses US-listed names only.</p>
+        </article>
+        <article class="card pad accent-teal">
+          <p class="kicker">Meta PPE Spend</p>
+          <div class="metric-big">$18,997,000,000</div>
+          <p class="metric-caption">SEC 10-Q period 2026-03-31: payments to acquire property and equipment.</p>
+        </article>
+        <article class="card pad accent-amber">
+          <p class="kicker">Oracle PPE Spend</p>
+          <div class="metric-big">$39,170,000,000</div>
+          <p class="metric-caption">SEC 10-Q period 2026-02-28: payments to acquire property and equipment.</p>
+        </article>
+        <article class="card pad accent-violet">
+          <p class="kicker">Data Center Compute</p>
+          <div class="metric-big">&gt;$600B</div>
+          <p class="metric-caption">TechInsights projects the datacenter compute market surpassing US$600 billion by 2030.</p>
+        </article>
+      </div>
+
+      <div class="cards-2" style="margin-top:14px;">
+        <article class="card pad">
+          <h3 style="margin:0 0 10px;">Hyperscaler Directional Flow</h3>
+          <div class="bar-stack">
+            <div class="bar-row">
+              <span class="bar-label">GPU/ASIC</span>
+              <span class="bar-track"><span class="bar-fill" style="display:block;width:96%;"></span></span>
+              <span class="bar-value">Primary</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">HBM/DRAM</span>
+              <span class="bar-track"><span class="bar-fill" style="display:block;width:88%;"></span></span>
+              <span class="bar-value">Acute</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Packaging</span>
+              <span class="bar-track"><span class="bar-fill" style="display:block;width:82%;"></span></span>
+              <span class="bar-value">Tight</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Power</span>
+              <span class="bar-track"><span class="bar-fill" style="display:block;width:79%;"></span></span>
+              <span class="bar-value">Tight</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Cooling</span>
+              <span class="bar-track"><span class="bar-fill" style="display:block;width:74%;"></span></span>
+              <span class="bar-value">Ramping</span>
+            </div>
+          </div>
+        </article>
+        <article class="card pad">
+          <h3 style="margin:0 0 10px;">Investment Interpretation</h3>
+          <p class="thesis">
+            The capital-flow signal favors companies with pricing power at choke points: NVIDIA in accelerated compute, Broadcom and Marvell in custom silicon and networking, Micron in HBM and server memory, TSMC/ASML/AMAT/KLAC in capacity formation, Credo/Astera in rack connectivity, and Coherent/Lumentum in optical interconnects. The caution is equally clear: when capex expectations reset higher, valuation risk and single-customer concentration rise together.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="prices">
+      <div class="section-head">
+        <div>
+          <h2>Re-Studied Price Tape</h2>
+          <p>Delayed Stooq quotes were checked again for every US-listed stock carried into the screen. The percentage shown is session move versus the session open because the quote feed did not provide prior close in this run.</p>
+        </div>
+        <div class="stamp">Quote source: Stooq, 2026-05-28</div>
+      </div>
+
+      <div class="quote-grid">
+        <article class="quote-card"><div class="quote-symbol">NVDA <span class="tag buy">Core</span></div><div class="quote-price">$212.82</div><div class="quote-meta">Open $211.31 · high $214.29 · low $211.22 · +0.71% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">AVGO <span class="tag buy">Core</span></div><div class="quote-price">$424.63</div><div class="quote-meta">Open $421.14 · high $425.50 · low $414.01 · +0.83% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">MU <span class="tag buy">Core</span></div><div class="quote-price">$943.52</div><div class="quote-meta">Open $930.07 · high $947.15 · low $904.78 · +1.45% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">AMAT <span class="tag buy">Core</span></div><div class="quote-price">$456.89</div><div class="quote-meta">Open $446.23 · high $457.06 · low $438.25 · +2.39% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">KLAC <span class="tag buy">Core</span></div><div class="quote-price">$1,957.00</div><div class="quote-meta">Open $1,956.30 · high $1,959.99 · low $1,891.38 · +0.04% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">CRDO <span class="tag watch">10x</span></div><div class="quote-price">$228.53</div><div class="quote-meta">Open $222.24 · high $228.98 · low $212.72 · +2.83% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">ALAB <span class="tag watch">Starter</span></div><div class="quote-price">$349.65</div><div class="quote-meta">Open $334.08 · high $354.53 · low $326.66 · +4.66% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">FORM <span class="tag watch">10x</span></div><div class="quote-price">$130.15</div><div class="quote-meta">Open $133.02 · high $133.02 · low $125.50 · -2.16% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">COHR <span class="tag caution">Wait</span></div><div class="quote-price">$383.56</div><div class="quote-meta">Open $387.82 · high $393.52 · low $369.36 · -1.10% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">LITE <span class="tag caution">Wait</span></div><div class="quote-price">$893.83</div><div class="quote-meta">Open $936.70 · high $948.49 · low $876.00 · -4.58% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">AMD <span class="tag caution">Caution</span></div><div class="quote-price">$526.28</div><div class="quote-meta">Open $499.00 · high $527.20 · low $493.52 · +5.47% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">SMCI <span class="tag risk">Risk</span></div><div class="quote-price">$43.49</div><div class="quote-meta">Open $38.00 · high $43.55 · low $37.61 · +14.45% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">ARM <span class="tag risk">Risk</span></div><div class="quote-price">$343.64</div><div class="quote-meta">Open $310.00 · high $345.60 · low $308.62 · +10.85% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">INTC <span class="tag risk">Risk</span></div><div class="quote-price">$121.41</div><div class="quote-meta">Open $121.45 · high $123.07 · low $116.31 · -0.03% vs open</div></article>
+      </div>
+
+      <div class="decision-strip">
+        <article class="decision-card accent-green">
+          <h3>Highest Confidence Buys</h3>
+          <p>NVDA, AVGO, MU, AMAT, and KLAC have the cleanest mix of filing quality, structural demand, and supply-chain importance.</p>
+        </article>
+        <article class="decision-card accent-teal">
+          <h3>10x Optionality</h3>
+          <p>CRDO, ALAB, and FORM are smaller and more volatile, but their roles in rack connectivity and advanced test create asymmetric upside if execution holds.</p>
+        </article>
+        <article class="decision-card accent-red">
+          <h3>Caution Bucket</h3>
+          <p>AMD, SMCI, ARM, INTC, LITE, and COHR require more patience today because of valuation, execution, filing availability, or recent momentum risk.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="chain">
+      <div class="section-head">
+        <div>
+          <h2>AI Data Center Industry Chain Trend</h2>
+          <p>The 2026 buildout is moving from board-level acceleration to rack-scale AI factories. The critical question is not whether demand exists; it is which layer becomes the next bottleneck.</p>
+        </div>
+      </div>
+
+      <div class="chain">
+        <article class="chain-card accent-blue">
+          <h3>Compute</h3>
+          <ul>
+            <li>NVIDIA Blackwell Ultra and Rubin roadmaps drive rack-scale upgrades.</li>
+            <li>AMD, Broadcom, Google TPU, AWS Trainium, and Meta ASIC programs expand custom silicon diversity.</li>
+            <li>SemiAnalysis flags TSMC N3 wafer supply as a key 2026 accelerator constraint.</li>
+          </ul>
+        </article>
+        <article class="chain-card accent-green">
+          <h3>Memory + Storage</h3>
+          <ul>
+            <li>TrendForce says HBM demand has crowded out conventional DRAM capacity.</li>
+            <li>Enterprise SSD revenue and prices are at historic highs as AI services need faster storage tiers.</li>
+            <li>Micron benefits from HBM and high-density server DRAM, but memory remains cyclical.</li>
+          </ul>
+        </article>
+        <article class="chain-card accent-violet">
+          <h3>Foundry + Tools</h3>
+          <ul>
+            <li>SEMI projects record US$133 billion 300mm front-end equipment spending in 2026.</li>
+            <li>Logic, foundry, and memory capacity dominate the spend map.</li>
+            <li>KLA and Applied Materials are quality compounders rather than pure 10x bets.</li>
+          </ul>
+        </article>
+        <article class="chain-card accent-teal">
+          <h3>Connectivity + Optics</h3>
+          <ul>
+            <li>800G to 1.6T transitions raise bandwidth, DSP, retimer, and AEC content.</li>
+            <li>EE Times highlights near-packaged optical interconnects for next-gen data centers.</li>
+            <li>Credo, Astera, Coherent, Lumentum, Marvell, and Broadcom sit in this layer.</li>
+          </ul>
+        </article>
+        <article class="chain-card accent-amber">
+          <h3>Power + Cooling</h3>
+          <ul>
+            <li>TrendForce says power architectures are becoming multi-track and liquid cooling is accelerating.</li>
+            <li>ServeTheHome's GB300 rack coverage shows rack-scale systems tied to CDUs and high-density facilities.</li>
+            <li>Power, substations, PSUs, CDUs, and thermal systems become semiconductor-adjacent bottlenecks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="longterm">
+      <div class="section-head">
+        <div>
+          <h2>Long-Term 10x Candidate Screen</h2>
+          <p>These are not guarantees or personalized recommendations. The screen favors smaller companies with exposure to durable bottlenecks, recent SEC filing support, and optionality to scale if AI racks keep absorbing more silicon, memory, and bandwidth.</p>
+        </div>
+        <div class="stamp">Educational screen only</div>
+      </div>
+
+      <div class="cards-3">
+        <article class="card pad accent-teal">
+          <div class="ticker-row"><span class="ticker">CRDO</span><span class="tag watch">10x candidate</span></div>
+          <p class="kicker">Active electrical cables / SerDes</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">Revenue</p><div class="mini-value">$407,012,000</div></div>
+            <div class="mini"><p class="mini-label">Net income</p><div class="mini-value">$157,142,000</div></div>
+            <div class="mini"><p class="mini-label">Diluted EPS</p><div class="mini-value">$0.82</div></div>
+            <div class="mini"><p class="mini-label">SEC filing</p><div class="mini-value">2026-03-03 10-Q</div></div>
+          </div>
+          <p class="thesis">Best fit for AI rack short-reach bandwidth and power efficiency. Risk is valuation and customer concentration after a strong move.</p>
+          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></span></div>
+        </article>
+
+        <article class="card pad accent-blue">
+          <div class="ticker-row"><span class="ticker">ALAB</span><span class="tag watch">10x candidate</span></div>
+          <p class="kicker">PCIe / CXL / rack connectivity</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">Revenue</p><div class="mini-value">$308,361,000</div></div>
+            <div class="mini"><p class="mini-label">Net income</p><div class="mini-value">$80,310,000</div></div>
+            <div class="mini"><p class="mini-label">Diluted EPS</p><div class="mini-value">$0.44</div></div>
+            <div class="mini"><p class="mini-label">SEC filing</p><div class="mini-value">2026-05-06 10-Q</div></div>
+          </div>
+          <p class="thesis">A clean way to express the PCIe/CXL fabric expansion inside AI clusters. Needs sustained hyperscaler design wins to justify premium multiples.</p>
+          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></span></div>
+        </article>
+
+        <article class="card pad accent-violet">
+          <div class="ticker-row"><span class="ticker">FORM</span><span class="tag watch">10x candidate</span></div>
+          <p class="kicker">Probe cards / advanced test</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">Revenue</p><div class="mini-value">$226,144,000</div></div>
+            <div class="mini"><p class="mini-label">Net income</p><div class="mini-value">$20,384,000</div></div>
+            <div class="mini"><p class="mini-label">Diluted EPS</p><div class="mini-value">$0.26</div></div>
+            <div class="mini"><p class="mini-label">SEC filing</p><div class="mini-value">2026-05-05 10-Q</div></div>
+          </div>
+          <p class="thesis">Less obvious picks-and-shovels exposure. Complexity in HBM, chiplets, and advanced nodes can raise probe-card intensity per wafer.</p>
+          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
+        </article>
+
+        <article class="card pad accent-teal">
+          <div class="ticker-row"><span class="ticker">COHR</span><span class="tag watch">Optics candidate</span></div>
+          <p class="kicker">Lasers / transceivers / photonics</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">Revenue</p><div class="mini-value">$1,805,641,000</div></div>
+            <div class="mini"><p class="mini-label">Net income</p><div class="mini-value">$191,402,000</div></div>
+            <div class="mini"><p class="mini-label">Diluted EPS</p><div class="mini-value">$0.97</div></div>
+            <div class="mini"><p class="mini-label">SEC filing</p><div class="mini-value">2026-05-06 10-Q</div></div>
+          </div>
+          <p class="thesis">Photonic integration, 800G/1.6T optics, and CPO optionality. More operational complexity than pure fabless names.</p>
+          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></span></div>
+        </article>
+
+        <article class="card pad accent-amber">
+          <div class="ticker-row"><span class="ticker">LITE</span><span class="tag caution">Pullback entry</span></div>
+          <p class="kicker">Optical components</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">Gross profit</p><div class="mini-value">$357,000,000</div></div>
+            <div class="mini"><p class="mini-label">Net income</p><div class="mini-value">$144,200,000</div></div>
+            <div class="mini"><p class="mini-label">Diluted EPS</p><div class="mini-value">$1.50</div></div>
+            <div class="mini"><p class="mini-label">Revenue</p><div class="mini-value">Not available in SEC extraction</div></div>
+          </div>
+          <p class="thesis">Excellent optical-cycle leverage, but current entries should respect customer concentration and momentum risk.</p>
+          <div class="risk-line">Risk <span class="risk-meter high"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></span></div>
+        </article>
+
+        <article class="card pad accent-green">
+          <div class="ticker-row"><span class="ticker">AMAT / KLAC</span><span class="tag buy">Core compounders</span></div>
+          <p class="kicker">Semicap equipment</p>
+          <div class="mini-grid">
+            <div class="mini"><p class="mini-label">AMAT revenue</p><div class="mini-value">$7,910,000,000</div></div>
+            <div class="mini"><p class="mini-label">AMAT EPS</p><div class="mini-value">$3.51</div></div>
+            <div class="mini"><p class="mini-label">KLAC revenue</p><div class="mini-value">$2,640,287,000</div></div>
+            <div class="mini"><p class="mini-label">KLAC EPS</p><div class="mini-value">$9.12</div></div>
+          </div>
+          <p class="thesis">Less likely to be 10x from current scale, but high-quality ways to own the record fab equipment cycle.</p>
+          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="today">
+      <div class="section-head">
+        <div>
+          <h2>Part Two: Best Buy Screen And Caution Screen Today</h2>
+          <p>Selection combines current source momentum, recent SEC financial anchors, and bottleneck exposure. Position sizing and time horizon matter because semiconductor leadership is strong but technically crowded.</p>
+        </div>
+        <div class="stamp">Not financial advice</div>
+      </div>
+
+      <div class="cards-2">
+        <article class="card pad accent-green">
+          <h3 style="margin:0 0 14px;">Best Buy Watchlist Today</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Ticker</th><th>Price Setup</th><th>Filing Anchor</th><th>Entry Discipline</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>NVDA</strong></td>
+                  <td>$212.82, +0.71% vs open. Not cheap, but still the highest-quality direct AI compute compounder.</td>
+                  <td>10-Q filed 2026-05-20; revenue $81,615,000,000; net income $58,321,000,000; diluted EPS $2.39.</td>
+                  <td>Accumulate on pullbacks; avoid chasing a single-session spike.</td>
+                </tr>
+                <tr>
+                  <td><strong>MU</strong></td>
+                  <td>$943.52, +1.45% vs open. Best cyclical-to-structural transformation candidate through HBM.</td>
+                  <td>10-Q filed 2026-03-19; revenue $23,860,000,000; net income $13,785,000,000; diluted EPS $12.07.</td>
+                  <td>Attractive, but memory cycles require staged entries.</td>
+                </tr>
+                <tr>
+                  <td><strong>AVGO</strong></td>
+                  <td>$424.63, +0.83% vs open. Best diversified AI silicon and networking platform after NVIDIA.</td>
+                  <td>10-Q filed 2026-03-11; revenue $14,130,000,000; operating income $8,563,000,000; diluted EPS $1.50.</td>
+                  <td>Buy around earnings volatility, not into vertical moves.</td>
+                </tr>
+                <tr>
+                  <td><strong>AMAT / KLAC</strong></td>
+                  <td>AMAT $456.89, +2.39% vs open; KLAC $1,957.00, flat vs open. Quality exposure to the record equipment cycle.</td>
+                  <td>AMAT 10-Q 2026-05-21; KLAC 10-Q 2026-04-30.</td>
+                  <td>Core long-term compounder bucket.</td>
+                </tr>
+                <tr>
+                  <td><strong>CRDO</strong></td>
+                  <td>$228.53, +2.83% vs open. Best smaller-cap upside candidate tied to AEC/SerDes content in AI racks.</td>
+                  <td>10-Q filed 2026-03-03; revenue $407,012,000; net income $157,142,000; cash $1,220,464,000.</td>
+                  <td>Starter-size only; add after volatility.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="card pad accent-red">
+          <h3 style="margin:0 0 14px;">Keep Caution Today</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Ticker</th><th>Caution Driver</th><th>Evidence</th><th>Better Action</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Sector / SOX</strong></td>
+                  <td>Leadership is crowded and momentum has become fragile.</td>
+                  <td>Reuters analysis flags semiconductor trade cooling risk after a sharp rally; SOXX quote checked at $573.41.</td>
+                  <td>Stage buys, keep cash reserves, rebalance winners.</td>
+                </tr>
+                <tr>
+                  <td><strong>AMD</strong></td>
+                  <td>Strong AI roadmap, but today's +5.47% vs open makes new entries more sensitive to disappointment.</td>
+                  <td>10-Q filed 2026-05-06; revenue $10,253,000,000; net income $1,383,000,000.</td>
+                  <td>Hold existing; wait for better risk/reward on new buys.</td>
+                </tr>
+                <tr>
+                  <td><strong>ALAB / COHR / LITE</strong></td>
+                  <td>Excellent AI connectivity and optics exposure, but price action is volatile and future success is already heavily capitalized.</td>
+                  <td>ALAB price +4.66% vs open; COHR -1.10%; LITE -4.58%. SEC filings confirm profits, but concentration and multiple risk remain.</td>
+                  <td>Prefer starter positions or pullbacks.</td>
+                </tr>
+                <tr>
+                  <td><strong>SMCI / ARM / INTC</strong></td>
+                  <td>SMCI and ARM were both up double digits versus the open in the quote pass; INTC is a turnaround rather than a clean AI compounder.</td>
+                  <td>SEC tool found SMCI/INTC filings; ARM 10-K/10-Q unavailable through the SEC tool in this run.</td>
+                  <td>Do not treat AI exposure alone as enough.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="filings">
+      <div class="section-head">
+        <div>
+          <h2>Earnings Reports, 10-K, And 10-Q Evidence</h2>
+          <p>All SEC values below are direct tool extractions from filings. When a field was not available or the tool returned inconsistent context, the dashboard marks it instead of guessing.</p>
+        </div>
+      </div>
+
+      <div class="cards-3" style="margin-bottom:14px;">
+        <article class="card pad accent-green">
+          <p class="kicker">Clean Earnings Power</p>
+          <div class="metric-big">NVDA / AVGO / MU</div>
+          <p class="metric-caption">These have the strongest direct revenue-and-profit anchors in the current filing pass. MU adds balance-sheet support with $13,908,000,000 cash and $72,459,000,000 stockholders' equity.</p>
+        </article>
+        <article class="card pad accent-teal">
+          <p class="kicker">Small-Cap Quality</p>
+          <div class="metric-big">CRDO / ALAB / FORM</div>
+          <p class="metric-caption">All three showed profitability in the SEC extraction. CRDO and ALAB carry high cash/current-asset cushions relative to liabilities, which helps 10x optionality survive volatility.</p>
+        </article>
+        <article class="card pad accent-red">
+          <p class="kicker">Risk Flags</p>
+          <div class="metric-big">SMCI / ARM / INTC</div>
+          <p class="metric-caption">SMCI extraction showed inconsistent revenue context despite a valid filing, ARM had no 10-K/10-Q result through the SEC tool, and INTC remains a capital-heavy turnaround.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Segment Role</th>
+              <th>Latest Filing Used</th>
+              <th>Revenue</th>
+              <th>Net Income</th>
+              <th>Diluted EPS</th>
+              <th>Screen Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>NVDA</td><td>Compute platform</td><td>10-Q 2026-05-20</td><td>$81,615,000,000</td><td>$58,321,000,000</td><td>$2.39</td><td><span class="tag buy">Buy watchlist</span></td></tr>
+            <tr><td>AVGO</td><td>Custom silicon / networking</td><td>10-Q 2026-03-11</td><td>$14,130,000,000</td><td>Not available in extracted filing row</td><td>$1.50</td><td><span class="tag buy">Buy watchlist</span></td></tr>
+            <tr><td>MU</td><td>HBM / server memory</td><td>10-Q 2026-03-19</td><td>$23,860,000,000</td><td>$13,785,000,000</td><td>$12.07</td><td><span class="tag buy">Buy watchlist</span></td></tr>
+            <tr><td>AMD</td><td>AI accelerators / CPUs</td><td>10-Q 2026-05-06</td><td>$10,253,000,000</td><td>$1,383,000,000</td><td>$0.84</td><td><span class="tag caution">Caution</span></td></tr>
+            <tr><td>CRDO</td><td>AEC / SerDes</td><td>10-Q 2026-03-03</td><td>$407,012,000</td><td>$157,142,000</td><td>$0.82</td><td><span class="tag watch">10x screen</span></td></tr>
+            <tr><td>ALAB</td><td>PCIe / CXL fabric</td><td>10-Q 2026-05-06</td><td>$308,361,000</td><td>$80,310,000</td><td>$0.44</td><td><span class="tag watch">10x screen</span></td></tr>
+            <tr><td>COHR</td><td>Photonics / optics</td><td>10-Q 2026-05-06</td><td>$1,805,641,000</td><td>$191,402,000</td><td>$0.97</td><td><span class="tag watch">Optics screen</span></td></tr>
+            <tr><td>LITE</td><td>Optical components</td><td>10-Q 2026-05-06</td><td>Not available in SEC extraction</td><td>$144,200,000</td><td>$1.50</td><td><span class="tag caution">Caution</span></td></tr>
+            <tr><td>FORM</td><td>Probe cards / test</td><td>10-Q 2026-05-05</td><td>$226,144,000</td><td>$20,384,000</td><td>$0.26</td><td><span class="tag watch">10x screen</span></td></tr>
+            <tr><td>AMAT</td><td>Fab equipment</td><td>10-Q 2026-05-21</td><td>$7,910,000,000</td><td>$2,806,000,000</td><td>$3.51</td><td><span class="tag buy">Core</span></td></tr>
+            <tr><td>KLAC</td><td>Process control</td><td>10-Q 2026-04-30</td><td>$2,640,287,000</td><td>$1,200,990,000</td><td>$9.12</td><td><span class="tag buy">Core</span></td></tr>
+            <tr><td>ARM / TSM / ASML</td><td>Architecture / foundry / lithography</td><td>No 10-K or 10-Q found by SEC tool</td><td>Data stale</td><td>Data stale</td><td>Data stale</td><td><span class="tag data">Manual check</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="section-head">
+        <div>
+          <h2>Source Hub</h2>
+          <p>Primary links used for the current version. Several publisher sites are paywalled or block automated extraction, so the dashboard distinguishes fetched content from source pages and quote-monitor links.</p>
+        </div>
+      </div>
+
+      <div class="source-list">
+        <a class="source-item" href="https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server" target="_blank" rel="noreferrer">
+          <span class="source-num">01</span><span><h3>TrendForce AI/HBM/Server</h3><p>Fetched May 28 items: top-nine CSP capex US$830B, HBM pricing power, enterprise SSD strength, liquid cooling and power-system tightening.</p></span>
+        </a>
+        <a class="source-item" href="https://www.semi.org/en/products-services/market-data/300mm-fab-outlook" target="_blank" rel="noreferrer">
+          <span class="source-num">02</span><span><h3>SEMI 300mm Fab Outlook</h3><p>Q1 2026 report page: 300mm front-end equipment spending expected at US$133B in 2026, up 18% YoY.</p></span>
+        </a>
+        <a class="source-item" href="https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage" target="_blank" rel="noreferrer">
+          <span class="source-num">03</span><span><h3>SemiAnalysis</h3><p>AI silicon shortage thesis: TSMC N3, memory, data center power, and advanced packaging bottlenecks.</p></span>
+        </a>
+        <a class="source-item" href="https://www.techinsights.com/outlook-reports-2026/ai-outlook-report" target="_blank" rel="noreferrer">
+          <span class="source-num">04</span><span><h3>TechInsights AI Outlook</h3><p>AI semiconductor and datacenter outlook, including 2nm, CPO, accelerator, and datacenter compute market projections.</p></span>
+        </a>
+        <a class="source-item" href="https://www.eetimes.com/tag/semiconductors/" target="_blank" rel="noreferrer">
+          <span class="source-num">05</span><span><h3>EE Times Semiconductors</h3><p>Fetched May 2026 semiconductor feed including near-packaged optical interconnects for AI data centers.</p></span>
+        </a>
+        <a class="source-item" href="https://www.servethehome.com/dell-and-coreweave-show-off-first-nvidia-gb300-nvl72-rack/" target="_blank" rel="noreferrer">
+          <span class="source-num">06</span><span><h3>ServeTheHome GB300 Rack</h3><p>Rack-scale GB300 coverage: Dell/CoreWeave delivery, Vertiv CDU visibility, and high-density rack power/cooling context.</p></span>
+        </a>
+        <a class="source-item" href="https://www.hpcwire.com/off-the-wire/nvidia-running-ai-workloads-on-rack-scale-supercomputers/" target="_blank" rel="noreferrer">
+          <span class="source-num">07</span><span><h3>HPCwire Rack-Scale AI</h3><p>Source page for rack-scale supercomputer operations and GB200/GB300 deployment context. Page blocks extraction in this run.</p></span>
+        </a>
+        <a class="source-item" href="https://www.investing.com/news/stock-market-news/analysissizzling-semiconductor-trade-at-risk-of-cooling--and-stalling-us-stocks-rally-4683659" target="_blank" rel="noreferrer">
+          <span class="source-num">08</span><span><h3>Reuters Sector Caution</h3><p>Reuters analysis on semiconductor trade cooling risk, accessed through Investing.com mirror/search result.</p></span>
+        </a>
+        <a class="source-item" href="https://www.investing.com/news/stock-market-news/nvidia-forecasts-quarterly-revenue-above-estimates-announces-80-billion-share-buyback-4702363" target="_blank" rel="noreferrer">
+          <span class="source-num">09</span><span><h3>Reuters NVIDIA Update</h3><p>Reuters coverage of NVIDIA forecast and capital return, accessed through Investing.com mirror/search result.</p></span>
+        </a>
+        <a class="source-item" href="https://www.benzinga.com/quote/NVDA/analyst-ratings" target="_blank" rel="noreferrer">
+          <span class="source-num">10</span><span><h3>Benzinga Analyst Ratings</h3><p>Analyst-rating monitor for NVDA, AVGO, AMD, MU, and CRDO. Used as a sentiment/target feed, not a valuation model.</p></span>
+        </a>
+        <a class="source-item" href="https://finance.yahoo.com/quote/NVDA" target="_blank" rel="noreferrer">
+          <span class="source-num">11</span><span><h3>Yahoo Finance Quote Monitor</h3><p>Quote/news monitor links for tickers. Only the NVIDIA live quote API returned a current value in this run.</p></span>
+        </a>
+        <a class="source-item" href="https://www.sec.gov/edgar/search/" target="_blank" rel="noreferrer">
+          <span class="source-num">12</span><span><h3>SEC EDGAR</h3><p>Direct 10-K/10-Q filing anchors for all company fundamental values shown in the filing table.</p></span>
+        </a>
+        <a class="source-item" href="https://stooq.com/" target="_blank" rel="noreferrer">
+          <span class="source-num">13</span><span><h3>Stooq Delayed Quotes</h3><p>Used for the re-studied price tape: open, high, low, last quote, time, and volume for the US-listed screening universe.</p></span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="disclaimer">
+        <strong>Educational information only. Not financial advice.</strong>
+        The dashboard is a research artifact based on public sources and SEC filings available during this run. It does not consider personal risk tolerance, tax status, liquidity needs, or portfolio concentration. Verify all data before trading.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built as a static local dashboard. Data snapshot: 2026-05-28 Asia/Shanghai.
+  </footer>
+</body>
+</html>

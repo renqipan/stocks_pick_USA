@@ -1,0 +1,204 @@
+{
+  "as_of": "2026-05-28",
+  "timezone": "Asia/Shanghai",
+  "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
+  "china_a_shares": {
+    "included": false,
+    "reason": "Excluded for this version because source confidence and filing comparability are below the threshold used for the US market screen."
+  },
+  "safe_harbor": "Educational information only. Not financial advice.",
+  "quote_source": {
+    "name": "Stooq delayed quotes",
+    "url": "https://stooq.com/",
+    "note": "Percent shown as session move versus open because prior close was not provided by the quote endpoint used in this run."
+  },
+  "quotes": {
+    "NVDA": { "date": "2026-05-28", "time": "17:36:32", "open": 211.31, "high": 214.29, "low": 211.22, "last": 212.8199, "volume": 34294980, "move_vs_open_percent": 0.71 },
+    "AVGO": { "date": "2026-05-28", "time": "17:36:32", "open": 421.14, "high": 425.5, "low": 414.01, "last": 424.63, "volume": 4561688, "move_vs_open_percent": 0.83 },
+    "MU": { "date": "2026-05-28", "time": "17:36:37", "open": 930.065, "high": 947.15, "low": 904.78, "last": 943.52, "volume": 17859736, "move_vs_open_percent": 1.45 },
+    "AMD": { "date": "2026-05-28", "time": "17:36:40", "open": 499.0, "high": 527.1999, "low": 493.52, "last": 526.275, "volume": 10115660, "move_vs_open_percent": 5.47 },
+    "CRDO": { "date": "2026-05-28", "time": "17:36:41", "open": 222.24, "high": 228.98, "low": 212.715, "last": 228.53, "volume": 1261986, "move_vs_open_percent": 2.83 },
+    "ALAB": { "date": "2026-05-28", "time": "17:36:40", "open": 334.08, "high": 354.53, "low": 326.66, "last": 349.65, "volume": 1461432, "move_vs_open_percent": 4.66 },
+    "FORM": { "date": "2026-05-28", "time": "17:36:08", "open": 133.02, "high": 133.02, "low": 125.5, "last": 130.15, "volume": 309534, "move_vs_open_percent": -2.16 },
+    "COHR": { "date": "2026-05-28", "time": "17:36:51", "open": 387.82, "high": 393.52, "low": 369.36, "last": 383.56, "volume": 1346832, "move_vs_open_percent": -1.1 },
+    "LITE": { "date": "2026-05-28", "time": "17:37:10", "open": 936.7, "high": 948.49, "low": 876.0001, "last": 893.83, "volume": 1446644, "move_vs_open_percent": -4.58 },
+    "AMAT": { "date": "2026-05-28", "time": "17:37:13", "open": 446.23, "high": 457.06, "low": 438.25, "last": 456.89, "volume": 1322272, "move_vs_open_percent": 2.39 },
+    "KLAC": { "date": "2026-05-28", "time": "17:37:17", "open": 1956.3, "high": 1959.99, "low": 1891.38, "last": 1957.0, "volume": 197036, "move_vs_open_percent": 0.04 },
+    "SMCI": { "date": "2026-05-28", "time": "17:37:20", "open": 38.0, "high": 43.55, "low": 37.61, "last": 43.49, "volume": 28637419, "move_vs_open_percent": 14.45 },
+    "ARM": { "date": "2026-05-28", "time": "17:37:19", "open": 310.0, "high": 345.6, "low": 308.6175, "last": 343.635, "volume": 4787741, "move_vs_open_percent": 10.85 },
+    "INTC": { "date": "2026-05-28", "time": "17:37:24", "open": 121.445, "high": 123.07, "low": 116.31, "last": 121.4099, "volume": 35840078, "move_vs_open_percent": -0.03 },
+    "MRVL": { "date": "2026-05-28", "time": "17:37:22", "open": 198.75, "high": 205.7, "low": 194.7, "last": 197.2599, "volume": 17601916, "move_vs_open_percent": -0.75 },
+    "TSM": { "date": "2026-05-28", "time": "17:37:30", "open": 422.22, "high": 425.17, "low": 414.71, "last": 424.92, "volume": 2860840, "move_vs_open_percent": 0.64 },
+    "ASML": { "date": "2026-05-28", "time": "17:37:41", "open": 1617.09, "high": 1622.61, "low": 1580.0, "last": 1622.11, "volume": 300351, "move_vs_open_percent": 0.31 },
+    "SOXX": { "date": "2026-05-28", "time": "17:37:50", "open": 564.29, "high": 574.14, "low": 554.825, "last": 573.41, "volume": 2337217, "move_vs_open_percent": 1.62 }
+  },
+  "rankings": {
+    "highest_confidence_buys": ["NVDA", "AVGO", "MU", "AMAT", "KLAC"],
+    "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
+    "watch_for_pullback": ["COHR", "LITE", "MRVL", "TSM", "ASML"],
+    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "LITE", "COHR", "Sector/SOXX"]
+  },
+  "capital_flow": [
+    {
+      "name": "Top nine North American CSPs",
+      "metric": "2026 AI data center capex",
+      "value": "US$830B",
+      "source": "TrendForce",
+      "url": "https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server"
+    },
+    {
+      "name": "Meta Platforms",
+      "metric": "Payments to acquire property and equipment",
+      "value": "$18,997,000,000",
+      "period": "2026-03-31",
+      "filing_date": "2026-04-30",
+      "accession_number": "0001628280-26-028526",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.html"
+    },
+    {
+      "name": "Oracle",
+      "metric": "Payments to acquire property and equipment",
+      "value": "$39,170,000,000",
+      "period": "2026-02-28",
+      "filing_date": "2026-03-11",
+      "accession_number": "0001193125-26-101045",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.html"
+    }
+  ],
+  "filing_screen": [
+    {
+      "ticker": "NVDA",
+      "role": "Compute platform",
+      "filing": "10-Q",
+      "filing_date": "2026-05-20",
+      "accession_number": "0001045810-26-000052",
+      "revenue": "$81,615,000,000",
+      "net_income": "$58,321,000,000",
+      "diluted_eps": "$2.39",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/0001045810-26-000052-index.html",
+      "screen_result": "highest_confidence_buy"
+    },
+    {
+      "ticker": "AVGO",
+      "role": "Custom silicon and networking",
+      "filing": "10-Q",
+      "filing_date": "2026-03-11",
+      "accession_number": "0001730168-26-000016",
+      "revenue": "$14,130,000,000",
+      "operating_income": "$8,563,000,000",
+      "diluted_eps": "$1.50",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000016/0001730168-26-000016-index.html",
+      "screen_result": "highest_confidence_buy"
+    },
+    {
+      "ticker": "MU",
+      "role": "HBM and server memory",
+      "filing": "10-Q",
+      "filing_date": "2026-03-19",
+      "accession_number": "0000723125-26-000006",
+      "revenue": "$23,860,000,000",
+      "net_income": "$13,785,000,000",
+      "diluted_eps": "$12.07",
+      "cash": "$13,908,000,000",
+      "stockholders_equity": "$72,459,000,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/0000723125-26-000006-index.html",
+      "screen_result": "highest_confidence_buy"
+    },
+    {
+      "ticker": "CRDO",
+      "role": "AEC and SerDes",
+      "filing": "10-Q",
+      "filing_date": "2026-03-03",
+      "accession_number": "0001628280-26-014017",
+      "revenue": "$407,012,000",
+      "net_income": "$157,142,000",
+      "diluted_eps": "$0.82",
+      "cash": "$1,220,464,000",
+      "liabilities": "$188,453,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/0001628280-26-014017-index.html",
+      "screen_result": "starter_or_10x_optionality"
+    },
+    {
+      "ticker": "ALAB",
+      "role": "PCIe and CXL fabric",
+      "filing": "10-Q",
+      "filing_date": "2026-05-06",
+      "accession_number": "0001736297-26-000020",
+      "revenue": "$308,361,000",
+      "net_income": "$80,310,000",
+      "diluted_eps": "$0.44",
+      "cash": "$148,285,000",
+      "liabilities": "$165,267,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/0001736297-26-000020-index.html",
+      "screen_result": "starter_or_10x_optionality"
+    },
+    {
+      "ticker": "FORM",
+      "role": "Probe cards and test",
+      "filing": "10-Q",
+      "filing_date": "2026-05-05",
+      "accession_number": "0001039399-26-000023",
+      "revenue": "$226,144,000",
+      "net_income": "$20,384,000",
+      "diluted_eps": "$0.26",
+      "cash": "$123,539,000",
+      "liabilities": "$197,051,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000023/0001039399-26-000023-index.html",
+      "screen_result": "starter_or_10x_optionality"
+    },
+    {
+      "ticker": "AMAT",
+      "role": "Fab equipment",
+      "filing": "10-Q",
+      "filing_date": "2026-05-21",
+      "accession_number": "0001628280-26-037227",
+      "revenue": "$7,910,000,000",
+      "net_income": "$2,806,000,000",
+      "diluted_eps": "$3.51",
+      "cash": "$6,301,000,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026037227/0001628280-26-037227-index.html",
+      "screen_result": "highest_confidence_buy"
+    },
+    {
+      "ticker": "KLAC",
+      "role": "Process control",
+      "filing": "10-Q",
+      "filing_date": "2026-04-30",
+      "accession_number": "0000319201-26-000016",
+      "revenue": "$2,640,287,000",
+      "net_income": "$1,200,990,000",
+      "diluted_eps": "$9.12",
+      "cash": "$1,787,010,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000016/0000319201-26-000016-index.html",
+      "screen_result": "highest_confidence_buy"
+    },
+    {
+      "ticker": "AMD",
+      "role": "AI accelerators and CPUs",
+      "filing": "10-Q",
+      "filing_date": "2026-05-06",
+      "accession_number": "0000002488-26-000076",
+      "revenue": "$10,253,000,000",
+      "net_income": "$1,383,000,000",
+      "diluted_eps": "$0.84",
+      "cash": "$5,585,000,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000076/0000002488-26-000076-index.html",
+      "screen_result": "caution_today"
+    }
+  ],
+  "sources": [
+    "https://stooq.com/",
+    "https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server",
+    "https://www.semi.org/en/products-services/market-data/300mm-fab-outlook",
+    "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage",
+    "https://www.techinsights.com/outlook-reports-2026/ai-outlook-report",
+    "https://www.eetimes.com/tag/semiconductors/",
+    "https://www.servethehome.com/dell-and-coreweave-show-off-first-nvidia-gb300-nvl72-rack/",
+    "https://www.hpcwire.com/off-the-wire/nvidia-running-ai-workloads-on-rack-scale-supercomputers/",
+    "https://www.investing.com/news/stock-market-news/analysissizzling-semiconductor-trade-at-risk-of-cooling--and-stalling-us-stocks-rally-4683659",
+    "https://www.investing.com/news/stock-market-news/nvidia-forecasts-quarterly-revenue-above-estimates-announces-80-billion-share-buyback-4702363",
+    "https://www.benzinga.com/quote/NVDA/analyst-ratings",
+    "https://finance.yahoo.com/quote/NVDA",
+    "https://www.sec.gov/edgar/search/"
+  ]
+}
