@@ -1,6 +1,7 @@
 {
   "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
   "version": "2.0",
+  "envId": "{{env.TCB_ENV_ID}}",
   "app": {
     "serviceName": "ai-semiconductor-market-intelligence",
     "framework": "static",
