@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-01",
+  "as_of": "2026-06-02",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -10,33 +10,33 @@
   "quote_source": {
     "name": "Stooq delayed quotes",
     "url": "https://stooq.com/",
-    "note": "Latest complete US session available from Asia/Shanghai on June 1 was the May 29 close. Percent shown as session move versus open because prior close was not provided by the quote endpoint used in this run."
+    "note": "June 2 feed is a delayed intraday tape rather than a completed close. Percent shown as latest quote versus session open because prior close was not provided by the quote endpoint used in this run."
   },
   "quotes": {
-    "NVDA": { "date": "2026-05-29", "time": "22:00:20", "open": 214.575, "high": 217.8599, "low": 211.13, "last": 211.14, "volume": 289410624, "move_vs_open_percent": -1.6 },
-    "AVGO": { "date": "2026-05-29", "time": "22:00:20", "open": 432.95, "high": 448.9, "low": 431.4707, "last": 446.77, "volume": 41798353, "move_vs_open_percent": 3.19 },
-    "MU": { "date": "2026-05-29", "time": "22:00:20", "open": 957.0, "high": 981.0, "low": 940.51, "last": 971.0, "volume": 60498561, "move_vs_open_percent": 1.46 },
-    "AMD": { "date": "2026-05-29", "time": "22:00:19", "open": 520.8, "high": 522.0, "low": 503.43, "last": 516.1, "volume": 30803236, "move_vs_open_percent": -0.9 },
-    "CRDO": { "date": "2026-05-29", "time": "22:00:19", "open": 228.25, "high": 240.81, "low": 224.5, "last": 236.03, "volume": 7597070, "move_vs_open_percent": 3.41 },
-    "ALAB": { "date": "2026-05-29", "time": "22:00:19", "open": 348.0, "high": 350.87, "low": 329.61, "last": 342.85, "volume": 5985713, "move_vs_open_percent": -1.48 },
-    "FORM": { "date": "2026-05-29", "time": "22:00:20", "open": 130.73, "high": 131.68, "low": 123.9, "last": 124.59, "volume": 1584162, "move_vs_open_percent": -4.7 },
-    "COHR": { "date": "2026-05-29", "time": "22:00:24", "open": 375.65, "high": 378.27, "low": 343.51, "last": 361.47, "volume": 11082553, "move_vs_open_percent": -3.77 },
-    "LITE": { "date": "2026-05-29", "time": "22:00:19", "open": 860.68, "high": 869.0, "low": 822.5, "last": 854.96, "volume": 6363965, "move_vs_open_percent": -0.66 },
-    "AMAT": { "date": "2026-05-29", "time": "22:00:19", "open": 452.77, "high": 460.46, "low": 445.7, "last": 450.06, "volume": 8549508, "move_vs_open_percent": -0.6 },
-    "KLAC": { "date": "2026-05-29", "time": "22:00:19", "open": 1929.9, "high": 1975.0, "low": 1911.46, "last": 1921.71, "volume": 1145940, "move_vs_open_percent": -0.42 },
-    "SMCI": { "date": "2026-05-29", "time": "22:00:19", "open": 44.5, "high": 48.34, "low": 44.17, "last": 46.09, "volume": 93235112, "move_vs_open_percent": 3.57 },
-    "ARM": { "date": "2026-05-29", "time": "22:00:19", "open": 339.25, "high": 356.45, "low": 337.0, "last": 353.29, "volume": 10448329, "move_vs_open_percent": 4.14 },
-    "INTC": { "date": "2026-05-29", "time": "22:00:20", "open": 123.85, "high": 126.64, "low": 113.54, "last": 114.68, "volume": 191676126, "move_vs_open_percent": -7.4 },
-    "MRVL": { "date": "2026-05-29", "time": "22:00:20", "open": 204.44, "high": 208.76, "low": 199.2001, "last": 205.0, "volume": 34024746, "move_vs_open_percent": 0.27 },
-    "TSM": { "date": "2026-05-29", "time": "22:00:24", "open": 427.07, "high": 430.44, "low": 417.25, "last": 418.45, "volume": 11232272, "move_vs_open_percent": -2.02 },
-    "ASML": { "date": "2026-05-29", "time": "22:00:19", "open": 1633.47, "high": 1654.2, "low": 1604.86, "last": 1612.76, "volume": 1070357, "move_vs_open_percent": -1.27 },
-    "SOXX": { "date": "2026-05-29", "time": "22:00:19", "open": 576.44, "high": 582.23, "low": 564.6, "last": 569.08, "volume": 7323862, "move_vs_open_percent": -1.28 }
+    "NVDA": { "date": "2026-06-02", "time": "16:28:46", "open": 227.18, "high": 232.28, "low": 225.04, "last": 228.608, "volume": 41563738, "move_vs_open_percent": 0.63 },
+    "AVGO": { "date": "2026-06-02", "time": "16:28:49", "open": 488.79, "high": 488.82, "low": 477.75, "last": 478.91, "volume": 7344066, "move_vs_open_percent": -2.02 },
+    "MU": { "date": "2026-06-02", "time": "16:28:51", "open": 1050.0, "high": 1072.84, "low": 1017.201, "last": 1028.0, "volume": 10490446, "move_vs_open_percent": -2.1 },
+    "AMD": { "date": "2026-06-02", "time": "16:28:54", "open": 506.3, "high": 519.95, "low": 501.22, "last": 504.26, "volume": 4243866, "move_vs_open_percent": -0.4 },
+    "CRDO": { "date": "2026-06-02", "time": "16:28:56", "open": 219.055, "high": 245.9499, "low": 210.7232, "last": 211.83, "volume": 4101020, "move_vs_open_percent": -3.3 },
+    "ALAB": { "date": "2026-06-02", "time": "16:32:32", "open": 326.4, "high": 342.5, "low": 322.47, "last": 336.48, "volume": 944003, "move_vs_open_percent": 3.09 },
+    "FORM": { "date": "2026-06-02", "time": "16:31:54", "open": 118.8, "high": 126.66, "low": 117.935, "last": 126.185, "volume": 192535, "move_vs_open_percent": 6.22 },
+    "COHR": { "date": "2026-06-02", "time": "16:32:09", "open": 381.86, "high": 427.28, "low": 377.58, "last": 427.28, "volume": 2837819, "move_vs_open_percent": 11.89 },
+    "LITE": { "date": "2026-06-02", "time": "16:32:11", "open": 935.13, "high": 996.5, "low": 935.012, "last": 995.95, "volume": 1904067, "move_vs_open_percent": 6.5 },
+    "AMAT": { "date": "2026-06-02", "time": "16:32:13", "open": 465.3, "high": 478.91, "low": 461.45, "last": 478.25, "volume": 1275024, "move_vs_open_percent": 2.78 },
+    "KLAC": { "date": "2026-06-02", "time": "16:32:43", "open": 1966.5, "high": 1997.71, "low": 1950.0, "last": 1989.66, "volume": 126006, "move_vs_open_percent": 1.18 },
+    "SMCI": { "date": "2026-06-02", "time": "16:32:47", "open": 48.76, "high": 51.4, "low": 48.56, "last": 49.62, "volume": 18492735, "move_vs_open_percent": 1.76 },
+    "ARM": { "date": "2026-06-02", "time": "16:32:49", "open": 401.12, "high": 406.66, "low": 387.903, "last": 401.8399, "volume": 3544481, "move_vs_open_percent": 0.18 },
+    "INTC": { "date": "2026-06-02", "time": "16:32:52", "open": 107.45, "high": 107.84, "low": 104.17, "last": 106.765, "volume": 28892070, "move_vs_open_percent": -0.64 },
+    "MRVL": { "date": "2026-06-02", "time": "16:32:55", "open": 253.46, "high": 277.54, "low": 252.43, "last": 273.385, "volume": 22543177, "move_vs_open_percent": 7.86 },
+    "TSM": { "date": "2026-06-02", "time": "16:32:56", "open": 440.58, "high": 445.05, "low": 436.03, "last": 441.095, "volume": 2427027, "move_vs_open_percent": 0.12 },
+    "ASML": { "date": "2026-06-02", "time": "16:32:56", "open": 1659.69, "high": 1688.06, "low": 1647.59, "last": 1682.64, "volume": 318195, "move_vs_open_percent": 1.38 },
+    "SOXX": { "date": "2026-06-02", "time": "16:33:01", "open": 585.17, "high": 594.9, "low": 581.925, "last": 592.36, "volume": 1344503, "move_vs_open_percent": 1.23 }
   },
   "rankings": {
     "highest_confidence_buys": ["NVDA", "AVGO", "MU", "AMAT", "KLAC"],
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
     "watch_for_pullback": ["COHR", "LITE", "MRVL", "TSM", "ASML"],
-    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "LITE", "COHR", "FORM", "Sector/SOXX"]
+    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "COHR", "LITE", "Sector/SOXX"]
   },
   "capital_flow": [
     {
@@ -84,73 +84,73 @@
   "source_intelligence": [
     {
       "source": "TrendForce",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
-      "signal": "Server DRAM contract prices continue rising due to supply deficits and depleted inventories; enterprise SSD, HBM, liquid cooling, and power-system tightness reinforce the AI data center bottleneck thesis."
+      "signal": "June 2 Computex coverage says SK hynix leadership expects memory supply-demand tightness to persist through 2030; Server DRAM contract prices continue rising and AI demand keeps enterprise SSD and HBM markets tight."
     },
     {
       "source": "EE Times",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "Recent semiconductor coverage highlights memory pooling AI server architecture with up to 100 TB DRAM per accelerator and 400-Gbps near-packaged optical interconnects."
     },
     {
       "source": "SemiAnalysis",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "2026 AI silicon shortage analysis points to TSMC N3, memory, advanced packaging, and data center power as the core deployment constraints."
     },
     {
       "source": "TechInsights",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "2026 AI outlook centers on GPUs, ASICs, next-generation memory, 2nm GAA, co-packaged optics, and datacenter compute exceeding US$600B by 2030."
     },
     {
       "source": "SEMI",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "Q1 2026 300mm Fab Outlook projects record US$133B front-end equipment spending in 2026, up 18% year over year."
     },
     {
       "source": "NVIDIA",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "Vera Rubin is ramping into full production; Spectrum-X Ethernet Photonics is now in production; production shipments are expected to begin this fall."
     },
     {
       "source": "ServeTheHome",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "GB300 rack coverage makes the physical buildout visible through liquid-cooled racks, CDUs, InfiniBand, and high-density power context."
     },
     {
       "source": "HPCwire",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "medium",
       "signal": "Search result confirms GB200/GB300 rack-scale supercomputer deployment context; direct page extraction was blocked."
     },
     {
       "source": "Benzinga",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "May 26 coverage ties semiconductor ETF highs to Micron's AI memory thesis and HBM-driven investor breadth."
     },
     {
       "source": "Yahoo Finance",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "BofA-linked coverage raises the 2026 chip-market forecast to US$1.3T and names NVIDIA, Broadcom, Marvell, and AMD as AI drivers."
     },
     {
       "source": "Reuters",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "high",
       "signal": "NVIDIA revenue outlook and buyback confirm durable AI demand, while a separate May 13 sector analysis warns the semiconductor rally may be overheating."
     },
     {
       "source": "Seeking Alpha",
-      "date_checked": "2026-06-01",
+      "date_checked": "2026-06-02",
       "confidence": "medium",
       "signal": "Search-accessible BofA AI-spending note supports the stronger-for-longer thesis; direct extraction was blocked."
     }
@@ -279,6 +279,7 @@
   "sources": [
     "https://stooq.com/",
     "https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server",
+    "https://www.trendforce.com/news/",
     "https://www.eetimes.com/tag/semiconductors/",
     "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage",
     "https://www.techinsights.com/outlook-reports-2026/ai-outlook-report",
