@@ -13,30 +13,30 @@
     "note": "June 2 feed is a delayed intraday tape rather than a completed close. Percent shown as latest quote versus session open because prior close was not provided by the quote endpoint used in this run."
   },
   "quotes": {
-    "NVDA": { "date": "2026-06-02", "time": "16:28:46", "open": 227.18, "high": 232.28, "low": 225.04, "last": 228.608, "volume": 41563738, "move_vs_open_percent": 0.63 },
-    "AVGO": { "date": "2026-06-02", "time": "16:28:49", "open": 488.79, "high": 488.82, "low": 477.75, "last": 478.91, "volume": 7344066, "move_vs_open_percent": -2.02 },
-    "MU": { "date": "2026-06-02", "time": "16:28:51", "open": 1050.0, "high": 1072.84, "low": 1017.201, "last": 1028.0, "volume": 10490446, "move_vs_open_percent": -2.1 },
-    "AMD": { "date": "2026-06-02", "time": "16:28:54", "open": 506.3, "high": 519.95, "low": 501.22, "last": 504.26, "volume": 4243866, "move_vs_open_percent": -0.4 },
-    "CRDO": { "date": "2026-06-02", "time": "16:28:56", "open": 219.055, "high": 245.9499, "low": 210.7232, "last": 211.83, "volume": 4101020, "move_vs_open_percent": -3.3 },
-    "ALAB": { "date": "2026-06-02", "time": "16:32:32", "open": 326.4, "high": 342.5, "low": 322.47, "last": 336.48, "volume": 944003, "move_vs_open_percent": 3.09 },
-    "FORM": { "date": "2026-06-02", "time": "16:31:54", "open": 118.8, "high": 126.66, "low": 117.935, "last": 126.185, "volume": 192535, "move_vs_open_percent": 6.22 },
-    "COHR": { "date": "2026-06-02", "time": "16:32:09", "open": 381.86, "high": 427.28, "low": 377.58, "last": 427.28, "volume": 2837819, "move_vs_open_percent": 11.89 },
-    "LITE": { "date": "2026-06-02", "time": "16:32:11", "open": 935.13, "high": 996.5, "low": 935.012, "last": 995.95, "volume": 1904067, "move_vs_open_percent": 6.5 },
-    "AMAT": { "date": "2026-06-02", "time": "16:32:13", "open": 465.3, "high": 478.91, "low": 461.45, "last": 478.25, "volume": 1275024, "move_vs_open_percent": 2.78 },
-    "KLAC": { "date": "2026-06-02", "time": "16:32:43", "open": 1966.5, "high": 1997.71, "low": 1950.0, "last": 1989.66, "volume": 126006, "move_vs_open_percent": 1.18 },
-    "SMCI": { "date": "2026-06-02", "time": "16:32:47", "open": 48.76, "high": 51.4, "low": 48.56, "last": 49.62, "volume": 18492735, "move_vs_open_percent": 1.76 },
-    "ARM": { "date": "2026-06-02", "time": "16:32:49", "open": 401.12, "high": 406.66, "low": 387.903, "last": 401.8399, "volume": 3544481, "move_vs_open_percent": 0.18 },
-    "INTC": { "date": "2026-06-02", "time": "16:32:52", "open": 107.45, "high": 107.84, "low": 104.17, "last": 106.765, "volume": 28892070, "move_vs_open_percent": -0.64 },
-    "MRVL": { "date": "2026-06-02", "time": "16:32:55", "open": 253.46, "high": 277.54, "low": 252.43, "last": 273.385, "volume": 22543177, "move_vs_open_percent": 7.86 },
+    "NVDA": { "date": "2026-06-02", "time": "17:09:41", "open": 227.18, "high": 232.28, "low": 225.04, "last": 226.89, "volume": 56930066, "move_vs_open_percent": -0.13 },
+    "AVGO": { "date": "2026-06-02", "time": "17:09:43", "open": 488.79, "high": 488.82, "low": 475.53, "last": 477.91, "volume": 9270691, "move_vs_open_percent": -2.23 },
+    "MU": { "date": "2026-06-02", "time": "17:09:46", "open": 1050.0, "high": 1072.84, "low": 1017.201, "last": 1035.46, "volume": 14723568, "move_vs_open_percent": -1.38 },
+    "AMD": { "date": "2026-06-02", "time": "17:09:48", "open": 506.3, "high": 519.95, "low": 501.22, "last": 509.355, "volume": 5621118, "move_vs_open_percent": 0.6 },
+    "CRDO": { "date": "2026-06-02", "time": "17:09:51", "open": 219.055, "high": 245.9499, "low": 210.7232, "last": 216.68, "volume": 5028089, "move_vs_open_percent": -1.08 },
+    "ALAB": { "date": "2026-06-02", "time": "17:09:53", "open": 326.4, "high": 344.0, "low": 322.47, "last": 342.85, "volume": 1202418, "move_vs_open_percent": 5.04 },
+    "FORM": { "date": "2026-06-02", "time": "17:09:25", "open": 118.8, "high": 127.726, "low": 117.935, "last": 127.49, "volume": 291080, "move_vs_open_percent": 7.31 },
+    "COHR": { "date": "2026-06-02", "time": "17:10:01", "open": 381.86, "high": 433.6899, "low": 377.58, "last": 426.255, "volume": 3848915, "move_vs_open_percent": 11.63 },
+    "LITE": { "date": "2026-06-02", "time": "17:10:02", "open": 935.13, "high": 1017.97, "low": 935.012, "last": 1002.12, "volume": 2652120, "move_vs_open_percent": 7.16 },
+    "AMAT": { "date": "2026-06-02", "time": "17:10:03", "open": 465.3, "high": 484.52, "low": 461.45, "last": 484.265, "volume": 1846810, "move_vs_open_percent": 4.08 },
+    "KLAC": { "date": "2026-06-02", "time": "17:10:08", "open": 1966.5, "high": 2031.02, "low": 1950.0, "last": 2031.02, "volume": 188721, "move_vs_open_percent": 3.28 },
+    "SMCI": { "date": "2026-06-02", "time": "17:10:13", "open": 48.76, "high": 51.4, "low": 48.56, "last": 50.06, "volume": 22907549, "move_vs_open_percent": 2.67 },
+    "ARM": { "date": "2026-06-02", "time": "17:10:13", "open": 401.12, "high": 414.7855, "low": 387.903, "last": 413.47, "volume": 4322459, "move_vs_open_percent": 3.08 },
+    "INTC": { "date": "2026-06-02", "time": "17:10:18", "open": 107.45, "high": 108.9399, "low": 104.17, "last": 108.1103, "volume": 37951298, "move_vs_open_percent": 0.61 },
+    "MRVL": { "date": "2026-06-02", "time": "17:10:21", "open": 253.46, "high": 280.88, "low": 252.43, "last": 275.82, "volume": 28784153, "move_vs_open_percent": 8.82 },
     "TSM": { "date": "2026-06-02", "time": "16:32:56", "open": 440.58, "high": 445.05, "low": 436.03, "last": 441.095, "volume": 2427027, "move_vs_open_percent": 0.12 },
     "ASML": { "date": "2026-06-02", "time": "16:32:56", "open": 1659.69, "high": 1688.06, "low": 1647.59, "last": 1682.64, "volume": 318195, "move_vs_open_percent": 1.38 },
-    "SOXX": { "date": "2026-06-02", "time": "16:33:01", "open": 585.17, "high": 594.9, "low": 581.925, "last": 592.36, "volume": 1344503, "move_vs_open_percent": 1.23 }
+    "SOXX": { "date": "2026-06-02", "time": "17:10:22", "open": 585.17, "high": 597.17, "low": 581.925, "last": 596.9, "volume": 1968019, "move_vs_open_percent": 2.0 }
   },
   "rankings": {
     "highest_confidence_buys": ["NVDA", "AVGO", "MU", "AMAT", "KLAC"],
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
-    "watch_for_pullback": ["COHR", "LITE", "MRVL", "TSM", "ASML"],
-    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "COHR", "LITE", "Sector/SOXX"]
+    "watch_for_pullback": ["MRVL", "COHR", "LITE", "TSM", "ASML"],
+    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "MRVL", "COHR", "LITE", "Sector/SOXX"]
   },
   "capital_flow": [
     {
@@ -140,13 +140,31 @@
       "source": "Yahoo Finance",
       "date_checked": "2026-06-02",
       "confidence": "high",
-      "signal": "BofA-linked coverage raises the 2026 chip-market forecast to US$1.3T and names NVIDIA, Broadcom, Marvell, and AMD as AI drivers."
+      "signal": "BofA-linked coverage raises the 2026 chip-market forecast to US$1.3T and names NVIDIA, Broadcom, Marvell, and AMD as AI drivers; separate Yahoo coverage says Marvell beat Q1 estimates and raised outlook on strong AI demand."
+    },
+    {
+      "source": "Credo Investor Relations",
+      "date_checked": "2026-06-02",
+      "confidence": "high",
+      "signal": "June 1 fiscal Q4/FY2026 release: Q4 revenue $437.0M, GAAP net income $169.1M, non-GAAP diluted EPS $1.16, ending cash and short-term investments $1.4B, and Q1 FY2027 revenue guidance of $465M-$475M."
+    },
+    {
+      "source": "Credo earnings call transcript",
+      "date_checked": "2026-06-02",
+      "confidence": "medium",
+      "signal": "Call commentary points to AEC, retimer, optical DSP, ZeroFlap Optics, and silicon-photonics PIC ramps, with fiscal 2027 optical portfolio revenue expected above $600M and customer concentration still material."
+    },
+    {
+      "source": "Marvell SEC 8-K and 10-Q",
+      "date_checked": "2026-06-02",
+      "confidence": "high",
+      "signal": "Q1 FY2027 revenue was $2.4178B, up 28% year over year; data center was 76% of revenue; Q2 revenue guide was $2.7B +/- 5%; operating cash flow was $638.8M."
     },
     {
       "source": "Reuters",
       "date_checked": "2026-06-02",
       "confidence": "high",
-      "signal": "NVIDIA revenue outlook and buyback confirm durable AI demand, while a separate May 13 sector analysis warns the semiconductor rally may be overheating."
+      "signal": "Reuters-sourced coverage says Marvell surged on June 2 after NVIDIA CEO Jensen Huang's Computex comments, while a separate May 13 sector analysis warns the semiconductor rally may be overheating."
     },
     {
       "source": "Seeking Alpha",
@@ -181,6 +199,22 @@
       "screen_result": "highest_confidence_buy"
     },
     {
+      "ticker": "MRVL",
+      "role": "Custom silicon, Ethernet, and optics",
+      "filing": "10-Q and 8-K",
+      "filing_date": "2026-05-28",
+      "accession_number": "0001835632-26-000019",
+      "earnings_8k_accession_number": "0001835632-26-000014",
+      "revenue": "$2,417,800,000",
+      "net_income": "$34,500,000",
+      "diluted_eps": "$0.04",
+      "cash": "$3,843,600,000",
+      "q2_guidance": "$2,700,000,000 +/- 5%",
+      "data_center_revenue_mix": "76%",
+      "url": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000019/0001835632-26-000019-index.html",
+      "screen_result": "watch_for_pullback"
+    },
+    {
       "ticker": "MU",
       "role": "HBM and server memory",
       "filing": "10-Q",
@@ -196,16 +230,18 @@
     },
     {
       "ticker": "CRDO",
-      "role": "AEC and SerDes",
-      "filing": "10-Q",
-      "filing_date": "2026-03-03",
-      "accession_number": "0001628280-26-014017",
-      "revenue": "$407,012,000",
-      "net_income": "$157,142,000",
-      "diluted_eps": "$0.82",
-      "cash": "$1,220,464,000",
-      "liabilities": "$188,453,000",
-      "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026014017/0001628280-26-014017-index.html",
+      "role": "AEC, SerDes, retimers, and optical DSP",
+      "filing": "8-K and 10-Q",
+      "filing_date": "2026-06-01",
+      "accession_number": "0001628280-26-039474",
+      "revenue": "$437,003,000",
+      "net_income": "$169,102,000",
+      "diluted_eps": "$0.88 GAAP / $1.16 non-GAAP",
+      "cash_and_short_term_investments": "$1,400,000,000",
+      "q1_fy2027_guidance": "$465,000,000 to $475,000,000 revenue",
+      "q3_fy2026_10q_cash": "$1,220,464,000",
+      "q3_fy2026_10q_liabilities": "$188,453,000",
+      "url": "https://www.sec.gov/Archives/edgar/data/1807794/0001628280-26-039474-index.html",
       "screen_result": "starter_or_10x_optionality"
     },
     {
@@ -291,6 +327,10 @@
     "https://money.usnews.com/investing/news/articles/2026-05-13/analysis-sizzling-semiconductor-trade-at-risk-of-cooling-and-stalling-us-stocks-rally",
     "https://www.benzinga.com/etfs/sector-etfs/26/05/52794407/semiconductor-etfs-hit-new-highs-as-microns-ai-memory-thesis-gains-traction",
     "https://finance.yahoo.com/news/bofa-hikes-2026-chips-forecast-to-13-trillion-names-nvidia-broadcom-marvell-amd-as-top-drivers-164800203.html",
+    "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx",
+    "https://www.investing.com/news/transcripts/earnings-call-transcript-credo-technology-q4-2026-earnings-beat-forecasts-93CH-4720593",
+    "https://ca.finance.yahoo.com/news/marvell-technology-beats-q1-estimates-203500763.html",
+    "https://www.investing.com/news/stock-market-news/marvell-technology-surges-after-nvidias-huang-calls-it-next-trilliondollar-company-4721040",
     "https://seekingalpha.com/news/4596821-nvidia-amd-among-group-of-winners-as-bofa-thinks-ai-spending-has-staying-power",
     "https://www.sec.gov/edgar/search/"
   ]
