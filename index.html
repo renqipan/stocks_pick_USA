@@ -184,6 +184,7 @@
     }
 
     .status-pill {
+      min-width: 0;
       min-height: 76px;
       padding: 13px 14px;
       border: 1px solid var(--line);
@@ -377,6 +378,7 @@
     }
 
     .decision-card {
+      min-width: 0;
       padding: 18px;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -401,6 +403,7 @@
     }
 
     .news-card {
+      min-width: 0;
       min-height: 170px;
       padding: 15px;
       border: 1px solid var(--line);
@@ -433,6 +436,7 @@
 
     .card {
       position: relative;
+      min-width: 0;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--paper);
@@ -623,6 +627,7 @@
     .risk-meter.high .on { background: var(--red); }
 
     .table-wrap {
+      max-width: 100%;
       overflow-x: auto;
       overscroll-behavior-x: contain;
       border: 1px solid var(--line);
@@ -739,6 +744,10 @@
       .source-list,
       .mini-grid,
       .legend { grid-template-columns: 1fr; }
+      .quote-grid {
+        grid-template-columns: 1fr;
+        overflow-x: visible;
+      }
       h1 { font-size: 39px; }
       .bar-row { grid-template-columns: 88px minmax(0, 1fr); }
       .bar-value { grid-column: 2; text-align: left; }
@@ -775,7 +784,7 @@
   <main id="top" class="shell">
     <section class="hero" aria-label="Dashboard overview">
       <div class="hero-copy">
-        <span class="eyebrow">Research date: 2026-06-05</span>
+        <span class="eyebrow">Research date: 2026-06-08</span>
         <h1>AI-Driven Semiconductor Market Intelligence</h1>
         <p class="hero-text">
           A sourced dashboard for tracking hyperscaler capital flow, AI data center supply-chain constraints,
@@ -794,8 +803,8 @@
           </div>
           <div class="status-pill">
             <p class="kicker">Live Quote Check</p>
-            <div class="status-value">15 US Tickers</div>
-            <div class="metric-caption">US delayed close tape, 2026-06-04 22:00</div>
+            <div class="status-value">No Fresh Buys</div>
+            <div class="metric-caption">Strict score gate triggered by June 5 shock and June 8 premarket rebound</div>
           </div>
         </div>
       </div>
@@ -861,7 +870,7 @@
           <h2>Part One: Capital Flow Of Major Technology Companies</h2>
           <p>Public-source capex tracking shows the AI trade is no longer only a chip story. Dollars are flowing from cloud budgets into GPU and ASIC clusters, HBM, foundry capacity, rack-scale systems, optics, SSDs, liquid cooling, and grid equipment.</p>
         </div>
-        <div class="stamp">T0 = 2026-06-05</div>
+        <div class="stamp">T0 = 2026-06-08</div>
       </div>
 
       <div class="cards-4">
@@ -942,7 +951,7 @@
         <article class="card pad">
           <h3 style="margin:0 0 10px;">Investment Interpretation</h3>
           <p class="thesis">
-            The capital-flow signal favors companies with pricing power at choke points: NVIDIA in accelerated compute, Broadcom and Marvell in custom silicon and networking, Micron in HBM and server memory, TSMC/ASML/AMAT/KLAC in capacity formation, Credo/Astera in rack connectivity, and Coherent/Lumentum in optical interconnects. The June 2026 SIA/Deloitte rack study strengthens the silicon-content thesis by framing semiconductors as the overwhelming value share inside AI data server racks. The caution is equally clear: when capex expectations reset higher, valuation risk and single-customer concentration rise together.
+            The capital-flow signal favors companies with pricing power at choke points: NVIDIA in accelerated compute, Broadcom and Marvell in custom silicon and networking, Micron in HBM and server memory, TSMC/ASML/AMAT/KLAC in capacity formation, Credo/Astera in rack connectivity, and Coherent/Lumentum in optical interconnects. The June 2026 SIA/Deloitte rack study strengthens the silicon-content thesis by framing semiconductors as the overwhelming value share inside AI data server racks. The stricter June 8 scoring adds one more rule: structural winners do not become automatic buys when the market is repricing the same bottleneck too aggressively.
           </p>
         </article>
       </div>
@@ -952,41 +961,41 @@
       <div class="section-head">
         <div>
           <h2>Re-Studied Price Tape</h2>
-          <p>Delayed Stooq quotes were checked again for every US-listed stock carried into the screen. The June 5 Asia/Shanghai snapshot uses the completed June 4 US close tape, so the percentage shown is close versus session open.</p>
+          <p>Every US-listed name carried into the screen was rechecked after the June 5 selloff and June 8 premarket rebound. The strict score treats this as unstable market emotion: a broad drawdown followed by strong premarket demand is not the same as a calm value-entry window.</p>
         </div>
-        <div class="stamp">Quote source: Stooq, 2026-06-04 22:00 close tape</div>
+        <div class="stamp">Quote source: StockAnalysis delayed history, June 5 close plus June 8 premarket</div>
       </div>
 
       <div class="quote-grid">
-        <article class="quote-card"><div class="quote-symbol">NVDA <span class="tag buy">Core</span></div><div class="quote-price">$218.66</div><div class="quote-meta">Open $213.91 · high $221.60 · low $210.97 · +2.22% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">AVGO <span class="tag buy">Core</span></div><div class="quote-price">$418.91</div><div class="quote-meta">Open $408.99 · high $426.48 · low $403.01 · +2.43% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">MU <span class="tag buy">Core</span></div><div class="quote-price">$996.00</div><div class="quote-meta">Open $1,007.10 · high $1,036.37 · low $971.68 · -1.10% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">AMAT <span class="tag buy">Core</span></div><div class="quote-price">$501.70</div><div class="quote-meta">Open $485.66 · high $510.75 · low $480.11 · +3.30% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">KLAC <span class="tag buy">Core</span></div><div class="quote-price">$2,131.10</div><div class="quote-meta">Open $2,053.85 · high $2,156.69 · low $2,034.01 · +3.76% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">CRDO <span class="tag watch">10x</span></div><div class="quote-price">$217.50</div><div class="quote-meta">Open $204.66 · high $227.69 · low $200.00 · +6.27% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">MRVL <span class="tag caution">Momentum</span></div><div class="quote-price">$316.43</div><div class="quote-meta">Open $282.95 · high $321.50 · low $277.56 · +11.83% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">ALAB <span class="tag watch">Starter</span></div><div class="quote-price">$358.05</div><div class="quote-meta">Open $348.06 · high $365.23 · low $338.02 · +2.87% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">FORM <span class="tag watch">10x</span></div><div class="quote-price">$126.61</div><div class="quote-meta">Open $121.16 · high $129.77 · low $117.70 · +4.49% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">COHR <span class="tag caution">Optics</span></div><div class="quote-price">$421.90</div><div class="quote-meta">Open $398.70 · high $432.51 · low $380.20 · +5.82% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">LITE <span class="tag caution">Optics</span></div><div class="quote-price">$945.08</div><div class="quote-meta">Open $900.10 · high $955.48 · low $864.20 · +5.00% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">AMD <span class="tag caution">Caution</span></div><div class="quote-price">$523.20</div><div class="quote-meta">Open $514.75 · high $532.19 · low $499.87 · +1.64% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">SMCI <span class="tag risk">Risk</span></div><div class="quote-price">$46.90</div><div class="quote-meta">Open $45.24 · high $47.84 · low $45.21 · +3.68% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">ARM <span class="tag risk">Risk</span></div><div class="quote-price">$393.44</div><div class="quote-meta">Open $380.41 · high $397.45 · low $367.52 · +3.43% vs open</div></article>
-        <article class="quote-card"><div class="quote-symbol">INTC <span class="tag risk">Risk</span></div><div class="quote-price">$111.78</div><div class="quote-meta">Open $108.40 · high $113.14 · low $107.48 · +3.12% vs open</div></article>
+        <article class="quote-card"><div class="quote-symbol">NVDA <span class="tag buy">Core</span></div><div class="quote-price">$205.10</div><div class="quote-meta">Jun 5 close -6.20%; premarket Jun 8 $210.59, +2.68%</div></article>
+        <article class="quote-card"><div class="quote-symbol">AVGO <span class="tag buy">Core</span></div><div class="quote-price">$385.73</div><div class="quote-meta">Jun 5 close -7.92%; premarket Jun 8 $398.66, +3.35%</div></article>
+        <article class="quote-card"><div class="quote-symbol">MU <span class="tag buy">Core</span></div><div class="quote-price">$864.01</div><div class="quote-meta">Jun 5 close -13.25%; premarket Jun 8 $935.00, +8.22%</div></article>
+        <article class="quote-card"><div class="quote-symbol">AMAT <span class="tag buy">Core</span></div><div class="quote-price">$453.01</div><div class="quote-meta">Jun 5 close -9.71%; premarket Jun 8 $478.74, +5.68%</div></article>
+        <article class="quote-card"><div class="quote-symbol">KLAC <span class="tag buy">Core</span></div><div class="quote-price">$1,929.20</div><div class="quote-meta">Jun 5 close -9.47%; premarket Jun 8 $2,018.00, +4.60%</div></article>
+        <article class="quote-card"><div class="quote-symbol">CRDO <span class="tag watch">10x</span></div><div class="quote-price">$206.89</div><div class="quote-meta">Jun 5 close -4.88%; premarket Jun 8 $217.78, +5.26%</div></article>
+        <article class="quote-card"><div class="quote-symbol">MRVL <span class="tag caution">Momentum</span></div><div class="quote-price">$263.47</div><div class="quote-meta">Jun 5 close -16.74%; premarket Jun 8 $286.79, +8.85%</div></article>
+        <article class="quote-card"><div class="quote-symbol">ALAB <span class="tag watch">Starter</span></div><div class="quote-price">$317.06</div><div class="quote-meta">Jun 5 close -11.45%; premarket Jun 8 $331.00, +4.40%</div></article>
+        <article class="quote-card"><div class="quote-symbol">FORM <span class="tag watch">10x</span></div><div class="quote-price">$116.70</div><div class="quote-meta">Jun 5 close -7.82%; premarket Jun 8 $122.93, +5.34%</div></article>
+        <article class="quote-card"><div class="quote-symbol">COHR <span class="tag caution">Optics</span></div><div class="quote-price">$376.99</div><div class="quote-meta">Jun 5 close -10.64%; premarket Jun 8 $399.00, +5.84%</div></article>
+        <article class="quote-card"><div class="quote-symbol">LITE <span class="tag caution">Optics</span></div><div class="quote-price">$863.66</div><div class="quote-meta">Jun 5 close -8.62%; premarket Jun 8 $896.26, +3.77%</div></article>
+        <article class="quote-card"><div class="quote-symbol">AMD <span class="tag caution">Caution</span></div><div class="quote-price">$466.38</div><div class="quote-meta">Jun 5 close -10.86%; premarket Jun 8 $488.18, +4.67%</div></article>
+        <article class="quote-card"><div class="quote-symbol">SMCI <span class="tag risk">Risk</span></div><div class="quote-price">$41.64</div><div class="quote-meta">Jun 5 close -11.22%; premarket Jun 8 $44.30, +6.39%</div></article>
+        <article class="quote-card"><div class="quote-symbol">ARM <span class="tag risk">Risk</span></div><div class="quote-price">$342.93</div><div class="quote-meta">Jun 5 close -12.84%; premarket Jun 8 $355.00, +3.52%</div></article>
+        <article class="quote-card"><div class="quote-symbol">INTC <span class="tag risk">Risk</span></div><div class="quote-price">$99.17</div><div class="quote-meta">Jun 5 close -11.28%; premarket Jun 8 $111.56, +12.49%</div></article>
       </div>
 
       <div class="decision-strip">
         <article class="decision-card accent-green">
-          <h3>Highest Confidence Buys</h3>
-          <p>NVDA, AVGO, MU, AMAT, and KLAC still have the cleanest mix of filing quality, structural demand, and supply-chain importance. AVGO recovered into the June 4 close after the earnings reset, while AMAT and KLAC confirmed semicap leadership; new entries should still be staged after a risk-on close.</p>
+          <h3>Highest Quality, Not Fresh Buys</h3>
+          <p>NVDA, AVGO, MU, AMAT, and KLAC still have the strongest combination of filing quality, bottleneck exposure, and long-term relevance. The stricter model withholds a buy label because the tape moved from a June 5 drawdown into a June 8 rebound too quickly for disciplined entries.</p>
         </article>
         <article class="decision-card accent-teal">
           <h3>10x Optionality</h3>
-          <p>CRDO, ALAB, and FORM remain the smaller-company asymmetric bucket. CRDO closed +6.27% versus the open, but its high-to-close fade and recent Form 144 filings keep the position-sizing message conservative.</p>
+          <p>CRDO, ALAB, and FORM remain the smaller-company asymmetric bucket. The model now penalizes post-earnings volatility, Form 144 supply overhang, top-customer concentration, and fast premarket rebounds, so optionality stays on the watchlist rather than the buy list.</p>
         </article>
         <article class="decision-card accent-red">
-          <h3>Caution Bucket</h3>
-          <p>AMD, SMCI, ARM, INTC, MRVL, COHR, LITE, ALAB, and the sector ETF require discipline today because the completed close was broadly risk-on. MRVL, COHR, LITE, AMAT, and KLAC all confirmed AI breadth, but the faster the tape runs, the less forgiving new entries become.</p>
+          <h3>Market Emotion Gate</h3>
+          <p>SOXX fell 10.44% on June 5 and rebounded 5.48% premarket on June 8. That heat reading is high enough to allow zero recommendations in the "Best Buy Watchlist Today" section.</p>
         </article>
       </div>
     </section>
@@ -995,9 +1004,9 @@
       <div class="section-head">
         <div>
           <h2>Broadcom, Credo, And Marvell Price Change</h2>
-          <p>Fresh focus update: Broadcom's June 3 fiscal Q2 2026 8-K was studied alongside Credo's June 1 fiscal Q4/FY2026 release and Marvell's May 27 earnings report, May 28 10-Q, and June 4 follow-through tape.</p>
+          <p>Fresh focus update: Broadcom's June 3 fiscal Q2 2026 8-K was studied alongside Credo's June 1 fiscal Q4/FY2026 release, Credo's June 5 Form 144 flow, Marvell's May 28 10-Q, and the June 5/June 8 price reset.</p>
         </div>
-        <div class="stamp">Refreshed 2026-06-05</div>
+        <div class="stamp">Refreshed 2026-06-08</div>
       </div>
 
       <div class="cards-3">
@@ -1013,8 +1022,8 @@
         </article>
         <article class="card pad accent-amber">
           <p class="kicker">MRVL tape</p>
-          <div class="metric-big">+11.83%</div>
-          <p class="metric-caption">MRVL closed at $316.43, +11.83% versus the open, extending the AI infrastructure momentum after the earlier Jensen Huang / trillion-dollar-company catalyst.</p>
+          <div class="metric-big">-16.74%</div>
+          <p class="metric-caption">MRVL closed at $263.47 on June 5, then rebounded to $286.79 premarket on June 8. The price action confirms AI enthusiasm and high entry risk at the same time.</p>
         </article>
       </div>
 
@@ -1034,21 +1043,21 @@
               <td><strong>AVGO</strong></td>
               <td>Broadcom filed a June 3 8-K with fiscal Q2 revenue of $22.187B, GAAP net income of $9.310B, adjusted EBITDA of $15.244B, and Q3 revenue guidance of about $29.4B.</td>
               <td>The AI semiconductor line is the key upgrade: Q2 AI semiconductor revenue grew 143% YoY to $10.8B, and management expects Q3 AI semiconductor revenue above $16.0B, up over 200% YoY.</td>
-              <td>Stooq showed AVGO closed at $418.91, +2.43% versus the June 4 open after recovering from the earlier earnings reset. The fundamentals improved, but the market is still demanding visible AI upside.</td>
-              <td>Keep AVGO in the core buy list, but only as staged accumulation after the earnings reset, not as a chase.</td>
+              <td>StockAnalysis showed AVGO closed at $385.73 on June 5, down 7.92%, then rebounded to $398.66 premarket on June 8. The business upgraded, but the price tape stayed unstable.</td>
+              <td>Keep AVGO as a core watchlist compounder, but remove it from today's fresh-buy list until the entry score clears the volatility gate.</td>
             </tr>
             <tr>
               <td><strong>CRDO</strong></td>
               <td>Fiscal Q4 2026 revenue hit $437.0M and FY2026 revenue reached $1.335B. Q1 FY2027 guidance is $465M-$475M revenue with non-GAAP gross margin of 67%-69%.</td>
-              <td>The call framed AI cluster networking around reliability, power efficiency, signal integrity, telemetry, AECs, retimers, optical DSPs, and the DustPhotonics silicon-photonics ramp.</td>
-              <td>Stooq showed $217.50, +6.27% vs the June 4 open, after touching $227.69. Customer concentration remains real: the top four end customers each contributed at least 10% of Q4 revenue, and June 3/4 Form 144 filings add supply-overhang awareness.</td>
-              <td>Keep CRDO as a 10x candidate, but change the tone from "buy now" to "starter only; add after post-earnings volatility cools."</td>
+              <td>The call framed AI cluster networking around reliability, power efficiency, signal integrity, telemetry, AECs, retimers, optical DSPs, and the DustPhotonics silicon-photonics ramp. The June 1 8-K also disclosed CEO performance hurdles tied to multi-year revenue and stock-price targets.</td>
+              <td>CRDO closed at $206.89 on June 5, down 4.88%, and rebounded to $217.78 premarket on June 8. Recent Form 144 filings on June 3, June 4, and June 5 add supply-overhang awareness.</td>
+              <td>Keep CRDO as a high-upside 10x candidate, but fail it for today's buy gate because valuation, concentration, volatility, and insider-sale supply risk stack together.</td>
             </tr>
             <tr>
               <td><strong>MRVL</strong></td>
               <td>Q1 FY2027 revenue was $2.418B, a record and +28% YoY. Marvell guided Q2 revenue to $2.7B +/- 5% and raised the FY2027/FY2028 outlook on AI bookings.</td>
               <td>Data center represented 76% of revenue. Management highlighted 800G/1.6T optics, 51.2T Ethernet switches, NPO/CPO optics, datacenter interconnect, custom XPU, and XPU-attach demand.</td>
-              <td>MRVL closed at $316.43, +11.83% vs open, with a $321.50 intraday high. The move confirms AI infrastructure leadership, but it also creates near-term chase risk.</td>
+              <td>MRVL fell from the June 4 close of $316.43 to $263.47 on June 5, then rebounded to $286.79 premarket on June 8. The stock is now an AI infrastructure sentiment barometer.</td>
               <td>Upgrade MRVL's strategic score, but keep it in pullback-watch rather than today's highest-conviction buy list.</td>
             </tr>
           </tbody>
@@ -1062,7 +1071,7 @@
           <h2>Latest Publisher Intelligence Matrix</h2>
           <p>Part two starts here: the named source set is mapped into actionable semiconductor signals. Paywalled or extraction-blocked sources are still included, but the page marks the confidence level instead of pretending every feed is equally readable.</p>
         </div>
-        <div class="stamp">Updated 2026-06-05</div>
+        <div class="stamp">Updated 2026-06-08</div>
       </div>
 
       <div class="news-grid">
@@ -1074,7 +1083,7 @@
         <article class="news-card accent-amber"><h3>SEMI <span class="confidence">High</span></h3><p>SEMI's Q1 2026 300mm outlook projects record $133B front-end equipment spending in 2026, +18% YoY, supporting AMAT/KLAC and the broader capacity-formation trade.</p></article>
         <article class="news-card accent-teal"><h3>NVIDIA / ServeTheHome <span class="confidence">High</span></h3><p>NVIDIA says Vera Rubin is ramping into full production, with Spectrum-X Ethernet Photonics now in production and production shipments set to begin this fall. ServeTheHome's GB300 rack coverage keeps the physical buildout visible through liquid-cooled racks, CDUs, InfiniBand, and high-density power.</p></article>
         <article class="news-card accent-green"><h3>Benzinga / Yahoo Finance <span class="confidence">High</span></h3><p>Benzinga's Broadcom Q2 call transcript, Micron/ETF read, Yahoo Finance's BofA chip-market forecast, and Yahoo's Marvell Q1 beat coverage support the breadth thesis: AI demand is spreading from GPUs into memory, custom silicon, networking, tools, and optical links.</p></article>
-        <article class="news-card accent-red"><h3>Reuters / Seeking Alpha <span class="confidence">Medium</span></h3><p>Reuters reinforces both sides: Marvell's June momentum shows AI infrastructure enthusiasm, while prior sector analysis warns the semiconductor rally can cool quickly. The June 4 completed close strengthens leadership evidence, but also raises chase risk after MRVL, optics, tools, and SOXX all closed strong.</p></article>
+        <article class="news-card accent-red"><h3>Reuters / Seeking Alpha <span class="confidence">Medium</span></h3><p>Reuters reinforces both sides: Marvell's June momentum shows AI infrastructure enthusiasm, while prior sector analysis warns the semiconductor rally can cool quickly. The June 5 selloff and June 8 premarket rebound keep the strict-score heat gate active.</p></article>
       </div>
     </section>
 
@@ -1082,34 +1091,35 @@
       <div class="section-head">
         <div>
           <h2>AI Data Center Industry Chain Trend</h2>
-          <p>The 2026 buildout is moving from board-level acceleration to rack-scale AI factories. The critical question is not whether demand exists; it is which layer becomes the next bottleneck.</p>
+          <p>The 2026 buildout is moving from board-level acceleration to rack-scale AI factories. The critical question is no longer whether demand exists; it is which layer becomes the next physical bottleneck and how much of that bottleneck is already priced into the equity.</p>
         </div>
       </div>
 
       <div class="chain">
         <article class="chain-card accent-blue">
-          <h3>Compute</h3>
+          <h3>Compute + Custom ASICs</h3>
           <ul>
             <li>NVIDIA Blackwell Ultra and Rubin roadmaps drive rack-scale upgrades.</li>
             <li>Broadcom's June 3 8-K confirms custom AI accelerators and AI networking as a revenue engine, with AI semiconductor revenue expected above $16.0B in fiscal Q3.</li>
-            <li>AMD, Google TPU, AWS Trainium, and Meta ASIC programs expand custom silicon diversity.</li>
-            <li>SemiAnalysis flags TSMC N3 wafer supply as a key 2026 accelerator constraint.</li>
+            <li>AMD, Google TPU, AWS Trainium, Meta ASIC, and hyperscaler co-design programs expand custom silicon diversity, but foundry allocation and software maturity still decide deployment speed.</li>
+            <li>Trend: GPUs remain the platform core, while ASICs take share in stable, high-volume inference workloads.</li>
           </ul>
         </article>
         <article class="chain-card accent-green">
-          <h3>Memory + Storage</h3>
+          <h3>HBM + Server Memory</h3>
           <ul>
             <li>TrendForce's June 3 update says DDR4 and DDR5 spot prices kept rising even as higher quotes slowed buyer chasing.</li>
             <li>Kioxia's investor-day plan points to larger NAND capex and data center/enterprise storage as the growth engine.</li>
-            <li>Micron benefits from HBM, high-density server DRAM, and broader memory tightness, but memory remains cyclical.</li>
+            <li>HBM4 negotiation, Rubin Ultra, AI ASIC demand, and server DRAM crowding-out can pull memory tightness into 2027.</li>
+            <li>Trend: Micron has powerful leverage to HBM and server DRAM, but cyclicality and fast price moves require staged entries.</li>
           </ul>
         </article>
         <article class="chain-card accent-violet">
-          <h3>Foundry + Tools</h3>
+          <h3>Foundry + Packaging + Tools</h3>
           <ul>
             <li>SEMI projects record US$133 billion 300mm front-end equipment spending in 2026.</li>
-            <li>Logic, foundry, and memory capacity dominate the spend map.</li>
-            <li>KLA and Applied Materials are quality compounders rather than pure 10x bets.</li>
+            <li>Advanced-node wafers, HBM-related memory capacity, CoWoS-style packaging, test, inspection, and metrology form the hidden capacity layer behind each AI rack.</li>
+            <li>Trend: KLA and Applied Materials remain quality compounders, but the June 5 drawdown shows even best-in-class tools can fail an entry-timing gate.</li>
           </ul>
         </article>
         <article class="chain-card accent-teal">
@@ -1119,6 +1129,7 @@
             <li>SIA/Deloitte's AI rack study frames semiconductors as about 95% of AI data server rack value, supporting the long-run connectivity-content thesis.</li>
             <li>EE Times highlights near-packaged optical interconnects for next-gen data centers.</li>
             <li>Credo's Q4 call added a sharper roadmap signal: AECs, optical DSPs, silicon-photonics PICs, ZeroFlap Optics, and retimers all become AI rack bottleneck exposure.</li>
+            <li>Trend: connectivity content per accelerator rises, but smaller optical and cable names deserve higher concentration and valuation penalties.</li>
           </ul>
         </article>
         <article class="chain-card accent-amber">
@@ -1126,7 +1137,8 @@
           <ul>
             <li>TrendForce says power architectures are becoming multi-track and liquid cooling is accelerating.</li>
             <li>ServeTheHome's GB300 rack coverage shows rack-scale systems tied to CDUs and high-density facilities.</li>
-            <li>Power, substations, PSUs, CDUs, and thermal systems become semiconductor-adjacent bottlenecks.</li>
+            <li>Power shelves, PSUs, backup power, substations, CDUs, cold plates, and facility water loops are now deployment constraints, not secondary accessories.</li>
+            <li>Trend: the next stock-market winners may be semiconductor-adjacent, but the current dashboard keeps the scoring universe focused on US-listed semiconductor technology stocks.</li>
           </ul>
         </article>
       </div>
@@ -1226,49 +1238,90 @@
       <div class="section-head">
         <div>
           <h2>Part Two: Best Buy Screen And Caution Screen Today</h2>
-          <p>Selection combines current source momentum, recent SEC financial anchors, and bottleneck exposure. Position sizing and time horizon matter because semiconductor leadership is strong but technically crowded.</p>
+          <p>Selection combines current source momentum, recent SEC financial anchors, bottleneck exposure, valuation discipline, and a stricter market-emotion penalty. A stock can be high quality and still fail today's fresh-buy gate.</p>
         </div>
         <div class="stamp">Not financial advice</div>
+      </div>
+
+      <div class="cards-3" style="margin-bottom:14px;">
+        <article class="card pad accent-red">
+          <p class="kicker">Market Emotion Heat</p>
+          <div class="metric-big">88 / 100</div>
+          <p class="metric-caption">SOXX fell 10.44% on June 5 and rebounded 5.48% premarket on June 8. Multiple AI leaders showed the same shock-and-rebound pattern.</p>
+        </article>
+        <article class="card pad accent-amber">
+          <p class="kicker">Fresh Buy Threshold</p>
+          <div class="metric-big">82+</div>
+          <p class="metric-caption">A candidate must score at least 82, clear every red-flag gate, and avoid the market-emotion penalty. No candidate cleared all gates today.</p>
+        </article>
+        <article class="card pad accent-blue">
+          <p class="kicker">Scoring Mechanism</p>
+          <div class="metric-big">Stricter</div>
+          <p class="metric-caption">Quality and supply-chain role are rewarded, but valuation, volatility, concentration, insider-sale flow, and unstable market breadth now subtract more points.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap" style="margin-bottom:14px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Scoring Gate</th>
+              <th>Max Points</th>
+              <th>Strict Rule</th>
+              <th>Today's Read</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Fundamental quality</td><td>25</td><td>Recent 10-Q/8-K must show revenue scale, cash flow, margin, or earnings power.</td><td>NVDA, AVGO, AMAT, KLAC, MU pass quality; CRDO passes growth but not concentration.</td></tr>
+            <tr><td>Supply-chain bottleneck power</td><td>20</td><td>Must control compute, HBM, advanced packaging/tools, networking, optics, or rack-level connectivity.</td><td>Most candidates pass because AI rack bottlenecks are broadening.</td></tr>
+            <tr><td>Filing transparency</td><td>15</td><td>SEC data must be fresh and consistent; missing or stale extraction loses points.</td><td>ARM and some non-US names remain manual-check only.</td></tr>
+            <tr><td>Valuation and entry discipline</td><td>15</td><td>Recent price action must support staged accumulation, not panic buying or rebound chasing.</td><td>Fails broadly after the June 5 shock and June 8 premarket rebound.</td></tr>
+            <tr><td>Market-emotion penalty</td><td>15</td><td>If heat is 75 or higher, the best-buy list may be empty.</td><td>Heat is 88, so the fresh-buy gate is closed today.</td></tr>
+            <tr><td>Concentration / supply-overhang risk</td><td>10</td><td>Customer concentration, Form 144 flow, or balance-sheet fragility reduces conviction.</td><td>CRDO, ALAB, COHR, LITE, SMCI, ARM, and INTC carry higher penalties.</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="cards-2">
         <article class="card pad accent-green">
           <h3 style="margin:0 0 14px;">Best Buy Watchlist Today</h3>
+          <div class="metric-big">No fresh buys today</div>
+          <p class="metric-caption" style="margin-bottom:14px;">The model is allowed to recommend zero stocks when market emotion is too high. On June 8, every high-quality candidate either failed the valuation/entry gate or the market-emotion gate.</p>
           <div class="table-wrap">
             <table>
               <thead>
-                <tr><th>Ticker</th><th>Price Setup</th><th>Filing Anchor</th><th>Entry Discipline</th></tr>
+                <tr><th>Ticker</th><th>Strict Score</th><th>Why It Failed Today</th><th>Better Action</th></tr>
               </thead>
               <tbody>
                 <tr>
                   <td><strong>NVDA</strong></td>
-                  <td>$218.66, +2.22% vs open on the completed June 4 close tape. Not cheap, but still the highest-quality direct AI compute compounder.</td>
-                  <td>10-Q filed 2026-05-20; revenue $81,615,000,000; net income $58,321,000,000; diluted EPS $2.39.</td>
-                  <td>Accumulate on pullbacks; avoid chasing a single-session spike.</td>
-                </tr>
-                <tr>
-                  <td><strong>MU</strong></td>
-                  <td>$996.00, -1.10% vs open. TrendForce's June 3 DRAM/HBM updates reinforce the memory tightness thesis, but the tape confirms memory remains volatile.</td>
-                  <td>10-Q filed 2026-03-19; revenue $23,860,000,000; net income $13,785,000,000; diluted EPS $12.07.</td>
-                  <td>Attractive, but memory cycles require staged entries.</td>
+                  <td>79 / 100</td>
+                  <td>Best quality score, but June 5 -6.20% and June 8 premarket +2.68% keep the entry gate unstable.</td>
+                  <td>Core watch; buy only after calmer setup or valuation reset.</td>
                 </tr>
                 <tr>
                   <td><strong>AVGO</strong></td>
-                  <td>$418.91, +2.43% vs open after recovering from the earlier post-earnings reset. Best diversified AI silicon and networking platform after NVIDIA, but now clearly a staged-entry setup.</td>
-                  <td>8-K filed 2026-06-03; Q2 revenue $22,187,000,000; GAAP net income $9,310,000,000; non-GAAP diluted EPS $2.44; Q3 revenue guide about $29,400,000,000.</td>
-                  <td>Use the reset to build in tranches; do not assume great earnings automatically mean a clean tape.</td>
+                  <td>78 / 100</td>
+                  <td>AI semiconductor fundamentals improved, but post-earnings volatility and June 5 -7.92% still fail the entry rule.</td>
+                  <td>Core watch; wait for post-report digestion.</td>
+                </tr>
+                <tr>
+                  <td><strong>MU</strong></td>
+                  <td>74 / 100</td>
+                  <td>HBM and DRAM thesis is strong, but June 5 -13.25% and June 8 +8.22% premarket show high memory-cycle emotion.</td>
+                  <td>Watch for staged pullbacks after volatility cools.</td>
                 </tr>
                 <tr>
                   <td><strong>AMAT / KLAC</strong></td>
-                  <td>AMAT $501.70, +3.30% vs open; KLAC $2,131.10, +3.76% vs open. Quality exposure to the record equipment cycle.</td>
-                  <td>AMAT 10-Q 2026-05-21; KLAC 10-Q 2026-04-30.</td>
-                  <td>Core long-term compounder bucket.</td>
+                  <td>76 / 100</td>
+                  <td>Record equipment cycle is intact, but both sold off hard on June 5 and rebounded premarket June 8.</td>
+                  <td>Core compounder watch; do not chase semicap rebounds.</td>
                 </tr>
                 <tr>
                   <td><strong>CRDO</strong></td>
-                  <td>$217.50, +6.27% vs open after touching $227.69. Best smaller-cap upside candidate tied to AEC/SerDes and optical content in AI racks, but today still confirms volatility risk.</td>
-	                  <td>8-K filed 2026-06-01; Q4 revenue $437,003,000; GAAP net income $169,102,000; non-GAAP diluted EPS $1.16.</td>
-                  <td>Starter-size only; add after post-earnings volatility cools.</td>
+                  <td>71 / 100</td>
+                  <td>Strong 10x optionality, but valuation, customer concentration, Form 144 flow, and post-earnings volatility stack up.</td>
+                  <td>Keep as 10x watch; wait for a better risk/reward window.</td>
                 </tr>
               </tbody>
             </table>
@@ -1285,31 +1338,31 @@
               <tbody>
                 <tr>
                   <td><strong>Sector / SOX</strong></td>
-                  <td>Leadership is crowded and momentum has become fragile.</td>
-                  <td>Reuters analysis flags semiconductor trade cooling risk after a sharp rally; SOXX closed at $602.72, +2.57% vs open, on the June 4 tape.</td>
+                  <td>Leadership is crowded, volatile, and fast-moving.</td>
+                  <td>SOXX closed at $539.77 on June 5, down 10.44%, then rebounded to $569.37 premarket on June 8, up 5.48%.</td>
                   <td>Stage buys, keep cash reserves, rebalance winners.</td>
                 </tr>
                 <tr>
                   <td><strong>AMD</strong></td>
-                  <td>Strong AI roadmap and +1.64% close-vs-open tape, but it remains less clean than the custom-silicon and networking leaders in this screen.</td>
+                  <td>Strong AI roadmap, but less clean than the custom-silicon and networking leaders in this screen.</td>
                   <td>10-Q filed 2026-05-06; revenue $10,253,000,000; net income $1,383,000,000.</td>
                   <td>Hold existing; wait for better risk/reward on new buys.</td>
                 </tr>
                 <tr>
                   <td><strong>ALAB / COHR / LITE</strong></td>
                   <td>Excellent AI connectivity and optics exposure, but price action is volatile and future success is already heavily capitalized.</td>
-                  <td>ALAB +2.87% vs open; COHR +5.82%; LITE +5.00%. SEC filings confirm profits, but concentration, insider-filing flow, and multiple risk remain.</td>
+                  <td>ALAB -11.45%, COHR -10.64%, and LITE -8.62% on June 5, followed by strong June 8 premarket rebounds. SEC filings confirm profits, but concentration, insider-filing flow, and multiple risk remain.</td>
                   <td>Prefer starter positions or pullbacks.</td>
                 </tr>
                 <tr>
                   <td><strong>MRVL</strong></td>
                   <td>Excellent AI custom silicon, Ethernet, and optics momentum, but the recent price move is crowded.</td>
-                  <td>Q1 FY2027 revenue $2,417,800,000; Q2 guide $2.7B +/- 5%; Stooq close $316.43, +11.83% vs open.</td>
+                  <td>Q1 FY2027 revenue $2,417,800,000; Q2 guide $2.7B +/- 5%; June 5 close $263.47, down 16.74%, then June 8 premarket $286.79, up 8.85%.</td>
                   <td>Best treated as a pullback buy, not an immediate chase.</td>
                 </tr>
                 <tr>
                   <td><strong>SMCI / ARM / INTC</strong></td>
-                  <td>SMCI +3.68%, ARM +3.43%, and INTC +3.12% versus open. INTC remains a turnaround rather than a clean AI compounder.</td>
+                  <td>SMCI, ARM, and INTC bounced premarket after double-digit June 5 declines. INTC remains a turnaround rather than a clean AI compounder.</td>
                   <td>SEC tool found SMCI/INTC filings; ARM 10-K/10-Q unavailable through the SEC tool in this run.</td>
                   <td>Do not treat AI exposure alone as enough.</td>
                 </tr>
@@ -1332,7 +1385,7 @@
         <article class="card pad accent-green">
           <p class="kicker">Clean Earnings Power</p>
           <div class="metric-big">NVDA / AVGO / MU</div>
-          <p class="metric-caption">These have the strongest direct revenue-and-profit anchors in the current filing pass. AVGO's June 3 8-K adds fresh AI revenue acceleration, while MU adds balance-sheet support with $13,908,000,000 cash and $72,459,000,000 stockholders' equity.</p>
+          <p class="metric-caption">These have the strongest direct revenue-and-profit anchors in the current filing pass. They are core watchlist names, but the June 8 strict gate removes them from fresh-buy status today.</p>
         </article>
         <article class="card pad accent-teal">
           <p class="kicker">Small-Cap Quality</p>
@@ -1360,18 +1413,18 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>NVDA</td><td>Compute platform</td><td>10-Q 2026-05-20</td><td>$81,615,000,000</td><td>$58,321,000,000</td><td>$2.39</td><td><span class="tag buy">Buy watchlist</span></td></tr>
-            <tr><td>AVGO</td><td>Custom silicon / networking</td><td>8-K 2026-06-03</td><td>$22,187,000,000</td><td>$9,310,000,000</td><td>$1.91 GAAP / $2.44 non-GAAP</td><td><span class="tag buy">Buy watchlist</span></td></tr>
+            <tr><td>NVDA</td><td>Compute platform</td><td>10-Q 2026-05-20</td><td>$81,615,000,000</td><td>$58,321,000,000</td><td>$2.39</td><td><span class="tag watch">Core watch, no fresh buy</span></td></tr>
+            <tr><td>AVGO</td><td>Custom silicon / networking</td><td>8-K 2026-06-03</td><td>$22,187,000,000</td><td>$9,310,000,000</td><td>$1.91 GAAP / $2.44 non-GAAP</td><td><span class="tag watch">Core watch, no fresh buy</span></td></tr>
             <tr><td>MRVL</td><td>Custom silicon / Ethernet / optics</td><td>10-Q 2026-05-28; 8-K 2026-05-27</td><td>$2,417,800,000</td><td>$34,500,000</td><td>$0.04</td><td><span class="tag caution">Pullback watch</span></td></tr>
-            <tr><td>MU</td><td>HBM / server memory</td><td>10-Q 2026-03-19</td><td>$23,860,000,000</td><td>$13,785,000,000</td><td>$12.07</td><td><span class="tag buy">Buy watchlist</span></td></tr>
+            <tr><td>MU</td><td>HBM / server memory</td><td>10-Q 2026-03-19</td><td>$23,860,000,000</td><td>$13,785,000,000</td><td>$12.07</td><td><span class="tag watch">Core watch, no fresh buy</span></td></tr>
             <tr><td>AMD</td><td>AI accelerators / CPUs</td><td>10-Q 2026-05-06</td><td>$10,253,000,000</td><td>$1,383,000,000</td><td>$0.84</td><td><span class="tag caution">Caution</span></td></tr>
             <tr><td>CRDO</td><td>AEC / SerDes / optical DSP</td><td>8-K 2026-06-01; 10-Q 2026-03-03 for balance sheet</td><td>$437,003,000</td><td>$169,102,000</td><td>$0.88 GAAP / $1.16 non-GAAP</td><td><span class="tag watch">10x screen</span></td></tr>
             <tr><td>ALAB</td><td>PCIe / CXL fabric</td><td>10-Q 2026-05-06</td><td>$308,361,000</td><td>$80,310,000</td><td>$0.44</td><td><span class="tag watch">10x screen</span></td></tr>
             <tr><td>COHR</td><td>Photonics / optics</td><td>10-Q 2026-05-06</td><td>$1,805,641,000</td><td>$191,402,000</td><td>$0.97</td><td><span class="tag watch">Optics screen</span></td></tr>
             <tr><td>LITE</td><td>Optical components</td><td>10-Q 2026-05-06</td><td>Not available in SEC extraction</td><td>$144,200,000</td><td>$1.50</td><td><span class="tag caution">Caution</span></td></tr>
             <tr><td>FORM</td><td>Probe cards / test</td><td>10-Q 2026-05-05</td><td>$226,144,000</td><td>$20,384,000</td><td>$0.26</td><td><span class="tag watch">10x screen</span></td></tr>
-            <tr><td>AMAT</td><td>Fab equipment</td><td>10-Q 2026-05-21</td><td>$7,910,000,000</td><td>$2,806,000,000</td><td>$3.51</td><td><span class="tag buy">Core</span></td></tr>
-            <tr><td>KLAC</td><td>Process control</td><td>10-Q 2026-04-30</td><td>$2,640,287,000</td><td>$1,200,990,000</td><td>$9.12</td><td><span class="tag buy">Core</span></td></tr>
+            <tr><td>AMAT</td><td>Fab equipment</td><td>10-Q 2026-05-21</td><td>$7,910,000,000</td><td>$2,806,000,000</td><td>$3.51</td><td><span class="tag watch">Core watch</span></td></tr>
+            <tr><td>KLAC</td><td>Process control</td><td>10-Q 2026-04-30</td><td>$2,640,287,000</td><td>$1,200,990,000</td><td>$9.12</td><td><span class="tag watch">Core watch</span></td></tr>
             <tr><td>ARM / TSM / ASML</td><td>Architecture / foundry / lithography</td><td>No 10-K or 10-Q found by SEC tool</td><td>Data stale</td><td>Data stale</td><td>Data stale</td><td><span class="tag data">Manual check</span></td></tr>
           </tbody>
         </table>
@@ -1388,7 +1441,7 @@
 
       <div class="source-list">
         <a class="source-item" href="https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server" target="_blank" rel="noreferrer">
-          <span class="source-num">01</span><span><h3>TrendForce AI/HBM/Server</h3><p>Rechecked June 5; June 3 news plus June 2 HBM work remain the freshest high-signal items: DDR4/DDR5 spot gains, South Korea chip exports to China +243% YoY in May, Kioxia capex expansion, HBM4 negotiations, server DRAM tightness, HBM/SSD tightness, liquid cooling, and power-system tightening.</p></span>
+          <span class="source-num">01</span><span><h3>TrendForce AI/HBM/Server</h3><p>Rechecked June 8; June 3 news plus June 2 HBM work remain the freshest high-signal items: DDR4/DDR5 spot gains, South Korea chip exports to China +243% YoY in May, Kioxia capex expansion, HBM4 negotiations, server DRAM tightness, HBM/SSD tightness, liquid cooling, and power-system tightening.</p></span>
         </a>
         <a class="source-item" href="https://www.semiconductors.org/new-report-finds-semiconductors-account-for-95-of-an-ai-data-server-racks-value-encompassing-the-full-stack-of-chip-technologies/" target="_blank" rel="noreferrer">
           <span class="source-num">02</span><span><h3>SIA / Deloitte AI Rack Study</h3><p>June report page: semiconductors account for about 95% of AI data server rack value, spanning accelerators, CPUs, memory, networking, storage, security, and control silicon.</p></span>
@@ -1439,7 +1492,7 @@
           <span class="source-num">17</span><span><h3>Yahoo Finance Marvell Q1</h3><p>Accessible coverage of Marvell's Q1 FY2027 beat, Q2 guidance, operating cash flow, and AI-related bookings drivers.</p></span>
         </a>
         <a class="source-item" href="https://www.investing.com/news/stock-market-news/marvell-technology-surges-after-nvidias-huang-calls-it-next-trilliondollar-company-4721040" target="_blank" rel="noreferrer">
-          <span class="source-num">18</span><span><h3>Reuters Marvell Price Move</h3><p>Reuters-sourced coverage of the June 2 Marvell surge after NVIDIA CEO Jensen Huang's Computex comments; cross-checked against the completed June 4 Stooq close tape.</p></span>
+          <span class="source-num">18</span><span><h3>Reuters Marvell Price Move</h3><p>Reuters-sourced coverage of the June 2 Marvell surge after NVIDIA CEO Jensen Huang's Computex comments; cross-checked against the June 5 StockAnalysis close and June 8 premarket tape.</p></span>
         </a>
         <a class="source-item" href="https://www.sec.gov/Archives/edgar/data/1730168/0001730168-26-000051-index.html" target="_blank" rel="noreferrer">
           <span class="source-num">19</span><span><h3>Broadcom Fiscal Q2 2026 8-K</h3><p>June 3 8-K used for Q2 revenue, net income, adjusted EBITDA, free cash flow, dividend, Q3 guidance, and AI semiconductor revenue evidence.</p></span>
@@ -1450,8 +1503,8 @@
         <a class="source-item" href="https://www.sec.gov/edgar/search/" target="_blank" rel="noreferrer">
           <span class="source-num">21</span><span><h3>SEC EDGAR</h3><p>Direct 8-K and 10-Q filing anchors for all company fundamental values shown in the filing table.</p></span>
         </a>
-        <a class="source-item" href="https://stooq.com/" target="_blank" rel="noreferrer">
-          <span class="source-num">22</span><span><h3>Stooq Delayed Quotes</h3><p>Used for the re-studied close tape: open, high, low, close, time, and volume for the US-listed screening universe.</p></span>
+        <a class="source-item" href="https://stockanalysis.com/" target="_blank" rel="noreferrer">
+          <span class="source-num">22</span><span><h3>StockAnalysis Delayed Quotes</h3><p>Used for the June 5 close and June 8 premarket price-history check after the prior quote endpoint became unavailable to this run.</p></span>
         </a>
       </div>
     </section>
@@ -1465,7 +1518,7 @@
   </main>
 
   <footer class="footer">
-    Built as a static local dashboard. Data snapshot: 2026-06-05 Asia/Shanghai; latest US quote tape: 2026-06-04 close.
+    Built as a static local dashboard. Data snapshot: 2026-06-08 Asia/Shanghai; latest US quote tape: 2026-06-05 close plus 2026-06-08 premarket.
   </footer>
 </body>
 </html>
