@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-08",
+  "as_of": "2026-06-10",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -76,7 +76,7 @@
     {
       "name": "SIA / Deloitte",
       "metric": "AI data server rack semiconductor value share",
-      "value": "95%",
+      "value": ">95%",
       "source": "SIA / Deloitte June 2026 AI data center semiconductor report",
       "url": "https://www.semiconductors.org/new-report-finds-semiconductors-account-for-95-of-an-ai-data-server-racks-value-encompassing-the-full-stack-of-chip-technologies/"
     },
@@ -108,6 +108,13 @@
       "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/0001193125-26-101045-index.html"
     },
     {
+      "name": "SEMI",
+      "metric": "2026 global 300mm front-end equipment spending outlook",
+      "value": "US$142B",
+      "source": "SEMI 300mm Fab Outlook Q2 2026",
+      "url": "https://www.semi.org/en/products-services/market-data/300mm-fab-outlook"
+    },
+    {
       "name": "TechInsights",
       "metric": "2030 datacenter compute market outlook",
       "value": ">US$600B",
@@ -115,18 +122,66 @@
       "url": "https://www.techinsights.com/outlook-reports-2026/ai-outlook-report"
     }
   ],
+  "supply_chain_view": {
+    "date_checked": "2026-06-10",
+    "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: HBM and LPDRAM allocation, optical links, advanced packaging, 300mm capacity, rack power, and liquid cooling.",
+    "strict_score_implication": "The supply-chain thesis is stronger, but the Best Buy Watchlist can still be empty when valuation, volatility, concentration, and market-emotion gates fail.",
+    "bottleneck_migration": [
+      "Chip-level scarcity remains important, but rack-level integration now governs deployment speed.",
+      "Memory allocation is a persistent constraint across HBM, server DRAM, LPDRAM, and enterprise storage.",
+      "Networking bottlenecks are moving from pluggable optics toward 1.6T+ links, AECs, retimers, optical DSPs, lasers, and CPO/NPO architectures.",
+      "Power and cooling are no longer secondary infrastructure; grid-to-chip and chip-to-chiller designs shape how quickly AI capacity can go live."
+    ],
+    "layers": [
+      {
+        "layer": "Compute platforms",
+        "tight_items": ["GPU platforms", "custom ASIC slots", "secure rack-scale systems", "software-qualified reference designs"],
+        "latest_signal": "NVIDIA says Vera Rubin is ramping into production across hundreds of partners and factories; Broadcom reported Q2 AI semiconductor revenue up 143% YoY.",
+        "stock_read": ["NVDA", "AVGO", "MRVL"],
+        "score_adjustment": "Reward platform quality, but fail fresh-buy status when price action is too crowded."
+      },
+      {
+        "layer": "Memory and storage",
+        "tight_items": ["HBM4", "server DRAM", "LPDRAM allocation", "enterprise SSDs", "NAND capacity"],
+        "latest_signal": "TrendForce says Vera CPU memory configuration changes reflect insufficient LPDRAM allocation, while HBM wafer input can reach about 30% of total DRAM wafer input by end-2027.",
+        "stock_read": ["MU"],
+        "score_adjustment": "Raise bottleneck score, but keep memory-cycle volatility and valuation discipline strict."
+      },
+      {
+        "layer": "Foundry, packaging, and tools",
+        "tight_items": ["advanced-node wafers", "advanced packaging", "inspection", "metrology", "etch", "deposition", "probe/test"],
+        "latest_signal": "SEMI Q2 2026 300mm outlook projects record US$142B front-end equipment spending in 2026, up 25% YoY.",
+        "stock_read": ["AMAT", "KLAC", "FORM", "TSM", "ASML"],
+        "score_adjustment": "Reward durable tools economics, but require calmer entries after broad semicap drawdowns."
+      },
+      {
+        "layer": "Networking and optics",
+        "tight_items": ["800G to 1.6T links", "optical engines", "DSPs", "retimers", "AECs", "lasers", "CPO/NPO", "switch silicon"],
+        "latest_signal": "TrendForce says AI data center expansion is driving EML and CW-DFB LD capacity toward 50.7 million units per month in 2026; NVIDIA says Spectrum-X Ethernet Photonics is in production.",
+        "stock_read": ["CRDO", "ALAB", "MRVL", "AVGO", "COHR", "LITE"],
+        "score_adjustment": "Add concentration and customer-program penalties before any best-buy label."
+      },
+      {
+        "layer": "Power, thermal, and facility stack",
+        "tight_items": ["power shelves", "PSUs", "PDUs", "UPS", "substations", "CDUs", "cold plates", "in-rack manifolds"],
+        "latest_signal": "ServeTheHome's GB300 rack coverage shows CDU and high-density rack context; Schneider Electric frames AI factories as integrated power plus liquid cooling from grid to chip and chip to chiller.",
+        "stock_read": ["NVDA", "AVGO", "MRVL", "CRDO", "ALAB"],
+        "score_adjustment": "Score semiconductor names by rack power efficiency and deployment risk, not just peak throughput."
+      }
+    ]
+  },
   "source_intelligence": [
     {
       "source": "TrendForce",
-      "date_checked": "2026-06-08",
+      "date_checked": "2026-06-10",
       "confidence": "high",
-      "signal": "June 8 recheck found the June 3/June 2 items still highest signal: DDR4 and DDR5 spot prices extended gains, South Korea chip exports to China rose 243% year over year in May on AI demand, Kioxia targets higher NAND capex, and HBM4/Rubin Ultra/AI ASIC demand can intensify DRAM crowding-out into 2027."
+      "signal": "June 10 recheck adds a Vera CPU LPDRAM allocation constraint, June 3 optics work says EML and CW-DFB LD monthly capacity can reach about 50.7 million units in 2026, and June 2 HBM work says HBM4/Rubin Ultra/AI ASIC demand can intensify DRAM crowding-out into 2027."
     },
     {
       "source": "SIA / Deloitte",
-      "date_checked": "2026-06-08",
+      "date_checked": "2026-06-10",
       "confidence": "high",
-      "signal": "June AI data center semiconductor report says semiconductors account for about 95% of an AI data server rack's value and maps AI data center logic revenue toward a US$1.2T opportunity by 2029."
+      "signal": "June AI data center semiconductor report says chips account for more than 95% of leading AI server-rack content value, more than 50% of AI data center build-and-operate capex, and could reach US$1.2T in annual AI data center semiconductor revenue by 2028."
     },
     {
       "source": "EE Times",
@@ -148,21 +203,27 @@
     },
     {
       "source": "SEMI",
-      "date_checked": "2026-06-08",
+      "date_checked": "2026-06-10",
       "confidence": "high",
-      "signal": "Q1 2026 300mm Fab Outlook projects record US$133B front-end equipment spending in 2026, up 18% year over year."
+      "signal": "Q2 2026 300mm Fab Outlook projects record US$142B front-end equipment spending in 2026, up 25% year over year, with Logic & Micro the largest segment and Memory spending also rising."
     },
     {
       "source": "NVIDIA",
-      "date_checked": "2026-06-08",
+      "date_checked": "2026-06-10",
       "confidence": "high",
-      "signal": "Vera Rubin is ramping into full production; Spectrum-X Ethernet Photonics is now in production; production shipments are expected to begin this fall."
+      "signal": "Vera Rubin is ramping into full production across hundreds of ecosystem partners and 350+ factories in 30 countries; Spectrum-X Ethernet Photonics is now in production; production shipments are expected to begin this fall."
     },
     {
       "source": "ServeTheHome",
-      "date_checked": "2026-06-08",
+      "date_checked": "2026-06-10",
       "confidence": "high",
-      "signal": "GB300 rack coverage makes the physical buildout visible through liquid-cooled racks, CDUs, InfiniBand, and high-density power context."
+      "signal": "GB300 rack coverage makes the physical buildout visible through liquid-cooled racks, Vertiv CDU visibility, InfiniBand, high-density power context, and a 21TB NVL72 memory reference."
+    },
+    {
+      "source": "Schneider Electric",
+      "date_checked": "2026-06-10",
+      "confidence": "medium",
+      "signal": "AI factory infrastructure note frames high-density deployment around integrated power, liquid cooling, and digital systems from grid to chip and chip to chiller; used as semiconductor-adjacent infrastructure context."
     },
     {
       "source": "HPCwire",
@@ -370,7 +431,9 @@
     "https://www.trendforce.com/news/2026/06/03/insights-memory-spot-price-update-ddr4-and-ddr5-extend-gains-though-higher-quotes-temper-procurement-demand/",
     "https://www.trendforce.com/news/2026/06/03/news-south-koreas-chip-exports-to-china-surge-243-yoy-in-may-as-beijings-ai-push-fuels-memory-demand/",
     "https://www.trendforce.com/news/2026/06/03/news-kioxia-targets-%c2%a5470b-yearly-capex-in-fy26-28-up-66-from-fy25-reportedly-weighing-third-kitakami-fab-and-ma/",
+    "https://www.trendforce.com/presscenter/news",
     "https://www.trendforce.com/presscenter/news/20260602-13074.html",
+    "https://www.trendforce.com/presscenter/news/20260603-13077.html",
     "https://www.semiconductors.org/new-report-finds-semiconductors-account-for-95-of-an-ai-data-server-racks-value-encompassing-the-full-stack-of-chip-technologies/",
     "https://www.eetimes.com/tag/semiconductors/",
     "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage",
@@ -396,6 +459,7 @@
     "https://seekingalpha.com/news/4596821-nvidia-amd-among-group-of-winners-as-bofa-thinks-ai-spending-has-staying-power",
     "https://www.sec.gov/Archives/edgar/data/1730168/0001730168-26-000051-index.html",
     "https://www.benzinga.com/insights/news/26/06/52991968/broadcom-q2-2026-earnings-call-complete-transcript",
-    "https://www.sec.gov/edgar/search/"
+    "https://www.sec.gov/edgar/search/",
+    "https://blog.se.com/datacenter/2026/04/09/building-ai-factories-why-integrated-power-and-liquid-cooling-systems-are-critical-for-high-density-ai-data-centers/"
   ]
 }
