@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-10",
+  "as_of": "2026-06-11",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -53,7 +53,7 @@
       "AVGO": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but post-earnings price action remains unstable." },
       "AMAT": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Semicap quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
       "KLAC": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Process-control quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
-      "MU": { "score": 74, "decision": "watch_for_pullback", "reason": "HBM thesis strong, but memory-cycle emotion and volatility are too high." },
+      "MU": { "score": 74, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened by the private April-May price study, but memory-cycle emotion and volatility remain too high." },
       "CRDO": { "score": 71, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but valuation, concentration, volatility, and Form 144 flow reduce confidence." },
       "MRVL": { "score": 70, "decision": "watch_for_pullback", "reason": "Strategic score improved, but recent price move is too emotional to chase." }
     }
@@ -64,6 +64,28 @@
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
     "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
     "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "MRVL", "COHR", "LITE", "Sector/SOXX"]
+  },
+  "private_memory_price_study": {
+    "source": "User-supplied private study",
+    "date_recorded": "2026-06-11",
+    "coverage": "DRAM/HBM and NAND/Flash unit-price growth",
+    "observations": [
+      {
+        "month": "2026-04",
+        "dram_hbm_yoy_percent": 232.69,
+        "dram_hbm_mom_percent": 18.19,
+        "nand_flash_yoy_percent": 252.44,
+        "nand_flash_mom_percent": 0.15
+      },
+      {
+        "month": "2026-05",
+        "dram_hbm_yoy_percent": 275.65,
+        "dram_hbm_mom_percent": 16.15,
+        "nand_flash_yoy_percent": 326.36,
+        "nand_flash_mom_percent": 23.55
+      }
+    ],
+    "dashboard_interpretation": "Memory bottleneck evidence is stronger and broader, especially after NAND/Flash accelerated sequentially in May. The strict model raises MU and enterprise-storage relevance but also raises the memory-cycle heat penalty, so no fresh buy is added."
   },
   "capital_flow": [
     {
@@ -123,12 +145,12 @@
     }
   ],
   "supply_chain_view": {
-    "date_checked": "2026-06-10",
-    "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: HBM and LPDRAM allocation, optical links, advanced packaging, 300mm capacity, rack power, and liquid cooling.",
+    "date_checked": "2026-06-11",
+    "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: HBM and LPDRAM allocation, NAND/enterprise SSD supply, optical links, advanced packaging, 300mm capacity, rack power, and liquid cooling.",
     "strict_score_implication": "The supply-chain thesis is stronger, but the Best Buy Watchlist can still be empty when valuation, volatility, concentration, and market-emotion gates fail.",
     "bottleneck_migration": [
       "Chip-level scarcity remains important, but rack-level integration now governs deployment speed.",
-      "Memory allocation is a persistent constraint across HBM, server DRAM, LPDRAM, and enterprise storage.",
+      "Memory allocation is a persistent constraint across HBM, server DRAM, LPDRAM, NAND/Flash, and enterprise storage.",
       "Networking bottlenecks are moving from pluggable optics toward 1.6T+ links, AECs, retimers, optical DSPs, lasers, and CPO/NPO architectures.",
       "Power and cooling are no longer secondary infrastructure; grid-to-chip and chip-to-chiller designs shape how quickly AI capacity can go live."
     ],
@@ -142,8 +164,8 @@
       },
       {
         "layer": "Memory and storage",
-        "tight_items": ["HBM4", "server DRAM", "LPDRAM allocation", "enterprise SSDs", "NAND capacity"],
-        "latest_signal": "TrendForce says Vera CPU memory configuration changes reflect insufficient LPDRAM allocation, while HBM wafer input can reach about 30% of total DRAM wafer input by end-2027.",
+        "tight_items": ["HBM4", "server DRAM", "LPDRAM allocation", "enterprise SSDs", "NAND capacity", "NAND/Flash unit pricing"],
+        "latest_signal": "The private May study shows DRAM/HBM +275.65% YoY and NAND/Flash +326.36% YoY; TrendForce says enterprise SSD demand hit record revenue in 1Q26 and HBM wafer input can reach about 30% of total DRAM wafer input by end-2027.",
         "stock_read": ["MU"],
         "score_adjustment": "Raise bottleneck score, but keep memory-cycle volatility and valuation discipline strict."
       },
@@ -173,9 +195,15 @@
   "source_intelligence": [
     {
       "source": "TrendForce",
-      "date_checked": "2026-06-10",
+      "date_checked": "2026-06-11",
       "confidence": "high",
-      "signal": "June 10 recheck adds a Vera CPU LPDRAM allocation constraint, June 3 optics work says EML and CW-DFB LD monthly capacity can reach about 50.7 million units in 2026, and June 2 HBM work says HBM4/Rubin Ultra/AI ASIC demand can intensify DRAM crowding-out into 2027."
+      "signal": "June 11 recheck adds an enterprise SSD supply crunch: AI-agent services and CSP procurement drove top-five enterprise SSD revenue to a record US$18.46B in 1Q26, up 86.1% QoQ. June 10 LPDRAM and June 2 HBM notes keep memory allocation tight."
+    },
+    {
+      "source": "Private memory price study",
+      "date_checked": "2026-06-11",
+      "confidence": "user_supplied",
+      "signal": "User-supplied unit-price work shows DRAM/HBM YoY growth of +232.69% in April 2026 and +275.65% in May 2026, while NAND/Flash YoY growth was +252.44% in April and +326.36% in May. May MoM growth was +16.15% for DRAM/HBM and +23.55% for NAND/Flash."
     },
     {
       "source": "SIA / Deloitte",
@@ -434,6 +462,7 @@
     "https://www.trendforce.com/presscenter/news",
     "https://www.trendforce.com/presscenter/news/20260602-13074.html",
     "https://www.trendforce.com/presscenter/news/20260603-13077.html",
+    "https://www.dramexchange.com/WeeklyResearch/MarketView",
     "https://www.semiconductors.org/new-report-finds-semiconductors-account-for-95-of-an-ai-data-server-racks-value-encompassing-the-full-stack-of-chip-technologies/",
     "https://www.eetimes.com/tag/semiconductors/",
     "https://newsletter.semianalysis.com/p/the-great-ai-silicon-shortage",
