@@ -53,7 +53,7 @@
       "AVGO": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but post-earnings price action remains unstable." },
       "AMAT": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Semicap quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
       "KLAC": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Process-control quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
-      "MU": { "score": 74, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened by the private April-May price study, but memory-cycle emotion and volatility remain too high." },
+      "MU": { "score": 74, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened after considering memory-price indicators, but memory-cycle emotion and volatility remain too high." },
       "CRDO": { "score": 71, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but valuation, concentration, volatility, and Form 144 flow reduce confidence." },
       "MRVL": { "score": 70, "decision": "watch_for_pullback", "reason": "Strategic score improved, but recent price move is too emotional to chase." }
     }
@@ -64,28 +64,6 @@
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
     "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
     "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "MRVL", "COHR", "LITE", "Sector/SOXX"]
-  },
-  "private_memory_price_study": {
-    "source": "User-supplied private study",
-    "date_recorded": "2026-06-11",
-    "coverage": "DRAM/HBM and NAND/Flash unit-price growth",
-    "observations": [
-      {
-        "month": "2026-04",
-        "dram_hbm_yoy_percent": 232.69,
-        "dram_hbm_mom_percent": 18.19,
-        "nand_flash_yoy_percent": 252.44,
-        "nand_flash_mom_percent": 0.15
-      },
-      {
-        "month": "2026-05",
-        "dram_hbm_yoy_percent": 275.65,
-        "dram_hbm_mom_percent": 16.15,
-        "nand_flash_yoy_percent": 326.36,
-        "nand_flash_mom_percent": 23.55
-      }
-    ],
-    "dashboard_interpretation": "Memory bottleneck evidence is stronger and broader, especially after NAND/Flash accelerated sequentially in May. The strict model raises MU and enterprise-storage relevance but also raises the memory-cycle heat penalty, so no fresh buy is added."
   },
   "capital_flow": [
     {
@@ -165,7 +143,7 @@
       {
         "layer": "Memory and storage",
         "tight_items": ["HBM4", "server DRAM", "LPDRAM allocation", "enterprise SSDs", "NAND capacity", "NAND/Flash unit pricing"],
-        "latest_signal": "The private May study shows DRAM/HBM +275.65% YoY and NAND/Flash +326.36% YoY; TrendForce says enterprise SSD demand hit record revenue in 1Q26 and HBM wafer input can reach about 30% of total DRAM wafer input by end-2027.",
+        "latest_signal": "Memory-price indicators are considered as part of the scoring input; TrendForce says enterprise SSD demand hit record revenue in 1Q26 and HBM wafer input can reach about 30% of total DRAM wafer input by end-2027.",
         "stock_read": ["MU"],
         "score_adjustment": "Raise bottleneck score, but keep memory-cycle volatility and valuation discipline strict."
       },
@@ -198,12 +176,6 @@
       "date_checked": "2026-06-11",
       "confidence": "high",
       "signal": "June 11 recheck adds an enterprise SSD supply crunch: AI-agent services and CSP procurement drove top-five enterprise SSD revenue to a record US$18.46B in 1Q26, up 86.1% QoQ. June 10 LPDRAM and June 2 HBM notes keep memory allocation tight."
-    },
-    {
-      "source": "Private memory price study",
-      "date_checked": "2026-06-11",
-      "confidence": "user_supplied",
-      "signal": "User-supplied unit-price work shows DRAM/HBM YoY growth of +232.69% in April 2026 and +275.65% in May 2026, while NAND/Flash YoY growth was +252.44% in April and +326.36% in May. May MoM growth was +16.15% for DRAM/HBM and +23.55% for NAND/Flash."
     },
     {
       "source": "SIA / Deloitte",
