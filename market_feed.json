@@ -8,34 +8,34 @@
   },
   "safe_harbor": "Educational information only. Not financial advice.",
   "quote_source": {
-    "name": "StockAnalysis delayed price history",
-    "url": "https://stockanalysis.com/",
-    "note": "June 8 Asia/Shanghai snapshot uses the completed US close from June 5 plus June 8 premarket checks where available. Change percent is daily close change or premarket change as reported by the price-history page."
+    "name": "Live market quote check",
+    "url": "https://finance.yahoo.com/",
+    "note": "June 11 intraday snapshot. Change percent is intraday change versus the prior close at the time checked; values are not final closing prices."
   },
   "quotes": {
-    "NVDA": { "date": "2026-06-05", "open": 214.53, "high": 214.87, "low": 204.33, "last": 205.10, "volume": 218779711, "change_percent": -6.20, "premarket_date": "2026-06-08", "premarket_price": 210.59, "premarket_change_percent": 2.68 },
-    "AVGO": { "date": "2026-06-05", "open": 407.61, "high": 410.50, "low": 385.59, "last": 385.73, "volume": 50465225, "change_percent": -7.92, "premarket_date": "2026-06-08", "premarket_price": 398.66, "premarket_change_percent": 3.35 },
-    "MU": { "date": "2026-06-05", "open": 944.40, "high": 961.89, "low": 864.01, "last": 864.01, "volume": 76708694, "change_percent": -13.25, "premarket_date": "2026-06-08", "premarket_price": 935.00, "premarket_change_percent": 8.22 },
-    "AMD": { "date": "2026-06-05", "open": 499.53, "high": 505.62, "low": 463.95, "last": 466.38, "volume": 46239758, "change_percent": -10.86, "premarket_date": "2026-06-08", "premarket_price": 488.18, "premarket_change_percent": 4.67 },
-    "CRDO": { "date": "2026-06-05", "open": 208.12, "high": 234.22, "low": 202.68, "last": 206.89, "volume": 15553156, "change_percent": -4.88, "premarket_date": "2026-06-08", "premarket_price": 217.78, "premarket_change_percent": 5.26 },
-    "ALAB": { "date": "2026-06-05", "open": 342.75, "high": 349.00, "low": 314.84, "last": 317.06, "volume": 7267455, "change_percent": -11.45, "premarket_date": "2026-06-08", "premarket_price": 331.00, "premarket_change_percent": 4.40 },
-    "FORM": { "date": "2026-06-05", "open": 124.06, "high": 124.61, "low": 115.12, "last": 116.70, "volume": 1255914, "change_percent": -7.82, "premarket_date": "2026-06-08", "premarket_price": 122.93, "premarket_change_percent": 5.34 },
-    "COHR": { "date": "2026-06-05", "open": 405.27, "high": 417.76, "low": 375.09, "last": 376.99, "volume": 6280800, "change_percent": -10.64, "premarket_date": "2026-06-08", "premarket_price": 399.00, "premarket_change_percent": 5.84 },
-    "LITE": { "date": "2026-06-05", "open": 912.62, "high": 974.00, "low": 853.10, "last": 863.66, "volume": 7454117, "change_percent": -8.62, "premarket_date": "2026-06-08", "premarket_price": 896.26, "premarket_change_percent": 3.77 },
-    "AMAT": { "date": "2026-06-05", "open": 479.71, "high": 484.90, "low": 452.91, "last": 453.01, "volume": 11628311, "change_percent": -9.71, "premarket_date": "2026-06-08", "premarket_price": 478.74, "premarket_change_percent": 5.68 },
-    "KLAC": { "date": "2026-06-05", "open": 2043.04, "high": 2054.96, "low": 1927.73, "last": 1929.20, "volume": 1813603, "change_percent": -9.47, "premarket_date": "2026-06-08", "premarket_price": 2018.00, "premarket_change_percent": 4.60 },
-    "SMCI": { "date": "2026-06-05", "open": 45.00, "high": 45.26, "low": 41.04, "last": 41.64, "volume": 46661332, "change_percent": -11.22, "premarket_date": "2026-06-08", "premarket_price": 44.30, "premarket_change_percent": 6.39 },
-    "ARM": { "date": "2026-06-05", "open": 369.75, "high": 373.74, "low": 337.55, "last": 342.93, "volume": 14822358, "change_percent": -12.84, "premarket_date": "2026-06-08", "premarket_price": 355.00, "premarket_change_percent": 3.52 },
-    "INTC": { "date": "2026-06-05", "open": 106.48, "high": 106.48, "low": 98.33, "last": 99.17, "volume": 141808293, "change_percent": -11.28, "premarket_date": "2026-06-08", "premarket_price": 111.56, "premarket_change_percent": 12.49 },
-    "MRVL": { "date": "2026-06-05", "open": 299.50, "high": 300.72, "low": 261.39, "last": 263.47, "volume": 87851587, "change_percent": -16.74, "premarket_date": "2026-06-08", "premarket_price": 286.79, "premarket_change_percent": 8.85 },
-    "TSM": { "date": "2026-06-05", "open": 429.77, "high": 433.90, "low": 412.79, "last": 415.17, "volume": 19001512, "change_percent": -6.69, "premarket_date": "2026-06-08", "premarket_price": 423.87, "premarket_change_percent": 2.10 },
-    "ASML": { "date": "2026-06-05", "open": 1685.36, "high": 1705.48, "low": 1638.38, "last": 1641.74, "volume": 2691517, "change_percent": -6.59, "premarket_date": "2026-06-08", "premarket_price": 1730.80, "premarket_change_percent": 5.42 },
-    "SOXX": { "date": "2026-06-05", "open": 577.86, "high": 580.50, "low": 539.57, "last": 539.77, "volume": 22081420, "change_percent": -10.44, "premarket_date": "2026-06-08", "premarket_price": 569.37, "premarket_change_percent": 5.48 }
+    "NVDA": { "date": "2026-06-11", "last": 202.75, "change": 2.33, "change_percent": 1.16, "quote_status": "intraday" },
+    "AVGO": { "date": "2026-06-11", "last": 360.17, "change": 7.30, "change_percent": 2.07, "quote_status": "intraday" },
+    "MU": { "date": "2026-06-11", "last": 857.72, "change": 21.69, "change_percent": 2.59, "quote_status": "intraday" },
+    "AMD": { "date": "2026-06-11", "last": 430.19, "change": 22.84, "change_percent": 5.61, "quote_status": "intraday" },
+    "CRDO": { "date": "2026-06-11", "last": 202.11, "change": 18.63, "change_percent": 10.15, "quote_status": "intraday" },
+    "ALAB": { "date": "2026-06-11", "last": 288.05, "change": 22.57, "change_percent": 8.50, "quote_status": "intraday" },
+    "FORM": { "date": "2026-06-11", "last": 111.18, "change": 5.32, "change_percent": 5.03, "quote_status": "intraday" },
+    "COHR": { "date": "2026-06-11", "last": 362.10, "change": 11.54, "change_percent": 3.29, "quote_status": "intraday" },
+    "LITE": { "date": "2026-06-11", "last": 835.75, "change": 22.83, "change_percent": 2.81, "quote_status": "intraday" },
+    "AMAT": { "date": "2026-06-11", "last": 430.38, "change": 30.22, "change_percent": 7.55, "quote_status": "intraday" },
+    "KLAC": { "date": "2026-06-11", "last": 1839.69, "change": 111.54, "change_percent": 6.46, "quote_status": "intraday" },
+    "SMCI": { "date": "2026-06-11", "last": 39.97, "change": 0.15, "change_percent": 0.38, "quote_status": "intraday" },
+    "ARM": { "date": "2026-06-11", "last": 319.57, "change": 24.03, "change_percent": 8.13, "quote_status": "intraday" },
+    "INTC": { "date": "2026-06-11", "last": 97.22, "change": 9.08, "change_percent": 10.30, "quote_status": "intraday" },
+    "MRVL": { "date": "2026-06-11", "last": 254.04, "change": 11.71, "change_percent": 4.83, "quote_status": "intraday" },
+    "TSM": { "date": "2026-06-11", "last": 398.20, "change": 10.04, "change_percent": 2.59, "quote_status": "intraday" },
+    "ASML": { "date": "2026-06-11", "last": 1579.67, "change": 70.45, "change_percent": 4.67, "quote_status": "intraday" },
+    "SOXX": { "date": "2026-06-11", "last": 526.79, "change": 23.90, "change_percent": 4.75, "quote_status": "intraday" }
   },
   "market_emotion": {
-    "score": 88,
+    "score": 91,
     "state": "too_hot_for_fresh_buys",
-    "basis": "Broad June 5 semiconductor drawdown followed by strong June 8 premarket rebound; SOXX -10.44% at the June 5 close and +5.48% premarket June 8."
+    "basis": "June 11 intraday relief rally: SOXX +4.75%, CRDO +10.15%, ALAB +8.50%, INTC +10.30%, ARM +8.13%, AMAT +7.55%, and KLAC +6.46%. The move is too broad and fast for a strict fresh-buy signal."
   },
   "strict_scoring": {
     "fresh_buy_threshold": 82,
@@ -49,13 +49,14 @@
       "concentration_supply_overhang_risk": 10
     },
     "candidate_scores": {
-      "NVDA": { "score": 79, "decision": "core_watch_no_fresh_buy", "reason": "Best quality but market-emotion and entry gates fail." },
-      "AVGO": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but post-earnings price action remains unstable." },
-      "AMAT": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Semicap quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
-      "KLAC": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "Process-control quality passes, entry discipline fails after June 5 drawdown and June 8 rebound." },
-      "MU": { "score": 74, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened after considering memory-price indicators, but memory-cycle emotion and volatility remain too high." },
-      "CRDO": { "score": 71, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but valuation, concentration, volatility, and Form 144 flow reduce confidence." },
-      "MRVL": { "score": 70, "decision": "watch_for_pullback", "reason": "Strategic score improved, but recent price move is too emotional to chase." }
+      "NVDA": { "score": 80, "decision": "core_watch_no_fresh_buy", "reason": "Best quality but still below the 82-point fresh-buy threshold while the sector tape is hot." },
+      "AVGO": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but post-earnings enthusiasm and intraday rebound keep entry discipline tight." },
+      "AMAT": { "score": 75, "decision": "core_watch_no_fresh_buy", "reason": "Semicap quality passes, but AMAT +7.55% intraday fails the fresh-entry rule." },
+      "KLAC": { "score": 75, "decision": "core_watch_no_fresh_buy", "reason": "Process-control quality passes, but KLAC +6.46% intraday fails the fresh-entry rule." },
+      "MU": { "score": 76, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened after considering memory-price indicators, but memory-cycle emotion and volatility remain too high." },
+      "CRDO": { "score": 68, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but CRDO +10.15% intraday, valuation, concentration, volatility, and Form 144 flow reduce confidence." },
+      "ALAB": { "score": 67, "decision": "starter_or_10x_watch_only", "reason": "AI connectivity exposure is strong, but ALAB +8.50% intraday and premium valuation fail the entry gate." },
+      "MRVL": { "score": 69, "decision": "watch_for_pullback", "reason": "Strategic score improved, but MRVL +4.83% intraday and AI-momentum crowding argue against chasing." }
     }
   },
   "rankings": {
@@ -63,7 +64,7 @@
     "core_watch_no_fresh_buy": ["NVDA", "AVGO", "AMAT", "KLAC"],
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
     "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
-    "keep_caution_today": ["AMD", "SMCI", "ARM", "INTC", "CRDO", "MRVL", "COHR", "LITE", "Sector/SOXX"]
+    "keep_caution_today": ["Sector/SOXX", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
   },
   "capital_flow": [
     {
@@ -271,7 +272,7 @@
       "source": "Reuters",
       "date_checked": "2026-06-08",
       "confidence": "high",
-      "signal": "Reuters-sourced coverage says Marvell surged after NVIDIA CEO Jensen Huang's Computex comments, while a separate sector analysis warns the semiconductor rally may be overheating. The June 5 semiconductor selloff and June 8 premarket rebound reinforce both structural momentum and chase risk."
+      "signal": "Reuters-sourced coverage says Marvell surged after NVIDIA CEO Jensen Huang's Computex comments, while a separate sector analysis warns the semiconductor rally may be overheating. The June 11 intraday relief rally reinforces both structural momentum and chase risk."
     },
     {
       "source": "Seeking Alpha",
