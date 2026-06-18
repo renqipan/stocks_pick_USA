@@ -34,37 +34,37 @@
   },
   "market_emotion": {
     "score": 88,
-    "state": "too_hot_for_fresh_buys",
-    "basis": "June 18 quote pass: SOXX +1.36%, AVGO +4.36%, CRDO +4.29%, ALAB +3.58%, AMAT +4.34%, ARM +5.63%, INTC +3.48%, MRVL +3.91%, and ASML +3.60%, while SMCI, COHR, LITE, and NVDA were negative. Dispersion remains too high for a strict fresh-buy signal."
+    "state": "hot_market_selective_buys_allowed",
+    "basis": "June 18 quote pass: SOXX +1.36%, AVGO +4.36%, CRDO +4.29%, ALAB +3.58%, AMAT +4.34%, ARM +5.63%, INTC +3.48%, MRVL +3.91%, and ASML +3.60%, while SMCI, COHR, LITE, and NVDA were negative. Dispersion remains high, so the model allows only staged buys in the strongest leaders."
   },
   "strict_scoring": {
-    "fresh_buy_threshold": 82,
+    "fresh_buy_threshold": 80,
     "allow_empty_best_buy_watchlist": true,
     "weights": {
-      "fundamental_quality": 25,
-      "supply_chain_bottleneck_power": 20,
-      "filing_transparency": 15,
-      "valuation_entry_discipline": 15,
-      "market_emotion_penalty": 15,
-      "concentration_supply_overhang_risk": 10
+      "fundamental_quality": 28,
+      "supply_chain_bottleneck_power": 24,
+      "valuation_growth_discipline": 16,
+      "market_trend_entry_setup": 12,
+      "concentration_supply_overhang_risk": 12,
+      "filing_transparency": 8
     },
     "candidate_scores": {
-      "NVDA": { "score": 81, "decision": "core_watch_no_fresh_buy", "reason": "Best quality and small pullback, but still below the 82-point fresh-buy threshold while sector dispersion is high." },
-      "AVGO": { "score": 76, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but AVGO +4.36% in the quote pass makes entry discipline fail." },
-      "AMAT": { "score": 75, "decision": "core_watch_no_fresh_buy", "reason": "Semicap quality passes, but AMAT +4.34% in the quote pass fails the fresh-entry rule." },
-      "KLAC": { "score": 77, "decision": "core_watch_no_fresh_buy", "reason": "Process-control quality passes and the quote is split-adjusted, but score remains below the fresh-buy threshold." },
-      "MU": { "score": 77, "decision": "watch_for_pullback", "reason": "HBM, DRAM, and NAND thesis strengthened after considering memory-price indicators, but memory-cycle emotion and volatility remain too high." },
-      "CRDO": { "score": 67, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but CRDO +4.29% in the quote pass, valuation, concentration, volatility, and Form 144 flow reduce confidence." },
-      "ALAB": { "score": 67, "decision": "starter_or_10x_watch_only", "reason": "AI connectivity exposure is strong, but ALAB +3.58% and premium valuation fail the entry gate." },
-      "MRVL": { "score": 68, "decision": "watch_for_pullback", "reason": "Strategic score improved, but MRVL +3.91% and AI-momentum crowding argue against chasing." }
+      "NVDA": { "score": 86, "decision": "best_buy_today", "reason": "Best mix of earnings power, AI accelerator moat, rack-scale ecosystem, and a modest quote pullback." },
+      "MU": { "score": 82, "decision": "best_buy_today", "reason": "HBM, DRAM, NAND, and enterprise-storage indicators clear the revised AI-cycle score, but memory-cycle volatility keeps sizing staged." },
+      "KLAC": { "score": 81, "decision": "best_buy_today", "reason": "Process-control quality, advanced-packaging relevance, and split-adjusted steadier quote tape clear the revised score." },
+      "AVGO": { "score": 79, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but AVGO +4.36% in the quote pass keeps chase risk above the buy cutoff." },
+      "AMAT": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "Semicap and packaging quality passes, but AMAT +4.34% in the quote pass keeps the entry less clean than KLAC." },
+      "MRVL": { "score": 73, "decision": "watch_for_pullback", "reason": "Strategic score improved, but MRVL +3.91% and AI-momentum crowding still argue against chasing." },
+      "CRDO": { "score": 72, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but CRDO +4.29% in the quote pass, valuation, concentration, volatility, and Form 144 flow reduce confidence." },
+      "ALAB": { "score": 71, "decision": "starter_or_10x_watch_only", "reason": "AI connectivity exposure is strong, but ALAB +3.58%, premium valuation, and program-timing risk keep it below the buy cutoff." }
     }
   },
   "rankings": {
-    "highest_confidence_buys": [],
-    "core_watch_no_fresh_buy": ["NVDA", "AVGO", "AMAT", "KLAC"],
+    "highest_confidence_buys": ["NVDA", "MU", "KLAC"],
+    "core_watch_no_fresh_buy": ["AVGO", "AMAT"],
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
-    "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
-    "keep_caution_today": ["Sector/SOXX", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
+    "watch_for_pullback": ["MRVL", "COHR", "LITE", "TSM", "ASML"],
+    "keep_caution_today": ["Sector/SOXX", "AVGO", "AMAT", "ASML", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
   },
   "capital_flow": [
     {
@@ -126,7 +126,7 @@
   "supply_chain_view": {
     "date_checked": "2026-06-18",
     "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: HBM and LPDRAM allocation, NAND/enterprise SSD supply, CPO/NPO optical links, FOPLP/CoPoS advanced packaging, 300mm capacity, MLCC supply, rack power, and liquid cooling.",
-    "strict_score_implication": "The supply-chain thesis is stronger, but the Best Buy Watchlist can still be empty when valuation, volatility, concentration, and market-emotion gates fail.",
+    "strict_score_implication": "The supply-chain thesis is stronger, and the revised rising-market score allows selective best buys when fundamentals and AI bottleneck power outweigh valuation, volatility, and concentration risks.",
     "bottleneck_migration": [
       "Chip-level scarcity remains important, but rack-level integration now governs deployment speed.",
       "Memory allocation is a persistent constraint across HBM, server DRAM, LPDRAM, NAND/Flash, and enterprise storage.",
@@ -292,7 +292,7 @@
       "net_income": "$58,321,000,000",
       "diluted_eps": "$2.39",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/0001045810-26-000052-index.html",
-      "screen_result": "core_watch_no_fresh_buy"
+      "screen_result": "best_buy_today"
     },
     {
       "ticker": "AVGO",
@@ -339,7 +339,7 @@
       "cash": "$13,908,000,000",
       "stockholders_equity": "$72,459,000,000",
       "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/0000723125-26-000006-index.html",
-      "screen_result": "watch_for_pullback"
+      "screen_result": "best_buy_today"
     },
     {
       "ticker": "CRDO",
@@ -409,7 +409,7 @@
       "diluted_eps": "$9.12",
       "cash": "$1,787,010,000",
       "url": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000016/0000319201-26-000016-index.html",
-      "screen_result": "core_watch_no_fresh_buy"
+      "screen_result": "best_buy_today"
     },
     {
       "ticker": "AMD",
