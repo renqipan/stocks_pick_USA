@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-18",
+  "as_of": "2026-06-24",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -8,34 +8,34 @@
   },
   "safe_harbor": "Educational information only. Not financial advice.",
   "quote_source": {
-    "name": "Live market quote check",
-    "url": "https://finance.yahoo.com/",
-    "note": "June 18 13:02 UTC quote snapshot. Change percent is quote change versus the prior close at the time checked; values are not final closing prices."
+    "name": "Nasdaq real-time quote check",
+    "url": "https://www.nasdaq.com/market-activity/stocks",
+    "note": "June 23 completed close plus June 24 premarket snapshot around 6:49 AM ET. Premarket values are not final closing prices."
   },
   "quotes": {
-    "NVDA": { "date": "2026-06-18", "last": 204.65, "change": -2.79, "change_percent": -1.35, "quote_status": "live_quote" },
-    "AVGO": { "date": "2026-06-18", "last": 409.75, "change": 16.42, "change_percent": 4.36, "quote_status": "live_quote" },
-    "MU": { "date": "2026-06-18", "last": 853.57, "change": 18.54, "change_percent": 2.22, "quote_status": "live_quote" },
-    "AMD": { "date": "2026-06-18", "last": 452.69, "change": 11.58, "change_percent": 2.63, "quote_status": "live_quote" },
-    "CRDO": { "date": "2026-06-18", "last": 193.13, "change": 7.94, "change_percent": 4.29, "quote_status": "live_quote" },
-    "ALAB": { "date": "2026-06-18", "last": 284.83, "change": 9.84, "change_percent": 3.58, "quote_status": "live_quote" },
-    "FORM": { "date": "2026-06-18", "last": 109.84, "change": 1.83, "change_percent": 1.69, "quote_status": "live_quote" },
-    "COHR": { "date": "2026-06-18", "last": 353.60, "change": -10.40, "change_percent": -2.86, "quote_status": "live_quote" },
-    "LITE": { "date": "2026-06-18", "last": 852.06, "change": -33.50, "change_percent": -3.78, "quote_status": "live_quote" },
-    "AMAT": { "date": "2026-06-18", "last": 452.14, "change": 18.81, "change_percent": 4.34, "quote_status": "live_quote" },
-    "KLAC": { "date": "2026-06-18", "last": 238.73, "change": 1.39, "change_percent": 0.59, "quote_status": "live_quote_split_adjusted" },
-    "SMCI": { "date": "2026-06-18", "last": 33.64, "change": -1.73, "change_percent": -4.89, "quote_status": "live_quote" },
-    "ARM": { "date": "2026-06-18", "last": 327.99, "change": 17.49, "change_percent": 5.63, "quote_status": "live_quote" },
-    "INTC": { "date": "2026-06-18", "last": 95.74, "change": 3.22, "change_percent": 3.48, "quote_status": "live_quote" },
-    "MRVL": { "date": "2026-06-18", "last": 262.86, "change": 9.90, "change_percent": 3.91, "quote_status": "live_quote" },
-    "TSM": { "date": "2026-06-18", "last": 372.16, "change": 3.97, "change_percent": 1.08, "quote_status": "live_quote" },
-    "ASML": { "date": "2026-06-18", "last": 1567.63, "change": 54.40, "change_percent": 3.60, "quote_status": "live_quote" },
-    "SOXX": { "date": "2026-06-18", "last": 530.43, "change": 7.10, "change_percent": 1.36, "quote_status": "live_quote" }
+    "NVDA": { "date": "2026-06-24", "last": 201.45, "change_percent": 0.70, "previous_close": 200.04, "previous_close_change_percent": -4.13, "quote_status": "premarket" },
+    "AVGO": { "date": "2026-06-24", "last": 382.37, "change_percent": 0.58, "previous_close": 380.15, "previous_close_change_percent": -3.06, "quote_status": "premarket" },
+    "MU": { "date": "2026-06-24", "last": 1089.12, "change_percent": 3.55, "previous_close": 1051.77, "previous_close_change_percent": -13.18, "quote_status": "premarket_pre_earnings" },
+    "AMD": { "date": "2026-06-24", "last": 527.62, "change_percent": 1.49, "previous_close": 519.85, "previous_close_change_percent": -5.76, "quote_status": "premarket" },
+    "CRDO": { "date": "2026-06-24", "last": 281.00, "change_percent": 3.31, "previous_close": 272.005, "previous_close_change_percent": -10.09, "quote_status": "premarket" },
+    "ALAB": { "date": "2026-06-24", "last": 404.00, "change_percent": 1.76, "previous_close": 397.02, "previous_close_change_percent": -9.70, "quote_status": "premarket" },
+    "FORM": { "date": "2026-06-24", "last": 145.72, "change_percent": 2.05, "previous_close": 142.79, "previous_close_change_percent": -8.85, "quote_status": "premarket" },
+    "COHR": { "date": "2026-06-24", "last": 390.87, "change_percent": 2.53, "previous_close": 381.22, "previous_close_change_percent": -10.40, "quote_status": "premarket" },
+    "LITE": { "date": "2026-06-24", "last": 838.17, "change_percent": 1.24, "previous_close": 827.92, "previous_close_change_percent": -7.38, "quote_status": "premarket" },
+    "AMAT": { "date": "2026-06-24", "last": 594.30, "change_percent": 1.44, "previous_close": 585.88, "previous_close_change_percent": -8.48, "quote_status": "premarket" },
+    "KLAC": { "date": "2026-06-24", "last": 248.00, "change_percent": 1.44, "previous_close": 244.49, "previous_close_change_percent": -9.17, "quote_status": "premarket_split_adjusted" },
+    "SMCI": { "date": "2026-06-24", "last": 34.11, "change_percent": 2.37, "previous_close": 33.32, "previous_close_change_percent": -6.03, "quote_status": "premarket" },
+    "ARM": { "date": "2026-06-24", "last": 381.22, "change_percent": 4.05, "previous_close": 366.39, "previous_close_change_percent": -10.14, "quote_status": "premarket" },
+    "INTC": { "date": "2026-06-24", "last": 135.12, "change_percent": 2.15, "previous_close": 132.28, "previous_close_change_percent": -6.14, "quote_status": "premarket" },
+    "MRVL": { "date": "2026-06-24", "last": 284.76, "change_percent": 2.05, "previous_close": 279.04, "previous_close_change_percent": -9.36, "quote_status": "premarket" },
+    "TSM": { "date": "2026-06-24", "last": 437.50, "change_percent": 0.25, "previous_close": 436.39, "previous_close_change_percent": -6.69, "quote_status": "premarket" },
+    "ASML": { "date": "2026-06-24", "last": 1786.50, "change_percent": 0.45, "previous_close": 1778.46, "previous_close_change_percent": -7.82, "quote_status": "premarket" },
+    "SOXX": { "date": "2026-06-24", "last": 612.223, "change_percent": 1.46, "previous_close": 603.39, "previous_close_change_percent": -7.88, "quote_status": "premarket" }
   },
   "market_emotion": {
-    "score": 88,
-    "state": "hot_market_selective_buys_allowed",
-    "basis": "June 18 quote pass: SOXX +1.36%, AVGO +4.36%, CRDO +4.29%, ALAB +3.58%, AMAT +4.34%, ARM +5.63%, INTC +3.48%, MRVL +3.91%, and ASML +3.60%, while SMCI, COHR, LITE, and NVDA were negative. Dispersion remains high, so the model allows only staged buys in the strongest leaders."
+    "score": 84,
+    "state": "high_volatility_correction_selective_buys",
+    "basis": "June 23 broad semiconductor correction: SOXX -7.88%, MU -13.18%, CRDO -10.09%, COHR -10.40%, ARM -10.14%, ALAB -9.70%, MRVL -9.36%, and KLAC -9.17%. June 24 premarket recoveries are modest, so selective staged buys are allowed only in high-quality leaders."
   },
   "strict_scoring": {
     "fresh_buy_threshold": 80,
@@ -49,22 +49,22 @@
       "filing_transparency": 8
     },
     "candidate_scores": {
-      "NVDA": { "score": 86, "decision": "best_buy_today", "reason": "Best mix of earnings power, AI accelerator moat, rack-scale ecosystem, and a modest quote pullback." },
-      "MU": { "score": 82, "decision": "best_buy_today", "reason": "HBM, DRAM, NAND, and enterprise-storage indicators clear the revised AI-cycle score, but memory-cycle volatility keeps sizing staged." },
-      "KLAC": { "score": 81, "decision": "best_buy_today", "reason": "Process-control quality, advanced-packaging relevance, and split-adjusted steadier quote tape clear the revised score." },
-      "AVGO": { "score": 79, "decision": "core_watch_no_fresh_buy", "reason": "AI semiconductor fundamentals upgraded, but AVGO +4.36% in the quote pass keeps chase risk above the buy cutoff." },
-      "AMAT": { "score": 78, "decision": "core_watch_no_fresh_buy", "reason": "Semicap and packaging quality passes, but AMAT +4.34% in the quote pass keeps the entry less clean than KLAC." },
-      "MRVL": { "score": 73, "decision": "watch_for_pullback", "reason": "Strategic score improved, but MRVL +3.91% and AI-momentum crowding still argue against chasing." },
-      "CRDO": { "score": 72, "decision": "starter_or_10x_watch_only", "reason": "High optionality, but CRDO +4.29% in the quote pass, valuation, concentration, volatility, and Form 144 flow reduce confidence." },
-      "ALAB": { "score": 71, "decision": "starter_or_10x_watch_only", "reason": "AI connectivity exposure is strong, but ALAB +3.58%, premium valuation, and program-timing risk keep it below the buy cutoff." }
+      "NVDA": { "score": 87, "decision": "best_buy_today", "reason": "Best mix of earnings power, AI accelerator moat, rack-scale ecosystem, and an improved entry near the $200 June 23 close." },
+      "AVGO": { "score": 82, "decision": "best_buy_today", "reason": "Custom AI silicon, networking, free cash flow, and a 3.06% June 23 pullback improve the entry after the prior crowded setup." },
+      "KLAC": { "score": 82, "decision": "best_buy_today", "reason": "Process-control quality, advanced-packaging relevance, and a 9.17% split-adjusted correction clear the revised score." },
+      "AMAT": { "score": 79, "decision": "core_watch_no_fresh_buy", "reason": "Semicap and packaging quality pass, but the 8.48% one-day drop needs stabilization before a fresh-buy label." },
+      "MU": { "score": 78, "decision": "earnings_event_caution", "reason": "AI memory fundamentals remain strong, but fiscal Q3 earnings after the June 24 close create unusually high binary event risk." },
+      "MRVL": { "score": 72, "decision": "watch_for_stabilization", "reason": "Strategic AI exposure remains strong, but the 9.36% selloff and high-beta behavior require stabilization." },
+      "CRDO": { "score": 70, "decision": "starter_or_10x_watch_only", "reason": "High optionality remains, but a 10.09% one-day decline, valuation, concentration, volatility, and Form 144 flow reduce confidence." },
+      "ALAB": { "score": 69, "decision": "starter_or_10x_watch_only", "reason": "AI connectivity exposure is strong, but a 9.70% decline, premium valuation, and program-timing risk keep it below the buy cutoff." }
     }
   },
   "rankings": {
-    "highest_confidence_buys": ["NVDA", "MU", "KLAC"],
-    "core_watch_no_fresh_buy": ["AVGO", "AMAT"],
+    "highest_confidence_buys": ["NVDA", "AVGO", "KLAC"],
+    "core_watch_no_fresh_buy": ["AMAT"],
     "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
-    "watch_for_pullback": ["MRVL", "COHR", "LITE", "TSM", "ASML"],
-    "keep_caution_today": ["Sector/SOXX", "AVGO", "AMAT", "ASML", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
+    "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
+    "keep_caution_today": ["Sector/SOXX", "MU", "AMAT", "ASML", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
   },
   "capital_flow": [
     {
@@ -124,9 +124,9 @@
     }
   ],
   "supply_chain_view": {
-    "date_checked": "2026-06-18",
+    "date_checked": "2026-06-24",
     "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: HBM and LPDRAM allocation, NAND/enterprise SSD supply, CPO/NPO optical links, FOPLP/CoPoS advanced packaging, 300mm capacity, MLCC supply, rack power, and liquid cooling.",
-    "strict_score_implication": "The supply-chain thesis is stronger, and the revised rising-market score allows selective best buys when fundamentals and AI bottleneck power outweigh valuation, volatility, and concentration risks.",
+    "strict_score_implication": "The supply-chain thesis remains strong, and the revised score allows selective best buys after corrections when fundamentals and AI bottleneck power outweigh volatility, concentration, and event risks.",
     "bottleneck_migration": [
       "Chip-level scarcity remains important, but rack-level integration now governs deployment speed.",
       "Memory allocation is a persistent constraint across HBM, server DRAM, LPDRAM, NAND/Flash, and enterprise storage.",
@@ -174,9 +174,9 @@
   "source_intelligence": [
     {
       "source": "TrendForce",
-      "date_checked": "2026-06-18",
+      "date_checked": "2026-06-24",
       "confidence": "high",
-      "signal": "June 18 recheck adds FOPLP/CoPoS packaging momentum, CPO/NPO optical-interconnect timing, MLCC supply risk, and NOR/SLC NAND pricing pressure to the existing enterprise SSD, LPDRAM, and HBM tightness thesis."
+      "signal": "June 24 recheck adds consumer DRAM crowd-out from AI server demand to FOPLP/CoPoS packaging momentum, CPO/NPO optical timing, MLCC supply risk, and NAND/NOR pricing pressure."
     },
     {
       "source": "SIA / Deloitte",
@@ -239,10 +239,16 @@
       "signal": "May 26 coverage ties semiconductor ETF highs to Micron's AI memory thesis and HBM-driven investor breadth. June 4 Broadcom Q2 call transcript adds call-level corroboration for AI semiconductor demand."
     },
     {
-      "source": "Yahoo Finance",
-      "date_checked": "2026-06-18",
+      "source": "Nasdaq Quotes",
+      "date_checked": "2026-06-24",
       "confidence": "high",
-      "signal": "BofA-linked coverage raises the 2026 chip-market forecast to US$1.3T and names NVIDIA, Broadcom, Marvell, and AMD as AI drivers; the June 18 quote pass keeps AVGO, MRVL, AMAT, ARM, INTC, CRDO, and ALAB in chase-risk territory."
+      "signal": "June 23 closes and June 24 premarket quotes show a broad correction followed by a modest bounce: SOXX -7.88%, MU -13.18%, CRDO -10.09%, ARM -10.14%, and KLAC -9.17% at the completed close."
+    },
+    {
+      "source": "Micron Investor Relations",
+      "date_checked": "2026-06-24",
+      "confidence": "high",
+      "signal": "Micron fiscal Q3 earnings are scheduled after the June 24 close. The dashboard applies an earnings-event deduction before the report despite strong HBM, DRAM, NAND, and enterprise-storage fundamentals."
     },
     {
       "source": "Credo Investor Relations",
@@ -270,9 +276,9 @@
     },
     {
       "source": "Reuters",
-      "date_checked": "2026-06-18",
+      "date_checked": "2026-06-24",
       "confidence": "high",
-      "signal": "Reuters-sourced coverage says Marvell surged after NVIDIA CEO Jensen Huang's Computex comments, while a separate sector analysis warns the semiconductor rally may be overheating. The June 18 quote pass reinforces both structural momentum and chase risk."
+      "signal": "Reuters-sourced coverage supports the structural AI infrastructure thesis while the June 23 broad semiconductor correction highlights geopolitical, positioning, and valuation risk."
     },
     {
       "source": "Seeking Alpha",
@@ -309,7 +315,7 @@
       "q2_ai_semiconductor_revenue": "$10,800,000,000",
       "q3_ai_semiconductor_revenue_guidance": "more than $16,000,000,000",
       "url": "https://www.sec.gov/Archives/edgar/data/1730168/0001730168-26-000051-index.html",
-      "screen_result": "core_watch_no_fresh_buy"
+      "screen_result": "best_buy_today"
     },
     {
       "ticker": "MRVL",
@@ -339,7 +345,7 @@
       "cash": "$13,908,000,000",
       "stockholders_equity": "$72,459,000,000",
       "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/0000723125-26-000006-index.html",
-      "screen_result": "best_buy_today"
+      "screen_result": "earnings_event_caution"
     },
     {
       "ticker": "CRDO",
