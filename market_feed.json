@@ -62,7 +62,7 @@
   "rankings": {
     "highest_confidence_buys": ["NVDA", "AVGO", "KLAC"],
     "core_watch_no_fresh_buy": ["AMAT"],
-    "starter_or_10x_optionality": ["CAMT", "ACMR", "FORM", "AAOI", "AIP"],
+    "starter_or_10x_optionality": ["FORM", "PDFS", "CAMT"],
     "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
     "keep_caution_today": ["Sector/SOXX", "MU", "AMAT", "ASML", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
   },
@@ -70,70 +70,159 @@
     "as_of": "2026-06-24",
     "horizon": "7-10 years",
     "methodology": [
-      "US-listed market value generally below $15B",
-      "Direct exposure to a durable AI data-center bottleneck",
-      "Filing-backed revenue and balance-sheet evidence",
-      "A credible path to operating leverage or royalty expansion",
+      "Start with estimated AI data-center bottlenecks through June 2028",
+      "Require direct exposure to yield, test, packaging, connectivity, power, or rack deployment constraints",
+      "Compare latest GAAP net income with the year-ago period and reject low-quality accounting gains",
+      "Require market-cap headroom, filing-backed revenue, and a credible path to operating leverage",
       "10x is a scenario, not a forecast or guaranteed return"
     ],
-    "tier_a_filing_backed": [
+    "two_year_bottleneck_estimate": [
+      {
+        "constraint": "Advanced packaging yield and known-good-die test",
+        "severity": "Very high through 2028",
+        "drivers": ["HBM stacks", "Chiplets", "Hybrid bonding", "FOPLP and CoPoS", "More test steps per accelerator"],
+        "stock_read": ["FORM", "CAMT", "PDFS"]
+      },
+      {
+        "constraint": "HBM and server-memory allocation",
+        "severity": "Very high in 2026-2027; high in 2028",
+        "drivers": ["Bits per accelerator", "Advanced DRAM allocation", "Yield-sensitive HBM stacks"],
+        "stock_read": ["MU", "FORM", "CAMT"]
+      },
+      {
+        "constraint": "800G to 1.6T connectivity",
+        "severity": "High; easing unevenly after 2027",
+        "drivers": ["Laser supply", "DSPs and retimers", "AECs", "Optical-engine integration", "CPO and NPO ramps"],
+        "stock_read": ["CRDO", "MTSI", "AAOI"]
+      },
+      {
+        "constraint": "Grid-to-rack power and liquid cooling",
+        "severity": "Very high through 2028",
+        "drivers": ["Utility interconnects", "Transformers and switchgear", "Backup power", "CDUs and cold plates", "Facility water loops"],
+        "stock_read": []
+      },
+      {
+        "constraint": "Rack manufacturing and high-layer interconnect",
+        "severity": "Medium-high",
+        "drivers": ["High-layer PCBs", "Power delivery", "Thermal integration", "Final assembly capacity"],
+        "stock_read": ["SANM", "TTMI"]
+      }
+    ],
+    "net_income_acceleration": [
+      {
+        "ticker": "CRDO",
+        "latest_gaap_net_income": "$169.1M",
+        "year_ago_gaap_net_income": "$36.6M",
+        "change": "+362.2%",
+        "screen_result": "Rejected for 10x due to $52.5B starting market value"
+      },
+      {
+        "ticker": "AMKR",
+        "latest_gaap_net_income": "$83.4M",
+        "year_ago_gaap_net_income": "$21.1M",
+        "change": "+294.5%",
+        "screen_result": "Rejected for 10x due to $21.9B scale and OSAT margins"
+      },
+      {
+        "ticker": "FORM",
+        "latest_gaap_net_income": "$20.4M",
+        "year_ago_gaap_net_income": "$6.4M",
+        "change": "+218.5%",
+        "screen_result": "Primary 10x candidate"
+      },
+      {
+        "ticker": "PDFS",
+        "latest_gaap_net_income": "$4.8M",
+        "year_ago_gaap_net_income": "($3.0M)",
+        "change": "Loss to profit",
+        "screen_result": "Asymmetric 10x candidate"
+      },
+      {
+        "ticker": "TTMI",
+        "latest_gaap_net_income": "$50.0M",
+        "year_ago_gaap_net_income": "$32.2M",
+        "change": "+55.3%",
+        "screen_result": "Rejected for 10x due to $22.6B starting market value"
+      },
+      {
+        "ticker": "MTSI",
+        "latest_gaap_net_income": "$46.3M",
+        "year_ago_gaap_net_income": "$31.7M",
+        "change": "+46.3%",
+        "screen_result": "Rejected for 10x due to $28.8B starting market value"
+      },
+      {
+        "ticker": "SANM",
+        "latest_gaap_net_income": "$93.6M",
+        "year_ago_gaap_net_income": "$64.2M",
+        "change": "+45.8%",
+        "screen_result": "Rejected for 10x because growth is acquisition-dependent and manufacturing margins remain thin"
+      },
       {
         "ticker": "CAMT",
+        "latest_gaap_net_income": "$31.6M",
+        "year_ago_gaap_net_income": "$34.4M",
+        "change": "-8.1%",
+        "screen_result": "Conditional 10x watch"
+      },
+      {
+        "ticker": "PLAB",
+        "latest_gaap_net_income": "$31.4M",
+        "year_ago_gaap_net_income": "$8.9M",
+        "change": "+254.7% reported",
+        "screen_result": "Rejected because operating income fell 27% and a $17.4M foreign-exchange gain inflated net income"
+      }
+    ],
+    "selected_candidates": [
+      {
+        "ticker": "FORM",
+        "classification": "Primary 10x candidate",
+        "role": "Probe cards and advanced wafer-level test",
+        "market_cap": "$11.4B",
+        "latest_revenue": "$226.1M Q1 2026",
+        "revenue_growth": "+32.0% YoY",
+        "latest_net_income": "$20.4M Q1 2026",
+        "net_income_growth": "+218.5% YoY",
+        "ten_x_requirement": "Become a global advanced-test platform worth roughly $114B as HBM and chiplet test intensity rises.",
+        "primary_risks": ["Semicap cyclicality", "Customer concentration", "High required terminal scale"]
+      },
+      {
+        "ticker": "PDFS",
+        "classification": "Asymmetric 10x candidate",
+        "role": "Semiconductor yield analytics and production intelligence",
+        "market_cap": "$2.4B",
+        "latest_revenue": "$60.1M Q1 2026",
+        "revenue_growth": "+25.9% YoY",
+        "latest_net_income": "$4.8M Q1 2026 versus a $3.0M loss",
+        "latest_operating_income": "$6.3M Q1 2026 versus a $3.6M loss",
+        "ten_x_requirement": "Build a durable recurring yield-intelligence platform worth roughly $24B.",
+        "primary_risks": ["Customer concentration", "Acquisition debt", "Integration execution", "Small current profit base"]
+      },
+      {
+        "ticker": "CAMT",
+        "classification": "Conditional 10x watch",
         "role": "Advanced packaging inspection and metrology",
         "market_cap": "$8.0B",
         "latest_revenue": "$121.7M Q1 2026",
         "latest_net_income": "$31.6M Q1 2026",
+        "net_income_growth": "-8.1% YoY",
         "key_signal": "Management expects second-half 2026 revenue growth above 25% versus first-half 2026.",
-        "ten_x_requirement": "Expand from a packaging-inspection specialist into a much broader yield-control platform.",
-        "primary_risks": ["Valuation", "Semicap cyclicality", "Customer concentration", "Israel geopolitical exposure"]
-      },
-      {
-        "ticker": "ACMR",
-        "role": "Wafer cleaning, plating, furnace, and packaging tools",
-        "market_cap": "$6.7B",
-        "latest_revenue": "$231.3M Q1 2026",
-        "latest_net_income": "$17.3M Q1 2026",
-        "cash": "$872.3M",
-        "ten_x_requirement": "Sustain product expansion and gain meaningful business outside mainland China.",
-        "primary_risks": ["China operating concentration", "Export controls", "Corporate structure", "Semicap cyclicality"]
-      },
-      {
-        "ticker": "FORM",
-        "role": "Probe cards and advanced wafer-level test",
-        "market_cap": "$11.3B",
-        "latest_revenue": "$226.1M Q1 2026",
-        "latest_net_income": "$20.4M Q1 2026",
-        "cash": "$123.5M",
-        "ten_x_requirement": "Become a global advanced-test platform worth more than $100B as HBM and chiplet test intensity rises.",
-        "primary_risks": ["Demand cyclicality", "Customer concentration", "High required terminal scale"]
-      }
-    ],
-    "tier_b_high_risk": [
-      {
-        "ticker": "AAOI",
-        "role": "800G and 1.6T data-center optical modules and lasers",
-        "market_cap": "$12.1B",
-        "latest_revenue": "$151.1M Q1 2026",
-        "latest_net_income": "($14.3M) Q1 2026",
-        "cash": "$439.7M",
-        "ten_x_requirement": "Convert capacity expansion into sustained hyperscaler volumes and structurally higher margins.",
-        "primary_risks": ["Net losses", "Customer concentration", "Manufacturing execution", "Optical-cycle volatility"]
-      },
-      {
-        "ticker": "AIP",
-        "role": "Network-on-chip IP, software, and royalties",
-        "market_cap": "$1.9B",
-        "latest_revenue": "$22.9M Q1 2026",
-        "latest_net_income": "($8.0M) Q1 2026",
-        "variable_royalties": "$2.5M Q1 2026",
-        "ten_x_requirement": "Turn AI and chiplet design wins into a large recurring royalty stream.",
-        "primary_risks": ["Losses", "Limited cash", "Long design cycles", "Customer concentration"]
+        "ten_x_requirement": "Expand from a packaging-inspection specialist into a much broader yield-control platform and restore earnings acceleration.",
+        "primary_risks": ["Valuation", "Earnings deceleration", "Customer concentration", "Israel geopolitical exposure"]
       }
     ],
     "not_selected": [
       {
-        "tickers": ["CRDO", "ALAB", "COHR", "LITE"],
-        "reason": "Quality AI compounders, but June 24 market values of roughly $52B-$76B make a further 10x much harder to underwrite."
+        "tickers": ["CRDO", "AMKR", "TTMI", "MTSI", "SANM"],
+        "reason": "Strong earnings acceleration, but current scale, low-margin manufacturing economics, or acquisition dependence make a further 10x too demanding."
+      },
+      {
+        "tickers": ["ACMR", "AAOI", "AIP"],
+        "reason": "Removed from the old candidate list because net income declined, losses widened, or filing-backed operating leverage remains insufficient."
+      },
+      {
+        "ticker": "PLAB",
+        "reason": "Reported net income rose 255%, but operating income fell 27% and a $17.4M foreign-exchange gain inflated the headline."
       },
       {
         "ticker": "POET",
@@ -329,7 +418,7 @@
       "source": "10x candidate SEC filings",
       "date_checked": "2026-06-24",
       "confidence": "high",
-      "signal": "CAMT, ACMR, and FORM pass the filing-backed profitability tier; AAOI and AIP pass only the higher-risk optionality tier; POET fails the value-evidence gate because revenue remains minimal relative to losses."
+      "signal": "FORM is the primary filing-backed candidate, PDFS is the asymmetric small-cap candidate, and CAMT is conditional because net income declined 8%. ACMR, AAOI, and AIP no longer pass the operating-leverage gate."
     },
     {
       "source": "Credo Investor Relations",
@@ -442,7 +531,7 @@
       "q3_fy2026_10q_cash": "$1,220,464,000",
       "q3_fy2026_10q_liabilities": "$188,453,000",
       "url": "https://www.sec.gov/Archives/edgar/data/1807794/0001628280-26-039474-index.html",
-      "screen_result": "starter_or_10x_optionality"
+      "screen_result": "earnings_leader_scale_fail"
     },
     {
       "ticker": "ALAB",
@@ -456,7 +545,7 @@
       "cash": "$148,285,000",
       "liabilities": "$165,267,000",
       "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000020/0001736297-26-000020-index.html",
-      "screen_result": "starter_or_10x_optionality"
+      "screen_result": "quality_compounder_scale_fail"
     },
     {
       "ticker": "FORM",
@@ -470,7 +559,34 @@
       "cash": "$123,539,000",
       "liabilities": "$197,051,000",
       "url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000023/0001039399-26-000023-index.html",
-      "screen_result": "starter_or_10x_optionality"
+      "screen_result": "primary_10x_candidate"
+    },
+    {
+      "ticker": "PDFS",
+      "role": "Semiconductor yield analytics and production intelligence",
+      "filing": "10-Q",
+      "filing_date": "2026-05-07",
+      "accession_number": "0001437749-26-015610",
+      "revenue": "$60,130,000",
+      "year_ago_revenue": "$47,778,000",
+      "net_income": "$4,791,000",
+      "year_ago_net_income": "($3,032,000)",
+      "operating_income": "$6,313,000",
+      "diluted_eps": "$0.12",
+      "url": "https://www.sec.gov/Archives/edgar/data/1120914/000143774926015610/pdfs20260331_10q.htm",
+      "screen_result": "asymmetric_10x_candidate"
+    },
+    {
+      "ticker": "CAMT",
+      "role": "Advanced packaging inspection and metrology",
+      "filing": "6-K",
+      "filing_date": "2026-05-12",
+      "revenue": "$121,700,000",
+      "net_income": "$31,600,000",
+      "year_ago_net_income": "$34,400,000",
+      "diluted_eps": "$0.63",
+      "url": "https://www.sec.gov/Archives/edgar/data/1109138/000117891326002569/zk2635285.htm",
+      "screen_result": "conditional_10x_watch"
     },
     {
       "ticker": "AMAT",
@@ -549,6 +665,12 @@
     "https://www.sec.gov/Archives/edgar/data/1730168/0001730168-26-000051-index.html",
     "https://www.benzinga.com/insights/news/26/06/52991968/broadcom-q2-2026-earnings-call-complete-transcript",
     "https://www.sec.gov/edgar/search/",
-    "https://blog.se.com/datacenter/2026/04/09/building-ai-factories-why-integrated-power-and-liquid-cooling-systems-are-critical-for-high-density-ai-data-centers/"
+    "https://blog.se.com/datacenter/2026/04/09/building-ai-factories-why-integrated-power-and-liquid-cooling-systems-are-critical-for-high-density-ai-data-centers/",
+    "https://www.sec.gov/Archives/edgar/data/1120914/000143774926015610/pdfs20260331_10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1047127/000104712726000020/amkr-20260331.htm",
+    "https://www.sec.gov/Archives/edgar/data/1116942/000119312526201403/ttmi-20260330.htm",
+    "https://www.sec.gov/Archives/edgar/data/897723/000089772326000025/sanm-20260328.htm",
+    "https://www.sec.gov/Archives/edgar/data/810136/000114036126024915/ef20070467_10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1493594/000149359426000028/mtsi-20260403.htm"
   ]
 }
