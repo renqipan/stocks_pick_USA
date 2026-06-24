@@ -62,9 +62,84 @@
   "rankings": {
     "highest_confidence_buys": ["NVDA", "AVGO", "KLAC"],
     "core_watch_no_fresh_buy": ["AMAT"],
-    "starter_or_10x_optionality": ["CRDO", "ALAB", "FORM"],
+    "starter_or_10x_optionality": ["CAMT", "ACMR", "FORM", "AAOI", "AIP"],
     "watch_for_pullback": ["MU", "MRVL", "COHR", "LITE", "TSM", "ASML"],
     "keep_caution_today": ["Sector/SOXX", "MU", "AMAT", "ASML", "CRDO", "ALAB", "MRVL", "AMD", "ARM", "INTC", "SMCI", "COHR", "LITE"]
+  },
+  "long_term_10x_screen": {
+    "as_of": "2026-06-24",
+    "horizon": "7-10 years",
+    "methodology": [
+      "US-listed market value generally below $15B",
+      "Direct exposure to a durable AI data-center bottleneck",
+      "Filing-backed revenue and balance-sheet evidence",
+      "A credible path to operating leverage or royalty expansion",
+      "10x is a scenario, not a forecast or guaranteed return"
+    ],
+    "tier_a_filing_backed": [
+      {
+        "ticker": "CAMT",
+        "role": "Advanced packaging inspection and metrology",
+        "market_cap": "$8.0B",
+        "latest_revenue": "$121.7M Q1 2026",
+        "latest_net_income": "$31.6M Q1 2026",
+        "key_signal": "Management expects second-half 2026 revenue growth above 25% versus first-half 2026.",
+        "ten_x_requirement": "Expand from a packaging-inspection specialist into a much broader yield-control platform.",
+        "primary_risks": ["Valuation", "Semicap cyclicality", "Customer concentration", "Israel geopolitical exposure"]
+      },
+      {
+        "ticker": "ACMR",
+        "role": "Wafer cleaning, plating, furnace, and packaging tools",
+        "market_cap": "$6.7B",
+        "latest_revenue": "$231.3M Q1 2026",
+        "latest_net_income": "$17.3M Q1 2026",
+        "cash": "$872.3M",
+        "ten_x_requirement": "Sustain product expansion and gain meaningful business outside mainland China.",
+        "primary_risks": ["China operating concentration", "Export controls", "Corporate structure", "Semicap cyclicality"]
+      },
+      {
+        "ticker": "FORM",
+        "role": "Probe cards and advanced wafer-level test",
+        "market_cap": "$11.3B",
+        "latest_revenue": "$226.1M Q1 2026",
+        "latest_net_income": "$20.4M Q1 2026",
+        "cash": "$123.5M",
+        "ten_x_requirement": "Become a global advanced-test platform worth more than $100B as HBM and chiplet test intensity rises.",
+        "primary_risks": ["Demand cyclicality", "Customer concentration", "High required terminal scale"]
+      }
+    ],
+    "tier_b_high_risk": [
+      {
+        "ticker": "AAOI",
+        "role": "800G and 1.6T data-center optical modules and lasers",
+        "market_cap": "$12.1B",
+        "latest_revenue": "$151.1M Q1 2026",
+        "latest_net_income": "($14.3M) Q1 2026",
+        "cash": "$439.7M",
+        "ten_x_requirement": "Convert capacity expansion into sustained hyperscaler volumes and structurally higher margins.",
+        "primary_risks": ["Net losses", "Customer concentration", "Manufacturing execution", "Optical-cycle volatility"]
+      },
+      {
+        "ticker": "AIP",
+        "role": "Network-on-chip IP, software, and royalties",
+        "market_cap": "$1.9B",
+        "latest_revenue": "$22.9M Q1 2026",
+        "latest_net_income": "($8.0M) Q1 2026",
+        "variable_royalties": "$2.5M Q1 2026",
+        "ten_x_requirement": "Turn AI and chiplet design wins into a large recurring royalty stream.",
+        "primary_risks": ["Losses", "Limited cash", "Long design cycles", "Customer concentration"]
+      }
+    ],
+    "not_selected": [
+      {
+        "tickers": ["CRDO", "ALAB", "COHR", "LITE"],
+        "reason": "Quality AI compounders, but June 24 market values of roughly $52B-$76B make a further 10x much harder to underwrite."
+      },
+      {
+        "ticker": "POET",
+        "reason": "Small enough for a mathematical 10x, but approximately $1.1M of 2025 revenue and a $63.0M net loss fail the value-investing evidence gate."
+      }
+    ]
   },
   "capital_flow": [
     {
@@ -138,7 +213,7 @@
         "layer": "Compute platforms",
         "tight_items": ["GPU platforms", "custom ASIC slots", "secure rack-scale systems", "software-qualified reference designs"],
         "latest_signal": "NVIDIA says Vera Rubin is ramping into production across hundreds of partners and factories; Broadcom reported Q2 AI semiconductor revenue up 143% YoY.",
-        "stock_read": ["NVDA", "AVGO", "MRVL"],
+        "stock_read": ["NVDA", "AVGO", "MRVL", "AIP"],
         "score_adjustment": "Reward platform quality, but fail fresh-buy status when price action is too crowded."
       },
       {
@@ -152,14 +227,14 @@
         "layer": "Foundry, packaging, and tools",
         "tight_items": ["advanced-node wafers", "advanced packaging", "FOPLP", "CoPoS", "inspection", "metrology", "etch", "deposition", "probe/test"],
         "latest_signal": "SEMI Q2 2026 300mm outlook projects record US$142B front-end equipment spending in 2026, up 25% YoY; TrendForce says Microsoft FOPLP momentum is pushing TSMC to accelerate CoPoS R&D toward 2028 mass production.",
-        "stock_read": ["AMAT", "KLAC", "FORM", "TSM", "ASML"],
+        "stock_read": ["AMAT", "KLAC", "CAMT", "ACMR", "FORM", "TSM", "ASML"],
         "score_adjustment": "Reward durable tools economics, but require calmer entries after broad semicap drawdowns."
       },
       {
         "layer": "Networking and optics",
         "tight_items": ["800G to 1.6T links", "optical engines", "DSPs", "retimers", "AECs", "lasers", "CPO/NPO", "switch silicon"],
         "latest_signal": "TrendForce says AI data center expansion is driving EML and CW-DFB LD capacity toward 50.7 million units per month in 2026; its June CPO/NPO work points to Rubin Ultra as a catalyst for co-packaged optics adoption.",
-        "stock_read": ["CRDO", "ALAB", "MRVL", "AVGO", "COHR", "LITE"],
+        "stock_read": ["CRDO", "ALAB", "MRVL", "AVGO", "COHR", "LITE", "AAOI"],
         "score_adjustment": "Add concentration and customer-program penalties before any best-buy label."
       },
       {
@@ -249,6 +324,12 @@
       "date_checked": "2026-06-24",
       "confidence": "high",
       "signal": "Micron fiscal Q3 earnings are scheduled after the June 24 close. The dashboard applies an earnings-event deduction before the report despite strong HBM, DRAM, NAND, and enterprise-storage fundamentals."
+    },
+    {
+      "source": "10x candidate SEC filings",
+      "date_checked": "2026-06-24",
+      "confidence": "high",
+      "signal": "CAMT, ACMR, and FORM pass the filing-backed profitability tier; AAOI and AIP pass only the higher-risk optionality tier; POET fails the value-evidence gate because revenue remains minimal relative to losses."
     },
     {
       "source": "Credo Investor Relations",
