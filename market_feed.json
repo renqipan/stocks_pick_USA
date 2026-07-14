@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-10",
+  "as_of": "2026-07-14",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -10,30 +10,30 @@
   "quote_source": {
     "name": "Live finance snapshot",
     "url": "https://www.nasdaq.com/market-activity/stocks",
-    "note": "July 10, 2026 snapshot around 7:17 AM ET. Pre-market values are not final closing prices."
+    "note": "July 14, 2026 snapshot around 7:45 AM ET. Pre-market values are not final closing prices."
   },
   "quotes": {
-    "SPY": { "date": "2026-07-10", "last": 751.71, "change_percent": 0.82, "previous_close": 745.57, "quote_status": "pre_market" },
-    "QQQ": { "date": "2026-07-10", "last": 723.28, "change_percent": 1.62, "previous_close": 711.76, "quote_status": "pre_market" },
-    "SOXX": { "date": "2026-07-10", "last": 581.70, "change_percent": 3.49, "previous_close": 562.06, "quote_status": "pre_market" },
-    "NVDA": { "date": "2026-07-10", "last": 202.78, "change_percent": -0.70, "previous_close": 204.21, "quote_status": "pre_market" },
-    "AVGO": { "date": "2026-07-10", "last": 401.11, "change_percent": 3.26, "previous_close": 388.46, "quote_status": "pre_market" },
-    "MU": { "date": "2026-07-10", "last": 991.64, "change_percent": 4.42, "previous_close": 949.67, "quote_status": "pre_market_post_earnings" },
-    "FORM": { "date": "2026-07-10", "last": 119.44, "change_percent": 7.00, "previous_close": 111.63, "market_cap": "$9.49B", "quote_status": "pre_market" },
-    "PDFS": { "date": "2026-07-10", "last": 55.93, "change_percent": 6.63, "previous_close": 52.45, "market_cap": "$2.26B", "quote_status": "pre_market" },
-    "CAMT": { "date": "2026-07-10", "last": 145.36, "change_percent": 3.91, "previous_close": 139.89, "market_cap": "$6.56B", "quote_status": "pre_market" },
-    "CRDO": { "date": "2026-07-10", "last": 265.65, "change_percent": 2.71, "previous_close": 258.63, "market_cap": "$51.01B", "quote_status": "pre_market" },
-    "ALAB": { "date": "2026-07-10", "last": 417.45, "change_percent": 6.18, "previous_close": 393.16, "market_cap": "$75.62B", "quote_status": "pre_market" },
-    "MRVL": { "date": "2026-07-10", "last": 243.27, "change_percent": 5.02, "previous_close": 231.64, "market_cap": "$217.31B", "quote_status": "pre_market" },
-    "COHR": { "date": "2026-07-10", "last": 327.24, "change_percent": 3.21, "previous_close": 317.05, "market_cap": "$64.02B", "quote_status": "pre_market" },
-    "LITE": { "date": "2026-07-10", "last": 785.77, "change_percent": 11.10, "previous_close": 707.26, "market_cap": "$75.59B", "quote_status": "pre_market" },
-    "VRT": { "date": "2026-07-10", "last": 323.92, "change_percent": 1.90, "previous_close": 317.88, "market_cap": "$127.02B", "quote_status": "pre_market" },
-    "ETN": { "date": "2026-07-10", "last": 405.83, "change_percent": 1.59, "previous_close": 399.47, "market_cap": "$157.95B", "quote_status": "pre_market" }
+    "SPY": { "date": "2026-07-14", "last": 749.17, "change_percent": -0.79, "previous_close": 755.15, "quote_status": "pre_market" },
+    "QQQ": { "date": "2026-07-14", "last": 711.74, "change_percent": -1.87, "previous_close": 725.33, "quote_status": "pre_market" },
+    "SOXX": { "date": "2026-07-14", "last": 553.61, "change_percent": -4.85, "previous_close": 581.81, "quote_status": "pre_market" },
+    "NVDA": { "date": "2026-07-14", "last": 203.53, "change_percent": -3.48, "previous_close": 210.87, "quote_status": "pre_market" },
+    "AVGO": { "date": "2026-07-14", "last": 384.05, "change_percent": -4.08, "previous_close": 400.37, "quote_status": "pre_market" },
+    "MU": { "date": "2026-07-14", "last": 937.00, "change_percent": -4.32, "previous_close": 979.31, "quote_status": "pre_market_post_earnings" },
+    "FORM": { "date": "2026-07-14", "last": 110.30, "change_percent": -6.11, "previous_close": 117.48, "market_cap": "$8.76B", "quote_status": "pre_market" },
+    "PDFS": { "date": "2026-07-14", "last": 52.79, "change_percent": -4.93, "previous_close": 55.53, "market_cap": "$2.13B", "quote_status": "pre_market" },
+    "CAMT": { "date": "2026-07-14", "last": 136.78, "change_percent": -4.92, "previous_close": 143.86, "market_cap": "$6.17B", "quote_status": "pre_market" },
+    "CRDO": { "date": "2026-07-14", "last": 236.88, "change_percent": -8.16, "previous_close": 257.92, "market_cap": "$45.49B", "quote_status": "pre_market" },
+    "ALAB": { "date": "2026-07-14", "last": 362.05, "change_percent": -12.42, "previous_close": 413.40, "market_cap": "$65.59B", "quote_status": "pre_market" },
+    "MRVL": { "date": "2026-07-14", "last": 217.53, "change_percent": -7.88, "previous_close": 236.14, "market_cap": "$194.32B", "quote_status": "pre_market" },
+    "COHR": { "date": "2026-07-14", "last": 307.39, "change_percent": -5.30, "previous_close": 324.60, "market_cap": "$60.14B", "quote_status": "pre_market" },
+    "LITE": { "date": "2026-07-14", "last": 768.15, "change_percent": -4.20, "previous_close": 801.82, "market_cap": "$73.90B", "quote_status": "pre_market" },
+    "VRT": { "date": "2026-07-14", "last": 305.87, "change_percent": -4.07, "previous_close": 318.86, "market_cap": "$119.94B", "quote_status": "pre_market" },
+    "ETN": { "date": "2026-07-14", "last": 402.85, "change_percent": -1.09, "previous_close": 407.29, "market_cap": "$156.79B", "quote_status": "pre_market" }
   },
   "market_emotion": {
-    "score": 94,
-    "state": "high_heat_gap_up_no_chase",
-    "basis": "The July 10 pre-market tape confirms broad AI-cycle strength, with SOXX +3.49%, FORM +7.00%, PDFS +6.63%, ALAB +6.18%, MRVL +5.02%, and LITE +11.10%. The model keeps long-term conviction but closes the fresh-buy gate because opening-gap and valuation risk are elevated."
+    "score": 96,
+    "state": "high_volatility_risk_off_wait_for_stabilization",
+    "basis": "The July 14 pre-market tape is broadly risk-off, with SOXX -4.85%, FORM -6.11%, PDFS -4.93%, CRDO -8.16%, MRVL -7.88%, and ALAB -12.42%. Lower prices improve valuation math, but trend confirmation has disappeared, so the fresh-buy gate stays closed until support forms."
   },
   "strict_scoring": {
     "fresh_buy_threshold": 80,
@@ -47,14 +47,14 @@
       "filing_transparency": 8
     },
     "candidate_scores": {
-      "NVDA": { "score": 78, "decision": "watch_for_staged_entry", "reason": "Platform and earnings quality are exceptional, but the company is already enormous and facility constraints can delay cluster monetization." },
-      "AVGO": { "score": 77, "decision": "watch_for_staged_entry", "reason": "Custom silicon and networking fundamentals are strong, but the July 10 pre-market gap reduces entry quality." },
-      "MU": { "score": 77, "decision": "post_earnings_wait_for_base", "reason": "Fiscal Q3 confirms exceptional memory demand, but another pre-market gap makes the entry extended." },
-      "KLAC": { "score": 76, "decision": "core_watch", "reason": "Process-control quality is strong, but the July 10 opening setup is stretched." },
-      "AMAT": { "score": 75, "decision": "core_watch", "reason": "Capacity-formation exposure passes, but staged entry is preferable after the sector gap settles." },
-      "VRT": { "score": 74, "decision": "power_cooling_compounder_watch", "reason": "Direct exposure to the most persistent facility bottleneck, but current market value and valuation limit upside asymmetry." },
-      "FORM": { "score": 74, "decision": "long_term_10x_scenario_watch", "reason": "HBM probe and known-good-die exposure plus 218% GAAP net-income growth pass the thesis gate; the 7% pre-market gap blocks a fresh buy." },
-      "PDFS": { "score": 69, "decision": "asymmetric_10x_scenario_watch", "reason": "Loss-to-profit inflection and 26% revenue growth are attractive, but concentration, integration, dilution, and a 6.6% gap raise risk." },
+      "NVDA": { "score": 76, "decision": "watch_for_stabilization", "reason": "Platform and earnings quality are exceptional, but broad downside volatility removes trend confirmation and facility constraints can delay cluster monetization." },
+      "AVGO": { "score": 75, "decision": "watch_for_stabilization", "reason": "Custom silicon and networking fundamentals are strong, but the July 14 pre-market decline has not established support." },
+      "MU": { "score": 74, "decision": "post_earnings_wait_for_base", "reason": "Fiscal Q3 confirms exceptional memory demand, but the cyclical leader is falling with the sector and needs a base." },
+      "KLAC": { "score": 74, "decision": "core_watch", "reason": "Process-control quality is strong, but the July 14 opening setup lacks trend confirmation." },
+      "AMAT": { "score": 73, "decision": "core_watch", "reason": "Capacity-formation exposure passes, but staged entry is preferable after the sector stabilizes." },
+      "VRT": { "score": 72, "decision": "power_cooling_compounder_watch", "reason": "Direct exposure to the most persistent facility bottleneck, but current market value, valuation, and market volatility limit upside asymmetry." },
+      "FORM": { "score": 72, "decision": "long_term_10x_scenario_watch", "reason": "HBM probe and known-good-die exposure plus 218% GAAP net-income growth pass the thesis gate; Q2 results on July 29 are the next checkpoint and the current selloff is not yet an entry signal." },
+      "PDFS": { "score": 68, "decision": "asymmetric_10x_scenario_watch", "reason": "Loss-to-profit inflection and 26% revenue growth are attractive, but concentration, integration, dilution, premium valuation, and weak tape raise risk." },
       "CAMT": { "score": 68, "decision": "conditional_watch", "reason": "Advanced-packaging inspection is strategic, but GAAP net income declined 8% and order conversion still must confirm the second-half outlook." }
     }
   },
@@ -103,9 +103,9 @@
     }
   ],
   "supply_chain_view": {
-    "date_checked": "2026-07-10",
+    "date_checked": "2026-07-14",
     "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: advanced-node wafers, HBM, 2.5D/3D packaging, probe and inspection, 1.6T optics, 800V HVDC power, grid interconnects, transformers, switchgear, and liquid cooling.",
-    "strict_score_implication": "The supply-chain thesis is strong, but the July 10 pre-market gap-up closes the fresh-buy gate. Structural bottleneck power does not remove valuation or entry risk.",
+    "strict_score_implication": "The supply-chain thesis is strong, but the July 14 risk-off tape closes the fresh-buy gate until support forms. Structural bottleneck power does not remove valuation, trend, or entry risk.",
     "bottleneck_migration": [
       "Compute remains scarce, but rack and site integration increasingly govern deployment speed.",
       "HBM pricing, allocation, and yield stay tight through 2027, with uneven easing in 2028.",
@@ -152,7 +152,7 @@
     ]
   },
   "long_term_10x_screen": {
-    "as_of": "2026-07-10",
+    "as_of": "2026-07-14",
     "horizon": "7-10 years",
     "methodology": [
       "Start with estimated AI data-center bottlenecks through July 2028.",
@@ -186,42 +186,32 @@
         "ticker": "FORM",
         "classification": "Primary 10x scenario candidate",
         "role": "Probe cards and advanced wafer-level test",
-        "market_cap": "$9.49B",
+        "market_cap": "$8.76B",
         "latest_revenue": "$226.1M Q1 2026",
         "revenue_growth": "+32.0% YoY",
         "latest_net_income": "$20.4M Q1 2026",
         "net_income_growth": "+218.5% YoY",
-        "ten_x_requirement": "Become a global advanced-test platform worth roughly $95B.",
+        "ten_x_requirement": "Become a global advanced-test platform worth roughly $87.6B.",
+        "next_earnings_checkpoint": "Q2 2026 results on July 29; prior guide was $240M +/- $5M revenue and $0.46 +/- $0.04 GAAP EPS.",
         "primary_risks": ["semicap cyclicality", "customer concentration", "premium valuation", "high required terminal scale"]
       },
       {
         "ticker": "PDFS",
         "classification": "Asymmetric 10x scenario candidate",
         "role": "Semiconductor yield analytics and production intelligence",
-        "market_cap": "$2.26B",
+        "market_cap": "$2.13B",
         "latest_revenue": "$60.1M Q1 2026",
         "revenue_growth": "+25.9% YoY",
         "latest_net_income": "$4.8M Q1 2026 versus a $3.0M loss",
         "latest_operating_income": "$6.3M Q1 2026 versus a $3.6M loss",
-        "ten_x_requirement": "Build a durable recurring yield-intelligence platform worth roughly $22.6B.",
+        "ten_x_requirement": "Build a durable recurring yield-intelligence platform worth roughly $21.3B.",
+        "next_earnings_checkpoint": "Q2 reporting date was not yet posted on the investor-relations calendar as of July 14.",
         "primary_risks": ["customer concentration", "acquisition debt", "integration execution", "share issuance and dilution", "small profit base"]
-      },
-      {
-        "ticker": "CAMT",
-        "classification": "Conditional 10x watch",
-        "role": "Advanced packaging inspection and metrology",
-        "market_cap": "$6.56B",
-        "latest_revenue": "$121.7M Q1 2026",
-        "latest_net_income": "$31.6M Q1 2026",
-        "net_income_growth": "-8.1% YoY",
-        "key_signal": "Q2 revenue guidance is $129M-$131M; management expects second-half revenue growth above 25% versus first-half 2026; June orders topped $105M.",
-        "ten_x_requirement": "Expand into a much broader yield-control platform worth roughly $65.6B and restore earnings acceleration.",
-        "primary_risks": ["earnings deceleration", "customer concentration", "valuation", "geopolitical exposure"]
       }
     ],
     "not_selected": [
       { "tickers": ["NVDA", "CRDO", "AMKR", "VRT", "TTMI", "MTSI", "SANM"], "reason": "Strong earnings acceleration, but current scale, manufacturing economics, or acquisition dependence make a further 10x too demanding." },
-      { "tickers": ["PLAB", "ACMR", "AAOI", "AIP", "POET"], "reason": "Headline earnings quality, declining profits, ongoing losses, or insufficient revenue fail the financial gate." }
+      { "tickers": ["CAMT", "PLAB", "ACMR", "AAOI", "AIP", "POET"], "reason": "Declining profits, low-quality headline gains, ongoing losses, or insufficient revenue fail the financial gate." }
     ]
   },
   "filing_screen": [
@@ -245,9 +235,9 @@
     { "source": "Meta", "date_checked": "2026-07-10", "confidence": "high", "signal": "2026 capex guidance is $125B-$145B; Q1 property-and-equipment purchases were $19.0B." },
     { "source": "IEA", "date_checked": "2026-07-10", "confidence": "high", "signal": "Data centers are expected to drive about half of US electricity-demand growth through 2030; connection queues and grid supply chains remain binding." },
     { "source": "TrendForce", "date_checked": "2026-07-10", "confidence": "high", "signal": "HBM, advanced packaging, 1.6T optics, CPO/NPO, and 800V HVDC remain the core technology bottlenecks." },
-    { "source": "FormFactor", "date_checked": "2026-07-10", "confidence": "high", "signal": "Q1 revenue grew 32%, GAAP net income grew 218%, HBM demand lifted record DRAM revenue, and Q2 guidance calls for another revenue record." },
-    { "source": "PDF Solutions", "date_checked": "2026-07-10", "confidence": "high", "signal": "Q1 revenue grew 26%, GAAP results moved from loss to profit, and backlog reached $246.4M; dilution and concentration remain key risks." },
-    { "source": "Camtek", "date_checked": "2026-07-10", "confidence": "high", "signal": "Q1 earnings declined, but Q2 guidance, a stronger second-half outlook, and more than $105M of June HBM/OSAT orders preserve conditional upside." },
+    { "source": "FormFactor", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 revenue grew 32%, GAAP net income grew 218%, and Q2 results on July 29 will test the $240M +/- $5M revenue and $0.46 +/- $0.04 GAAP EPS guide." },
+    { "source": "PDF Solutions", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 revenue grew 26%, GAAP results moved from loss to profit, and backlog reached $246.4M; no Q2 reporting date was posted as of July 14." },
+    { "source": "Camtek", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 GAAP net income declined 8%, so Camtek remains outside the final 10x result set despite strong Q2 guidance and June HBM/OSAT orders." },
     { "source": "Vertiv", "date_checked": "2026-07-10", "confidence": "high", "signal": "Q1 sales grew 30% and GAAP net income grew 137%, confirming strong power-and-cooling demand; current scale blocks a credible 10x label." }
   ],
   "sources": [
@@ -264,6 +254,7 @@
     "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx",
     "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results",
+    "https://investors.formfactor.com/news-releases/news-release-details/formfactor-announce-second-quarter-2026-financial-results-july",
     "https://www.pdf.com/resources/pdf-solutions-reports-first-quarter-2026-financial-results/",
     "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/",
     "https://www.camtek.com/news-and-events/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer/",
