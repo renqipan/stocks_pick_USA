@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-14",
+  "as_of": "2026-07-30",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -10,30 +10,30 @@
   "quote_source": {
     "name": "Live finance snapshot",
     "url": "https://www.nasdaq.com/market-activity/stocks",
-    "note": "July 14, 2026 snapshot around 7:45 AM ET. Pre-market values are not final closing prices."
+    "note": "July 30, 2026 Nasdaq snapshot around 6:49 AM ET. Pre-market values are not final closing prices."
   },
   "quotes": {
-    "SPY": { "date": "2026-07-14", "last": 749.17, "change_percent": -0.79, "previous_close": 755.15, "quote_status": "pre_market" },
-    "QQQ": { "date": "2026-07-14", "last": 711.74, "change_percent": -1.87, "previous_close": 725.33, "quote_status": "pre_market" },
-    "SOXX": { "date": "2026-07-14", "last": 553.61, "change_percent": -4.85, "previous_close": 581.81, "quote_status": "pre_market" },
-    "NVDA": { "date": "2026-07-14", "last": 203.53, "change_percent": -3.48, "previous_close": 210.87, "quote_status": "pre_market" },
-    "AVGO": { "date": "2026-07-14", "last": 384.05, "change_percent": -4.08, "previous_close": 400.37, "quote_status": "pre_market" },
-    "MU": { "date": "2026-07-14", "last": 937.00, "change_percent": -4.32, "previous_close": 979.31, "quote_status": "pre_market_post_earnings" },
-    "FORM": { "date": "2026-07-14", "last": 110.30, "change_percent": -6.11, "previous_close": 117.48, "market_cap": "$8.76B", "quote_status": "pre_market" },
-    "PDFS": { "date": "2026-07-14", "last": 52.79, "change_percent": -4.93, "previous_close": 55.53, "market_cap": "$2.13B", "quote_status": "pre_market" },
-    "CAMT": { "date": "2026-07-14", "last": 136.78, "change_percent": -4.92, "previous_close": 143.86, "market_cap": "$6.17B", "quote_status": "pre_market" },
-    "CRDO": { "date": "2026-07-14", "last": 236.88, "change_percent": -8.16, "previous_close": 257.92, "market_cap": "$45.49B", "quote_status": "pre_market" },
-    "ALAB": { "date": "2026-07-14", "last": 362.05, "change_percent": -12.42, "previous_close": 413.40, "market_cap": "$65.59B", "quote_status": "pre_market" },
-    "MRVL": { "date": "2026-07-14", "last": 217.53, "change_percent": -7.88, "previous_close": 236.14, "market_cap": "$194.32B", "quote_status": "pre_market" },
-    "COHR": { "date": "2026-07-14", "last": 307.39, "change_percent": -5.30, "previous_close": 324.60, "market_cap": "$60.14B", "quote_status": "pre_market" },
-    "LITE": { "date": "2026-07-14", "last": 768.15, "change_percent": -4.20, "previous_close": 801.82, "market_cap": "$73.90B", "quote_status": "pre_market" },
-    "VRT": { "date": "2026-07-14", "last": 305.87, "change_percent": -4.07, "previous_close": 318.86, "market_cap": "$119.94B", "quote_status": "pre_market" },
-    "ETN": { "date": "2026-07-14", "last": 402.85, "change_percent": -1.09, "previous_close": 407.29, "market_cap": "$156.79B", "quote_status": "pre_market" }
+    "SPY": { "date": "2026-07-30", "last": 733.71, "change_percent": 0.58, "previous_close": 729.46, "prior_session_change_percent": -1.54, "quote_status": "pre_market" },
+    "QQQ": { "date": "2026-07-30", "last": 669.19, "change_percent": 1.13, "previous_close": 661.73, "prior_session_change_percent": -2.04, "quote_status": "pre_market" },
+    "SOXX": { "date": "2026-07-30", "last": 474.80, "change_percent": 2.11, "previous_close": 465.00, "prior_session_change_percent": -5.38, "quote_status": "pre_market" },
+    "NVDA": { "date": "2026-07-30", "last": 192.66, "change_percent": 1.39, "previous_close": 190.01, "prior_session_change_percent": -3.55, "quote_status": "pre_market" },
+    "AVGO": { "date": "2026-07-30", "last": 375.00, "change_percent": 1.26, "previous_close": 370.32, "prior_session_change_percent": -2.78, "quote_status": "pre_market" },
+    "MU": { "date": "2026-07-30", "last": 749.80, "change_percent": 1.46, "previous_close": 739.00, "prior_session_change_percent": -9.94, "quote_status": "pre_market_post_earnings" },
+    "FORM": { "date": "2026-07-30", "last": 95.87, "change_percent": 14.88, "previous_close": 83.45, "prior_session_change_percent": -5.42, "market_cap": "$7.47B", "quote_status": "pre_market_post_earnings" },
+    "PDFS": { "date": "2026-07-29", "last": 41.17, "change_percent": -7.67, "previous_close": 44.59, "market_cap": "$1.64B", "quote_status": "regular_close_no_premarket_quote" },
+    "CAMT": { "date": "2026-07-30", "last": 130.25, "change_percent": 2.58, "previous_close": 126.97, "prior_session_change_percent": -9.35, "quote_status": "pre_market" },
+    "CRDO": { "date": "2026-07-30", "last": 181.00, "change_percent": 2.00, "previous_close": 177.45, "prior_session_change_percent": -7.71, "quote_status": "pre_market" },
+    "ALAB": { "date": "2026-07-30", "last": 256.67, "change_percent": 2.77, "previous_close": 249.74, "prior_session_change_percent": -4.03, "quote_status": "pre_market" },
+    "MRVL": { "date": "2026-07-30", "last": 167.33, "change_percent": 2.41, "previous_close": 163.40, "prior_session_change_percent": -6.34, "quote_status": "pre_market" },
+    "COHR": { "date": "2026-07-30", "last": 228.00, "change_percent": 2.68, "previous_close": 222.05, "prior_session_change_percent": -8.75, "quote_status": "pre_market" },
+    "LITE": { "date": "2026-07-30", "last": 622.20, "change_percent": 3.30, "previous_close": 602.35, "prior_session_change_percent": -7.61, "quote_status": "pre_market" },
+    "VRT": { "date": "2026-07-30", "last": 228.87, "change_percent": 2.61, "previous_close": 223.04, "prior_session_change_percent": -17.26, "quote_status": "pre_market" },
+    "ETN": { "date": "2026-07-30", "last": 371.69, "change_percent": 2.71, "previous_close": 361.88, "prior_session_change_percent": -6.31, "quote_status": "pre_market" }
   },
   "market_emotion": {
-    "score": 96,
-    "state": "high_volatility_risk_off_wait_for_stabilization",
-    "basis": "The July 14 pre-market tape is broadly risk-off, with SOXX -4.85%, FORM -6.11%, PDFS -4.93%, CRDO -8.16%, MRVL -7.88%, and ALAB -12.42%. Lower prices improve valuation math, but trend confirmation has disappeared, so the fresh-buy gate stays closed until support forms."
+    "score": 98,
+    "state": "extreme_two_way_volatility_oversold_rebound_no_chase",
+    "basis": "The July 30 pre-market tape is rebounding after another severe chip selloff: SOXX +2.11% after a -5.38% session, while FORM is +14.88% after exceptional Q2 results. The fundamental signal improves, but the sector breakdown and earnings gap keep the fresh-buy gate closed until support forms."
   },
   "strict_scoring": {
     "fresh_buy_threshold": 80,
@@ -47,14 +47,14 @@
       "filing_transparency": 8
     },
     "candidate_scores": {
-      "NVDA": { "score": 76, "decision": "watch_for_stabilization", "reason": "Platform and earnings quality are exceptional, but broad downside volatility removes trend confirmation and facility constraints can delay cluster monetization." },
-      "AVGO": { "score": 75, "decision": "watch_for_stabilization", "reason": "Custom silicon and networking fundamentals are strong, but the July 14 pre-market decline has not established support." },
-      "MU": { "score": 74, "decision": "post_earnings_wait_for_base", "reason": "Fiscal Q3 confirms exceptional memory demand, but the cyclical leader is falling with the sector and needs a base." },
-      "KLAC": { "score": 74, "decision": "core_watch", "reason": "Process-control quality is strong, but the July 14 opening setup lacks trend confirmation." },
-      "AMAT": { "score": 73, "decision": "core_watch", "reason": "Capacity-formation exposure passes, but staged entry is preferable after the sector stabilizes." },
-      "VRT": { "score": 72, "decision": "power_cooling_compounder_watch", "reason": "Direct exposure to the most persistent facility bottleneck, but current market value, valuation, and market volatility limit upside asymmetry." },
-      "FORM": { "score": 72, "decision": "long_term_10x_scenario_watch", "reason": "HBM probe and known-good-die exposure plus 218% GAAP net-income growth pass the thesis gate; Q2 results on July 29 are the next checkpoint and the current selloff is not yet an entry signal." },
-      "PDFS": { "score": 68, "decision": "asymmetric_10x_scenario_watch", "reason": "Loss-to-profit inflection and 26% revenue growth are attractive, but concentration, integration, dilution, premium valuation, and weak tape raise risk." },
+      "NVDA": { "score": 75, "decision": "watch_for_stabilization", "reason": "Platform and earnings quality are exceptional, but the July 30 bounce follows another broad breakdown and facility constraints can delay cluster monetization." },
+      "AVGO": { "score": 74, "decision": "watch_for_stabilization", "reason": "Custom silicon and networking fundamentals are strong, but the modest rebound has not established support." },
+      "MU": { "score": 72, "decision": "post_earnings_wait_for_base", "reason": "Fiscal Q3 confirms exceptional memory demand, but the cyclical leader fell 9.94% on July 29 and needs a base." },
+      "KLAC": { "score": 72, "decision": "core_watch", "reason": "Process-control quality is strong, but a 4% bounce after a 10.8% down session lacks trend confirmation." },
+      "AMAT": { "score": 71, "decision": "core_watch", "reason": "Capacity-formation exposure passes, but a 4.25% rebound after an 8.4% down session is not a confirmed entry." },
+      "VRT": { "score": 69, "decision": "power_cooling_compounder_watch", "reason": "Direct exposure to the most persistent facility bottleneck, but the prior 17.26% decline, current scale, and valuation limit entry quality." },
+      "FORM": { "score": 79, "decision": "top_10x_candidate_wait_for_gap_consolidation", "reason": "Q2 revenue rose 31.9%, GAAP net income rose 518.6%, and free cash flow reached $52.6M; the 14.88% pre-market earnings gap blocks a fresh buy." },
+      "PDFS": { "score": 66, "decision": "asymmetric_10x_candidate_earnings_event_risk", "reason": "Loss-to-profit inflection and 26% revenue growth are attractive, but August 6 results must confirm backlog conversion, integration, dilution control, and durable GAAP profit." },
       "CAMT": { "score": 68, "decision": "conditional_watch", "reason": "Advanced-packaging inspection is strategic, but GAAP net income declined 8% and order conversion still must confirm the second-half outlook." }
     }
   },
@@ -103,9 +103,9 @@
     }
   ],
   "supply_chain_view": {
-    "date_checked": "2026-07-14",
+    "date_checked": "2026-07-30",
     "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: advanced-node wafers, HBM, 2.5D/3D packaging, probe and inspection, 1.6T optics, 800V HVDC power, grid interconnects, transformers, switchgear, and liquid cooling.",
-    "strict_score_implication": "The supply-chain thesis is strong, but the July 14 risk-off tape closes the fresh-buy gate until support forms. Structural bottleneck power does not remove valuation, trend, or entry risk.",
+    "strict_score_implication": "The supply-chain thesis is strong and FormFactor's Q2 results confirm test-bottleneck operating leverage, but the July 30 oversold rebound follows another severe sector breakdown. Structural bottleneck power does not remove valuation, trend, or entry risk.",
     "bottleneck_migration": [
       "Compute remains scarce, but rack and site integration increasingly govern deployment speed.",
       "HBM pricing, allocation, and yield stay tight through 2027, with uneven easing in 2028.",
@@ -152,7 +152,7 @@
     ]
   },
   "long_term_10x_screen": {
-    "as_of": "2026-07-14",
+    "as_of": "2026-07-30",
     "horizon": "7-10 years",
     "methodology": [
       "Start with estimated AI data-center bottlenecks through July 2028.",
@@ -172,7 +172,7 @@
       { "ticker": "CRDO", "latest_gaap_net_income": "$169.1M", "year_ago_gaap_net_income": "$36.6M", "change": "+362.2%", "screen_result": "Earnings leader; rejected for 10x due to $51.0B market value" },
       { "ticker": "AMKR", "latest_gaap_net_income": "$83.4M", "year_ago_gaap_net_income": "$21.1M", "change": "+294.5%", "screen_result": "Earnings leader; rejected for 10x due to $18.0B scale and OSAT margins" },
       { "ticker": "PLAB", "latest_gaap_net_income": "$31.4M", "year_ago_gaap_net_income": "$8.9M", "change": "+254.7% reported", "screen_result": "Rejected because revenue and operating quality did not confirm the headline; FX inflated GAAP net income" },
-      { "ticker": "FORM", "latest_gaap_net_income": "$20.4M", "year_ago_gaap_net_income": "$6.4M", "change": "+218.5%", "screen_result": "Primary 10x scenario candidate" },
+      { "ticker": "FORM", "latest_gaap_net_income": "$56.2M", "year_ago_gaap_net_income": "$9.1M", "change": "+518.6%", "screen_result": "Primary 10x scenario candidate; earnings confirmed" },
       { "ticker": "NVDA", "latest_gaap_net_income": "$58.3B", "year_ago_gaap_net_income": "$18.8B", "change": "+210.6%", "screen_result": "Quality leader; rejected for 10x due to roughly $4.9T scale" },
       { "ticker": "VRT", "latest_gaap_net_income": "$390.1M", "year_ago_gaap_net_income": "$164.5M", "change": "+137.1%", "screen_result": "Power/cooling leader; rejected for 10x due to $127.0B scale" },
       { "ticker": "PDFS", "latest_gaap_net_income": "$4.8M", "year_ago_gaap_net_income": "($3.0M)", "change": "Loss to profit", "screen_result": "Asymmetric 10x scenario candidate" },
@@ -186,26 +186,27 @@
         "ticker": "FORM",
         "classification": "Primary 10x scenario candidate",
         "role": "Probe cards and advanced wafer-level test",
-        "market_cap": "$8.76B",
-        "latest_revenue": "$226.1M Q1 2026",
-        "revenue_growth": "+32.0% YoY",
-        "latest_net_income": "$20.4M Q1 2026",
-        "net_income_growth": "+218.5% YoY",
-        "ten_x_requirement": "Become a global advanced-test platform worth roughly $87.6B.",
-        "next_earnings_checkpoint": "Q2 2026 results on July 29; prior guide was $240M +/- $5M revenue and $0.46 +/- $0.04 GAAP EPS.",
+        "market_cap": "$7.47B",
+        "latest_revenue": "$258.2M Q2 2026",
+        "revenue_growth": "+31.9% YoY",
+        "latest_net_income": "$56.2M Q2 2026",
+        "net_income_growth": "+518.6% YoY",
+        "free_cash_flow": "$52.6M Q2 2026",
+        "ten_x_requirement": "Become a global advanced-test platform worth roughly $74.7B.",
+        "next_earnings_checkpoint": "Q3 guide is $270M +/- $10M revenue and $0.75 +/- $0.09 GAAP EPS.",
         "primary_risks": ["semicap cyclicality", "customer concentration", "premium valuation", "high required terminal scale"]
       },
       {
         "ticker": "PDFS",
         "classification": "Asymmetric 10x scenario candidate",
         "role": "Semiconductor yield analytics and production intelligence",
-        "market_cap": "$2.13B",
+        "market_cap": "$1.64B",
         "latest_revenue": "$60.1M Q1 2026",
         "revenue_growth": "+25.9% YoY",
         "latest_net_income": "$4.8M Q1 2026 versus a $3.0M loss",
         "latest_operating_income": "$6.3M Q1 2026 versus a $3.6M loss",
-        "ten_x_requirement": "Build a durable recurring yield-intelligence platform worth roughly $21.3B.",
-        "next_earnings_checkpoint": "Q2 reporting date was not yet posted on the investor-relations calendar as of July 14.",
+        "ten_x_requirement": "Build a durable recurring yield-intelligence platform worth roughly $16.4B.",
+        "next_earnings_checkpoint": "Q2 results after the market close on August 6, 2026.",
         "primary_risks": ["customer concentration", "acquisition debt", "integration execution", "share issuance and dilution", "small profit base"]
       }
     ],
@@ -218,7 +219,7 @@
     { "ticker": "NVDA", "role": "Compute platform", "filing": "10-Q", "filing_date": "2026-05-20", "revenue": "$81,615,000,000", "net_income": "$58,321,000,000", "diluted_eps": "$2.39", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx", "screen_result": "quality_leader_scale_fail" },
     { "ticker": "MU", "role": "HBM and server memory", "filing": "10-Q and 8-K", "filing_date": "2026-06-24", "revenue": "$41,456,000,000", "net_income": "$28,240,000,000", "diluted_eps": "$24.67 GAAP / $25.11 non-GAAP", "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm", "screen_result": "post_earnings_wait_for_base" },
     { "ticker": "CRDO", "role": "AEC, SerDes, retimers, and optical DSP", "filing": "8-K", "filing_date": "2026-06-01", "revenue": "$437,003,000", "net_income": "$169,102,000", "diluted_eps": "$0.88 GAAP / $1.16 non-GAAP", "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx", "screen_result": "earnings_leader_scale_fail" },
-    { "ticker": "FORM", "role": "Probe cards and test", "filing": "10-Q", "filing_date": "2026-05-05", "revenue": "$226,144,000", "net_income": "$20,384,000", "diluted_eps": "$0.26", "operating_cash_flow": "$44,961,000", "q2_guidance": "$240M +/- $5M revenue; $0.46 +/- $0.04 GAAP EPS", "url": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results", "screen_result": "primary_10x_scenario_candidate" },
+    { "ticker": "FORM", "role": "Probe cards and test", "filing": "Q2 earnings release", "filing_date": "2026-07-29", "revenue": "$258,242,000", "year_ago_revenue": "$195,798,000", "net_income": "$56,207,000", "year_ago_net_income": "$9,086,000", "diluted_eps": "$0.71", "operating_cash_flow": "$61,803,000", "free_cash_flow": "$52,552,000", "q3_guidance": "$270M +/- $10M revenue; $0.75 +/- $0.09 GAAP EPS", "url": "https://investors.formfactor.com/static-files/72a3c38a-87c8-43cd-8029-562c01021f45", "screen_result": "primary_10x_scenario_candidate_earnings_confirmed" },
     { "ticker": "PDFS", "role": "Yield analytics and production intelligence", "filing": "10-Q", "filing_date": "2026-05-07", "revenue": "$60,130,000", "year_ago_revenue": "$47,778,000", "net_income": "$4,791,000", "year_ago_net_income": "($3,032,000)", "operating_income": "$6,313,000", "backlog": "$246,400,000", "diluted_eps": "$0.12", "url": "https://www.pdf.com/resources/pdf-solutions-reports-first-quarter-2026-financial-results/", "screen_result": "asymmetric_10x_scenario_candidate" },
     { "ticker": "CAMT", "role": "Advanced packaging inspection and metrology", "filing": "6-K", "filing_date": "2026-05-12", "revenue": "$121,700,000", "net_income": "$31,600,000", "year_ago_net_income": "$34,300,000", "diluted_eps": "$0.63", "q2_guidance": "$129M-$131M revenue", "url": "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/", "screen_result": "conditional_10x_watch" },
     { "ticker": "VRT", "role": "Power and liquid cooling", "filing": "10-Q and 8-K", "filing_date": "2026-04-22", "revenue": "$2,649,500,000", "net_income": "$390,100,000", "year_ago_net_income": "$164,500,000", "diluted_eps": "$0.99", "url": "https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm", "screen_result": "earnings_leader_scale_fail" },
@@ -235,9 +236,9 @@
     { "source": "Meta", "date_checked": "2026-07-10", "confidence": "high", "signal": "2026 capex guidance is $125B-$145B; Q1 property-and-equipment purchases were $19.0B." },
     { "source": "IEA", "date_checked": "2026-07-10", "confidence": "high", "signal": "Data centers are expected to drive about half of US electricity-demand growth through 2030; connection queues and grid supply chains remain binding." },
     { "source": "TrendForce", "date_checked": "2026-07-10", "confidence": "high", "signal": "HBM, advanced packaging, 1.6T optics, CPO/NPO, and 800V HVDC remain the core technology bottlenecks." },
-    { "source": "FormFactor", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 revenue grew 32%, GAAP net income grew 218%, and Q2 results on July 29 will test the $240M +/- $5M revenue and $0.46 +/- $0.04 GAAP EPS guide." },
-    { "source": "PDF Solutions", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 revenue grew 26%, GAAP results moved from loss to profit, and backlog reached $246.4M; no Q2 reporting date was posted as of July 14." },
-    { "source": "Camtek", "date_checked": "2026-07-14", "confidence": "high", "signal": "Q1 GAAP net income declined 8%, so Camtek remains outside the final 10x result set despite strong Q2 guidance and June HBM/OSAT orders." },
+    { "source": "FormFactor", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q2 revenue grew 31.9% to $258.2M, GAAP net income grew 518.6% to $56.2M, free cash flow reached $52.6M, and Q3 guidance calls for another record quarter." },
+    { "source": "PDF Solutions", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q1 revenue grew 26%, GAAP results moved from loss to profit, and backlog reached $246.4M; Q2 results are scheduled for August 6." },
+    { "source": "Camtek", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q1 GAAP net income declined 8%, so Camtek remains outside the final 10x result set despite strong Q2 guidance and June HBM/OSAT orders." },
     { "source": "Vertiv", "date_checked": "2026-07-10", "confidence": "high", "signal": "Q1 sales grew 30% and GAAP net income grew 137%, confirming strong power-and-cooling demand; current scale blocks a credible 10x label." }
   ],
   "sources": [
@@ -255,7 +256,9 @@
     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx",
     "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results",
     "https://investors.formfactor.com/news-releases/news-release-details/formfactor-announce-second-quarter-2026-financial-results-july",
+    "https://investors.formfactor.com/static-files/72a3c38a-87c8-43cd-8029-562c01021f45",
     "https://www.pdf.com/resources/pdf-solutions-reports-first-quarter-2026-financial-results/",
+    "https://www.pdf.com/resources/pdf-solutions-to-report-second-quarter-fiscal-2026-financial-results-on-august-6-2026/",
     "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/",
     "https://www.camtek.com/news-and-events/camtek-receives-over-105-million-multi-system-orders-from-a-tier-1-osat-and-a-leading-hbm-manufacturer/",
     "https://www.sec.gov/Archives/edgar/data/1674101/000162828026026379/q12026exhibit991vrt04222026.htm",
