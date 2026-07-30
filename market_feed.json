@@ -8,17 +8,17 @@
   },
   "safe_harbor": "Educational information only. Not financial advice.",
   "quote_source": {
-    "name": "Live finance snapshot",
+    "name": "Nasdaq pre-market snapshot with later intraday cross-check",
     "url": "https://www.nasdaq.com/market-activity/stocks",
-    "note": "July 30, 2026 Nasdaq snapshot around 6:49 AM ET. Pre-market values are not final closing prices."
+    "note": "Most values are from the July 30, 2026 Nasdaq snapshot around 6:49 AM ET. NVDA, MU, and LRCX include a later July 30 intraday cross-check from Investing.com. None are final closing prices."
   },
   "quotes": {
     "SPY": { "date": "2026-07-30", "last": 733.71, "change_percent": 0.58, "previous_close": 729.46, "prior_session_change_percent": -1.54, "quote_status": "pre_market" },
     "QQQ": { "date": "2026-07-30", "last": 669.19, "change_percent": 1.13, "previous_close": 661.73, "prior_session_change_percent": -2.04, "quote_status": "pre_market" },
     "SOXX": { "date": "2026-07-30", "last": 474.80, "change_percent": 2.11, "previous_close": 465.00, "prior_session_change_percent": -5.38, "quote_status": "pre_market" },
-    "NVDA": { "date": "2026-07-30", "last": 192.66, "change_percent": 1.39, "previous_close": 190.01, "prior_session_change_percent": -3.55, "quote_status": "pre_market" },
+    "NVDA": { "date": "2026-07-30", "last": 192.28, "change_percent": 1.19, "previous_close": 190.01, "prior_session_change_percent": -3.55, "quote_status": "intraday_crosscheck" },
     "AVGO": { "date": "2026-07-30", "last": 375.00, "change_percent": 1.26, "previous_close": 370.32, "prior_session_change_percent": -2.78, "quote_status": "pre_market" },
-    "MU": { "date": "2026-07-30", "last": 749.80, "change_percent": 1.46, "previous_close": 739.00, "prior_session_change_percent": -9.94, "quote_status": "pre_market_post_earnings" },
+    "MU": { "date": "2026-07-30", "last": 791.50, "change_percent": 7.10, "previous_close": 739.00, "prior_session_change_percent": -9.94, "quote_status": "intraday_crosscheck" },
     "FORM": { "date": "2026-07-30", "last": 95.87, "change_percent": 14.88, "previous_close": 83.45, "prior_session_change_percent": -5.42, "market_cap": "$7.47B", "quote_status": "pre_market_post_earnings" },
     "PDFS": { "date": "2026-07-29", "last": 41.17, "change_percent": -7.67, "previous_close": 44.59, "market_cap": "$1.64B", "quote_status": "regular_close_no_premarket_quote" },
     "CAMT": { "date": "2026-07-30", "last": 130.25, "change_percent": 2.58, "previous_close": 126.97, "prior_session_change_percent": -9.35, "quote_status": "pre_market" },
@@ -28,12 +28,13 @@
     "COHR": { "date": "2026-07-30", "last": 228.00, "change_percent": 2.68, "previous_close": 222.05, "prior_session_change_percent": -8.75, "quote_status": "pre_market" },
     "LITE": { "date": "2026-07-30", "last": 622.20, "change_percent": 3.30, "previous_close": 602.35, "prior_session_change_percent": -7.61, "quote_status": "pre_market" },
     "VRT": { "date": "2026-07-30", "last": 228.87, "change_percent": 2.61, "previous_close": 223.04, "prior_session_change_percent": -17.26, "quote_status": "pre_market" },
-    "ETN": { "date": "2026-07-30", "last": 371.69, "change_percent": 2.71, "previous_close": 361.88, "prior_session_change_percent": -6.31, "quote_status": "pre_market" }
+    "ETN": { "date": "2026-07-30", "last": 371.69, "change_percent": 2.71, "previous_close": 361.88, "prior_session_change_percent": -6.31, "quote_status": "pre_market" },
+    "LRCX": { "date": "2026-07-30", "last": 300.32, "change_percent": 19.01, "quote_status": "intraday_post_earnings_crosscheck" }
   },
   "market_emotion": {
     "score": 98,
     "state": "extreme_two_way_volatility_oversold_rebound_no_chase",
-    "basis": "The July 30 pre-market tape is rebounding after another severe chip selloff: SOXX +2.11% after a -5.38% session, while FORM is +14.88% after exceptional Q2 results. The fundamental signal improves, but the sector breakdown and earnings gap keep the fresh-buy gate closed until support forms."
+    "basis": "The July 30 tape is rebounding after another severe chip selloff: SOXX began +2.11% after a -5.38% session, MU later reached +7.10%, and LRCX reached +19.01% after record results and a strong guide. The fundamental signal improves, but the sector breakdown and earnings gaps keep the fresh-buy gate closed until support forms."
   },
   "strict_scoring": {
     "fresh_buy_threshold": 80,
@@ -53,6 +54,7 @@
       "KLAC": { "score": 72, "decision": "core_watch", "reason": "Process-control quality is strong, but a 4% bounce after a 10.8% down session lacks trend confirmation." },
       "AMAT": { "score": 71, "decision": "core_watch", "reason": "Capacity-formation exposure passes, but a 4.25% rebound after an 8.4% down session is not a confirmed entry." },
       "VRT": { "score": 69, "decision": "power_cooling_compounder_watch", "reason": "Direct exposure to the most persistent facility bottleneck, but the prior 17.26% decline, current scale, and valuation limit entry quality." },
+      "LRCX": { "score": 79, "decision": "quality_equipment_leader_wait_for_gap_support", "reason": "June-quarter revenue grew 30.0% YoY, GAAP net income grew 32.4%, margins reached records, and September-quarter guidance accelerated; the 19.01% intraday earnings gap triggers the entry cap." },
       "FORM": { "score": 79, "decision": "top_10x_candidate_wait_for_gap_consolidation", "reason": "Q2 revenue rose 31.9%, GAAP net income rose 518.6%, and free cash flow reached $52.6M; the 14.88% pre-market earnings gap blocks a fresh buy." },
       "PDFS": { "score": 66, "decision": "asymmetric_10x_candidate_earnings_event_risk", "reason": "Loss-to-profit inflection and 26% revenue growth are attractive, but August 6 results must confirm backlog conversion, integration, dilution control, and durable GAAP profit." },
       "CAMT": { "score": 68, "decision": "conditional_watch", "reason": "Advanced-packaging inspection is strategic, but GAAP net income declined 8% and order conversion still must confirm the second-half outlook." }
@@ -60,25 +62,25 @@
   },
   "rankings": {
     "highest_confidence_buys": [],
-    "core_watch_no_fresh_buy": ["NVDA", "AVGO", "MU", "KLAC", "AMAT", "VRT"],
+    "core_watch_no_fresh_buy": ["NVDA", "AVGO", "MU", "LRCX", "KLAC", "AMAT", "VRT"],
     "starter_or_10x_optionality": ["FORM", "PDFS"],
     "watch_for_pullback": ["CAMT", "MRVL", "COHR", "LITE", "ETN"],
-    "keep_caution_today": ["Sector/SOXX", "LITE", "ARM", "FORM", "PDFS", "ALAB", "AMD", "MRVL", "MU", "CRDO", "CAMT"]
+    "keep_caution_today": ["Sector/SOXX", "LRCX", "LITE", "ARM", "FORM", "PDFS", "ALAB", "AMD", "MRVL", "MU", "CRDO", "CAMT"]
   },
   "capital_flow": [
     {
-      "name": "Five large cloud providers",
-      "metric": "2026 capital expenditures",
-      "value": "about US$750B",
-      "source": "S&P Global Ratings",
-      "url": "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676"
+      "name": "Microsoft, Amazon, Alphabet, and Meta",
+      "metric": "Current 2026 capital expenditure guidance",
+      "value": "US$715B-US$740B",
+      "source": "Latest company releases and calls",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
     },
     {
       "name": "Microsoft",
       "metric": "Calendar-2026 capital expenditures",
       "value": "about US$190B",
-      "source": "Microsoft FY26 Q3 earnings call",
-      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+      "source": "Microsoft FY26 Q4 release and call",
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
     },
     {
       "name": "Amazon",
@@ -90,26 +92,26 @@
     {
       "name": "Alphabet",
       "metric": "2026 capital expenditures",
-      "value": "US$180B-US$190B",
-      "source": "Alphabet Q1 2026 earnings",
-      "url": "https://abc.xyz/investor/events/event-details/"
+      "value": "US$195B-US$205B",
+      "source": "Alphabet Q2 2026 earnings release and call",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf"
     },
     {
       "name": "Meta Platforms",
       "metric": "2026 capital expenditures",
-      "value": "US$125B-US$145B",
-      "source": "Meta Q1 2026 results",
-      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/"
+      "value": "US$130B-US$145B",
+      "source": "Meta Q2 2026 results and call",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf"
     }
   ],
   "supply_chain_view": {
     "date_checked": "2026-07-30",
-    "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: advanced-node wafers, HBM, 2.5D/3D packaging, probe and inspection, 1.6T optics, 800V HVDC power, grid interconnects, transformers, switchgear, and liquid cooling.",
-    "strict_score_implication": "The supply-chain thesis is strong and FormFactor's Q2 results confirm test-bottleneck operating leverage, but the July 30 oversold rebound follows another severe sector breakdown. Structural bottleneck power does not remove valuation, trend, or entry risk.",
+    "thesis": "AI data center bottlenecks are migrating from accelerator availability alone into the full AI factory stack: advanced-node wafers, HBM and server DRAM, 2.5D/3D packaging, probe and inspection, CPO optical-engine yield, 1.6T optics, 800V HVDC power, grid interconnects, transformers, switchgear, and liquid cooling.",
+    "strict_score_implication": "Microsoft and Alphabet confirm rapid AI infrastructure monetization, while Lam Research and FormFactor confirm operating leverage in equipment and test. Alphabet and Meta also show rising free-cash-flow pressure, and the July 30 earnings gaps remain poor entries. Structural bottleneck power does not remove capital-efficiency, valuation, trend, or entry risk.",
     "bottleneck_migration": [
       "Compute remains scarce, but rack and site integration increasingly govern deployment speed.",
-      "HBM pricing, allocation, and yield stay tight through 2027, with uneven easing in 2028.",
-      "Networking moves from 800G pluggables toward 1.6T, AECs, optical DSPs, silicon photonics, CPO, and NPO.",
+      "HBM and server DRAM stay tight through 2027, while NAND supply can loosen in the second half of 2027.",
+      "Networking moves from 800G pluggables toward 1.6T, AECs, optical DSPs, silicon photonics, CPO, and NPO; optical-engine yield and advanced packaging now govern the ramp.",
       "Power and cooling become first-order constraints as rack density rises and 800V HVDC architectures begin deployment.",
       "Grid interconnection can take longer than the two-to-three-year data center construction cycle."
     ],
@@ -117,28 +119,28 @@
       {
         "layer": "Compute platforms",
         "tight_items": ["GPUs", "custom ASICs", "advanced CPUs", "rack-scale reference designs", "software qualification"],
-        "latest_signal": "NVIDIA reported Q1 FY2027 data center revenue of $75.2B, up 92% YoY, and Vera Rubin is ramping into production across 350+ factories in 30 countries.",
+        "latest_signal": "NVIDIA reported Q1 FY2027 data center revenue of $75.2B, up 92% YoY, while Microsoft's Azure grew 43% and Alphabet's Google Cloud grew 82%. Vera Rubin is in production and capacity demand is monetizing.",
         "stock_read": ["NVDA", "AVGO", "MRVL"],
         "score_adjustment": "Reward platform quality, but current scale prevents a credible 10x label."
       },
       {
         "layer": "Memory and storage",
         "tight_items": ["HBM4", "server DRAM", "LPDRAM", "enterprise SSDs", "NAND"],
-        "latest_signal": "Micron reported fiscal Q3 revenue of $41.46B and GAAP net income of $28.24B; TrendForce says 2027 HBM contract pricing is rising sharply as AI ASIC demand expands.",
+        "latest_signal": "Micron reported fiscal Q3 revenue of $41.46B and GAAP net income of $28.24B. TrendForce estimates a 1%-2% DRAM deficit in 2026 with a wider 2027 gap, but expects NAND supply conditions to ease in 2H27.",
         "stock_read": ["MU", "FORM"],
         "score_adjustment": "Raise bottleneck score, but retain memory-cycle and late-entry penalties."
       },
       {
         "layer": "Foundry, packaging, inspection, and test",
         "tight_items": ["3nm and 2nm wafers", "CoWoS-class packaging", "hybrid bonding", "inspection", "metrology", "probe cards", "known-good-die test"],
-        "latest_signal": "SEMI projects US$142B of 2026 300mm equipment spending. FormFactor reported record DRAM revenue on HBM demand; Camtek disclosed more than $105M of June orders from an OSAT and an HBM manufacturer.",
-        "stock_read": ["TSM", "AMAT", "KLAC", "FORM", "CAMT", "PDFS"],
+        "latest_signal": "SEMI projects $52B of 2026 and $57B of 2027 300mm memory equipment investment. Lam Research reported record $6.72B revenue and guided to $8.10B; FormFactor reported record DRAM revenue on HBM demand.",
+        "stock_read": ["TSM", "LRCX", "AMAT", "KLAC", "FORM", "CAMT", "PDFS"],
         "score_adjustment": "This is the strongest scale-aware 10x hunting ground, but earnings quality still determines selection."
       },
       {
         "layer": "Networking and optics",
         "tight_items": ["800G and 1.6T links", "AECs", "DSPs", "retimers", "lasers", "silicon photonics", "CPO and NPO"],
-        "latest_signal": "TrendForce expects CPO/NPO to grow from roughly US$100M in 2025 to more than US$39B by 2030 as conventional copper faces signal-loss and power limits.",
+        "latest_signal": "TrendForce says NVIDIA has begun Spectrum-X CPO shipments to select partners and Broadcom's 51.2T Bailly is in volume manufacturing. Optical-engine yield, silicon-photonics precision, thermal management, and advanced-packaging capacity are the primary constraints.",
         "stock_read": ["CRDO", "ALAB", "MRVL", "AVGO", "COHR", "LITE"],
         "score_adjustment": "High growth is offset by customer concentration, premium valuations, and already-large market values."
       },
@@ -162,9 +164,9 @@
       "Treat 10x as a scenario, not a forecast, target, or guaranteed return."
     ],
     "two_year_bottleneck_estimate": [
-      { "constraint": "Advanced packaging yield and known-good-die test", "severity": "Very high through July 2028", "drivers": ["HBM stacks", "chiplets", "hybrid bonding", "larger substrates", "more inspection and test steps"], "stock_read": ["FORM", "CAMT", "PDFS"] },
-      { "constraint": "HBM and server-memory allocation", "severity": "Very high in 2026-2027; high in 2028", "drivers": ["bits per accelerator", "AI ASIC adoption", "yield-sensitive HBM stacks", "advanced DRAM capacity crowd-out"], "stock_read": ["MU", "FORM"] },
-      { "constraint": "800G to 1.6T connectivity", "severity": "High; uneven easing after 2027", "drivers": ["lasers", "DSPs", "retimers", "AECs", "silicon photonics", "CPO and NPO"], "stock_read": ["CRDO", "MTSI", "COHR", "LITE"] },
+      { "constraint": "Advanced packaging, CPO optical-engine yield, and known-good-die test", "severity": "Very high through July 2028", "drivers": ["HBM stacks", "chiplets", "hybrid bonding", "COUPE-class packaging", "optical-engine thermal management", "more inspection and test steps"], "stock_read": ["LRCX", "FORM", "CAMT", "PDFS"] },
+      { "constraint": "HBM and server-DRAM allocation", "severity": "Very high in 2026-2027; easing only after new capacity contributes in 2028", "drivers": ["bits per accelerator", "AI ASIC adoption", "yield-sensitive HBM stacks", "higher HBM wafer input", "advanced DRAM capacity crowd-out"], "stock_read": ["MU", "FORM"] },
+      { "constraint": "800G to 1.6T connectivity and CPO scaling", "severity": "High; volume-ramp risk peaks in 2027-2028", "drivers": ["lasers", "DSPs", "retimers", "AECs", "silicon photonics", "optical-engine yield", "CPO and NPO"], "stock_read": ["CRDO", "MTSI", "COHR", "LITE"] },
       { "constraint": "Grid-to-rack power and liquid cooling", "severity": "Very high through July 2028", "drivers": ["connection queues", "transformers and switchgear", "800V HVDC", "UPS and BBU", "CDUs and cold plates"], "stock_read": ["VRT", "ETN"] },
       { "constraint": "Rack manufacturing and high-layer interconnect", "severity": "Medium-high", "drivers": ["high-layer PCBs", "power delivery", "thermal integration", "final assembly"], "stock_read": ["SANM", "TTMI"] }
     ],
@@ -173,6 +175,7 @@
       { "ticker": "AMKR", "latest_gaap_net_income": "$83.4M", "year_ago_gaap_net_income": "$21.1M", "change": "+294.5%", "screen_result": "Earnings leader; rejected for 10x due to $18.0B scale and OSAT margins" },
       { "ticker": "PLAB", "latest_gaap_net_income": "$31.4M", "year_ago_gaap_net_income": "$8.9M", "change": "+254.7% reported", "screen_result": "Rejected because revenue and operating quality did not confirm the headline; FX inflated GAAP net income" },
       { "ticker": "FORM", "latest_gaap_net_income": "$56.2M", "year_ago_gaap_net_income": "$9.1M", "change": "+518.6%", "screen_result": "Primary 10x scenario candidate; earnings confirmed" },
+      { "ticker": "LRCX", "latest_gaap_net_income": "$2.28B", "year_ago_gaap_net_income": "$1.72B", "change": "+32.4%", "screen_result": "Quality equipment leader; rejected for 10x because current scale is already too large" },
       { "ticker": "NVDA", "latest_gaap_net_income": "$58.3B", "year_ago_gaap_net_income": "$18.8B", "change": "+210.6%", "screen_result": "Quality leader; rejected for 10x due to roughly $4.9T scale" },
       { "ticker": "VRT", "latest_gaap_net_income": "$390.1M", "year_ago_gaap_net_income": "$164.5M", "change": "+137.1%", "screen_result": "Power/cooling leader; rejected for 10x due to $127.0B scale" },
       { "ticker": "PDFS", "latest_gaap_net_income": "$4.8M", "year_ago_gaap_net_income": "($3.0M)", "change": "Loss to profit", "screen_result": "Asymmetric 10x scenario candidate" },
@@ -211,7 +214,7 @@
       }
     ],
     "not_selected": [
-      { "tickers": ["NVDA", "CRDO", "AMKR", "VRT", "TTMI", "MTSI", "SANM"], "reason": "Strong earnings acceleration, but current scale, manufacturing economics, or acquisition dependence make a further 10x too demanding." },
+      { "tickers": ["NVDA", "LRCX", "CRDO", "AMKR", "VRT", "TTMI", "MTSI", "SANM"], "reason": "Strong earnings acceleration, but current scale, manufacturing economics, or acquisition dependence make a further 10x too demanding." },
       { "tickers": ["CAMT", "PLAB", "ACMR", "AAOI", "AIP", "POET"], "reason": "Declining profits, low-quality headline gains, ongoing losses, or insufficient revenue fail the financial gate." }
     ]
   },
@@ -219,6 +222,7 @@
     { "ticker": "NVDA", "role": "Compute platform", "filing": "10-Q", "filing_date": "2026-05-20", "revenue": "$81,615,000,000", "net_income": "$58,321,000,000", "diluted_eps": "$2.39", "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx", "screen_result": "quality_leader_scale_fail" },
     { "ticker": "MU", "role": "HBM and server memory", "filing": "10-Q and 8-K", "filing_date": "2026-06-24", "revenue": "$41,456,000,000", "net_income": "$28,240,000,000", "diluted_eps": "$24.67 GAAP / $25.11 non-GAAP", "url": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm", "screen_result": "post_earnings_wait_for_base" },
     { "ticker": "CRDO", "role": "AEC, SerDes, retimers, and optical DSP", "filing": "8-K", "filing_date": "2026-06-01", "revenue": "$437,003,000", "net_income": "$169,102,000", "diluted_eps": "$0.88 GAAP / $1.16 non-GAAP", "url": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-Fourth-Quarter-and-Fiscal-Year-2026-Financial-Results/default.aspx", "screen_result": "earnings_leader_scale_fail" },
+    { "ticker": "LRCX", "role": "Etch, deposition, and advanced-memory wafer-fab equipment", "filing": "Q4 earnings release", "filing_date": "2026-07-29", "revenue": "$6,722,238,000", "year_ago_revenue": "$5,171,393,000", "net_income": "$2,277,282,000", "year_ago_net_income": "$1,720,088,000", "diluted_eps": "$1.81", "q1_fy2027_guidance": "$8.10B +/- $0.40B revenue; $2.15 +/- $0.15 GAAP EPS", "url": "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28%2C-2026", "screen_result": "quality_equipment_leader_wait_for_gap_support" },
     { "ticker": "FORM", "role": "Probe cards and test", "filing": "Q2 earnings release", "filing_date": "2026-07-29", "revenue": "$258,242,000", "year_ago_revenue": "$195,798,000", "net_income": "$56,207,000", "year_ago_net_income": "$9,086,000", "diluted_eps": "$0.71", "operating_cash_flow": "$61,803,000", "free_cash_flow": "$52,552,000", "q3_guidance": "$270M +/- $10M revenue; $0.75 +/- $0.09 GAAP EPS", "url": "https://investors.formfactor.com/static-files/72a3c38a-87c8-43cd-8029-562c01021f45", "screen_result": "primary_10x_scenario_candidate_earnings_confirmed" },
     { "ticker": "PDFS", "role": "Yield analytics and production intelligence", "filing": "10-Q", "filing_date": "2026-05-07", "revenue": "$60,130,000", "year_ago_revenue": "$47,778,000", "net_income": "$4,791,000", "year_ago_net_income": "($3,032,000)", "operating_income": "$6,313,000", "backlog": "$246,400,000", "diluted_eps": "$0.12", "url": "https://www.pdf.com/resources/pdf-solutions-reports-first-quarter-2026-financial-results/", "screen_result": "asymmetric_10x_scenario_candidate" },
     { "ticker": "CAMT", "role": "Advanced packaging inspection and metrology", "filing": "6-K", "filing_date": "2026-05-12", "revenue": "$121,700,000", "net_income": "$31,600,000", "year_ago_net_income": "$34,300,000", "diluted_eps": "$0.63", "q2_guidance": "$129M-$131M revenue", "url": "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/", "screen_result": "conditional_10x_watch" },
@@ -230,12 +234,14 @@
     { "ticker": "PLAB", "role": "Photomasks", "filing": "10-Q", "filing_date": "2026-06-11", "revenue": "$209,940,000", "net_income": "$31,429,000", "diluted_eps": "$0.54", "url": "https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-second-quarter-2026-results", "screen_result": "headline_quality_fail" }
   ],
   "source_intelligence": [
-    { "source": "Microsoft", "date_checked": "2026-07-10", "confidence": "high", "signal": "Calendar-2026 capex is expected at roughly $190B; management expects AI capacity constraints through 2026." },
+    { "source": "Microsoft", "date_checked": "2026-07-30", "confidence": "high", "signal": "FY26 Q4 revenue grew 18% to $90.0B, Azure grew 43%, annual Azure revenue passed $100B, and quarterly capex reached $41B with roughly two-thirds directed to short-lived CPUs and GPUs." },
     { "source": "Amazon", "date_checked": "2026-07-10", "confidence": "high", "signal": "Amazon expects about $200B of 2026 capex, predominantly AWS, with much of the capacity monetizing in 2027-2028." },
-    { "source": "Alphabet", "date_checked": "2026-07-10", "confidence": "high", "signal": "2026 capex guidance is $180B-$190B, with about 60% directed to servers and 40% to data centers and networking." },
-    { "source": "Meta", "date_checked": "2026-07-10", "confidence": "high", "signal": "2026 capex guidance is $125B-$145B; Q1 property-and-equipment purchases were $19.0B." },
+    { "source": "Alphabet", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q2 Google Cloud revenue grew 82% to $24.8B; 2026 capex guidance increased to $195B-$205B, Q2 capex reached $44.9B, and quarterly free cash flow was negative $5.9B." },
+    { "source": "Meta", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q2 revenue grew 28% to $60.8B, capex reached $31.1B, free cash flow fell to $784M, and 2026 capex guidance narrowed upward to $130B-$145B." },
     { "source": "IEA", "date_checked": "2026-07-10", "confidence": "high", "signal": "Data centers are expected to drive about half of US electricity-demand growth through 2030; connection queues and grid supply chains remain binding." },
-    { "source": "TrendForce", "date_checked": "2026-07-10", "confidence": "high", "signal": "HBM, advanced packaging, 1.6T optics, CPO/NPO, and 800V HVDC remain the core technology bottlenecks." },
+    { "source": "TrendForce", "date_checked": "2026-07-30", "confidence": "high", "signal": "DRAM remains structurally tight through 2027 while NAND can loosen in 2H27. CPO has entered initial production, with optical-engine yield, silicon photonics, and advanced packaging limiting the 2027-2028 ramp." },
+    { "source": "SEMI", "date_checked": "2026-07-30", "confidence": "high", "signal": "300mm memory equipment investment is projected at $52B in 2026 and $57B in 2027; DRAM equipment spending is expected to rise 29% to $37B in 2026." },
+    { "source": "Lam Research", "date_checked": "2026-07-30", "confidence": "high", "signal": "June-quarter revenue grew 30.0% YoY to $6.72B, GAAP net income grew 32.4% to $2.28B, and September-quarter revenue guidance accelerated to $8.10B +/- $0.40B." },
     { "source": "FormFactor", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q2 revenue grew 31.9% to $258.2M, GAAP net income grew 518.6% to $56.2M, free cash flow reached $52.6M, and Q3 guidance calls for another record quarter." },
     { "source": "PDF Solutions", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q1 revenue grew 26%, GAAP results moved from loss to profit, and backlog reached $246.4M; Q2 results are scheduled for August 6." },
     { "source": "Camtek", "date_checked": "2026-07-30", "confidence": "high", "signal": "Q1 GAAP net income declined 8%, so Camtek remains outside the final 10x result set despite strong Q2 guidance and June HBM/OSAT orders." },
@@ -243,20 +249,25 @@
   ],
   "sources": [
     "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676",
-    "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+    "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast",
     "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Fourth-Quarter-Results/default.aspx",
-    "https://abc.xyz/investor/events/event-details/",
-    "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/",
+    "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q2/2026q2-alphabet-earnings-release.pdf",
+    "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf",
+    "https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/META-Q2-2026-Earnings-Call-Transcript.pdf",
     "https://www.iea.org/reports/electricity-2026/executive-summary",
     "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
     "https://www.trendforce.com/presscenter/news/20260430-13028.html",
     "https://www.trendforce.com/presscenter/news/20260602-13074.html",
     "https://www.trendforce.com/presscenter/news/20260615-13098.html",
+    "https://www.trendforce.com/presscenter/news/20260727-13151.html",
+    "https://www.trendforce.com/presscenter/news/20260730-13158.html",
+    "https://www.semi.org/en/semi-press-release/semi-projects-300mm-memory-equipment-investment-to-surpass-50-billion-dollars-in-2026",
     "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2027/default.aspx",
     "https://investors.formfactor.com/news-releases/news-release-details/formfactor-inc-reports-2026-first-quarter-results",
     "https://investors.formfactor.com/news-releases/news-release-details/formfactor-announce-second-quarter-2026-financial-results-july",
     "https://investors.formfactor.com/static-files/72a3c38a-87c8-43cd-8029-562c01021f45",
+    "https://newsroom.lamresearch.com/2026-07-29-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-June-28%2C-2026",
     "https://www.pdf.com/resources/pdf-solutions-reports-first-quarter-2026-financial-results/",
     "https://www.pdf.com/resources/pdf-solutions-to-report-second-quarter-fiscal-2026-financial-results-on-august-6-2026/",
     "https://www.camtek.com/news-and-events/camtek-announces-results-for-the-first-quarter-of-2026/",
@@ -268,6 +279,7 @@
     "https://macom.gcs-web.com/news-releases/news-release-details/macom-reports-fiscal-second-quarter-2026-financial-results",
     "https://ir.sanmina.com/news/news-details/2026/Sanmina-Reports-Second-Quarter-Fiscal-2026-Financial-Results/default.aspx",
     "https://photronicsinc.gcs-web.com/news-releases/news-release-details/photronics-reports-second-quarter-2026-results",
-    "https://www.nasdaq.com/market-activity/stocks"
+    "https://www.nasdaq.com/market-activity/stocks",
+    "https://www.investing.com/news/stock-market-news/analysisai-investment-boom-puts-big-techs-free-cash-flow-under-pressure-4804645"
   ]
 }
