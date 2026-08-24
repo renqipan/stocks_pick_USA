@@ -27,12 +27,18 @@
     "basis": "SOXX lost about 7% from August 18 through August 21, technology shares remained soft on August 24, and NVIDIA, Marvell, and Broadcom earnings create concentrated event risk. The pullback improves entry prices, but only filing-backed names with valuation support qualify for staged buys."
   },
   "strict_scoring": {
+    "methodology_version": "event_adjusted_conviction_v2",
     "fresh_buy_threshold": 82,
     "allow_empty_best_buy_watchlist": true,
-    "weights": { "earnings_and_cash_flow": 25, "bottleneck_position_and_growth": 22, "valuation_and_upside": 20, "balance_sheet_and_execution": 13, "price_setup_and_event_risk": 12, "filing_quality": 8 },
+    "score_formula": "forward fundamental surprise + narrative and expectation shift + supply-chain moat and diffusion + valuation and reaction gap + financial quality and positioning risk + evidence integrity",
+    "weights": { "forward_fundamental_surprise": 24, "narrative_and_expectation_shift": 16, "supply_chain_moat_and_diffusion": 18, "valuation_and_reaction_gap": 18, "financial_quality_and_positioning_risk": 16, "evidence_integrity_and_uncertainty": 8 },
+    "interpretation": "The score is an ordinal research rank, not a calibrated probability, target return, or backtested alpha estimate.",
+    "hard_gates": ["fresh attributable filing or company evidence", "no unresolved accounting or liquidity red flag", "valuation and market reaction assessed against expectations", "buy list may be empty when no candidate reaches 82"],
+    "position_sizing_overlay": { "is_separate_score": false, "rule": "Use the conviction rank only for selection. Size is reduced independently for volatility, portfolio correlation, crowding, customer concentration, liquidity, and imminent earnings risk.", "initial_size": "about one-quarter of intended exposure for current staged buys", "exit_rule": "Review or exit when the guidance, demand, margin, cash-flow, or supply-chain thesis breaks; do not rely on price stops alone." },
+    "validation_status": { "state": "research_only_not_backtested", "missing_for_quantitative_claims": ["point-in-time consensus and analyst revisions", "timestamped tradable event windows", "similar-event sample distributions", "transaction costs and slippage", "walk-forward out-of-sample validation", "factor and regime attribution"] },
     "candidate_scores": {
-      "AVGO": { "score": 85, "decision": "staged_buy", "reason": "AI semiconductor revenue accelerated 143%, free cash flow reached $10.3B, the forward multiple compressed, and the price sits well below its high; the September 2 report limits size." },
-      "KLAC": { "score": 83, "decision": "staged_buy", "reason": "Process-control intensity, double-digit growth, strong free cash flow, and a large drawdown produce the best equipment risk/reward, despite a still-full multiple." },
+      "AVGO": { "score": 84, "decision": "staged_buy", "reason": "AI semiconductor revenue accelerated 143%, free cash flow reached $10.3B, and valuation plus drawdown leave room for underreaction; the September 2 report must validate the forward narrative and limits size." },
+      "KLAC": { "score": 83, "decision": "staged_buy", "reason": "Process-control intensity, double-digit growth, strong free cash flow, and a large drawdown versus filing strength create the cleanest reaction-gap setup, despite a still-full multiple." },
       "LRCX": { "score": 79, "decision": "watch", "reason": "Revenue and earnings growth are excellent, but the post-earnings rerating offers less entry margin than KLAC." },
       "AMAT": { "score": 78, "decision": "watch", "reason": "Fiscal Q3 growth and DRAM exposure are strong, but price and expectations remain elevated after the AI equipment rerating." },
       "FORM": { "score": 78, "decision": "long_term_optionality_wait", "reason": "HBM and CPO test intensity drove a major earnings inflection, but the stock has more than doubled year to date." },
