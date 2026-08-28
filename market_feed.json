@@ -1,63 +1,93 @@
 {
-  "as_of": "2026-08-24",
+  "as_of": "2026-08-28",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
-  "china_a_shares": { "included": false, "reason": "Excluded because filing comparability and source confidence are below the US-market screen threshold." },
+  "china_a_shares": {
+    "included": false,
+    "reason": "Excluded because filing comparability and source confidence are below the US-market screen threshold."
+  },
   "safe_harbor": "Educational information only. Not financial advice. Prices can move materially around earnings.",
   "quote_source": {
-    "name": "Yahoo Finance and Reuters market snapshots",
-    "note": "August 21 regular closes are used where August 24 trading was not final. KLAC, MU, AMAT, PDFS, and TSM include August 24 intraday or pre-market observations."
+    "name": "Official company releases, Reuters, Yahoo Finance, and public market snapshots",
+    "note": "August 27 regular closes are used where available. Marvell uses an August 28 pre-market reference after its earnings release. Approximate prices are labeled."
   },
   "quotes": {
-    "SOXX": { "date": "2026-08-21", "last": 520.05, "change_percent": -0.44, "quote_status": "regular_close" },
-    "NVDA": { "date": "2026-08-21", "last": 214.72, "quote_status": "regular_close", "next_earnings": "2026-08-26" },
-    "AVGO": { "date": "2026-08-21", "last": 368.45, "distance_from_52_week_high_percent": -25.6, "forward_pe": 19.72, "quote_status": "regular_close", "next_earnings": "2026-09-02" },
-    "KLAC": { "date": "2026-08-24", "last": 181.23, "change_percent": -1.50, "regular_close_reference": 183.99, "distance_from_52_week_high_percent": -41.0, "forward_pe": 34.36, "quote_status": "pre_market" },
-    "MU": { "date": "2026-08-24", "last": 966.78, "change_percent": -0.78, "forward_pe": 6.28, "quote_status": "intraday" },
-    "AMAT": { "date": "2026-08-24", "last": 483.86, "change_percent": -1.72, "quote_status": "intraday" },
-    "LRCX": { "date": "2026-08-21", "last": 314.00, "quote_status": "regular_close" },
-    "MRVL": { "date": "2026-08-21", "last": 237.04, "change": -5.57, "forward_pe": 57.8, "quote_status": "regular_close", "next_earnings": "2026-08-27" },
-    "CRDO": { "date": "2026-08-21", "last": 224.91, "quote_status": "regular_close" },
-    "PDFS": { "date": "2026-08-24", "last": 47.43, "change_percent": -1.05, "forward_pe": 39.0, "quote_status": "intraday" },
-    "TSM": { "date": "2026-08-24", "last": 418.95, "quote_status": "intraday" }
+    "SOXX": { "date": "2026-08-27", "last": 525.43, "change_percent": 1.6, "quote_status": "regular_close" },
+    "NVDA": { "date": "2026-08-27", "last": 227.98, "change_percent": 8.738, "forward_pe": 17.9, "quote_status": "regular_close", "latest_earnings": "2026-08-26" },
+    "AVGO": { "date": "2026-08-27", "last": 371.54, "change_percent": 4.49, "distance_from_52_week_high_percent": -24.94, "quote_status": "regular_close", "next_earnings": "2026-09-02" },
+    "KLAC": { "date": "2026-08-27", "last": 183.83, "change_percent": 0.21, "quote_status": "regular_close" },
+    "MU": { "date": "2026-08-27", "last": 929.87, "change_percent": -0.909, "quote_status": "regular_close" },
+    "AMAT": { "date": "2026-08-27", "last_approximate": 479, "quote_status": "regular_close_reference" },
+    "LRCX": { "date": "2026-08-27", "last": 318.44, "change_percent": 1.777, "quote_status": "regular_close" },
+    "MRVL": { "date": "2026-08-28", "last_approximate": 223.1, "change_percent_approximate": -8, "forward_pe": 58.41, "quote_status": "pre_market", "latest_earnings": "2026-08-27" },
+    "CRDO": { "date": "2026-08-27", "last_approximate": 237.89, "change_percent_approximate": 5.03, "quote_status": "late_session_reference" },
+    "TSM": { "date": "2026-08-27", "last_approximate": 427.58, "change_percent_approximate": 2.37, "quote_status": "late_session_reference" }
   },
   "market_emotion": {
-    "score": 86,
-    "state": "high_event_risk_selective_value",
-    "basis": "SOXX lost about 7% from August 18 through August 21, technology shares remained soft on August 24, and NVIDIA, Marvell, and Broadcom earnings create concentrated event risk. The pullback improves entry prices, but only filing-backed names with valuation support qualify for staged buys."
+    "score": 72,
+    "state": "positive_demand_confirmation_selective_entries",
+    "basis": "NVIDIA de-risked near-term AI demand and lifted the semiconductor complex on August 27. The score remains elevated because NVIDIA already gapped 8.7%, Broadcom reports September 2, Marvell fell despite a beat and raise, and memory plus connectivity positioning remains crowded."
   },
   "strict_scoring": {
     "methodology_version": "event_adjusted_conviction_v2",
     "fresh_buy_threshold": 82,
     "allow_empty_best_buy_watchlist": true,
     "score_formula": "forward fundamental surprise + narrative and expectation shift + supply-chain moat and diffusion + valuation and reaction gap + financial quality and positioning risk + evidence integrity",
-    "weights": { "forward_fundamental_surprise": 24, "narrative_and_expectation_shift": 16, "supply_chain_moat_and_diffusion": 18, "valuation_and_reaction_gap": 18, "financial_quality_and_positioning_risk": 16, "evidence_integrity_and_uncertainty": 8 },
+    "weights": {
+      "forward_fundamental_surprise": 24,
+      "narrative_and_expectation_shift": 16,
+      "supply_chain_moat_and_diffusion": 18,
+      "valuation_and_reaction_gap": 18,
+      "financial_quality_and_positioning_risk": 16,
+      "evidence_integrity_and_uncertainty": 8
+    },
     "interpretation": "The score is an ordinal research rank, not a calibrated probability, target return, or backtested alpha estimate.",
-    "hard_gates": ["fresh attributable filing or company evidence", "no unresolved accounting or liquidity red flag", "valuation and market reaction assessed against expectations", "buy list may be empty when no candidate reaches 82"],
-    "position_sizing_overlay": { "is_separate_score": false, "rule": "Use the conviction rank only for selection. Size is reduced independently for volatility, portfolio correlation, crowding, customer concentration, liquidity, and imminent earnings risk.", "initial_size": "about one-quarter of intended exposure for current staged buys", "exit_rule": "Review or exit when the guidance, demand, margin, cash-flow, or supply-chain thesis breaks; do not rely on price stops alone." },
-    "validation_status": { "state": "research_only_not_backtested", "missing_for_quantitative_claims": ["point-in-time consensus and analyst revisions", "timestamped tradable event windows", "similar-event sample distributions", "transaction costs and slippage", "walk-forward out-of-sample validation", "factor and regime attribution"] },
+    "hard_gates": [
+      "fresh attributable filing or company evidence",
+      "no unresolved accounting or liquidity red flag",
+      "valuation and market reaction assessed against expectations",
+      "buy list may be empty when no candidate reaches 82"
+    ],
+    "position_sizing_overlay": {
+      "is_separate_score": false,
+      "rule": "Use the conviction rank only for selection. Size is reduced independently for volatility, portfolio correlation, crowding, customer concentration, liquidity, and imminent earnings risk.",
+      "initial_size": "No more than about one-quarter of intended exposure for current staged buys, and only on an orderly pullback or support retest.",
+      "exit_rule": "Review or exit when the guidance, demand, margin, cash-flow, or supply-chain thesis breaks; do not rely on price stops alone."
+    },
+    "validation_status": {
+      "state": "research_only_not_backtested",
+      "missing_for_quantitative_claims": [
+        "point-in-time consensus and analyst revisions",
+        "timestamped tradable event windows",
+        "similar-event sample distributions",
+        "transaction costs and slippage",
+        "walk-forward out-of-sample validation",
+        "factor and regime attribution"
+      ]
+    },
     "candidate_scores": {
-      "AVGO": { "score": 84, "decision": "staged_buy", "reason": "AI semiconductor revenue accelerated 143%, free cash flow reached $10.3B, and valuation plus drawdown leave room for underreaction; the September 2 report must validate the forward narrative and limits size." },
-      "KLAC": { "score": 83, "decision": "staged_buy", "reason": "Process-control intensity, double-digit growth, strong free cash flow, and a large drawdown versus filing strength create the cleanest reaction-gap setup, despite a still-full multiple." },
-      "LRCX": { "score": 79, "decision": "watch", "reason": "Revenue and earnings growth are excellent, but the post-earnings rerating offers less entry margin than KLAC." },
+      "NVDA": { "score": 86, "decision": "staged_buy_on_pullback", "reason": "Revenue exceeded consensus by about 8.7%, EPS beat, Q3 guidance exceeded the prior estimate, GAAP gross margin was 75%, and Rubin plus memory commitments extend the runway. The 8.7% price gap prevents chase entries." },
+      "KLAC": { "score": 83, "decision": "staged_buy", "reason": "Process-control intensity, double-digit growth, strong free cash flow, and only a 0.2% August 27 move versus a roughly 1.6% SOXX gain create the cleaner underreaction setup." },
+      "AVGO": { "score": 81, "decision": "watch_before_earnings", "reason": "AI semiconductor and networking fundamentals are excellent, but the stock gained 4.5% in sympathy and September 2 earnings are the required fresh evidence." },
+      "LRCX": { "score": 79, "decision": "watch", "reason": "Revenue and earnings growth are excellent, but the rerating offers less entry margin than KLAC." },
       "AMAT": { "score": 78, "decision": "watch", "reason": "Fiscal Q3 growth and DRAM exposure are strong, but price and expectations remain elevated after the AI equipment rerating." },
       "FORM": { "score": 78, "decision": "long_term_optionality_wait", "reason": "HBM and CPO test intensity drove a major earnings inflection, but the stock has more than doubled year to date." },
-      "NVDA": { "score": 77, "decision": "wait_for_earnings", "reason": "Exceptional platform quality is offset by an August 26 binary event and power/site constraints outside NVIDIA's control." },
-      "MU": { "score": 76, "decision": "keep_caution", "reason": "HBM and memory earnings are extraordinary, but the roughly 239% year-to-date rise leaves substantial cyclical and positioning risk." },
+      "MU": { "score": 78, "decision": "keep_caution", "reason": "HBM and memory earnings are extraordinary and NVIDIA procurement confirms scarcity, but the price cycle and positioning remain extreme." },
+      "MRVL": { "score": 78, "decision": "post_earnings_watch_not_buy", "reason": "Revenue, data-center growth, cash flow, and guidance passed, but the negative reaction indicates Google-program timing and a roughly 58x forward multiple did not clear expectations." },
       "PDFS": { "score": 76, "decision": "long_term_optionality_wait", "reason": "Q2 passed the profit and cash-flow gate, but valuation and integration risk prevent a current best-buy rating." },
-      "CRDO": { "score": 73, "decision": "keep_caution", "reason": "AEC and connectivity exposure are attractive, but momentum, expectations, and valuation are demanding." },
-      "MRVL": { "score": 72, "decision": "keep_caution", "reason": "The Google custom-silicon agreement validates demand, but concentration, valuation, a large year-to-date gain, and August 27 earnings make entry asymmetric." }
+      "CRDO": { "score": 73, "decision": "keep_caution", "reason": "AEC and connectivity exposure are attractive, but momentum, expectations, valuation, and concentration are demanding." }
     }
   },
   "rankings": {
-    "highest_confidence_buys": ["AVGO", "KLAC"],
-    "positioning": "Quarter-size starter positions only; add after earnings confirmation or support retests.",
-    "quality_watch": ["NVDA", "LRCX", "AMAT"],
+    "highest_confidence_buys": ["NVDA", "KLAC"],
+    "positioning": "Quarter-size starter positions only on pullbacks or support retests; do not chase NVIDIA's post-earnings gap.",
+    "quality_watch": ["AVGO before September 2 earnings", "LRCX", "AMAT"],
     "long_term_10x_optionality": ["FORM", "PDFS"],
-    "keep_caution_today": ["MRVL", "MU", "CRDO", "ALAB", "NVDA before earnings", "AMAT after rerating", "LRCX after rerating"]
+    "keep_caution_today": ["MRVL after expectation reset", "MU", "CRDO", "ALAB", "AVGO before earnings", "AMAT after rerating", "LRCX after rerating"]
   },
   "capital_flow": [
-    { "name": "Microsoft, Amazon, Alphabet, and Meta", "metric": "Current 2026 capital expenditure guidance", "value": "$715B-$740B", "signal": "Demand remains historic, but capital is broadening from accelerators into power, networking, storage, cooling, and sites." },
+    { "name": "Microsoft, Amazon, Alphabet, and Meta", "metric": "Current 2026 capital expenditure guidance", "value": "$715B-$740B", "signal": "Demand remains historic, but capital is broadening from accelerators into memory, power, networking, storage, cooling, and sites." },
+    { "name": "NVIDIA", "metric": "Purchase and capacity commitments", "value": "$279B, up from $119B", "signal": "Primarily memory procurement; the strongest new bottom-up confirmation that 2027-2028 supply, not demand, is the binding constraint." },
     { "name": "Microsoft", "value": "about $190B", "focus": "AI capacity, data centers, servers, and network infrastructure" },
     { "name": "Amazon", "value": "about $200B", "focus": "AWS AI infrastructure and custom silicon" },
     { "name": "Alphabet", "value": "$195B-$205B", "focus": "GCP, TPU systems, networking, and data centers" },
@@ -65,13 +95,21 @@
   ],
   "supply_chain_view": {
     "framework": "Silicon to system to powered site",
-    "next_two_year_bottlenecks": ["HBM allocation and HBM4e qualification", "CoWoS and advanced packaging yield", "process control and advanced test", "800G/1.6T networking, AECs, and silicon photonics", "GPU-initiated storage and data movement", "grid interconnects, transformers, liquid cooling, and powered land"],
-    "trend": "Accelerator demand remains strong, but system delivery and utilization increasingly depend on memory, packaging, networking, storage, power, cooling, and construction timing."
+    "next_two_year_bottlenecks": [
+      "HBM and DRAM allocation plus HBM4e qualification",
+      "CoWoS and advanced packaging capacity, yield, and inspection",
+      "process control and known-good-die test",
+      "800G and 1.6T networking, AECs, CPO, and silicon photonics",
+      "GPU-initiated storage and data movement",
+      "high-voltage rack power, grid interconnects, transformers, liquid cooling, and powered land"
+    ],
+    "trend": "Vera Rubin is in full production and NVIDIA's $279B commitment base identifies memory as the first-order constraint. Custom ASICs expand alongside merchant GPUs, while useful cluster output increasingly depends on packaging, networking, storage, power, cooling, and construction timing."
   },
   "filing_screen": {
-    "AVGO": { "period": "FY2026 Q2", "revenue": "$22.187B, +48% YoY", "gaap_net_income": "$9.310B", "free_cash_flow": "$10.262B", "ai_semiconductor_revenue": "$10.8B, +143% YoY", "next_guide": "Q3 revenue about $29.4B; AI semiconductor revenue $16B, +200%+" },
+    "NVDA": { "period": "FY2027 Q2", "revenue": "$96.221B, +106% YoY and +18% QoQ", "data_center_revenue": "$89.0B, +117% YoY", "gaap_net_income": "$59.688B, +126% YoY", "gaap_eps": "$2.46", "gaap_gross_margin": "75.0%", "next_guide": "Q3 revenue $108B +/- 2%; GAAP gross margin about 74%; no China data-center compute revenue assumed", "supply_signal": "Vera Rubin in full production; purchase and capacity commitments increased to $279B, primarily memory" },
+    "MRVL": { "period": "FY2027 Q2 and August 27 8-K", "revenue": "$2.739B, +37% YoY and +13% QoQ", "data_center_revenue": "$2.172B, 79% of total and +46% YoY", "gaap_net_income": "$308M", "non_gaap_eps": "$0.94", "operating_cash_flow": "$605.5M", "next_guide": "Q3 revenue $3.15B +/- 5%; non-GAAP EPS $1.10 +/- $0.05; non-GAAP gross margin 57.5%-58.5%", "market_check": "About -8% pre-market as Google custom-silicon timing and valuation disappointed elevated expectations" },
+    "AVGO": { "period": "FY2026 Q2; next update September 2", "revenue": "$22.187B, +48% YoY", "free_cash_flow": "$10.262B", "ai_semiconductor_revenue": "$10.8B, +143% YoY", "status": "Quality passes; fresh position is capped until September 2 earnings." },
     "KLAC": { "period": "FY2026 Q4 and FY2026 10-K filed August 6", "quarter_revenue": "$3.658B, +15.2% YoY", "quarter_gaap_net_income": "$1.363B, +13.3% YoY", "fiscal_year_free_cash_flow": "$3.77B", "next_guide": "FY2027 Q1 revenue $4.0B +/- $0.2B" },
-    "NVDA": { "period": "FY2027 Q1", "status": "Quality passes; August 26 earnings must be cleared before entry." },
     "MU": { "period": "FY2026 Q3", "revenue": "$41.456B", "gaap_net_income": "$28.243B", "free_cash_flow": "$18.3B", "status": "Fundamentals pass; price-cycle discipline fails today's buy gate." },
     "AMAT": { "period": "FY2026 Q3; 10-Q filed August 20", "revenue": "$9.115B, +25% YoY", "gaap_net_income": "$2.538B, +43% YoY", "free_cash_flow": "$2.33B" },
     "LRCX": { "period": "June 2026 quarter", "revenue": "$6.722B, +30% YoY", "gaap_net_income": "$2.277B, +32.4% YoY", "next_guide": "Revenue about $8.1B" },
@@ -79,31 +117,34 @@
     "PDFS": { "period": "2026 Q2 and 10-Q", "revenue": "$61.5M, +19% YoY", "gaap_net_income": "$4.3M versus $1.1M", "backlog": "$270.7M", "operating_cash_flow": "$16.4M" }
   },
   "source_intelligence": [
-    { "publisher": "Benzinga", "signal": "Supplier-side AI exposure remains favored as hyperscaler capital expenditure rises above $1.2T on a 12-month view." },
-    { "publisher": "EE Times", "signal": "Photonics, HBM, build-to-print equipment capacity, and public power/water constraints are moving to the foreground." },
-    { "publisher": "SemiAnalysis", "signal": "Accelerator economics must be modeled with HBM, wafer starts, packaging yields, networking, and customer deployment capacity." },
-    { "publisher": "Seeking Alpha", "signal": "Institutional research remains bullish on key AI suppliers, while financing and capacity headlines raise selectivity." },
+    { "publisher": "Benzinga", "signal": "Marvell's 37% growth and higher guide were overshadowed by valuation and custom-silicon timing." },
+    { "publisher": "EE Times", "signal": "Photonics, HBM, equipment capacity, and power plus water constraints remain foreground system dependencies." },
+    { "publisher": "SemiAnalysis", "signal": "Accelerator economics link HBM, wafer starts, packaging yields, networking, power, financing, and deployment capacity." },
+    { "publisher": "Seeking Alpha", "signal": "AI connectivity and custom-silicon theses remain constructive, but valuation grades and the actual market reaction require selectivity." },
     { "publisher": "TechInsights", "signal": "Order activity improved; generative AI, CoWoS constraints, foundry momentum, and subcontractor gains remain supportive." },
-    { "publisher": "TrendForce", "signal": "HBM supply is expected to stay tight through 2027, with 50%-60% bit growth potentially insufficient for demand." },
-    { "publisher": "SEMI", "signal": "Training compute is scaling faster than power and data movement, elevating ASICs, HBM, photonics, and integration." },
+    { "publisher": "TrendForce", "signal": "Rubin-class rack demand, liquid cooling, and high-voltage DC power are becoming key 2026-2028 system constraints." },
+    { "publisher": "SEMI", "signal": "Training compute is scaling faster than power and data movement; 300mm memory equipment spending is expected above $50B, up 29%." },
     { "publisher": "ServeTheHome", "signal": "Rubin-class racks expose the physical bill of materials: liquid cooling, 800G networking, DPUs, storage, and power shelves." },
-    { "publisher": "HPCwire", "signal": "Third-party infrastructure capital, GPU-initiated storage, and powered-site development are becoming explicit enablers." },
-    { "publisher": "Reuters", "signal": "NVIDIA earnings are a market catalyst; Google's Marvell agreement validates custom silicon but adds customer-concentration risk." },
-    { "publisher": "Yahoo Finance", "signal": "Semiconductors entered a high-event-risk week with technology shares weak and NVIDIA, Marvell, and Broadcom reports ahead." }
+    { "publisher": "HPCwire", "signal": "NVLink Fusion, NVHBM, AWS GPU deployment, custom inference chips, and flash capacity show broad system scaling." },
+    { "publisher": "Reuters", "signal": "NVIDIA's longer runway lifted the sector, while Marvell's decline exposed timing and valuation risk despite strong results." },
+    { "publisher": "Yahoo Finance", "signal": "NVIDIA's post-earnings move drove a broad semiconductor rally, raising both demand confidence and short-term entry risk." }
   ],
   "sources": [
-    "https://www.benzinga.com/markets/tech/26/08/60886732/hyperscaler-capex-1-2-trillion-9-semiconductor-stocks-bofa",
+    "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+    "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+    "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results",
+    "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001835632-26-000022/mrvl-20260827.htm",
+    "https://www.benzinga.com/markets/tech/26/08/61488294/marvell-technology-stock-slides-data-center-strength-overshadowed-by-valuation-concerns",
     "https://www.eetimes.com/tag/ai-and-big-data/2026/8/",
-    "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking",
+    "https://semianalysis.com/models-research/",
     "https://seekingalpha.com/news/4636009-notable-tech-headlines-for-the-week-nvidia-micron-broadcom-in-focus",
     "https://www.techinsights.com/blog/order-activity-improving-despite-cold-temperatures",
-    "https://www.trendforce.com/presscenter/news/20260804-13166.html",
+    "https://www.trendforce.com/research/category/Semiconductors/AI%20Server_HBM_Server",
     "https://www.semi.org/en/node/174306",
     "https://www.servethehome.com/nvidia-vera-rubin-nvl72-rack-and-more-in-the-pegatron-booth-at-gtc-2026/",
-    "https://www.hpcwire.com/off-the-wire/nvidia-partners-with-financial-giants-to-mobilize-500b-for-ai-infrastructure/",
-    "https://www.investing.com/news/stock-market-news/marvell-gives-google-option-to-buy-122-billion-stake-in-custom-chip-deal-4867472",
-    "https://ca.finance.yahoo.com/news/tech-stocks-today-all-eyes-on-nvidia-as-meta-trial-resumes-125406169.html",
-    "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-second-quarter-fiscal-year-2026-financial",
-    "https://ir.kla.com/news-events/press-releases/detail/518/kla-corporation-reports-fiscal-2026-fourth-quarter-and-full"
+    "https://www.hpcwire.com/",
+    "https://www.investing.com/news/stock-market-news/nvidia-rises-after-signaling-longer-ai-spending-runway-4878530",
+    "https://www.investing.com/news/stock-market-news/marvell-shares-slide-as-concerns-over-timing-of-google-ai-deal-revenue-eclipse-strong-results-4880940",
+    "https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-27-dow-sp-500-nasdaq-082144520.html"
   ]
 }
