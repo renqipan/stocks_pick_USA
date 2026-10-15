@@ -94,6 +94,7 @@
     }
 
     .brand-sub {
+      display: block;
       margin-top: 3px;
       color: var(--muted);
       font-size: 12px;
@@ -164,7 +165,7 @@
     h1 {
       max-width: 780px;
       margin: 0;
-      font-size: clamp(35px, 6vw, 72px);
+      font-size: 64px;
       line-height: .94;
       letter-spacing: 0;
     }
@@ -173,7 +174,7 @@
       max-width: 760px;
       margin: 0;
       color: #475467;
-      font-size: clamp(15px, 1.8vw, 18px);
+      font-size: 18px;
     }
 
     .status-grid {
@@ -297,7 +298,7 @@
 
     .section-head h2 {
       margin: 0;
-      font-size: clamp(23px, 3vw, 34px);
+      font-size: 30px;
       line-height: 1.05;
       letter-spacing: 0;
     }
@@ -721,6 +722,11 @@
       font-size: 13px;
     }
 
+    section { scroll-margin-top: 145px; }
+    td a, .thesis a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+    .metric-big { overflow-wrap: anywhere; }
+    .table-wrap + .table-wrap, .cards-2 + .table-wrap { margin-top: 16px; }
+
     .footer {
       padding: 24px 0 44px;
       color: var(--muted);
@@ -781,11 +787,13 @@
       </a>
       <nav class="nav" aria-label="Report sections">
         <a href="#capital">Capital Flow</a>
+        <a href="#today">Today</a>
         <a href="#prices">Price Tape</a>
         <a href="#news">News Matrix</a>
         <a href="#chain">Industry Chain</a>
+        <a href="#profits">Profit Growth</a>
+        <a href="#credo">Credo Study</a>
         <a href="#longterm">10x Results</a>
-        <a href="#today">Today</a>
       </nav>
     </div>
   </header>
@@ -793,7 +801,7 @@
   <main id="top" class="shell">
     <section class="hero" aria-label="Dashboard overview">
       <div class="hero-copy">
-        <span class="eyebrow">Research date: 2026-09-04</span>
+        <span class="eyebrow">Research date: 2026-10-15</span>
         <h1>AI-Driven Semiconductor Market Intelligence</h1>
         <p class="hero-text">
           A sourced dashboard for tracking hyperscaler capital flow, AI data center supply-chain constraints,
@@ -807,13 +815,13 @@
           </div>
           <div class="status-pill">
             <p class="kicker">Fab Equipment</p>
-            <div class="status-value">US$142B</div>
-            <div class="metric-caption">SEMI Q2 2026 300mm front-end</div>
+            <div class="status-value">US$165.9B</div>
+            <div class="metric-caption">SEMI 2026 total equipment forecast</div>
           </div>
           <div class="status-pill">
             <p class="kicker">Best Buy Today</p>
-            <div class="status-value">4 Staged Buys</div>
-            <div class="metric-caption">AVGO, MU, NVDA, and KLAC; price discipline required</div>
+            <div class="status-value">4 Conditional Buys</div>
+            <div class="metric-caption">MU, AVGO, ASML, NVDA; stabilization required</div>
           </div>
         </div>
       </div>
@@ -874,458 +882,43 @@
     </section>
 
     <section id="capital">
-      <div class="section-head">
-        <div>
-          <h2>Part One: Capital Flow Of Major Technology Companies</h2>
-          <p>Public-source capex tracking shows the AI trade is no longer only a chip story. Dollars are flowing from cloud budgets into GPU and ASIC clusters, HBM, foundry capacity, rack-scale systems, optics, SSDs, liquid cooling, and grid equipment.</p>
-        </div>
-        <div class="stamp">T0 = 2026-09-04</div>
-      </div>
-
-      <div class="cards-4">
-        <article class="card pad accent-blue">
-          <p class="kicker">Big Four Buildout</p>
-          <div class="metric-big">$715B-$740B</div>
-          <p class="metric-caption">Current Microsoft, Amazon, Alphabet, and Meta 2026 capex guidance. The aggregate is directional because company definitions and reporting calendars differ.</p>
-        </article>
-        <article class="card pad accent-teal">
-          <p class="kicker">Microsoft FY26 Q4</p>
-          <div class="metric-big">$41B</div>
-          <p class="metric-caption">Quarterly capex rose about 70% YoY as Azure revenue passed $100B for the year. Roughly two-thirds was directed to short-lived CPU and GPU assets.</p>
-        </article>
-        <article class="card pad accent-amber">
-          <p class="kicker">Alphabet 2026</p>
-          <div class="metric-big">$195B-$205B</div>
-          <p class="metric-caption">Raised after Q2 Cloud revenue grew 82% to $24.8B. Q2 capex reached $44.9B and quarterly free cash flow turned negative $5.9B.</p>
-        </article>
-        <article class="card pad accent-violet">
-          <p class="kicker">Meta 2026</p>
-          <div class="metric-big">$130B-$145B</div>
-          <p class="metric-caption">Q2 capex reached $31.1B for servers, data centers, and networking while quarterly free cash flow fell to $0.8B. Demand is firm; funding pressure is rising.</p>
-        </article>
-      </div>
-
-      <div class="table-wrap" style="margin-top:14px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Capital Source</th>
-              <th>Filing / Source</th>
-              <th>Capital Flow Row</th>
-              <th>Exact Value</th>
-              <th>AI Data Center Read-Through</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Big Four cloud builders</td><td>Latest company guidance</td><td>Aggregate 2026 capex range</td><td>$715B-$740B</td><td>The buildout still pulls simultaneously on accelerators, custom ASICs, HBM, optics, storage, power, thermal systems, and construction.</td></tr>
-            <tr><td>Microsoft</td><td>Official FY26 Q4 release / call</td><td>Q4 capex; calendar-2026 outlook</td><td>$41B; ~$190B</td><td>Azure grew 43% and passed $100B of annual revenue, while roughly two-thirds of quarterly capex went to short-lived CPUs and GPUs. This is the cleanest current proof that AI capacity is monetizing.</td></tr>
-            <tr><td>Amazon</td><td>Official FY2025 results / shareholder letter</td><td>2026 capex outlook</td><td>~$200B</td><td>Predominantly AWS; management says customer commitments already support a substantial portion of the capacity planned for 2027-2028 monetization.</td></tr>
-            <tr><td>Alphabet</td><td>Official Q2 2026 release / call</td><td>2026 capex guidance; Q2 capex</td><td>$195B-$205B; $44.9B</td><td>Google Cloud revenue grew 82% and backlog reached $514B, but Q2 free cash flow was negative $5.9B. The demand signal is powerful and the capital-efficiency risk is now material.</td></tr>
-            <tr><td>Meta Platforms</td><td>Official Q2 2026 release / call</td><td>2026 capex guidance; Q2 capex</td><td>$130B-$145B; $31.1B</td><td>Servers, data centers, and network infrastructure consumed nearly all quarterly operating cash flow; Q2 free cash flow fell to $784M.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="cards-2" style="margin-top:14px;">
-        <article class="card pad">
-          <h3 style="margin:0 0 10px;">Hyperscaler Directional Flow</h3>
-          <div class="bar-stack">
-            <div class="bar-row">
-              <span class="bar-label">GPU/ASIC</span>
-              <span class="bar-track"><span class="bar-fill" style="display:block;width:96%;"></span></span>
-              <span class="bar-value">Primary</span>
-            </div>
-            <div class="bar-row">
-              <span class="bar-label">HBM/DRAM</span>
-              <span class="bar-track"><span class="bar-fill" style="display:block;width:88%;"></span></span>
-              <span class="bar-value">Acute</span>
-            </div>
-            <div class="bar-row">
-              <span class="bar-label">Packaging</span>
-              <span class="bar-track"><span class="bar-fill" style="display:block;width:82%;"></span></span>
-              <span class="bar-value">Tight</span>
-            </div>
-            <div class="bar-row">
-              <span class="bar-label">Power</span>
-              <span class="bar-track"><span class="bar-fill" style="display:block;width:79%;"></span></span>
-              <span class="bar-value">Tight</span>
-            </div>
-            <div class="bar-row">
-              <span class="bar-label">Cooling</span>
-              <span class="bar-track"><span class="bar-fill" style="display:block;width:74%;"></span></span>
-              <span class="bar-value">Ramping</span>
-            </div>
-          </div>
-        </article>
-        <article class="card pad">
-          <h3 style="margin:0 0 10px;">Investment Interpretation</h3>
-          <p class="thesis">
-            The capital-flow signal now has two hard procurement checks. NVIDIA's purchase and capacity commitments reached $279B, primarily for memory, while Broadcom expects about $115B of AI semiconductor revenue in fiscal 2027 and $230B in fiscal 2028. Demand is expanding across merchant GPUs and custom accelerators, but Broadcom also identified leading-edge wafers, substrates, HBM, and data-center site readiness as the limits on recognized revenue. The physical bottleneck is migrating from silicon into the complete powered system.
-          </p>
-        </article>
-      </div>
+      <div class="section-head"><div><h2>Capital Flow Of Major Technology Companies</h2><p>The last reported cloud budgets remain large, but spending is increasingly constrained by financing, memory allocation and powered sites. Guidance below comes from the prior reporting cycle; it is not new October guidance.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="cards-3" style="margin-bottom:14px;"><article class="card pad accent-blue"><p class="kicker">Big Four 2026 Guidance</p><div class="metric-big">$715B-$740B</div><p class="metric-caption">Directional aggregate; definitions and fiscal calendars differ. Higher component prices do not translate one-for-one into more installed capacity.</p></article><article class="card pad accent-teal"><p class="kicker">ASML October 14</p><div class="metric-big">Tight Through 2028</div><p class="metric-caption">Management says planned tool supply will not fully meet customer demand in 2027 and 2028. Customer interest in 2029-2030 is not a booked order.</p></article><article class="card pad accent-amber"><p class="kicker">Funding Check</p><div class="metric-big">Cash Before Capacity</div><p class="metric-caption">Track cloud cash generation, borrowing cost, prepayments and site readiness alongside announced megawatts.</p></article></div><div class="table-wrap"><table><thead><tr><th scope="col">Capital Source</th><th scope="col">2026 Plan</th><th scope="col">Read-Through</th><th scope="col">Primary Evidence</th></tr></thead><tbody><tr><td>Microsoft</td><td>~$190B</td><td>Calendar 2026 capex outlook; includes about $25B component-price impact.</td><td><a href="https://www.microsoft.com/en-us/Investor/events/fy-2026/earnings-fy-2026-q3">Company disclosure</a></td></tr><tr><td>Amazon</td><td>~$200B</td><td>2026 capex plan. Q2 AWS grew 36.7%; distinguish deployed capacity from announced projects.</td><td><a href="https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm">Company disclosure</a></td></tr><tr><td>Alphabet</td><td>$195B-$205B</td><td>Raised 2026 capex outlook after Q2. Heavy spending pressures free cash flow.</td><td><a href="https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm">Company disclosure</a></td></tr><tr><td>Meta</td><td>$130B-$145B</td><td>2026 capex range in the June-quarter 10-Q; servers, network and data center buildout.</td><td><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm">Company disclosure</a></td></tr></tbody></table></div><p class="thesis">The next two years favor suppliers that control qualified capacity and can convert demand into cash. <a href="https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm">ASML&#39;s current release</a> and <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm">Micron&#39;s new 10-K</a> confirm strong demand, while <a href="https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm">Broadcom&#39;s latest 10-Q</a> reports $179.2B of remaining performance obligations across software and semiconductors. This is not an AI-only order book.</p>
     </section>
 
     <section id="prices">
-      <div class="section-head">
-        <div>
-          <h2>Re-Studied Price Tape</h2>
-          <p>September 3 closes are the latest complete US tape for this Sep. 4 Asia research run. SOXX ended at $502.20, about 4.4% below its Aug. 27 close even after Thursday's broad rebound. Broadcom closed at $357.16, down 2.74% after a strong quarter but a slightly soft total-revenue guide; Credo remained near $164 after a 20.0% post-earnings break. The tape says AI demand is intact, but the market now punishes any gap between excellent fundamentals and exceptional expectations.</p>
-        </div>
-        <div class="stamp">Snapshot: Sep. 3 US close</div>
-      </div>
-
-      <div class="quote-grid">
-        <article class="quote-card"><div class="quote-symbol">SOXX <span class="tag watch">Sector</span></div><div class="quote-price">$502.20</div><div class="quote-meta">September 3 close +0.15%; still about 4.4% below August 27.</div></article>
-        <article class="quote-card"><div class="quote-symbol">AVGO <span class="tag buy">Post-Earnings Buy</span></div><div class="quote-price">$357.16</div><div class="quote-meta">September 3 close -2.74%; record AI growth met a very high expectation bar.</div></article>
-        <article class="quote-card"><div class="quote-symbol">NVDA <span class="tag buy">Buy On Pullback</span></div><div class="quote-price">$228.45</div><div class="quote-meta">September 3 close +1.8%; recovered most of its post-report reset, so do not chase above support.</div></article>
-        <article class="quote-card"><div class="quote-symbol">KLAC <span class="tag buy">Staged Buy</span></div><div class="quote-price">$172.94</div><div class="quote-meta">September 3 close +0.39%; about 5.9% below August 27 despite strong filing economics.</div></article>
-        <article class="quote-card"><div class="quote-symbol">CRDO <span class="tag caution">Reset</span></div><div class="quote-price">$164.17</div><div class="quote-meta">September 3 close -0.64%; about 31.7% below August 27 after the 20.0% earnings-day break.</div></article>
-        <article class="quote-card"><div class="quote-symbol">MRVL <span class="tag caution">No Base</span></div><div class="quote-price">$208.83</div><div class="quote-meta">September 3 close +1.14%; still about 13.5% below August 27 after its expectation reset.</div></article>
-        <article class="quote-card"><div class="quote-symbol">MU <span class="tag buy">Staged Buy</span></div><div class="quote-price">$958.16</div><div class="quote-meta">September 3 close +0.22%; exceptional earnings and valuation pass, with Sep. 30 event risk limiting size.</div></article>
-        <article class="quote-card"><div class="quote-symbol">AMAT <span class="tag watch">Tools</span></div><div class="quote-price">$435.91</div><div class="quote-meta">September 3 close -0.58%; down about 9.6% from August 27, with valuation still above KLAC's setup.</div></article>
-        <article class="quote-card"><div class="quote-symbol">LRCX <span class="tag watch">Tools</span></div><div class="quote-price">$292.69</div><div class="quote-meta">September 3 close +1.52%; down about 8.1% from August 27 despite excellent execution.</div></article>
-        <article class="quote-card"><div class="quote-symbol">FORM <span class="tag watch">10x Screen</span></div><div class="quote-price">~$96.76</div><div class="quote-meta">September 3 reference; HBM test intensity is intact, but a durable price base is still missing.</div></article>
-        <article class="quote-card"><div class="quote-symbol">PDFS <span class="tag watch">10x Screen</span></div><div class="quote-price">$43.46</div><div class="quote-meta">September 3 close +3.35%; filing strength passes, while integration and valuation cap sizing.</div></article>
-        <article class="quote-card"><div class="quote-symbol">TSM <span class="tag watch">Foundry</span></div><div class="quote-price">Core Watch</div><div class="quote-meta">Indispensable leading-edge and CoWoS capacity; geopolitical concentration remains the gating risk.</div></article>
-      </div>
-
-      <div class="table-wrap" style="margin-top:14px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Focused Re-Underwriting</th>
-              <th>Latest Filing And Call Evidence</th>
-              <th>Price And Valuation Read</th>
-              <th>Risk That Prevents A Higher Score</th>
-              <th>Decision</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>AVGO</strong></td>
-              <td><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial">Q3 revenue $29.6B</a>, AI semiconductor revenue $16.7B, and free cash flow $13.7B. The call framed roughly $115B of fiscal 2027 and $230B of fiscal 2028 AI semiconductor revenue.</td>
-              <td>$357.16 after a 2.74% post-report decline; refreshed forward P/E is about 21x. The $342.33 earnings-day low is the first support test.</td>
-              <td>$64.9B of debt in the latest 10-Q, lower-margin accelerator mix, a slightly soft total-revenue guide, customer concentration, and site-readiness timing.</td>
-              <td><span class="tag buy">#1 Staged Buy</span></td>
-            </tr>
-            <tr>
-              <td><strong>MU</strong></td>
-              <td><a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000013/a2026q3ex991-pressrelease.htm">Q3 revenue $41.46B</a>, GAAP gross margin 84.6%, net income $28.24B, free cash flow $18.3B, and a $50B Q4 revenue guide. HBM4 is shipping and HBM4E is targeted for 2027.</td>
-              <td>$958.16 and about 6.7x forward earnings on the current quote-provider estimate. The stock is volatile but has not rerated in proportion to the latest profit guide.</td>
-              <td>Memory pricing is cyclical, fiscal 2026 net capex is about $27B, competitors can add supply, and Sep. 30 earnings can reset the entire forward curve.</td>
-              <td><span class="tag buy">#2 Staged Buy</span></td>
-            </tr>
-            <tr>
-              <td><strong>NVDA</strong></td>
-              <td><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">Q2 revenue $96.22B</a>, data-center revenue $89.0B, GAAP gross margin 75.0%, and a $108B Q3 guide. Vera Rubin production and the full rack platform preserve the strongest compute moat.</td>
-              <td>$228.45 and about 18.6x forward earnings. The stock recovered from its post-report low, so the reaction gap is smaller than AVGO's or MU's.</td>
-              <td>The 10-Q discloses a $366B commitment stack, plus $36B of AI-cloud agreements and selected land, power, and shell guarantees. Customer concentration and China restrictions remain material.</td>
-              <td><span class="tag buy">Buy On Pullback</span></td>
-            </tr>
-            <tr>
-              <td><strong>CRDO</strong></td>
-              <td><a href="https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm">Q1 revenue grew 114.7%</a> to $479.0M; Q2 guidance is $525M-$535M. AEC volume drove more than 90% of the YoY revenue increase, while DustPhotonics expands the optical stack.</td>
-              <td>$164.17 after a 31.7% decline from Aug. 27; roughly 22.5x forward earnings is more reasonable, but a falling price is not yet a base.</td>
-              <td>GAAP gross margin fell to 64.5%; two customers represent 85% of receivables. Stock compensation was $88.0M versus $90.2M of operating cash flow, with $151.3M used by working capital.</td>
-              <td><span class="tag caution">Watch, Not Buy</span></td>
-            </tr>
-            <tr>
-              <td><strong>MRVL</strong></td>
-              <td><a href="https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm">Q2 revenue grew 37%</a> to $2.74B and data-center revenue grew 46%. Management lifted its fiscal 2027 and 2028 revenue view and guided Q3 revenue to $3.15B.</td>
-              <td>$208.83, 13.5% below Aug. 27, but still about 38x forward earnings. The drawdown improves entry math without yet proving support.</td>
-              <td>A customer received a warrant for up to 59.0M shares at $206.58, about 6.7% of current shares. Customer and distributor concentration, acquisitions, and conversion of NVIDIA's preferred stock add risk.</td>
-              <td><span class="tag caution">Wait For Base</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="decision-strip">
-        <article class="decision-card accent-green">
-          <h3>Four Staged Buys Today</h3>
-          <p>AVGO, MU, NVDA, and KLAC clear the 82-point gate. Broadcom has the best fresh reaction gap; Micron has the strongest earnings-to-valuation dislocation but the highest cycle risk; NVIDIA has the best platform moat but a smaller entry gap; KLA remains the steadier process-control setup. All require partial sizing.</p>
-        </article>
-        <article class="decision-card accent-teal">
-          <h3>10x Optionality</h3>
-          <p>The filing-backed 10x screen still selects FORM and PDFS. PDFS has now passed its August gate with 19% revenue growth, GAAP net income of $4.3M, and record backlog of $270.7M, but neither small cap qualifies as a full-size entry after its 2026 rerating.</p>
-        </article>
-        <article class="decision-card accent-red">
-          <h3>Market Emotion Gate</h3>
-          <p>Risk heat rises to 76. SOXX is below its Aug. 27 level, yet Broadcom and Credo both sold off after beats because their guides or margins did not clear embedded expectations. This is a selective reset, not evidence of an AI demand collapse.</p>
-        </article>
-      </div>
+      <div class="section-head"><div><h2>Re-Studied Price Tape</h2><p>October 14 regular-session closes in USD. October 15 is in progress; live quotes, premarket moves and closing-price comparisons are kept distinct. SOXX lost 4.50% in the last complete session.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="quote-grid"><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/etf/soxx/history/">SOXX</a> <span class="tag caution">Sector</span></div><div class="quote-price">$519.42</div><div class="quote-meta">Oct. 14 close -4.50%; sector benchmark.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/avgo/history/">AVGO</a> <span class="tag watch">Conditional Buy</span></div><div class="quote-price">$346.25</div><div class="quote-meta">Oct. 14 close -3.10%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/nvda/history/">NVDA</a> <span class="tag watch">Conditional Buy</span></div><div class="quote-price">$221.30</div><div class="quote-meta">Oct. 14 close -3.16%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/mu/history/">MU</a> <span class="tag watch">Conditional Buy</span></div><div class="quote-price">$914.13</div><div class="quote-meta">Oct. 14 close -4.08%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/asml/history/">ASML</a> <span class="tag watch">Conditional Buy</span></div><div class="quote-price">$1,650.00</div><div class="quote-meta">Oct. 14 close -3.94%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/klac/history/">KLAC</a> <span class="tag caution">Caution</span></div><div class="quote-price">$178.81</div><div class="quote-meta">Oct. 14 close -2.82%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/crdo/history/">CRDO</a> <span class="tag caution">Caution</span></div><div class="quote-price">$179.23</div><div class="quote-meta">Oct. 14 close -9.62%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/mrvl/history/">MRVL</a> <span class="tag caution">Caution</span></div><div class="quote-price">$245.28</div><div class="quote-meta">Oct. 14 close -8.72%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/form/history/">FORM</a> <span class="tag caution">10x Research</span></div><div class="quote-price">$119.71</div><div class="quote-meta">Oct. 14 close -6.54%; research reference, not an execution price.</div></article><article class="quote-card"><div class="quote-symbol"><a href="https://stockanalysis.com/stocks/pdfs/history/">PDFS</a> <span class="tag caution">10x Research</span></div><div class="quote-price">$42.41</div><div class="quote-meta">Oct. 14 close -10.94%; research reference, not an execution price.</div></article></div><p class="thesis">The selloff improves some entry valuations, but a price decline alone is not a fundamental surprise. CRDO and MRVL fell 9.62% and 8.72%, respectively, versus SOXX's 4.50%. The current shortlist therefore uses staged entries with explicit conditions.</p>
     </section>
 
     <section id="news">
-      <div class="section-head">
-        <div>
-          <h2>Latest Publisher Intelligence Matrix</h2>
-          <p>Part two starts here: the named source set is mapped into actionable semiconductor signals. Paywalled or extraction-blocked sources are still included, but the page marks the confidence level instead of pretending every feed is equally readable.</p>
-        </div>
-        <div class="stamp">Updated 2026-09-04</div>
-      </div>
-
-      <div class="news-grid">
-        <article class="news-card accent-blue"><h3><a href="https://www.benzinga.com/markets/tech/26/09/61596036/why-is-broadcom-stock-falling-thursday">Benzinga</a> <span class="confidence">Medium</span></h3><p>Broadcom beat Q3 revenue and EPS expectations, but its $34.8B Q4 revenue guide was slightly below consensus. Credo also beat, then fell as gross margin compressed and operating costs increased. Expectations, not demand failure, drove both reactions.</p></article>
-        <article class="news-card accent-teal"><h3><a href="https://www.eetimes.com/">EE Times</a> <span class="confidence">High</span></h3><p>September coverage places power integrity inside the package-level design problem, while liquid cooling and megawatt-scale distribution move into the core system architecture. SK hynix's planned Indiana HBM facility also underscores the advanced-packaging localization gap.</p></article>
-        <article class="news-card accent-violet"><h3><a href="https://semianalysis.com/models-research/">SemiAnalysis</a> <span class="confidence">Medium</span></h3><p>Recent work spans sovereign AI spending, custom ASICs, and cloud security. Its system model remains decisive: accelerator economics depend on HBM, packaging yield, 200G-1.6T networking, deployable megawatts, and token-level returns.</p></article>
-        <article class="news-card accent-amber"><h3><a href="https://seekingalpha.com/article/4942557-broadcom-inc-avgo-q3-2026-earnings-call-transcript">Seeking Alpha</a> <span class="confidence">Medium</span></h3><p>Broadcom's call transcript confirms a six-customer AI pipeline and management's approximate $115B fiscal 2027 plus $230B fiscal 2028 AI semiconductor outlook. The outlook is extraordinary, but customer site readiness can shift shipment timing.</p></article>
-        <article class="news-card accent-blue"><h3><a href="https://www.techinsights.com/blog/near-term-visibility-limited-order-activity-starting-look-brighter-far-horizon">TechInsights</a> <span class="confidence">High</span></h3><p>Semiconductor equipment order activity improved one point to a still-cool 44 degrees. DRAM and HBM demand are strengthening, while NAND recovery remains less complete. The split favors bottleneck exposure over a broad undifferentiated equipment trade.</p></article>
-        <article class="news-card accent-green"><h3><a href="https://www.trendforce.com/news/2026/09/03/news-broadcom-targets-115b-ai-revenue-in-fy27-nearly-2x-fy26-singapore-fab-to-ease-key-substrate-bottleneck/">TrendForce</a> <span class="confidence">High</span></h3><p>Broadcom's substrate expansion, tight HBM supply, and TSMC advanced-node plus CoWoS constraints define the near-term bottleneck. Separate reporting says memory can exceed 75% of an AI server bill of materials, magnifying both pricing power and cycle risk.</p></article>
-        <article class="news-card accent-amber"><h3><a href="https://www.semi.org/en/semi-press-release/semicon-taiwan-2026-to-serve-as-global-stage-where-the-semiconductor-industry-defines-whats-next">SEMI</a> <span class="confidence">High</span></h3><p>SEMICON Taiwan opened with a record 1,300 exhibitors and 4,300 booths focused on advanced nodes, packaging, smart fabs, and chiplets. SEMI reports 2025 equipment sales of $135.1B and materials sales of $73.2B, both still expanding.</p></article>
-        <article class="news-card accent-teal"><h3><a href="https://www.servethehome.com/nvidia-vera-cpu-at-hot-chips-2026/nvidia-vera-hot-chips-2026-scalable-coherency/">ServeTheHome</a> <span class="confidence">High</span></h3><p>Hot Chips coverage of NVIDIA Vera, Groq 3, Cerebras CS-4, and Fujitsu Monaka shows AI systems becoming more heterogeneous and rack-scale. Coherency, network scheduling, power, and serviceability broaden the investable stack.</p></article>
-        <article class="news-card accent-violet"><h3><a href="https://www.hpcwire.com/aiwire/2026/09/03/vast-data-integrates-crowdstrike-falcon-protection-with-its-ai-operating-system/">HPCwire</a> <span class="confidence">Medium</span></h3><p>Programmable optical networking funding and data-platform security releases show that cluster utilization now depends on more than compute. Optics, storage, orchestration, and secure data movement become essential as rack density rises.</p></article>
-        <article class="news-card accent-red"><h3><a href="https://www.brecorder.com/news/40437747">Reuters</a> <span class="confidence">High</span></h3><p>Broadcom's post-report decline followed a slightly below-consensus Q4 revenue guide despite 86% quarterly growth. The reaction reinforces a central rule of this screen: a strong company is not automatically a strong entry unless new evidence beats the price's embedded bar.</p></article>
-        <article class="news-card accent-blue"><h3><a href="https://finance.yahoo.com/markets/stocks/articles/broadcom-falls-6-soft-guidance-140556754.html">Yahoo Finance</a> <span class="confidence">High</span></h3><p>Broadcom's non-GAAP gross margin eased to about 75% from roughly 78% a year earlier as custom accelerators scaled, while Credo's shares suffered an even larger reset. The mix shift is revenue-positive but can reduce near-term margin quality.</p></article>
-        <article class="news-card accent-green"><h3><a href="https://www.sec.gov/Archives/edgar/data/1730168/000173016826000054/avgo-20260503.htm">Broadcom Filings</a> <span class="confidence">High</span></h3><p>The Q3 8-K reports $29.6B revenue, $16.7B AI semiconductor revenue, $13.1B GAAP net income, and $13.7B free cash flow. The latest available 10-Q reported $164.6B of remaining performance obligations and $64.9B of debt, so cash conversion must remain strong.</p></article>
-        <article class="news-card accent-blue"><h3><a href="https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm">Credo 10-Q</a> <span class="confidence">High</span></h3><p>Q1 revenue rose 114.7% and operating cash flow reached $90.2M. The filing also shows $88.0M of stock compensation, $151.3M of working-capital outflow, and the top two customers at 57% and 28% of receivables. That concentration keeps CRDO below the buy gate.</p></article>
-        <article class="news-card accent-violet"><h3><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx">NVIDIA Filing</a> <span class="confidence">High</span></h3><p>Q2 revenue reached $96.22B, data-center revenue $89.0B, GAAP net income $59.69B, and GAAP gross margin 75.0%. The $108B Q3 guide, Rubin production, and $279B commitment base keep the platform thesis intact.</p></article>
-      </div>
+      <div class="section-head"><div><h2>Latest Publisher Intelligence Matrix</h2><p>All eleven requested publishers were checked. Dates and access labels show which evidence is current, older, sponsored, syndicated or limited to public excerpts.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="news-grid"><article class="news-card accent-blue"><h3><a href="https://www.benzinga.com/markets/tech/26/10/62346389/micron-stock-gets-hammered-over-china-fears-jim-cramer-calls-the-selloff-nonsense">Benzinga</a></h3><p class="kicker">2026-10-14 | Public reporting</p><p>Memory stocks sold off on Chinese competition fears. Treat market commentary as a sentiment signal; it does not establish near-term HBM qualification or pricing collapse.</p></article><article class="news-card accent-teal"><h3><a href="https://www.eetimes.com/podcasts/scaling-ai-with-wide-parallel-interconnects/">EE Times</a></h3><p class="kicker">2026-10 | Public podcast overview</p><p>Wide parallel interconnects target bandwidth, power and reach limits. The investment implication is more technology choice, not automatic success for one supplier.</p></article><article class="news-card accent-violet"><h3><a href="https://semianalysis.com/weekly/episodes/?tag=InferenceX">SemiAnalysis</a></h3><p class="kicker">2026-10-09 | Public episode summaries; institutional models not accessed</p><p>Current discussion emphasizes AI buildout financing, GPU rental economics and credit quality. Semiconductor demand must be tested against customers&#39; ability to fund useful capacity.</p></article><article class="news-card accent-amber"><h3><a href="https://seekingalpha.com/article/4951208-micron-technology-inc-mu-q4-2026-post-earnings-analyst-call-transcript">Seeking Alpha</a></h3><p class="kicker">2026-09-30 | Public transcript excerpt; full paywalled analysis not assumed</p><p>Micron&#39;s earnings discussion frames demand, pricing and capacity risks. The actual revenue, profit and guidance numbers in this screen come from the SEC release and 10-K.</p></article><article class="news-card accent-blue"><h3><a href="https://www.techinsights.com/blog/storm-clouds-are-starting-roll">TechInsights</a></h3><p class="kicker">2026-09-22 | Older public summary; mixed evidence</p><p>The broad equipment summary reports weaker orders and utilization, conflicting with stronger AI-specific issuer evidence. The old 44-degree gauge is removed; no unverified October industry reading receives score credit.</p></article><article class="news-card accent-green"><h3><a href="https://www.trendforce.com/insights/memory-hierarchy-paradigm-shift">TrendForce</a></h3><p class="kicker">2026-09-11 | Public research</p><p>Inference expands the memory hierarchy beyond HBM. DRAM, flash and KV-cache storage matter alongside bandwidth, supporting a wider memory and connectivity opportunity.</p></article><article class="news-card accent-amber"><h3><a href="https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports">SEMI</a></h3><p class="kicker">2026-07-14 | Latest relevant forecast verified in this review</p><p>Total equipment sales forecast: $165.9B in 2026 and $229.5B in 2028. Test and packaging grow with device complexity; these are forecasts, not realized sales.</p></article><article class="news-card accent-teal"><h3><a href="https://www.servethehome.com/inside-the-secretive-aws-networking-lab/">ServeTheHome</a></h3><p class="kicker">2026-10-14 | Sponsored on-site technical reporting</p><p>AWS is deploying 51.2T / 800G switching and preparing 102.4T / 1.6T. Telemetry, optics cooling and serviceability are deployment constraints, not optional accessories.</p></article><article class="news-card accent-violet"><h3><a href="https://www.hpcwire.com/off-the-wire/bull-to-bring-nvidia-vera-and-vera-rubin-ultra-nvl72-to-europe/">HPCwire</a></h3><p class="kicker">2026-10-14 | Company press release carried by publisher</p><p>Bull plans European Vera Rubin Ultra NVL72 production for H1 2028 with liquid cooling, 800VDC support and direct optical links. This is a roadmap, not a shipment or purchase order.</p></article><article class="news-card accent-red"><h3><a href="https://live.euronext.com/en/financial-news/chip-tool-giant-asml-nudges-outlook-ai-driven-demand-outruns-supply">Reuters</a></h3><p class="kicker">2026-10-14 | Reuters syndication</p><p>ASML raised its outlook and warned of unmet demand through 2028. Long-lead equipment interest supports structural demand but cannot rule out nearer-term order deferrals.</p></article><article class="news-card accent-blue"><h3><a href="https://ca.finance.yahoo.com/news/chip-rout-deepens-rate-fears-002721466.html">Yahoo Finance</a></h3><p class="kicker">2026-10-14 | Syndicated market reporting</p><p>Higher rates, stretched valuations and AI financing costs are driving a chip-sector reset. A strong earnings quarter and a falling valuation can coexist with substantial further downside.</p></article></div>
     </section>
 
     <section id="chain">
-      <div class="section-head">
-        <div>
-          <h2>AI Data Center Supply Chain</h2>
-          <p>The constraint is moving from chips alone to manufacturable, powered, and deployable AI factories. NVIDIA's $279B commitment base and Broadcom's two-year AI revenue outlook validate deep demand, but recognized revenue still depends on HBM, substrates, CoWoS, package power integrity, 800G/1.6T data movement, liquid cooling, and customer sites that are ready to accept systems.</p>
-        </div>
-      </div>
+      <div class="section-head"><div><h2>AI Data Center Supply Chain: October 2026-2028</h2><p>Analyst assessment: bottlenecks are broadening from accelerator supply into memory hierarchy, network reliability, test, power and finance. These forecasts depend on funded projects and customer qualification.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Layer</th><th scope="col">Binding Constraint</th><th scope="col">Next Two Years</th><th scope="col">US-Listed Exposure</th></tr></thead><tbody><tr><td>Compute</td><td>Leading-edge lithography output, rack qualification and customer funding</td><td>ASML&#39;s supply constraint supports demand visibility into 2028. GPU and custom ASIC architectures compete on useful output per dollar.</td><td>NVDA, AVGO, ASML</td></tr><tr><td>Memory</td><td>HBM4 qualification, DRAM yield and capacity; inference memory bandwidth and capacity</td><td>HBM remains critical, while DRAM, LPDDR and SSD KV-cache tiers broaden demand. New supply and architectural efficiency are the principal cycle risks.</td><td>MU, FORM; CRDO / MRVL memory-connectivity options</td></tr><tr><td>Connectivity</td><td>224G signaling, 1.6T link qualification, switch thermals and reliable telemetry</td><td>Copper retains short-reach economics; light cables and optics expand reach. NPO / CPO timing depends on qualification, serviceability and total system cost.</td><td>AVGO, MRVL, CRDO</td></tr><tr><td>Optics + test</td><td>Laser/PIC integration, fiber assembly, optical-engine test yield and known-good-die</td><td>More optical content is only monetizable if packaging and test can scale. Avoid double-counting a component sold inside a complete module.</td><td>FORM, CRDO, MRVL; COHR / LITE thematic exposure</td></tr><tr><td>Cooling</td><td>CDUs, cold plates, fluid compatibility, retrofit and maintenance qualification</td><td>Liquid cooling becomes part of rack acceptance. Qualified deployment capacity, not product announcements, sets revenue timing.</td><td>VRT / ETN thematic exposure; not individually rated here</td></tr><tr><td>Power &amp; energy</td><td>Grid queues, transformers, switchgear, 800VDC conversion and powered sites</td><td>Physical and funding constraints can persist through 2028 even when accelerators are ready. Delay risk can shift profit timing across the chain.</td><td>ETN / VRT thematic exposure; not individually rated here</td></tr></tbody></table></div><p class="thesis">The supply case is supported by <a href="https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm">ASML&#39;s issuer outlook</a>, <a href="https://www.trendforce.com/insights/memory-hierarchy-paradigm-shift">TrendForce&#39;s memory hierarchy work</a>, <a href="https://www.servethehome.com/inside-the-secretive-aws-networking-lab/">the AWS networking lab report</a> and <a href="https://www.hpcwire.com/off-the-wire/bull-to-bring-nvidia-vera-and-vera-rubin-ultra-nvl72-to-europe/">Bull&#39;s 2028 rack roadmap</a>. These are different evidence types: reported earnings, research, observed hardware and a planned product. No roadmap is treated as a purchase commitment.</p>
+    </section>
 
-      <div class="cards-3" style="margin-bottom:14px;">
-        <article class="card pad accent-blue">
-          <p class="kicker">Site-Ready Revenue</p>
-          <div class="metric-big">Silicon -> MW</div>
-          <p class="metric-caption">Broadcom says demand may exceed its shipment outlook, but data-center shells and customer deployment schedules can defer revenue even when silicon supply is secured.</p>
-        </article>
-        <article class="card pad accent-green">
-          <p class="kicker">Memory Wall</p>
-          <div class="metric-big">Over 75% Of BOM</div>
-          <p class="metric-caption">TrendForce cites memory at more than 75% of some AI-server bills of materials. HBM allocation and DRAM pricing remain acute, while NAND recovery is less uniform.</p>
-        </article>
-        <article class="card pad accent-teal">
-          <p class="kicker">Substrate + Power Integrity</p>
-          <div class="metric-big">Package Is The System</div>
-          <p class="metric-caption">Broadcom is adding substrate capacity as leading-edge packages become a shared electrical design problem. Yield, thermal density, power delivery, and coherency now move together.</p>
-        </article>
-      </div>
+    <section id="profits">
+      <div class="section-head"><div><h2>Net-Income Growth And Earnings Quality</h2><p>Selected reviewed companies, not a complete industry leaderboard. YoY comparisons use quarterly GAAP net income; ASML's separate row is explicitly QoQ. Large percentage growth can reflect a small base, cycle peaks or non-operating gains.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Company / Period</th><th scope="col">Current GAAP Profit</th><th scope="col">Comparison Profit</th><th scope="col">Growth / Basis</th><th scope="col">Quality Check</th></tr></thead><tbody><tr><td><a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm">MU FY26 Q4</a></td><td>37,701 USD million</td><td>3,201 USD million</td><td>+1077.8% YoY</td><td>86.8% gross margin is exceptional; stress pricing and future supply rather than capitalize it forever.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1039399/000103939926000030/ex9901-earningsreleasexq226.htm">FORM 2026 Q2</a></td><td>56.2 USD million</td><td>9.1 USD million</td><td>+517.6% YoY; rounded</td><td>Probe cards and systems benefit from HBM and CPO; next quarter must confirm the margin step-up.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm">PDFS 2026 Q2</a></td><td>4.271 USD million</td><td>1.146 USD million</td><td>+272.7% YoY</td><td>Profit +272.7%, but diluted shares +6.4%; platform revenue declined 4% sequentially.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm">AVGO FY26 Q3</a></td><td>13,088 USD million</td><td>4,140 USD million</td><td>+216.1% YoY</td><td>FCF $13.665B; $179.2B RPO includes software. Debt carrying value $59.419B.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVDA FY27 Q2</a></td><td>59,688 USD million</td><td>26,422 USD million</td><td>+125.9% YoY</td><td>Other income, net $7.773B. Separate operating growth from investment gains.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm">CRDO FY27 Q1</a></td><td>129.425 USD million</td><td>63.399 USD million</td><td>+104.1% YoY</td><td>Stock compensation $87.979M; OCF $90.231M; customer concentration remains material.</td></tr><tr><td><a href="https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm">ASML 2026 Q3</a></td><td>4,960 EUR million</td><td>2,918 EUR million</td><td>+70.0% QoQ; separate basis</td><td>Net income +70.0% QoQ, not YoY. Supply outlook is management guidance.</td></tr></tbody></table></div>
+    </section>
 
-      <div class="table-wrap" style="margin-bottom:14px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Layer</th>
-              <th>Primary Bottleneck</th>
-              <th>2026-2028 Outlook</th>
-              <th>US-Listed Exposure</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Compute</td><td>Leading-edge wafers, custom-ASIC design capacity, rack qualification</td><td><span class="tag watch">High</span>; NVIDIA and Broadcom show merchant GPUs and custom accelerators scaling together</td><td>NVDA, AVGO, MRVL, AMD</td></tr>
-            <tr><td>Memory</td><td>HBM allocation, HBM4 validation, DRAM yield, certification, and prepayments</td><td><span class="tag risk">Acute</span>; supplier pricing power is high, but capacity expansion raises future cycle risk</td><td>MU, FORM</td></tr>
-            <tr><td>Packaging + process control</td><td>CoWoS, high-end substrates, hybrid bonding, package power integrity, and known-good-die test</td><td><span class="tag risk">Very high</span>; complexity raises inspection and test intensity across each package generation</td><td>KLAC, LRCX, AMAT, FORM, PDFS</td></tr>
-            <tr><td>Connectivity + storage</td><td>800G/1.6T links, AECs, DSPs, DPUs, CPO, coherency, and secure data movement</td><td><span class="tag watch">High</span>; cluster utilization becomes as important as installed accelerator count</td><td>AVGO, CRDO, MRVL, COHR, LITE</td></tr>
-            <tr><td>Power + sites</td><td>Powered land, grid queues, transformers, switchgear, high-voltage DC, CDUs, and construction timing</td><td><span class="tag risk">Critical</span>; customer readiness can delay silicon deployment and recognized revenue</td><td>VRT, ETN</td></tr>
-          </tbody>
-        </table>
-      </div>
-
+    <section id="credo">
+      <div class="section-head"><div><h2>Credo: Position, Products And Profit Outlook</h2><p>CRDO is evolving from an AEC-led business into a copper, optics and memory-connectivity platform. The October OCP demonstrations strengthen the roadmap; the September quarter is still the latest earnings evidence.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Product</th><th scope="col">AI Data Center Role</th><th scope="col">Investment Interpretation</th></tr></thead><tbody><tr><td>ZeroFlap AECs</td><td>Short-reach copper links</td><td>Established largest business; qualification, signal integrity and telemetry differentiate it.</td></tr><tr><td>Optical DSP + silicon photonics + ZeroFlap optics</td><td>1.6T pluggables and optical links</td><td>Optics is the second growth engine. Component and full-module revenue must not be double-counted.</td></tr><tr><td>1.6T ZeroFlap ALC</td><td>Row-scale links, targeted up to 50m</td><td>October 12 launch; planned 2027 shipments. Power, reach and reliability figures are company design targets.</td></tr><tr><td>OmniConnect / Weaver</td><td>Inference memory fanout</td><td>October 13 AMD Versal demonstration supports technical feasibility; paid customer ramps remain the commercial test.</td></tr><tr><td>Retimers, PCIe AECs and PILOT</td><td>Scale-up links, PCIe and network observability</td><td>Platform breadth improves customer relevance, while Broadcom, Marvell and Astera compete in adjacent products.</td></tr></tbody></table></div><p class="thesis"><a href="https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm">Q1 10-Q</a>: revenue $479.0M, GAAP net income $129.4M and cash plus short-term investments $764.3M. Four end customers supplied 84% of revenue. <a href="https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Broad-Portfolio-of-Connectivity-Solutions-for-AI-Scale-Out-and-Scale-Up-Fabrics-at-2026-OCP-Global-Summit/default.aspx">October OCP portfolio</a> and <a href="https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Unveils-1-6T-ZeroFlap-Active-Light-Cable-Industrys-First-Row-Scale-Wide-Parallel-Optical-Interconnect-for-AI-Data-Centers/default.aspx">the ALC launch</a> add future opportunities, but they do not establish new revenue guidance.</p><h3 style="margin-top:22px;">Three-Year Research Scenario</h3><p class="metric-caption">Analyst assumptions, not company guidance or consensus. FY27 ends in May 2027. Forecast confidence falls with distance; no new earnings quarter has been reported since the earlier study.</p><div class="table-wrap"><table><thead><tr><th scope="col">Fiscal Year</th><th scope="col">Revenue</th><th scope="col">GAAP Net Income</th><th scope="col">Adjusted Net Income</th><th scope="col">Key Requirement</th></tr></thead><tbody><tr><td>FY2027</td><td>$2.52B</td><td>$0.83B</td><td>$1.23B</td><td>Strong second-half optical ramp; company previously guided more than 85% revenue growth.</td></tr><tr><td>FY2028</td><td>$3.75B</td><td>$1.31B</td><td>$1.76B</td><td>1.6T and optical qualification convert to shipments; early new-product contribution.</td></tr><tr><td>FY2029</td><td>$4.85B</td><td>$1.75B</td><td>$2.18B</td><td>Optical diversification scales while concentration and compensation intensity fall.</td></tr></tbody></table></div><p class="thesis">These forecasts are conditional. AEC displacement, slower optical qualification, customer concentration, acquisition integration and stock compensation can all reduce per-share returns. The earlier $142 intrinsic-value estimate is not reused as a current target: the dilution and cash-flow treatment requires a consistent refreshed valuation. At $179.23, CRDO remains a watch rather than a fresh buy under the single score.</p>
     </section>
 
     <section id="longterm">
-      <div class="section-head">
-        <div>
-          <h2>10x Candidate Results</h2>
-          <p>Only the final scenario candidates are shown. A 10x outcome is a seven-to-ten-year possibility—not a forecast, price target, or expected return.</p>
-        </div>
-        <div class="stamp">Re-underwritten 2026-09-04 - US-listed stocks</div>
-      </div>
-
-      <div class="cards-2">
-        <article class="card pad accent-violet">
-          <div class="ticker-row"><span class="ticker">FORM</span><span class="tag buy">Primary 10x Scenario</span></div>
-          <p class="kicker">Probe cards / HBM and advanced wafer test</p>
-          <div class="mini-grid">
-            <div class="mini"><p class="mini-label">Sep. 3 price</p><div class="mini-value">~$96.76</div></div>
-            <div class="mini"><p class="mini-label">Q2 revenue</p><div class="mini-value">$258.2M</div></div>
-            <div class="mini"><p class="mini-label">Revenue YoY</p><div class="mini-value">+31.9%</div></div>
-            <div class="mini"><p class="mini-label">Net income YoY</p><div class="mini-value">+518.6%</div></div>
-          </div>
-          <p class="thesis">FORM is the strongest filing-backed candidate. HBM, chiplets, and the newly visible CPO optical-engine yield problem are raising test intensity, while Q2 revenue, margin, earnings, and cash flow all exceeded guidance. From its current multibillion-dollar value, a 10x still requires FormFactor to become a much broader global test platform. The thesis is confirmed, but semicap cyclicality, customer concentration, and the sharp year-to-date rerating still demand a patient entry.</p>
-          <div class="risk-line">Risk <span class="risk-meter"><span class="on"></span><span class="on"></span><span></span><span></span></span></div>
-        </article>
-
-        <article class="card pad accent-blue">
-          <div class="ticker-row"><span class="ticker">PDFS</span><span class="tag buy">Asymmetric 10x Scenario</span></div>
-          <p class="kicker">Semiconductor yield analytics / production intelligence</p>
-          <div class="mini-grid">
-            <div class="mini"><p class="mini-label">Sep. 3 price</p><div class="mini-value">$43.46</div></div>
-            <div class="mini"><p class="mini-label">Q2 revenue</p><div class="mini-value">$61.5M</div></div>
-            <div class="mini"><p class="mini-label">Revenue YoY</p><div class="mini-value">+19.0%</div></div>
-            <div class="mini"><p class="mini-label">Backlog</p><div class="mini-value">$270.7M</div></div>
-          </div>
-          <p class="thesis">PDFS passed its Q2 hard gate: revenue rose 19% to $61.5M, GAAP net income rose to $4.3M from $1.1M, and backlog reached a record $270.7M. The 10x case still requires a much larger recurring yield-intelligence platform, successful secureWISE integration, lower customer concentration, controlled dilution, and materially higher free cash flow. The thesis improved, but a forward multiple near 39x keeps it out of today's full-size buy list.</p>
-          <div class="risk-line">Risk <span class="risk-meter high"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></span></div>
-        </article>
-
-      </div>
+      <div class="section-head"><div><h2>Long-Term 10x Candidate Screen</h2><p>FORM and PDFS remain speculative research candidates, not high-confidence 10x recommendations. A tenfold share-price return in ten years requires about 25.9% annual compounding. The reverse earnings hurdles below expose how much execution is required.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="cards-2"><article class="card pad accent-violet"><div class="ticker-row"><span class="ticker">FORM</span><span class="tag watch">Speculative Research</span></div><p class="kicker">Oct. 14 reference $119.71</p><p class="thesis"><strong>Base case:</strong> HBM probe demand and optical-engine test broaden the business, but growth decelerates and 10x is not reached.</p><p class="thesis"><strong>10x bull hurdle:</strong> Become a much larger global test platform with about $12.6B sales and $3.8B profit; current quarterly revenue is $258.2M.</p><p class="thesis"><strong>Failure case:</strong> Memory capex reversal, customer concentration or failure to scale optical testing.</p><p class="thesis"><strong>Next check:</strong> October 28 company-announced earnings; verify shipments, margin and cash conversion.</p><p><a href="https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm">Reviewed 10-Q</a></p></article><article class="card pad accent-blue"><div class="ticker-row"><span class="ticker">PDFS</span><span class="tag watch">Speculative Research</span></div><p class="kicker">Oct. 14 reference $42.41</p><p class="thesis"><strong>Base case:</strong> Yield analytics and recurring platform adoption grow, but platform integration and dilution keep returns below 10x.</p><p class="thesis"><strong>10x bull hurdle:</strong> Scale to about $3.5B revenue and $707M profit with 50M diluted shares; current quarterly revenue is $61.5M.</p><p class="thesis"><strong>Failure case:</strong> SecureWISE integration, customer concentration, weak recurring mix or rising dilution.</p><p class="thesis"><strong>Next check:</strong> Next quarterly filing; verify platform revenue rebounds, recurring mix and per-share cash flow.</p><p><a href="https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm">Reviewed 10-Q</a></p></article></div><div class="table-wrap"><table><thead><tr><th scope="col">Candidate</th><th scope="col">10x Share Price</th><th scope="col">Assumed Terminal P/E</th><th scope="col">Required Annual EPS</th><th scope="col">Assumed Diluted Shares</th><th scope="col">Required Net Income / Revenue</th></tr></thead><tbody><tr><td>FORM</td><td>$1197.10</td><td>30</td><td>$39.90</td><td>95M</td><td>$3.79B / $12.64B</td></tr><tr><td>PDFS</td><td>$424.10</td><td>30</td><td>$14.14</td><td>50M</td><td>$0.71B / $3.53B</td></tr></tbody></table></div><p class="thesis">These are reverse-engineered requirements, not fair values or return forecasts. FORM assumes a 30% terminal net margin and PDFS 20%, with 95M and 50M terminal diluted shares respectively. Required EPS already includes dilution; no second dilution penalty is applied. A lower terminal multiple makes the hurdle harder. Large current winners such as NVDA and AVGO are not forced into a 10x category.</p>
     </section>
 
     <section id="today">
-      <div class="section-head">
-        <div>
-          <h2>Part Two: Best Buy Screen And Caution Screen Today</h2>
-          <p>Selection separates information shock from market adjustment. Filing-confirmed numerical surprise, forward guidance, narrative change, supply-chain diffusion, valuation, and price reaction remain one event-adjusted conviction score. Broadcom, Micron, NVIDIA, and KLA clear today's gate, but each is a staged entry. Credo and Marvell remain below the line after their fresh 10-Q risk checks.</p>
-        </div>
-        <div class="stamp">Not financial advice</div>
-      </div>
-
-      <div class="cards-3" style="margin-bottom:14px;">
-        <article class="card pad accent-red">
-          <p class="kicker">Market Risk Heat</p>
-          <div class="metric-big">76 / 100</div>
-          <p class="metric-caption">AI demand remains exceptional, but SOXX is below its Aug. 27 level and two strong reports were sold because guidance or margins missed an elevated bar.</p>
-        </article>
-        <article class="card pad accent-amber">
-          <p class="kicker">Fresh Buy Threshold</p>
-          <div class="metric-big">82+</div>
-          <p class="metric-caption">A candidate must score at least 82, clear severe red-flag gates, and show enough AI-cycle confirmation to justify staged buying.</p>
-        </article>
-        <article class="card pad accent-blue">
-          <p class="kicker">Scoring Mechanism</p>
-          <div class="metric-big">Event-Adjusted</div>
-          <p class="metric-caption">One conviction score compares the information shock with expectations, valuation, and the market's first adjustment. It is a research rank, not a return probability.</p>
-        </article>
-      </div>
-
-      <div class="decision-strip" style="margin-bottom:14px;">
-        <article class="decision-card accent-blue">
-          <h3>Three-Layer Surprise</h3>
-          <p><strong>Numerical:</strong> earnings, revenue, margins, cash flow, and guidance. <strong>Narrative:</strong> demand acceleration, pricing power, supply constraints, and management confidence. <strong>Expectation:</strong> whether the new evidence is genuinely better than what valuation and consensus already imply.</p>
-        </article>
-        <article class="decision-card accent-teal">
-          <h3>Reaction-Gap Test</h3>
-          <p>Strong fundamentals are not enough. The model asks whether the stock and its abnormal return versus SOXX have already absorbed the information. Positive evidence plus a weak or orderly price response can improve entry quality; a euphoric gap or parabolic trend reduces it.</p>
-        </article>
-        <article class="decision-card accent-red">
-          <h3>Risk And Thesis Overlay</h3>
-          <p>The score ranks ideas; it does not set position size. Initial exposure is reduced for earnings events, volatility, correlated semiconductor holdings, customer concentration, and crowding. A broken guidance, demand, margin, or supply-chain thesis forces review even if price has not hit a stop.</p>
-        </article>
-      </div>
-
-      <div class="table-wrap" style="margin-bottom:14px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Scoring Gate</th>
-              <th>Max Points</th>
-              <th>Strict Rule</th>
-              <th>Today's Read</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Forward fundamental surprise</td><td>24</td><td>Recent filings must confirm earnings, revenue, margins, cash flow, guidance, or estimate-direction improvement. Absolute growth without a forward signal receives less credit.</td><td>MU earns the highest mark after 84.6% GAAP gross margin, $18.3B free cash flow, and a $50B next-quarter guide. AVGO and NVDA also pass; CRDO's guide was closer to the existing bar.</td></tr>
-            <tr><td>Narrative and expectation shift</td><td>16</td><td>Demand, pricing, supply, customer, and management-confidence changes are judged relative to the prior quarter and the expectations embedded in the stock.</td><td>Broadcom's approximate $350B two-year AI outlook and Micron's HBM4 ramp extend the infrastructure runway. Site readiness, memory cyclicality, and elevated expectations prevent maximum scores.</td></tr>
-            <tr><td>Supply-chain moat and diffusion</td><td>18</td><td>Score direct bottleneck control plus corroboration from customers, suppliers, and adjacent nodes; avoid counting the same industry signal multiple times.</td><td>AVGO spans custom compute and switching; NVDA controls the rack platform; MU supplies the memory bottleneck. CRDO and MRVL participate in connectivity but carry more customer and program concentration.</td></tr>
-            <tr><td>Valuation and reaction gap</td><td>18</td><td>Compare growth and cash economics with valuation, abnormal price reaction versus SOXX, drawdown, and whether the event has already been fully priced.</td><td>AVGO is about 21x forward earnings after a 2.7% decline; MU is about 6.7x forward earnings. NVDA's rebound reduces its gap. MRVL remains near 38x despite the pullback.</td></tr>
-            <tr><td>Financial quality and positioning risk</td><td>16</td><td>Balance-sheet strength and execution add points; leverage, dilution, customer concentration, cyclicality, parabolic momentum, and crowded positioning subtract them.</td><td>All five receive deductions: AVGO for debt, NVDA for commitments, MU for cycle and capex, CRDO for concentration and stock compensation, and MRVL for warrants, acquisitions, and concentration.</td></tr>
-            <tr><td>Evidence integrity and uncertainty</td><td>8</td><td>Use timestamped filings and attributable sources. Stale data, missing consensus history, conflicting evidence, or high semantic uncertainty caps conviction.</td><td>AVGO, NVDA, MU, CRDO, and MRVL are backed by current releases and SEC filings. Equipment and smaller 10x names use older quarters, so their conviction remains capped.</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="table-wrap" style="margin-bottom:14px;">
-        <table>
-          <thead>
-            <tr><th>Focused Score Audit</th><th>Fundamental / 24</th><th>Narrative / 16</th><th>Moat / 18</th><th>Value + Reaction / 18</th><th>Quality + Risk / 16</th><th>Evidence / 8</th><th>Total</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>AVGO</strong></td><td>22</td><td>13</td><td>17</td><td>13</td><td>15</td><td>8</td><td><strong>88</strong></td></tr>
-            <tr><td><strong>MU</strong></td><td>24</td><td>15</td><td>16</td><td>14</td><td>8</td><td>8</td><td><strong>85</strong></td></tr>
-            <tr><td><strong>NVDA</strong></td><td>23</td><td>14</td><td>18</td><td>11</td><td>10</td><td>8</td><td><strong>84</strong></td></tr>
-            <tr><td><strong>CRDO</strong></td><td>20</td><td>13</td><td>15</td><td>11</td><td>12</td><td>8</td><td><strong>79</strong></td></tr>
-            <tr><td><strong>MRVL</strong></td><td>21</td><td>13</td><td>15</td><td>7</td><td>11</td><td>8</td><td><strong>75</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div style="display:grid;gap:14px;">
-        <article class="card pad accent-green">
-          <h3 style="margin:0 0 14px;">Best Buy Watchlist Today</h3>
-          <div class="metric-big">AVGO + MU + NVDA + KLAC</div>
-          <p class="metric-caption" style="margin-bottom:14px;">All four clear 82 under the single score, but none is a full-position signal. Use no more than one-quarter of intended exposure, respect the stated price condition, and leave the list empty on a future update if no setup clears both evidence and entry gates.</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>Ticker</th><th>Score</th><th>Why It Clears</th><th>Execution</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>AVGO</strong></td>
-                  <td>88 / 100</td>
-                  <td>Q3 revenue rose 86% to $29.6B, AI semiconductor revenue rose 221% to $16.7B, and free cash flow reached $13.7B. The Q4 AI guide is $21.7B and management's two-year outlook materially extends the runway.</td>
-                  <td>Quarter-position starter only after the $342-$357 post-report zone holds; do not chase a fast reversal. Thesis stop: weaker AI bookings, site-driven shipment slippage, or persistent margin deterioration.</td>
-                </tr>
-                <tr>
-                  <td><strong>MU</strong></td>
-                  <td>85 / 100</td>
-                  <td>Q3 revenue rose 346% to $41.46B, GAAP gross margin reached 84.6%, free cash flow was $18.3B, and the $50B Q4 guide materially exceeded the prior bar. HBM4 and a low forward multiple create the largest earnings-to-valuation gap.</td>
-                  <td>Quarter-position starter below roughly $960, preferably on a $920-$940 retest; do not chase above $1,000 before Sep. 30. Thesis stop: weaker HBM demand, pricing, guide, margin, or capex returns.</td>
-                </tr>
-                <tr>
-                  <td><strong>NVDA</strong></td>
-                  <td>84 / 100</td>
-                  <td>Q2 revenue rose 106% to $96.22B, data-center revenue reached $89.0B, GAAP gross margin was 75.0%, and the $108B Q3 guide exceeded consensus. Rubin production and the full-rack ecosystem preserve the platform moat.</td>
-                  <td>Quarter position only on an orderly retest near $225; avoid new exposure above roughly $230. Thesis stop: weaker demand, guide, margins, supply conversion, or deterioration in AI-cloud counterparty quality.</td>
-                </tr>
-                <tr>
-                  <td><strong>KLAC</strong></td>
-                  <td>83 / 100</td>
-                  <td>Fiscal 2026 revenue +11.7%, net income +18.9%, 35.6% net margin, and $3.77B free cash flow. The drawdown versus filing strength creates the cleaner reaction-gap setup, while process complexity supports structural demand.</td>
-                  <td>Quarter-position starter near $170-$173; add only after price confirms. Thesis stop: weaker foundry/logic demand, packaging inspection intensity, margin, or cash flow.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
-
-        <article class="card pad accent-red">
-          <h3 style="margin:0 0 14px;">Keep Caution Today</h3>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr><th>Ticker</th><th>Caution Driver</th><th>Evidence</th><th>Better Action</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>CRDO</strong></td>
-                  <td>The business is compounding rapidly, but the 20% earnings-day break exposed margin, concentration, and expectation risk.</td>
-                  <td>Q1 revenue rose 114.7%, yet GAAP gross margin fell to 64.5%. Two customers were 85% of receivables; $88.0M stock compensation nearly equaled $90.2M operating cash flow, and working capital used $151.3M.</td>
-                  <td>Watch the $162-$171 earnings-reset area. Require a multi-week base, stable margins, better cash conversion, and evidence that optics broadens the AEC-heavy growth engine.</td>
-                </tr>
-                <tr>
-                  <td><strong>MRVL</strong></td>
-                  <td>The beat-and-raise passed, but valuation, dilution, and price stability do not.</td>
-                  <td>At $208.83 and about 38x forward earnings, shares remain 13.5% below Aug. 27. The 10-Q adds a customer warrant for up to 59.0M shares at $206.58, on top of concentration and acquisition risk.</td>
-                  <td>Wait for a durable base and clearer custom-silicon economics at the Oct. 6 investor day; require the expected growth to outpace per-share dilution.</td>
-                </tr>
-                <tr>
-                  <td><strong>AMAT / LRCX</strong></td>
-                  <td>The pullbacks improved entry quality, but equipment order activity remains only 44 degrees and both setups rank below KLAC.</td>
-                  <td>AMAT is down about 9.6% and LRCX about 8.1% from Aug. 27; their latest revenue still grew 25% and 30%, respectively.</td>
-                  <td>Watch for base formation and improving broad equipment orders before adding.</td>
-                </tr>
-                <tr>
-                  <td><strong>FORM / PDFS</strong></td>
-                  <td>Best long-duration asymmetric candidates, but not the best risk-adjusted entries today.</td>
-                  <td>The HBM and yield-intelligence theses pass, but both rely on smaller-company execution and older quarterly evidence.</td>
-                  <td>Small speculative watch only; require better price support.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </article>
-      </div>
+      <div class="section-head"><div><h2>Best Buy Watchlist Today And Keep Caution Today</h2><p>MU and AVGO rank first, followed by ASML and NVDA. These are conditional research selections for October 15. The last complete session was a broad selloff; no closing reference is an instruction to buy at market.</p></div><div class="stamp">Reviewed 2026-10-15</div></div>
+      <div class="cards-3" style="margin-bottom:14px;"><article class="card pad accent-red"><p class="kicker">Market Risk Heat</p><div class="metric-big">82 / 100</div><p class="metric-caption">Qualitative risk assessment: funding pressure, rates, memory supply fears and weak price breadth. This is not a second stock score.</p></article><article class="card pad accent-amber"><p class="kicker">Fresh Buy Threshold</p><div class="metric-big">82+</div><p class="metric-caption">One conviction score plus evidence and entry conditions. The actionable list is empty until a candidate's stated condition is met.</p></article><article class="card pad accent-blue"><p class="kicker">Initial Exposure</p><div class="metric-big">Staged Only</div><p class="metric-caption">At most one-quarter of intended size after confirmation. Review correlated semiconductor exposure and thesis breaks before adding.</p></article></div><h3>Single Conviction Score</h3><div class="table-wrap"><table><thead><tr><th scope="col">Factor</th><th scope="col">Weight</th><th scope="col">October 15 Application</th></tr></thead><tbody><tr><td>Forward fundamental surprise</td><td>24</td><td>Forward guidance, profit, margins and cash conversion matter more than headline growth alone.</td></tr><tr><td>Narrative and expectation shift</td><td>16</td><td>ASML supply visibility, Marvell&#39;s investor-day uplift and Credo&#39;s OCP roadmap receive credit appropriate to their evidence.</td></tr><tr><td>Supply-chain moat and diffusion</td><td>18</td><td>Qualified bottleneck control and independent demand checks; avoid counting the same AI capex twice.</td></tr><tr><td>Valuation and reaction gap</td><td>18</td><td>Price declines improve valuation only when the expected earnings remain credible. Peak memory earnings require stress tests.</td></tr><tr><td>Financial quality and positioning risk</td><td>16</td><td>Deduct for debt, commitments, concentration, dilution, cycle risk and funding dependencies.</td></tr><tr><td>Evidence integrity and uncertainty</td><td>8</td><td>Current filings and attributable releases get most credit. Public excerpts and older industry gauges are capped.</td></tr></tbody></table></div><div class="table-wrap"><table><thead><tr><th scope="col">Ticker</th><th scope="col">Fundamental /24</th><th scope="col">Narrative /16</th><th scope="col">Moat /18</th><th scope="col">Value /18</th><th scope="col">Quality /16</th><th scope="col">Evidence /8</th><th scope="col">Total</th></tr></thead><tbody><tr><td><strong>MU</strong></td><td>24</td><td>15</td><td>17</td><td>15</td><td>7</td><td>8</td><td><strong>86</strong></td></tr><tr><td><strong>AVGO</strong></td><td>22</td><td>14</td><td>17</td><td>13</td><td>12</td><td>8</td><td><strong>86</strong></td></tr><tr><td><strong>ASML</strong></td><td>23</td><td>14</td><td>18</td><td>10</td><td>12</td><td>8</td><td><strong>85</strong></td></tr><tr><td><strong>NVDA</strong></td><td>22</td><td>13</td><td>18</td><td>12</td><td>10</td><td>8</td><td><strong>83</strong></td></tr><tr><td><strong>KLAC</strong></td><td>19</td><td>12</td><td>17</td><td>10</td><td>13</td><td>7</td><td><strong>78</strong></td></tr><tr><td><strong>MRVL</strong></td><td>21</td><td>15</td><td>17</td><td>7</td><td>10</td><td>8</td><td><strong>78</strong></td></tr><tr><td><strong>CRDO</strong></td><td>20</td><td>14</td><td>17</td><td>8</td><td>10</td><td>8</td><td><strong>77</strong></td></tr><tr><td><strong>FORM</strong></td><td>20</td><td>12</td><td>16</td><td>6</td><td>11</td><td>7</td><td><strong>72</strong></td></tr><tr><td><strong>PDFS</strong></td><td>18</td><td>12</td><td>14</td><td>7</td><td>11</td><td>7</td><td><strong>69</strong></td></tr></tbody></table></div><h3 style="margin-top:24px;">Best Buy Watchlist Today</h3><p class="metric-caption">MU 86 | AVGO 86 | ASML 85 | NVDA 83. Scores are ordinal judgments, not calibrated probabilities. Conditions below are pending and must be checked against the live session before any order.</p><div class="table-wrap"><table><thead><tr><th scope="col">Candidate</th><th scope="col">Score</th><th scope="col">Why It Ranks</th><th scope="col">Entry Condition / Invalidation</th></tr></thead><tbody><tr><td><strong>MU</strong></td><td>86 / 100</td><td>Largest verified quarterly profit growth in this reviewed sample. FY26 Q4 net income $37.701B versus $3.201B; FY27 Q1 revenue guide $61.5B. Low earnings multiples may reflect peak-cycle margins and rising competition, so use a cycle-capped starter.</td><td>Wait for selling pressure to settle and a regular-session close back above $950 before a starter; reassess if demand or pricing weakens.</td></tr><tr><td><strong>AVGO</strong></td><td>86 / 100</td><td>Q3 AI revenue grew 221%, free cash flow reached $13.665B, and the newer 10-Q shows $179.2B remaining performance obligations and $59.419B carrying debt. Custom compute and networking diversify the demand source, while funding and site timing remain key risks.</td><td>Prefer an orderly retest and hold of the $340-$350 zone; defer while price is making new lows or the funding thesis worsens.</td></tr><tr><td><strong>ASML</strong></td><td>85 / 100</td><td>Fresh October 14 results: EUR11.662B revenue, EUR4.960B net income, 57.5% gross margin and a EUR14.2B-EUR15.2B Q4 sales guide. Management says planned 2027-2028 supply will not fully meet demand. Valuation and customer capex concentration cap the score.</td><td>Require the earnings-reset area near $1,650 to hold or be reclaimed; use a limit order and verify EUR earnings versus USD ADR pricing.</td></tr><tr><td><strong>NVDA</strong></td><td>83 / 100</td><td>FY27 Q2 net income grew 125.9% and revenue reached $96.221B. Full-rack systems and software retain the strongest compute position, but investment gains, large commitments, customer financing and competing inference architectures require deductions.</td><td>Prefer stabilization around $220-$225; defer below $220 until support is reclaimed. Do not treat a falling quote as automatic value.</td></tr></tbody></table></div><p class="thesis">Valuation cross-checks use the closing reference and an explicit earnings denominator. MU: $914.13 / ($32.87 quarterly GAAP EPS x 4) = about 7.0x, rising to about 13.9x if that earnings run rate halves. AVGO: $346.25 / ($3.32 adjusted quarterly EPS x 4) = about 26.1x, which is not a forward consensus P/E. ASML's EUR earnings require a consistent FX conversion before comparing with its USD share price; no mixed-currency multiple is shown.</p><h3 style="margin-top:24px;">Keep Caution Today</h3><div class="table-wrap"><table><thead><tr><th scope="col">Ticker</th><th scope="col">What Improved</th><th scope="col">What Still Blocks A Buy</th><th scope="col">Next Evidence</th></tr></thead><tbody><tr><td>CRDO</td><td>1.6T ALC and OmniConnect demonstrations widen its potential market.</td><td>77/100; four end customers are 84% of revenue; compensation and working capital weaken owner cash conversion. Product launches do not establish near-term profit.</td><td>Paid optical / memory-connectivity ramps, lower concentration, stable margins and a durable price base.</td></tr><tr><td>MRVL</td><td>Management raised FY28 revenue outlook to about $20B at October 6 investor day.</td><td>78/100; potential 59M-share warrant, acquisition integration, program concentration and October 14&#39;s 8.72% decline.</td><td>Bookings and per-share EPS / cash flow must support the larger outlook; review warrant vesting and exercise proceeds, not just the maximum share count.</td></tr><tr><td>KLAC</td><td>Process-control intensity remains structurally attractive.</td><td>78/100; quarterly evidence is older than ASML&#39;s current report and the tape remains weak.</td><td>Next earnings, orders, margin and cash flow; do not carry forward September entry prices.</td></tr><tr><td>FORM / PDFS</td><td>Both show sharply higher quarterly GAAP net income.</td><td>72 / 69; the reverse 10x hurdles require extraordinary scale, and share dilution matters.</td><td>FORM October 28 report; PDFS next quarterly filing, recurring mix, integration and per-share cash conversion.</td></tr></tbody></table></div><p class="thesis">Filing checks: <a href="https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm">MU 10-K</a>, <a href="https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm">AVGO 10-Q</a>, <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm">NVDA 10-Q</a>, <a href="https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm">ASML 6-K exhibit</a>, <a href="https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm">CRDO 10-Q</a>, <a href="https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm">MRVL 10-Q</a>, <a href="https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm">FORM 10-Q</a> and <a href="https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm">PDFS 10-Q</a>. ASML reports as a foreign issuer under 20-F / 6-K. Research links are attached to the relevant evidence throughout this page.</p>
     </section>
 
     <section>
@@ -1337,7 +930,7 @@
   </main>
 
   <footer class="footer">
-    Built as a static research dashboard. Supply-chain snapshot: 2026-09-04 Asia/Shanghai; latest complete US quote tape: September 3 close.
+    Built as a static research dashboard. Supply-chain snapshot: 2026-10-15 Asia/Shanghai; quote reference: October 14 US close. Research selections are conditional; no trades are recorded.
   </footer>
 </body>
 </html>
