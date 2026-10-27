@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-15",
+  "as_of": "2026-10-27",
   "timezone": "Asia/Shanghai",
   "market_scope": "US-listed semiconductor and AI data center infrastructure stocks only",
   "china_a_shares": {
@@ -9,98 +9,107 @@
   "safe_harbor": "Educational information only. Not financial advice. Prices can move materially around earnings.",
   "quote_source": {
     "name": "Stock Analysis historical regular-session closes; issuer releases and SEC filings for fundamentals",
-    "note": "All recorded prices are October 14, 2026 closes in USD. October 15 live prices and provider valuation ratios are not mixed into the closing-price snapshot. Rankings are research selections, not executed trades."
+    "note": "October 26, 2026 regular-session unadjusted closes in USD, verified from historical rows; October 27 intraday and premarket prices are deliberately excluded. Research incorporates news available October 27, including the October 26 financing announcement. No fills are inferred.",
+    "as_of": "2026-10-26T16:00:00-04:00"
   },
   "quotes": {
     "SOXX": {
-      "date": "2026-10-14",
-      "last": 519.42,
-      "change_percent": -4.5,
+      "date": "2026-10-26",
+      "last": 491.83,
+      "change_percent": 2.85,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/etf/soxx/history/",
       "data_stale": false
     },
     "AVGO": {
-      "date": "2026-10-14",
-      "last": 346.25,
-      "change_percent": -3.1,
+      "date": "2026-10-26",
+      "last": 329.17,
+      "change_percent": 2.33,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/avgo/history/",
       "data_stale": false
     },
     "NVDA": {
-      "date": "2026-10-14",
-      "last": 221.3,
-      "change_percent": -3.16,
+      "date": "2026-10-26",
+      "last": 216,
+      "change_percent": 2.39,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/nvda/history/",
       "data_stale": false
     },
     "MU": {
-      "date": "2026-10-14",
-      "last": 914.13,
-      "change_percent": -4.08,
+      "date": "2026-10-26",
+      "last": 903.7,
+      "change_percent": 2.98,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/mu/history/",
       "data_stale": false
     },
     "ASML": {
-      "date": "2026-10-14",
-      "last": 1650,
-      "change_percent": -3.94,
+      "date": "2026-10-26",
+      "last": 1590.9,
+      "change_percent": 1.22,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/asml/history/",
       "data_stale": false
     },
     "KLAC": {
-      "date": "2026-10-14",
-      "last": 178.81,
-      "change_percent": -2.82,
+      "date": "2026-10-26",
+      "last": 149.21,
+      "change_percent": 2.47,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/klac/history/",
       "data_stale": false
     },
     "CRDO": {
-      "date": "2026-10-14",
-      "last": 179.23,
-      "change_percent": -9.62,
+      "date": "2026-10-26",
+      "last": 151.15,
+      "change_percent": 2.62,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/crdo/history/",
       "data_stale": false
     },
     "MRVL": {
-      "date": "2026-10-14",
-      "last": 245.28,
-      "change_percent": -8.72,
+      "date": "2026-10-26",
+      "last": 233.78,
+      "change_percent": 2.31,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/mrvl/history/",
       "data_stale": false
     },
     "FORM": {
-      "date": "2026-10-14",
-      "last": 119.71,
-      "change_percent": -6.54,
+      "date": "2026-10-26",
+      "last": 101.11,
+      "change_percent": 2.64,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/form/history/",
       "data_stale": false
     },
     "PDFS": {
-      "date": "2026-10-14",
-      "last": 42.41,
-      "change_percent": -10.94,
+      "date": "2026-10-26",
+      "last": 40.82,
+      "change_percent": 3.81,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/pdfs/history/",
+      "data_stale": false
+    },
+    "LRCX": {
+      "date": "2026-10-26",
+      "last": 237.5,
+      "change_percent": 3.22,
+      "quote_status": "regular_close",
+      "source_url": "https://stockanalysis.com/stocks/lrcx/history/",
       "data_stale": false
     }
   },
   "market_emotion": {
     "score": 82,
-    "state": "funding_rate_and_memory_supply_risk",
-    "basis": "SOXX fell 4.50% on October 14. CRDO, MRVL and PDFS fell substantially more than the sector. ASML's current demand outlook and Micron's earnings remain strong, but higher discount rates, AI project funding and future memory supply challenge valuations.",
-    "interpretation": "Qualitative risk heat, not a second stock score or calibrated sentiment probability."
+    "state": "post_selloff_rebound_with_funding_and_execution_risk",
+    "basis": "SOXX rebounded 2.85% on October 26 after a 6.79% October 22 decline. Lam fell 11.76% after earnings and Credo fell 10.70% then 9.51% on October 22-23. A rebound does not establish a durable base. Supplier residual-value support adds financing exposure.",
+    "interpretation": "Uncalibrated qualitative risk heat; not a second stock score, sentiment survey or probability."
   },
   "strict_scoring": {
-    "methodology_version": "event_adjusted_conviction_v2_2026_10_15",
+    "methodology_version": "event_adjusted_conviction_v2_2026_10_27",
     "fresh_buy_threshold": 82,
     "allow_empty_best_buy_watchlist": true,
     "score_formula": "forward fundamental surprise + narrative and expectation shift + supply-chain moat and diffusion + valuation and reaction gap + financial quality and positioning risk + evidence integrity",
@@ -130,47 +139,52 @@
       "MU": {
         "score": 86,
         "decision": "conditional_staged_buy_watchlist",
-        "reason": "Largest verified quarterly profit growth in this reviewed sample. FY26 Q4 net income $37.701B versus $3.201B; FY27 Q1 revenue guide $61.5B. Low earnings multiples may reflect peak-cycle margins and rising competition, so use a cycle-capped starter."
-      },
-      "AVGO": {
-        "score": 86,
-        "decision": "conditional_staged_buy_watchlist",
-        "reason": "Q3 AI revenue grew 221%, free cash flow reached $13.665B, and the newer 10-Q shows $179.2B remaining performance obligations and $59.419B carrying debt. Custom compute and networking diversify the demand source, while funding and site timing remain key risks."
+        "reason": "Memory remains the strongest verified profit-growth case in this sample. FY26 Q4 GAAP profit was $37.701B; the September 3 year-end 10-K reports $74.33 diluted annual EPS. At $903.70 the annual earnings multiple is 12.2x, but peak pricing and margins can reverse. Score unchanged."
       },
       "ASML": {
-        "score": 85,
+        "score": 86,
         "decision": "conditional_staged_buy_watchlist",
-        "reason": "Fresh October 14 results: EUR11.662B revenue, EUR4.960B net income, 57.5% gross margin and a EUR14.2B-EUR15.2B Q4 sales guide. Management says planned 2027-2028 supply will not fully meet demand. Valuation and customer capex concentration cap the score."
+        "reason": "October 14 Q3 results and the 2027-2028 supply shortfall support scarce lithography capacity. The lower USD close improves the valuation factor by one point; it does not make a mixed EUR/USD P/E valid. Export controls and customer capex concentration remain risks."
       },
       "NVDA": {
+        "score": 84,
+        "decision": "conditional_staged_buy_watchlist",
+        "reason": "The latest 10-Q supports strong compute and networking demand, while the lower reference price adds one valuation point. Investment gains, purchase commitments, model-customer funding and improving custom-ASIC software remain deductions."
+      },
+      "LRCX": {
         "score": 83,
         "decision": "conditional_staged_buy_watchlist",
-        "reason": "FY27 Q2 net income grew 125.9% and revenue reached $96.221B. Full-rack systems and software retain the strongest compute position, but investment gains, large commitments, customer financing and competing inference architectures require deductions."
+        "reason": "New October 21 results and October 22 10-Q verify $8.219B revenue, $2.753B GAAP profit and strong cash generation. Deposition and etch benefit from DRAM and 3D complexity. The earnings sell-off creates a research opportunity, but supply constraints, China exposure and cyclical capex block an unconditional buy."
+      },
+      "AVGO": {
+        "score": 80,
+        "decision": "watch_or_caution",
+        "reason": "Q3 AI growth and cash flow remain strong. October 26's $63B Anthropic SPV transaction adds residual-value support equal to its first-lien financing portion. That amount and detailed loss mechanics are not disclosed in the short release. Quality/risk falls six points; do not book the financing as incremental revenue or assume the entire $63B is Broadcom debt."
+      },
+      "CRDO": {
+        "score": 79,
+        "decision": "watch_or_caution",
+        "reason": "The lower price adds two valuation points, but four end customers remain 84% of revenue and Q1 stock compensation was $87.979M versus $90.231M operating cash flow. New ALC and memory-connectivity products require paid deployments and yield proof, not just demonstrations."
+      },
+      "MRVL": {
+        "score": 79,
+        "decision": "watch_or_caution",
+        "reason": "October 6's management FY28 revenue outlook improves visibility but is not reported earnings. One valuation point is added after the pullback; customer-program concentration and conditional warrant dilution still block a buy."
       },
       "KLAC": {
         "score": 78,
         "decision": "watch_or_caution",
-        "reason": "Process-control intensity remains attractive, but the evidence is older than ASML's new quarter and the current tape does not justify a fresh entry."
-      },
-      "CRDO": {
-        "score": 77,
-        "decision": "watch_or_caution",
-        "reason": "OCP broadens the platform into 1.6T light cables and inference memory connectivity. These remain future commercialization opportunities; Q1 customer concentration, $87.979M stock compensation and weak cash conversion still cap per-share confidence."
-      },
-      "MRVL": {
-        "score": 78,
-        "decision": "watch_or_caution",
-        "reason": "October 6 management outlook raised FY28 revenue to about $20B. This improves the forward signal, but the 10-Q's customer warrant, acquisition accounting, program concentration and sharp price reversal still constrain the score."
+        "reason": "Process-control demand is attractive, but the October 28 after-close earnings event is pending. Do not infer tomorrow's results from Lam's quarter or mix split-adjusted prices with pre-split EPS."
       },
       "FORM": {
-        "score": 72,
+        "score": 73,
         "decision": "watch_or_caution",
-        "reason": "Q2 GAAP profit grew about 518%, confirming HBM and optical test demand. At $119.71, even a ten-year 10x requires far more profit than the current run rate, so it remains a speculative research candidate."
+        "reason": "The lower price improves valuation by two points, offset by one event-risk point before the October 28 report. Q2 profit growth is strong but the ten-year 10x earnings hurdle remains demanding."
       },
       "PDFS": {
         "score": 69,
         "decision": "watch_or_caution",
-        "reason": "Q2 GAAP net income rose to $4.271M from $1.146M, but platform revenue declined sequentially and diluted shares increased. The ten-year 10x earnings hurdle is exceptionally demanding."
+        "reason": "Yield analytics has strategic relevance, but a small profit base, sequential platform weakness, acquisition integration and dilution limit conviction. A lower share price alone is insufficient."
       }
     },
     "focused_score_audit": {
@@ -183,32 +197,59 @@
         "evidence_integrity_and_uncertainty": 8,
         "total": 86
       },
-      "AVGO": {
-        "forward_fundamental_surprise": 22,
-        "narrative_and_expectation_shift": 14,
-        "supply_chain_moat_and_diffusion": 17,
-        "valuation_and_reaction_gap": 13,
-        "financial_quality_and_positioning_risk": 12,
-        "evidence_integrity_and_uncertainty": 8,
-        "total": 86
-      },
       "ASML": {
         "forward_fundamental_surprise": 23,
         "narrative_and_expectation_shift": 14,
         "supply_chain_moat_and_diffusion": 18,
-        "valuation_and_reaction_gap": 10,
+        "valuation_and_reaction_gap": 11,
         "financial_quality_and_positioning_risk": 12,
         "evidence_integrity_and_uncertainty": 8,
-        "total": 85
+        "total": 86
       },
       "NVDA": {
         "forward_fundamental_surprise": 22,
         "narrative_and_expectation_shift": 13,
         "supply_chain_moat_and_diffusion": 18,
-        "valuation_and_reaction_gap": 12,
+        "valuation_and_reaction_gap": 13,
         "financial_quality_and_positioning_risk": 10,
         "evidence_integrity_and_uncertainty": 8,
+        "total": 84
+      },
+      "LRCX": {
+        "forward_fundamental_surprise": 22,
+        "narrative_and_expectation_shift": 13,
+        "supply_chain_moat_and_diffusion": 17,
+        "valuation_and_reaction_gap": 12,
+        "financial_quality_and_positioning_risk": 11,
+        "evidence_integrity_and_uncertainty": 8,
         "total": 83
+      },
+      "AVGO": {
+        "forward_fundamental_surprise": 22,
+        "narrative_and_expectation_shift": 14,
+        "supply_chain_moat_and_diffusion": 17,
+        "valuation_and_reaction_gap": 13,
+        "financial_quality_and_positioning_risk": 6,
+        "evidence_integrity_and_uncertainty": 8,
+        "total": 80
+      },
+      "CRDO": {
+        "forward_fundamental_surprise": 20,
+        "narrative_and_expectation_shift": 14,
+        "supply_chain_moat_and_diffusion": 17,
+        "valuation_and_reaction_gap": 10,
+        "financial_quality_and_positioning_risk": 10,
+        "evidence_integrity_and_uncertainty": 8,
+        "total": 79
+      },
+      "MRVL": {
+        "forward_fundamental_surprise": 21,
+        "narrative_and_expectation_shift": 15,
+        "supply_chain_moat_and_diffusion": 17,
+        "valuation_and_reaction_gap": 8,
+        "financial_quality_and_positioning_risk": 10,
+        "evidence_integrity_and_uncertainty": 8,
+        "total": 79
       },
       "KLAC": {
         "forward_fundamental_surprise": 19,
@@ -219,32 +260,14 @@
         "evidence_integrity_and_uncertainty": 7,
         "total": 78
       },
-      "CRDO": {
-        "forward_fundamental_surprise": 20,
-        "narrative_and_expectation_shift": 14,
-        "supply_chain_moat_and_diffusion": 17,
-        "valuation_and_reaction_gap": 8,
-        "financial_quality_and_positioning_risk": 10,
-        "evidence_integrity_and_uncertainty": 8,
-        "total": 77
-      },
-      "MRVL": {
-        "forward_fundamental_surprise": 21,
-        "narrative_and_expectation_shift": 15,
-        "supply_chain_moat_and_diffusion": 17,
-        "valuation_and_reaction_gap": 7,
-        "financial_quality_and_positioning_risk": 10,
-        "evidence_integrity_and_uncertainty": 8,
-        "total": 78
-      },
       "FORM": {
         "forward_fundamental_surprise": 20,
         "narrative_and_expectation_shift": 12,
         "supply_chain_moat_and_diffusion": 16,
-        "valuation_and_reaction_gap": 6,
-        "financial_quality_and_positioning_risk": 11,
+        "valuation_and_reaction_gap": 8,
+        "financial_quality_and_positioning_risk": 10,
         "evidence_integrity_and_uncertainty": 7,
-        "total": 72
+        "total": 73
       },
       "PDFS": {
         "forward_fundamental_surprise": 18,
@@ -255,17 +278,33 @@
         "evidence_integrity_and_uncertainty": 7,
         "total": 69
       }
+    },
+    "evidence_limitations": "No point-in-time consensus database or validated backtest is available. Forward surprise is a qualitative assessment of guidance and earnings trajectory, not a measured consensus beat. Weights are unchanged; repeated coverage of one transaction is not independent evidence.",
+    "score_changes_since_prior_review": {
+      "prior_date": "2026-10-15",
+      "MU": 0,
+      "ASML": 1,
+      "NVDA": 1,
+      "LRCX": "newly reviewed: 83",
+      "AVGO": -6,
+      "CRDO": 2,
+      "MRVL": 1,
+      "KLAC": 0,
+      "FORM": 1,
+      "PDFS": 0
     }
   },
   "rankings": {
     "highest_confidence_buys": [
       "MU",
-      "AVGO",
       "ASML",
-      "NVDA"
+      "NVDA",
+      "LRCX"
     ],
     "ranking_status": "conditional_watchlist_not_executed",
-    "positioning": "Four research candidates clear 82. Initial exposure, when conditions are satisfied, is at most one-quarter of intended size. October 14 closes are reference prices, not limits or fills. Do not average down after a guide, margin, funding or customer thesis break.",
+    "actionable_buys": [],
+    "actionable_status": "No unconditional buy. Prior MU, ASML and NVDA stabilization gates remain unmet at the October 26 close. Lam's new post-earnings gate is also pending. Live October 27 conditions must be rechecked.",
+    "positioning": "Research priority: MU and ASML, then NVDA and LRCX. Use no more than one-quarter of intended exposure only after conditions are met. Do not lower technical gates merely because prices fell. No closing reference is a limit order or fill.",
     "quality_watch": [
       "KLAC"
     ],
@@ -274,68 +313,69 @@
       "PDFS"
     ],
     "keep_caution_today": [
-      "CRDO: commercial proof, concentration, cash conversion and valuation",
-      "MRVL: dilution-adjusted growth and program execution",
-      "FORM and PDFS: ambitious ten-year earnings hurdles and upcoming quarterly checks"
+      "AVGO: supplier residual-value support and customer financing",
+      "CRDO: concentration, compensation and commercial conversion",
+      "MRVL: program execution and conditional dilution",
+      "KLAC and FORM: October 28 earnings risk",
+      "PDFS: recurring mix, integration and dilution"
     ],
     "execution_conditions": {
-      "MU": "Wait for selling pressure to settle and a regular-session close back above $950 before a starter; reassess if demand or pricing weakens.",
-      "AVGO": "Prefer an orderly retest and hold of the $340-$350 zone; defer while price is making new lows or the funding thesis worsens.",
-      "ASML": "Require the earnings-reset area near $1,650 to hold or be reclaimed; use a limit order and verify EUR earnings versus USD ADR pricing.",
-      "NVDA": "Prefer stabilization around $220-$225; defer below $220 until support is reclaimed. Do not treat a falling quote as automatic value."
+      "MU": "Retain the prior requirement for a regular-session close above $950 and a subsequent orderly hold. October 26 close $903.70 has not met it. Reassess if pricing, margins or demand weaken.",
+      "ASML": "Retain the $1,650 reclaim/hold requirement. October 26 close $1,590.90 remains below it. Verify live price and EUR-to-USD valuation consistency; abandon if tool demand or customer funding deteriorates.",
+      "NVDA": "Retain the $220-$225 stabilization zone; require a regular-session reclaim and orderly hold. October 26 close $216.00 is below it. Reassess on weaker guidance, financing or competitive economics.",
+      "LRCX": "New analyst condition: a regular-session close above $242.10, the October 22 post-earnings high, followed by an orderly hold. October 26 close $237.50 has not met it. Reassess on supply slippage, export restrictions or a guide cut."
     }
   },
   "capital_flow": [
     {
       "name": "Microsoft, Amazon, Alphabet, and Meta",
-      "metric": "Current 2026 capital expenditure guidance",
-      "value": "$715B-$740B",
-      "signal": "Demand remains historic, but capital is broadening from accelerators into memory, power, networking, storage, cooling, and sites.",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
-    },
-    {
-      "name": "NVIDIA",
-      "metric": "Purchase and capacity commitments",
-      "value": "$279B",
-      "signal": "Primarily memory procurement; this confirms that 2027-2028 supply and deployment capacity remain binding constraints.",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
-    },
-    {
-      "name": "Broadcom",
-      "metric": "Management AI semiconductor revenue outlook",
-      "value": "about $115B FY2027 and $230B FY2028",
-      "signal": "Custom accelerators and networking are scaling rapidly, but customer site readiness can defer shipments.",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
+      "metric": "Directional sum of latest verified calendar-2026 spending outlooks",
+      "value": "$725B-$745B",
+      "signal": "Not a like-for-like AI-only capex measure: lease treatment, scope and timing differ. Do not add supplier-backed SPV funding to this aggregate.",
+      "evidence_period": "Microsoft July 29; Amazon July 30; Alphabet July 22; Meta October 21"
     },
     {
       "name": "Microsoft",
-      "value": "about $190B",
-      "focus": "AI capacity, data centers, servers, and network infrastructure",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
+      "value": "about $175B",
+      "focus": "Calendar-2026 reported capex after finance-to-operating lease reclassification; prior $190B is not the current reported figure. Underlying investment expectations unchanged outside this accounting effect.",
+      "evidence_period": "July 29 FY26 Q4 call",
+      "source_url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
     },
     {
       "name": "Amazon",
-      "value": "about $200B",
-      "focus": "AWS AI infrastructure and custom silicon",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
+      "value": "about $220B",
+      "focus": "Calendar-2026 cash capex; July call raised $200B to $220B partly because memory costs increased. More dollars do not imply equal growth in installed capacity.",
+      "evidence_period": "July 30 Q2 earnings call",
+      "source_url": "https://stockanalysis.com/stocks/amzn/transcripts/657334-q2-2026/"
     },
     {
       "name": "Alphabet",
       "value": "$195B-$205B",
-      "focus": "GCP, TPU systems, networking, and data centers",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
+      "focus": "2026 capex outlook for infrastructure, including non-AI activity; retains July guidance, not an October result.",
+      "evidence_period": "July 22 Q2 release",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
     },
     {
       "name": "Meta",
-      "value": "$130B-$145B",
-      "focus": "AI training and inference infrastructure",
-      "evidence_period": "Latest verified reported guidance; prior earnings cycle, not new October guidance"
+      "value": "$135B-$145B",
+      "focus": "2026 capex including finance-lease principal; narrowed from $130B-$145B. New Q3 disclosure supersedes the June-quarter range.",
+      "evidence_period": "October 21 Q3 release",
+      "source_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
+    },
+    {
+      "name": "Broadcom / Anthropic SPV",
+      "metric": "Announced transaction financing",
+      "value": "$63B",
+      "signal": "SPV buys XPU/networking and leases to Anthropic, with deliveries expected from 2027. Broadcom provides residual-value support equal to first-lien portion; tranche amount and loss mechanics not quantified in the short release. Not recognized revenue, not automatically all Broadcom debt, and not additional hyperscaler capex.",
+      "evidence_period": "October 26 issuer-hosted announcement",
+      "source_url": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
     }
   ],
   "supply_chain_view": {
-    "framework": "Cash-funded capacity -> manufacturable chips -> reliable networks -> powered and cooled sites -> useful tokens",
+    "framework": "Funded demand -> qualified tools and cleanrooms -> logic and memory -> packaging/test -> networked, powered racks -> useful tokens and customer cash flow",
     "forecast_horizon": "October 2026 to October 2028; analyst assessment, not a certainty",
     "next_two_year_bottlenecks": [
+      "Deposition/etch components and cleanroom availability: Lam's October call says both constrain 2027 output; demand visibility is not the same as shippable capacity",
       "Lithography output: ASML says planned 2027 and 2028 supply will not fully meet customer demand",
       "HBM4 qualification, DRAM process yield and multi-tier inference memory capacity",
       "Advanced packaging, substrates and known-good-die / optical-engine testing",
@@ -343,7 +383,7 @@
       "Grid connections, transformers, 800VDC conversion, liquid-cooling qualification and powered sites",
       "Project financing and customer cash generation: equipment demand does not guarantee funded deployment"
     ],
-    "trend": "Inference diversifies memory beyond HBM into DRAM, LPDDR and SSD KV cache. Short links can remain copper while longer and denser links move toward light cables, pluggables, NPO and CPO. AI demand remains strong, but qualified capacity and financial returns determine supplier earnings."
+    "trend": "2027-2028 likely favors qualified manufacturing capacity and memory/network attach, but constrained supply does not ensure permanent scarcity rents. Inference expands DRAM, LPDDR and NAND cache tiers; custom ASIC software improves competition with GPUs. Panel packaging and hybrid bonding are opportunities subject to yield, qualification and cost. Supplier-backed finance moves residual-value and customer-credit risk back up the chain."
   },
   "filing_screen": {
     "AVGO": {
@@ -358,9 +398,13 @@
       "risk": "Q4 total revenue was slightly below consensus; gross-margin mix and customer site readiness can limit revenue conversion",
       "sources": [
         "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
-        "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm"
+        "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+        "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "new_financing_risk": "SPV buys XPU/networking and leases to Anthropic, with deliveries expected from 2027. Broadcom provides residual-value support equal to first-lien portion; tranche amount and loss mechanics not quantified in the short release. Not recognized revenue, not automatically all Broadcom debt, and not additional hyperscaler capex.",
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "NVDA": {
       "period": "FY2027 Q2",
@@ -375,7 +419,10 @@
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today.",
+      "gaap_diluted_eps": "$2.46"
     },
     "CRDO": {
       "period": "FY2027 Q1 and 10-Q filed September 2",
@@ -392,7 +439,7 @@
       "manufacturing_purchase_commitments": "$212.7M",
       "acquisition_risk": "$1.3B DustPhotonics purchase consideration, including $895.8M of goodwill",
       "next_guide": "Q2 revenue $525M-$535M; non-GAAP gross margin 67%-69%",
-      "market_check": "October 14 close $179.23, down 9.62% for the session.",
+      "market_check": "October 26 close $151.15; +2.62% after declines of 10.70% and 9.51% on October 22-23. No new quarter is inferred from the lower quote.",
       "new_products": "October 12: 1.6T ZeroFlap ALC, targeted 50m reach, planned 2027 shipment. October 13: OmniConnect Weaver demonstration on AMD Versal. Design targets and demonstrations are not recognized revenue.",
       "end_customer_concentration": "33%, 28%, 13%, 10% of Q1 revenue: 84% combined",
       "sources": [
@@ -400,7 +447,9 @@
         "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Broad-Portfolio-of-Connectivity-Solutions-for-AI-Scale-Out-and-Scale-Up-Fabrics-at-2026-OCP-Global-Summit/default.aspx",
         "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Unveils-1-6T-ZeroFlap-Active-Light-Cable-Industrys-First-Row-Scale-Wide-Parallel-Optical-Interconnect-for-AI-Data-Centers/default.aspx"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "MRVL": {
       "period": "FY2027 Q2 and August 27 10-Q",
@@ -409,21 +458,25 @@
       "gaap_net_income": "$308M",
       "operating_cash_flow": "$605.5M",
       "next_guide": "Q3 revenue $3.15B +/- 5%; non-GAAP EPS $1.10 +/- $0.05",
-      "market_check": "October 14 close $245.28, down 8.72%; October 6 investor-day FY28 revenue outlook about $20B is management guidance.",
+      "market_check": "October 26 close $233.78, +2.31%. October 6 investor-day FY28 revenue outlook about $20B is management guidance, not reported revenue.",
       "dilution_risk": "customer warrant for up to 59.0M common shares at $206.58; NVIDIA preferred stock can convert into up to 21.8M common shares",
       "concentration": "direct Customer A was 16% of Q2 revenue; Distributor A was 44%",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
         "https://stockanalysis.com/stocks/mrvl/transcripts/724088-investor-day-2026/"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "KLAC": {
       "period": "FY2026 Q4 and FY2026 10-K filed August 6",
       "quarter_revenue": "$3.658B, +15.2% YoY",
       "quarter_gaap_net_income": "$1.363B, +13.3% YoY",
       "fiscal_year_free_cash_flow": "$3.77B",
-      "next_guide": "FY2027 Q1 revenue $4.0B +/- $0.2B"
+      "next_guide": "FY2027 Q1 revenue $4.0B +/- $0.2B",
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "MU": {
       "period": "FY2026 Q4 ended September 3, 2026; September 30 release and FY2026 10-K",
@@ -439,7 +492,9 @@
         "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
         "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "FORM": {
       "period": "2026 Q2",
@@ -451,7 +506,9 @@
         "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000030/ex9901-earningsreleasexq226.htm",
         "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "PDFS": {
       "period": "2026 Q2 and 10-Q",
@@ -464,7 +521,9 @@
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     },
     "ASML": {
       "period": "Q3 2026 ended September 27; October 14 6-K exhibit",
@@ -476,103 +535,141 @@
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm"
       ],
-      "data_stale": false
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
+    },
+    "LRCX": {
+      "period": "FY2027 Q1 ended September 27, 2026; release October 21; 10-Q filed October 22",
+      "revenue": "$8.219418B, +54.4% YoY and +22% QoQ",
+      "gaap_net_income": "$2.753138B versus $1.568660B, +75.5% YoY",
+      "gaap_eps": "$2.19",
+      "operating_cash_flow": "$3.497652B",
+      "capital_expenditures_and_intangibles": "$257.697M",
+      "free_cash_flow": "$3.239955B, OCF less capital expenditures and intangible assets",
+      "gaap_gross_margin": "52.3%",
+      "next_guide": "December-quarter revenue $8.60B +/- $0.40B; GAAP EPS $2.33 +/- $0.15",
+      "call_signal": "Management preliminary 2027 WFE outlook above $200B; cleanroom and component constraints limit supply. Industry forecast, not Lam revenue guidance.",
+      "risk": "35% of quarterly revenue from China; export restrictions, customer concentration, memory capex cyclicality and supplier capacity",
+      "sources": [
+        "https://investor.lamresearch.com/2026-10-21-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-27,-2026",
+        "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm",
+        "https://investor.lamresearch.com/image/LRCX-USQ_Transcript_2026-10-21.pdf"
+      ],
+      "data_stale": false,
+      "reviewed_on": "2026-10-27",
+      "freshness_note": "Period labels identify the reported quarter. Reviewed today does not mean new results were released today."
     }
   },
   "source_intelligence": [
     {
       "publisher": "Benzinga",
-      "date": "2026-10-14",
-      "url": "https://www.benzinga.com/markets/tech/26/10/62346389/micron-stock-gets-hammered-over-china-fears-jim-cramer-calls-the-selloff-nonsense",
-      "access": "Public reporting",
-      "signal": "Memory stocks sold off on Chinese competition fears. Treat market commentary as a sentiment signal; it does not establish near-term HBM qualification or pricing collapse."
+      "date": "2026-10-26",
+      "url": "https://www.benzinga.com/opinion/26/10/62598577/neoclouds-face-guppy-level-death-36-of-sp500-earnings-this-week-brazil-stocks-plunge-on-election-outcome",
+      "access": "Public opinion; not an audited credit study",
+      "signal": "Neocloud consolidation and funding risk are prominent in market commentary. Treat this as sentiment and a diligence prompt, not evidence that any specific customer will default.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "EE Times",
-      "date": "2026-10",
-      "url": "https://www.eetimes.com/podcasts/scaling-ai-with-wide-parallel-interconnects/",
-      "access": "Public podcast overview",
-      "signal": "Wide parallel interconnects target bandwidth, power and reach limits. The investment implication is more technology choice, not automatic success for one supplier."
+      "date": "2026-10-26",
+      "url": "https://www.eetimes.com/the-ai-packaging-challenge-5-reasons-panels-are-gaining-momentum/",
+      "access": "Lam executive contribution / partner content",
+      "signal": "Larger AI packages create wafer-utilization and scaling challenges. Panel processing offers potential area efficiency, but uniformity, yield and qualification remain unresolved. This is supplier advocacy, not an independent Lam earnings catalyst.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "SemiAnalysis",
-      "date": "2026-10-09",
-      "url": "https://semianalysis.com/weekly/episodes/?tag=InferenceX",
-      "access": "Public episode summaries; institutional models not accessed",
-      "signal": "Current discussion emphasizes AI buildout financing, GPU rental economics and credit quality. Semiconductor demand must be tested against customers' ability to fund useful capacity."
+      "date": "2026-10-23",
+      "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+      "access": "Publicly accessible article text; paid models not accessed",
+      "signal": "Trainium's more native PyTorch experience could reduce switching friction. Analyst inference: custom accelerators can gain share without eliminating GPU demand; software portability is a real competitive risk, not just theoretical silicon competition.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "Seeking Alpha",
-      "date": "2026-09-30",
-      "url": "https://seekingalpha.com/article/4951208-micron-technology-inc-mu-q4-2026-post-earnings-analyst-call-transcript",
-      "access": "Public transcript excerpt; full paywalled analysis not assumed",
-      "signal": "Micron's earnings discussion frames demand, pricing and capacity risks. The actual revenue, profit and guidance numbers in this screen come from the SEC release and 10-K."
+      "date": "2026-10-22",
+      "url": "https://seekingalpha.com/news/4655710-lam-projects-more-than-200b-2027-wfe-as-aether-revenue-target-rises-to-2_5b-by-decade-end",
+      "access": "Public news preview; full paid coverage not assumed",
+      "signal": "Lam's preliminary 2027 WFE outlook exceeds $200B. Issuer-hosted call and SEC filing independently check the operating numbers; the industry outlook is not a guaranteed order book.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "TechInsights",
-      "date": "2026-09-22",
-      "url": "https://www.techinsights.com/blog/storm-clouds-are-starting-roll",
-      "access": "Older public summary; mixed evidence",
-      "signal": "The broad equipment summary reports weaker orders and utilization, conflicting with stronger AI-specific issuer evidence. The old 44-degree gauge is removed; no unverified October industry reading receives score credit."
+      "date": "2026-10-23",
+      "url": "https://www.techinsights.com/chip-observer/october-2026",
+      "access": "Public October briefing; forecasts not realized sales",
+      "signal": "Updated forecast puts 2026 semiconductor sales at $1.803T and capex at $301B; estimated Q3 fab utilization is 90%, above 95% at 5nm/3nm. Price inflation contributes to dollar growth, so do not equate it with unit growth.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "TrendForce",
-      "date": "2026-09-11",
-      "url": "https://www.trendforce.com/insights/memory-hierarchy-paradigm-shift",
-      "access": "Public research",
-      "signal": "Inference expands the memory hierarchy beyond HBM. DRAM, flash and KV-cache storage matter alongside bandwidth, supporting a wider memory and connectivity opportunity."
+      "date": "2026-10-26",
+      "url": "https://www.trendforce.com/price/dram/dram_spot",
+      "access": "Public spot table updated 18:10 GMT+8; contract HBM distinct",
+      "signal": "Standard DDR5 16Gb spot session average rose 0.11%, while some DDR4 lines fell. This is not an HBM contract quote. September 29's forecast of higher 2027 HBM ASPs supports a scenario, not a certainty.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "SEMI",
-      "date": "2026-07-14",
-      "url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports",
-      "access": "Latest relevant forecast verified in this review",
-      "signal": "Total equipment sales forecast: $165.9B in 2026 and $229.5B in 2028. Test and packaging grow with device complexity; these are forecasts, not realized sales."
+      "date": "2026-10-13",
+      "url": "https://www.semi.org/en/semi-press-release/global-300mm-fab-equipment-spending-to-reach-227-billion-in-2029-as-buildout-accelerates-semi-projects",
+      "access": "Public industry forecast",
+      "signal": "300mm front-end fab equipment spending is forecast at $149B in 2026 and $227B in 2029. This narrower measure differs from July's total-equipment forecast; the series must not be spliced together.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "ServeTheHome",
-      "date": "2026-10-14",
-      "url": "https://www.servethehome.com/inside-the-secretive-aws-networking-lab/",
-      "access": "Sponsored on-site technical reporting",
-      "signal": "AWS is deploying 51.2T / 800G switching and preparing 102.4T / 1.6T. Telemetry, optics cooling and serviceability are deployment constraints, not optional accessories."
+      "date": "2026-10-19",
+      "url": "https://www.servethehome.com/nvidia-bluefield-4-stx-server-for-cmx-at-ocp-2026/",
+      "access": "On-site hardware reporting; newer site headlines also checked",
+      "signal": "BlueField-4 STX context-memory hardware pairs a compact server design with SOCAMM/LPDDR memory. The memory hierarchy extends beyond HBM into capacity and cache; observed boards are not evidence of volume shipments.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "HPCwire",
-      "date": "2026-10-14",
-      "url": "https://www.hpcwire.com/off-the-wire/bull-to-bring-nvidia-vera-and-vera-rubin-ultra-nvl72-to-europe/",
-      "access": "Company press release carried by publisher",
-      "signal": "Bull plans European Vera Rubin Ultra NVL72 production for H1 2028 with liquid cooling, 800VDC support and direct optical links. This is a roadmap, not a shipment or purchase order."
+      "date": "2026-10-26",
+      "url": "https://www.hpcwire.com/bigdatawire/this-just-in/nagare-labs-emerges-from-stealth-to-break-ais-memory-bottleneck/",
+      "access": "HPCwire network press-release preview; full page access limited",
+      "signal": "Nagare Labs' new memory technology highlights attempts to improve density and latency. Early-stage company claims do not demonstrate manufacturable yield or near-term displacement of incumbent DRAM/HBM.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "Reuters",
-      "date": "2026-10-14",
-      "url": "https://live.euronext.com/en/financial-news/chip-tool-giant-asml-nudges-outlook-ai-driven-demand-outruns-supply",
-      "access": "Reuters syndication",
-      "signal": "ASML raised its outlook and warned of unmet demand through 2028. Long-lead equipment interest supports structural demand but cannot rule out nearer-term order deferrals."
+      "date": "2026-10-26",
+      "url": "https://whbl.com/2026/10/26/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-chips-for-anthropic/",
+      "access": "Reuters syndication; checked against issuer announcement",
+      "signal": "The Broadcom/Anthropic funding transaction supports future procurement but exposes the financial structure behind AI demand. The same transaction reported by several outlets is one event, not multiple independent demand signals.",
+      "checked_on": "2026-10-27"
     },
     {
       "publisher": "Yahoo Finance",
-      "date": "2026-10-14",
-      "url": "https://ca.finance.yahoo.com/news/chip-rout-deepens-rate-fears-002721466.html",
-      "access": "Syndicated market reporting",
-      "signal": "Higher rates, stretched valuations and AI financing costs are driving a chip-sector reset. A strong earnings quarter and a falling valuation can coexist with substantial further downside."
+      "date": "2026-10-26",
+      "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-arranges-63-billion-deal-203614048.html",
+      "access": "Bloomberg syndication search preview; full page unavailable",
+      "signal": "Coverage of Broadcom-arranged financing reinforces the need to examine customer credit and asset residual values. Use the issuer announcement for transaction mechanics; no paywalled details or live quote response are assumed.",
+      "checked_on": "2026-10-27"
     }
   ],
   "sources": [
-    "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
-    "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
-    "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
     "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
+    "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
+    "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
     "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-    "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm",
     "https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm",
     "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-to-Showcase-Broad-Portfolio-of-Connectivity-Solutions-for-AI-Scale-Out-and-Scale-Up-Fabrics-at-2026-OCP-Global-Summit/default.aspx",
     "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Unveils-1-6T-ZeroFlap-Active-Light-Cable-Industrys-First-Row-Scale-Wide-Parallel-Optical-Interconnect-for-AI-Data-Centers/default.aspx",
     "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
     "https://stockanalysis.com/stocks/mrvl/transcripts/724088-investor-day-2026/",
-    "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+    "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
     "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000030/ex9901-earningsreleasexq226.htm",
+    "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
     "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm",
+    "https://investor.lamresearch.com/2026-10-21-Lam-Research-Corporation-Reports-Financial-Results-for-the-Quarter-Ended-September-27,-2026",
+    "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm",
+    "https://investor.lamresearch.com/image/LRCX-USQ_Transcript_2026-10-21.pdf",
     "https://stockanalysis.com/etf/soxx/history/",
     "https://stockanalysis.com/stocks/avgo/history/",
     "https://stockanalysis.com/stocks/nvda/history/",
@@ -583,21 +680,25 @@
     "https://stockanalysis.com/stocks/mrvl/history/",
     "https://stockanalysis.com/stocks/form/history/",
     "https://stockanalysis.com/stocks/pdfs/history/",
-    "https://www.benzinga.com/markets/tech/26/10/62346389/micron-stock-gets-hammered-over-china-fears-jim-cramer-calls-the-selloff-nonsense",
-    "https://www.eetimes.com/podcasts/scaling-ai-with-wide-parallel-interconnects/",
-    "https://semianalysis.com/weekly/episodes/?tag=InferenceX",
-    "https://seekingalpha.com/article/4951208-micron-technology-inc-mu-q4-2026-post-earnings-analyst-call-transcript",
-    "https://www.techinsights.com/blog/storm-clouds-are-starting-roll",
-    "https://www.trendforce.com/insights/memory-hierarchy-paradigm-shift",
-    "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports",
-    "https://www.servethehome.com/inside-the-secretive-aws-networking-lab/",
-    "https://www.hpcwire.com/off-the-wire/bull-to-bring-nvidia-vera-and-vera-rubin-ultra-nvl72-to-europe/",
-    "https://live.euronext.com/en/financial-news/chip-tool-giant-asml-nudges-outlook-ai-driven-demand-outruns-supply",
-    "https://ca.finance.yahoo.com/news/chip-rout-deepens-rate-fears-002721466.html",
-    "https://www.microsoft.com/en-us/Investor/events/fy-2026/earnings-fy-2026-q3",
-    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+    "https://stockanalysis.com/stocks/lrcx/history/",
+    "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+    "https://stockanalysis.com/stocks/amzn/transcripts/657334-q2-2026/",
     "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
-    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm"
+    "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+    "https://www.benzinga.com/opinion/26/10/62598577/neoclouds-face-guppy-level-death-36-of-sp500-earnings-this-week-brazil-stocks-plunge-on-election-outcome",
+    "https://www.eetimes.com/the-ai-packaging-challenge-5-reasons-panels-are-gaining-momentum/",
+    "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+    "https://seekingalpha.com/news/4655710-lam-projects-more-than-200b-2027-wfe-as-aether-revenue-target-rises-to-2_5b-by-decade-end",
+    "https://www.techinsights.com/chip-observer/october-2026",
+    "https://www.trendforce.com/price/dram/dram_spot",
+    "https://www.semi.org/en/semi-press-release/global-300mm-fab-equipment-spending-to-reach-227-billion-in-2029-as-buildout-accelerates-semi-projects",
+    "https://www.servethehome.com/nvidia-bluefield-4-stx-server-for-cmx-at-ocp-2026/",
+    "https://www.hpcwire.com/bigdatawire/this-just-in/nagare-labs-emerges-from-stealth-to-break-ais-memory-bottleneck/",
+    "https://whbl.com/2026/10/26/wall-street-banks-blackstone-line-up-63-billion-to-finance-broadcom-chips-for-anthropic/",
+    "https://finance.yahoo.com/technology/ai/articles/broadcom-arranges-63-billion-deal-203614048.html",
+    "https://www.trendforce.com/presscenter/news/20260929-13255.html",
+    "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date",
+    "https://investors.formfactor.com/press-releases"
   ],
   "profit_growth_screen": {
     "scope": "Selected reviewed companies only; not a complete sector ranking. All figures are quarterly GAAP net income; ASML uses a sequential comparison explicitly.",
@@ -657,6 +758,15 @@
         "growth_percent": 104.1
       },
       {
+        "ticker": "LRCX",
+        "current": 2753.138,
+        "prior": 1568.66,
+        "unit": "USD million",
+        "comparison": "YoY",
+        "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm",
+        "growth_percent": 75.5
+      },
+      {
         "ticker": "ASML",
         "current": 4960,
         "prior": 2918,
@@ -675,32 +785,32 @@
     "candidates": [
       {
         "ticker": "FORM",
-        "reference_price": 119.71,
-        "reference_date": "2026-10-14",
+        "reference_price": 101.11,
+        "reference_date": "2026-10-26",
         "terminal_pe": 30,
-        "required_eps": 39.9,
+        "required_eps": 33.703,
         "assumed_terminal_diluted_shares_m": 95,
-        "required_net_income_b": 3.79,
+        "required_net_income_b": 3.202,
         "assumed_terminal_net_margin": 0.3,
-        "required_revenue_b": 12.64,
+        "required_revenue_b": 10.673,
         "base": "HBM probe demand and optical-engine test broaden the business, but growth decelerates and 10x is not reached.",
-        "bull_requirement": "Become a much larger global test platform with about $12.6B sales and $3.8B profit; current quarterly revenue is $258.2M.",
+        "bull_requirement": "Reach roughly $10.67B revenue and $3.20B annual profit with 95M diluted shares; current quarterly revenue $258.2M.",
         "bear": "Memory capex reversal, customer concentration or failure to scale optical testing.",
         "next_check": "October 28 company-announced earnings; verify shipments, margin and cash conversion.",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm"
       },
       {
         "ticker": "PDFS",
-        "reference_price": 42.41,
-        "reference_date": "2026-10-14",
+        "reference_price": 40.82,
+        "reference_date": "2026-10-26",
         "terminal_pe": 30,
-        "required_eps": 14.14,
+        "required_eps": 13.607,
         "assumed_terminal_diluted_shares_m": 50,
-        "required_net_income_b": 0.707,
+        "required_net_income_b": 0.68,
         "assumed_terminal_net_margin": 0.2,
-        "required_revenue_b": 3.534,
+        "required_revenue_b": 3.402,
         "base": "Yield analytics and recurring platform adoption grow, but platform integration and dilution keep returns below 10x.",
-        "bull_requirement": "Scale to about $3.5B revenue and $707M profit with 50M diluted shares; current quarterly revenue is $61.5M.",
+        "bull_requirement": "Reach roughly $3.40B revenue and $680M annual profit with 50M diluted shares; current quarterly revenue $61.5M.",
         "bear": "SecureWISE integration, customer concentration, weak recurring mix or rising dilution.",
         "next_check": "Next quarterly filing; verify platform revenue rebounds, recurring mix and per-share cash flow.",
         "filing_url": "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm"
@@ -709,14 +819,44 @@
   },
   "watchlist_history": {
     "local_file": "best_buy_watchlist_history.csv",
-    "snapshot_date": "2026-10-15",
-    "reference_quote_date": "2026-10-14",
+    "snapshot_date": "2026-10-27",
+    "reference_quote_date": "2026-10-26",
     "record_type": "Conditional research shortlist; no fills or portfolio returns inferred.",
     "tickers": [
       "MU",
-      "AVGO",
       "ASML",
-      "NVDA"
+      "NVDA",
+      "LRCX"
     ]
+  },
+  "valuation_checks": {
+    "basis": "Illustrative annualized-quarter or latest reported annual EPS, not consensus forward P/E; none is an intrinsic-value estimate.",
+    "MU": {
+      "annual_gaap_eps": 74.33,
+      "annual_pe": 12.16,
+      "quarterly_gaap_eps": 32.87,
+      "annualized_quarter_pe": 6.87,
+      "half_quarter_run_rate_pe": 13.75
+    },
+    "LRCX": {
+      "quarterly_gaap_eps": 2.19,
+      "annualized_quarter_pe": 27.11,
+      "guided_quarter_gaap_eps": 2.33,
+      "annualized_guided_quarter_pe": 25.48
+    },
+    "AVGO": {
+      "quarterly_gaap_eps": 2.68,
+      "annualized_quarter_gaap_pe": 30.71,
+      "quarterly_adjusted_eps": 3.32,
+      "annualized_quarter_adjusted_pe": 24.79
+    },
+    "ASML": {
+      "note": "EUR financial statements versus USD-listed share price: no mixed-currency P/E shown."
+    },
+    "NVDA": {
+      "quarterly_gaap_eps": 2.46,
+      "annualized_quarter_gaap_pe": 21.95,
+      "note": "Quarterly EPS includes investment-related other income. Annualization is not a sustainable owner-earnings forecast."
+    }
   }
 }
