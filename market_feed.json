@@ -309,8 +309,9 @@
       "KLAC"
     ],
     "long_term_10x_optionality": [
-      "FORM",
-      "PDFS"
+      "PDFS",
+      "AEHR",
+      "VICR"
     ],
     "keep_caution_today": [
       "AVGO: supplier residual-value support and customer financing",
@@ -698,7 +699,23 @@
     "https://finance.yahoo.com/technology/ai/articles/broadcom-arranges-63-billion-deal-203614048.html",
     "https://www.trendforce.com/presscenter/news/20260929-13255.html",
     "https://ir.kla.com/news-events/press-releases/detail/522/kla-announces-first-quarter-fiscal-year-2027-earnings-date",
-    "https://investors.formfactor.com/press-releases"
+    "https://investors.formfactor.com/press-releases",
+    "https://www.pdf.com/resources/introducing-exensio-aurora-pdf-solutions-unveils-highly-scalable-architecture-for-exensio-analytics/",
+    "https://www.pdf.com/resources/pdf-solutions-to-report-third-quarter-fiscal-2026-financial-results-on-november-5-2026/",
+    "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm",
+    "https://www.aehr.com/2026/07/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-financial-results-with-record-quarterly-bookings-and-100-million-effective-backlog/",
+    "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+    "https://www.aehr.com/2026/10/aehr-test-systems-to-announce-first-quarter-fiscal-2027-financial-results-on-november-2-2026/",
+    "https://vicorcorporation.gcs-web.com/node/17966/html",
+    "https://vicorcorporation.gcs-web.com/node/17956",
+    "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/",
+    "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html",
+    "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+    "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-unveils-orion-compute-agnostic-rack-scale",
+    "https://rss.globenewswire.com/news-release/2026/08/13/3344383/0/en/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth.html",
+    "https://stockanalysis.com/stocks/aehr/history/",
+    "https://stockanalysis.com/stocks/vicr/history/",
+    "https://stockanalysis.com/stocks/alab/history/"
   ],
   "profit_growth_screen": {
     "scope": "Selected reviewed companies only; not a complete sector ranking. All figures are quarterly GAAP net income; ASML uses a sequential comparison explicitly.",
@@ -778,43 +795,387 @@
     ]
   },
   "ten_x_screen": {
+    "reviewed_on": "2026-10-27",
     "horizon_years": 10,
-    "status": "Two speculative research candidates; no high-confidence 10x forecast",
-    "required_annual_share_price_return_percent": 25.9,
-    "method": "Reverse earnings hurdle: 10 x reference share price / terminal P/E. Required EPS already incorporates future dilution; profits use explicitly assumed terminal diluted shares.",
+    "horizon_end": "2036-10",
+    "status": "PDFS, AEHR and VICR selected for speculative research; no high-confidence 10x forecast or immediate buy",
+    "required_annual_share_price_return_percent": 25.892541179416728,
+    "method": "Technology adoption -> serviceable market -> durable profit/cash conversion -> dilution-adjusted per-share value. Tenfold price return is a bull-case screen, not a prediction.",
+    "selection_rules": [
+      "Commercial technology with evidence beyond a presentation",
+      "Room to expand the company's serviceable market, not just total AI spending",
+      "Explicit earnings, share-count and margin hurdles at the current reference price",
+      "Funded growth and per-share economics; avoid treating equity-financed cash as operating cash",
+      "A non-10x base illustration and severe downside case; no invented success probabilities"
+    ],
+    "score_policy": "No additional numerical score or quality/entry split. Existing single stock scores and Best Buy Today list are unchanged; new names here are unscored research candidates.",
+    "return_definition": "Share-price return only, before tax, trading costs and dividends; all quotes are October 26 regular-session USD closes.",
+    "forecast_limits": "All 2036 scenarios, terminal shares, P/E, margins and 20% share assumptions are analyst illustrations, not company guidance or calibrated forecasts. Quarter annualization is a scaling reference, not a prediction. Bankruptcy or worse outcomes than the illustrated bear cases remain possible.",
+    "technology_trends": [
+      {
+        "theme": "Manufacturing intelligence",
+        "near_term": "2026-2028: chiplets, hybrid packaging and more process data increase yield/debug complexity.",
+        "long_term": "2029-2036: opportunity for cross-fab analytics and closed-loop workflows; software adoption must create measurable customer savings.",
+        "exposure": [
+          "PDFS"
+        ],
+        "check": "Paid software adoption, retention, mix and cash per share, not AI feature announcements.",
+        "source": "https://www.pdf.com/resources/introducing-exensio-aurora-pdf-solutions-unveils-highly-scalable-architecture-for-exensio-analytics/"
+      },
+      {
+        "theme": "Reliability and known-good devices",
+        "near_term": "2026-2028: high-power AI processors and optical devices require reliable qualification; AI and photonics can diversify test demand.",
+        "long_term": "2029-2036: more device generations and consumables could compound, but alternative test methods can lower intensity.",
+        "exposure": [
+          "AEHR",
+          "FORM"
+        ],
+        "check": "Multiple production customers, accepted shipments and recurring consumables; no assumed monopoly.",
+        "source": "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/"
+      },
+      {
+        "theme": "Rack fabrics and optical reach",
+        "near_term": "2026-2028: PCIe fabrics, open interconnect roadmaps, 1.6T links and memory tiers increase connectivity content.",
+        "long_term": "2029-2036: optical I/O and fabric disaggregation may expand the market; system-level efficiency can reduce some component demand.",
+        "exposure": [
+          "ALAB",
+          "CRDO",
+          "POET"
+        ],
+        "check": "Qualification yield, architecture share and customer economics; no double-counting components inside modules.",
+        "source": "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-unveils-orion-compute-agnostic-rack-scale"
+      },
+      {
+        "theme": "Power delivery density",
+        "near_term": "2026-2028: 800V roadmaps and higher-current processors change conversion and distribution requirements.",
+        "long_term": "2029-2036: efficient conversion and near-chip delivery may gain value, but standards create opportunities for competing vendors.",
+        "exposure": [
+          "VICR"
+        ],
+        "check": "Vendor-specific design wins, recurring license economics and return on manufacturing investment.",
+        "source": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/"
+      }
+    ],
     "candidates": [
+      {
+        "ticker": "PDFS",
+        "company": "PDF Solutions",
+        "vertical": "Manufacturing software / yield analytics",
+        "selection": "Priority platform research",
+        "reference_price": 40.82,
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/pdfs/history/",
+        "assumed_terminal_diluted_shares_m": 50,
+        "assumed_terminal_net_margin": 0.2,
+        "terminal_pe": 30,
+        "baseline_revenue_b": 0.246,
+        "baseline_basis": "Q2 2026 revenue $61.5M x 4; illustrative annualized quarter, not annual guidance",
+        "technology_thesis": "Chiplets, 3D integration and hybrid packaging increase cross-fab data complexity. Exensio Aurora could make yield analytics, equipment connectivity and workflow automation more valuable.",
+        "market_expansion": "Must expand from a specialist analytics supplier into a cross-fab manufacturing data/workflow platform. Semiconductor sales or cloud AI spending is not its serviceable software market.",
+        "reported_evidence": "Q2 revenue $61.5M, +19% YoY; GAAP net income $4.271M; platform revenue $49.1M. The filing says Exensio/software and secureWISE decreases partly offset hardware-led growth.",
+        "valuation_warning": "$40.82 / ($0.10 quarterly GAAP EPS x 4) is about 102x. Small size does not mean a cheap stock or a SaaS-like margin structure.",
+        "milestones": [
+          "November 5 earnings: platform/software growth reaccelerates rather than hardware alone",
+          "Aurora beta converts into disclosed paid adoption and recurring revenue",
+          "Cash flow per diluted share rises and dilution stays within the modeled share count"
+        ],
+        "failure": "Customer in-house tools or larger software competitors win; platform growth stalls; hardware mix, integration costs or dilution prevent a 20% net margin.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm",
+          "https://www.pdf.com/resources/introducing-exensio-aurora-pdf-solutions-unveils-highly-scalable-architecture-for-exensio-analytics/",
+          "https://www.pdf.com/resources/pdf-solutions-to-report-third-quarter-fiscal-2026-financial-results-on-november-5-2026/"
+        ],
+        "scenarios": [
+          {
+            "label": "Bear",
+            "revenue_b": 0.4,
+            "net_margin": 0.1,
+            "diluted_shares_m": 55,
+            "pe": 20,
+            "net_income_b": 0.04000000000000001,
+            "share_price": 14.545454545454549,
+            "price_multiple": 0.3563315665226494,
+            "annualized_price_return_percent": -9.804383845741038
+          },
+          {
+            "label": "Base illustration",
+            "revenue_b": 1.5,
+            "net_margin": 0.2,
+            "diluted_shares_m": 50,
+            "pe": 25,
+            "net_income_b": 0.30000000000000004,
+            "share_price": 150.00000000000003,
+            "price_multiple": 3.6746692797648217,
+            "annualized_price_return_percent": 13.899502167698131
+          },
+          {
+            "label": "10x bull illustration",
+            "revenue_b": 3.5,
+            "net_margin": 0.2,
+            "diluted_shares_m": 50,
+            "pe": 30,
+            "net_income_b": 0.7000000000000001,
+            "share_price": 420.00000000000006,
+            "price_multiple": 10.2890739833415,
+            "annualized_price_return_percent": 26.251814632342985
+          }
+        ],
+        "ten_x_share_price": 408.2,
+        "required_eps": 13.606666666666666,
+        "required_net_income_b": 0.6803333333333332,
+        "required_revenue_b": 3.401666666666666,
+        "required_revenue_cagr_percent": 30.039611911379204,
+        "minimum_serviceable_market_b_at_20_percent_share": 17.00833333333333,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 5.102499999999999
+      },
+      {
+        "ticker": "AEHR",
+        "company": "Aehr Test Systems",
+        "vertical": "AI processor / photonics reliability testing",
+        "selection": "Higher-risk adoption research",
+        "reference_price": 56.6,
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/aehr/history/",
+        "assumed_terminal_diluted_shares_m": 50,
+        "assumed_terminal_net_margin": 0.25,
+        "terminal_pe": 30,
+        "baseline_revenue_b": 0.050001,
+        "baseline_basis": "FY2026 reported revenue $50.001M; not the FY2027 guidance midpoint",
+        "technology_thesis": "Higher-power AI packages and photonic devices increase the cost of latent failures. Wafer/package-level burn-in and device-specific consumables could capture more test content.",
+        "market_expansion": "Needs many customers and device generations across AI, photonics and other reliability-critical chips. The AI chip market itself is not the burn-in equipment market.",
+        "reported_evidence": "FY26 revenue $50.0M and GAAP loss $7.126M; $3.310M operating cash outflow. FY27 management revenue outlook is $130M-$150M, not reported sales. October 7 follow-on Sonoma orders were about $6M.",
+        "valuation_warning": "The business is priced for an inflection. FY26 cash growth was largely equity-financed; 32.62M shares were outstanding July 20. The 50M terminal assumption explicitly allows substantial dilution. The modeled 25% terminal net margin is more demanding than management's FY27 18%-22% non-GAAP net-income outlook.",
+        "milestones": [
+          "November 2 earnings: orders become accepted shipments and cash collections",
+          "More than one major AI customer and multiple production device ramps",
+          "Consumables/services scale, operating cash flow turns positive and margins survive growth"
+        ],
+        "failure": "Benchmark wins do not convert, major customers delay capex, burn-in methods change, or concentration and dilution overwhelm revenue growth.",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm",
+          "https://www.aehr.com/2026/07/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-financial-results-with-record-quarterly-bookings-and-100-million-effective-backlog/",
+          "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+          "https://www.aehr.com/2026/10/aehr-test-systems-to-announce-first-quarter-fiscal-2027-financial-results-on-november-2-2026/"
+        ],
+        "scenarios": [
+          {
+            "label": "Bear",
+            "revenue_b": 0.15,
+            "net_margin": 0.08,
+            "diluted_shares_m": 50,
+            "pe": 20,
+            "net_income_b": 0.012,
+            "share_price": 4.8,
+            "price_multiple": 0.08480565371024734,
+            "annualized_price_return_percent": -21.86556418006783
+          },
+          {
+            "label": "Base illustration",
+            "revenue_b": 1,
+            "net_margin": 0.2,
+            "diluted_shares_m": 45,
+            "pe": 25,
+            "net_income_b": 0.2,
+            "share_price": 111.11111111111111,
+            "price_multiple": 1.9630938358853554,
+            "annualized_price_return_percent": 6.977909259866855
+          },
+          {
+            "label": "10x bull illustration",
+            "revenue_b": 4,
+            "net_margin": 0.25,
+            "diluted_shares_m": 50,
+            "pe": 30,
+            "net_income_b": 1,
+            "share_price": 600,
+            "price_multiple": 10.600706713780918,
+            "annualized_price_return_percent": 26.629088840440353
+          }
+        ],
+        "ten_x_share_price": 566,
+        "required_eps": 18.866666666666667,
+        "required_net_income_b": 0.9433333333333334,
+        "required_revenue_b": 3.7733333333333334,
+        "required_revenue_cagr_percent": 54.09006849000328,
+        "minimum_serviceable_market_b_at_20_percent_share": 18.866666666666667,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 5.66
+      },
+      {
+        "ticker": "VICR",
+        "company": "Vicor",
+        "vertical": "Power conversion / vertical power delivery",
+        "selection": "Conditional power-platform research",
+        "reference_price": 194.77,
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/vicr/history/",
+        "assumed_terminal_diluted_shares_m": 55,
+        "assumed_terminal_net_margin": 0.25,
+        "terminal_pe": 30,
+        "baseline_revenue_b": 0.788456,
+        "baseline_basis": "Q3 2026 product plus royalty revenue x 4; not a normalized recurring run rate",
+        "technology_thesis": "Denser accelerators need efficient high-current delivery close to the processor. Vertical power delivery and compact modules could gain content as rack power distribution evolves.",
+        "market_expansion": "Must win repeat product designs and durable licenses across AI processors and adjacent power applications. 800V infrastructure adoption does not guarantee Vicor wins the conversion stages.",
+        "reported_evidence": "Q3 revenue $197.114M comprises $130.501M product revenue and $66.613M royalties; attributable GAAP profit $63.321M. The October 26 10-Q is available through the issuer.",
+        "valuation_warning": "The reference price jumped 10.64% on October 26. Annualizing Q3 EPS $1.33 gives about 36.6x, but licensing timing makes that a poor substitute for normalized earnings.",
+        "milestones": [
+          "Separate recurring royalties from new-agreement effects and validate cash collection",
+          "Turn VPD customer interest into disclosed production revenue",
+          "Prove capacity-expansion economics, sustainable margins and competitive wins"
+        ],
+        "failure": "TI or other architectures win, patent/licensing economics disappoint, customers redesign power delivery, or manufacturing expansion consumes returns.",
+        "sources": [
+          "https://vicorcorporation.gcs-web.com/node/17966/html",
+          "https://vicorcorporation.gcs-web.com/node/17956",
+          "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/",
+          "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html"
+        ],
+        "scenarios": [
+          {
+            "label": "Bear",
+            "revenue_b": 1,
+            "net_margin": 0.12,
+            "diluted_shares_m": 55,
+            "pe": 20,
+            "net_income_b": 0.12,
+            "share_price": 43.63636363636363,
+            "price_multiple": 0.22404047664611404,
+            "annualized_price_return_percent": -13.89415187729548
+          },
+          {
+            "label": "Base illustration",
+            "revenue_b": 5,
+            "net_margin": 0.22,
+            "diluted_shares_m": 55,
+            "pe": 25,
+            "net_income_b": 1.1,
+            "share_price": 500,
+            "price_multiple": 2.567130461570057,
+            "annualized_price_return_percent": 9.88661465413616
+          },
+          {
+            "label": "10x bull illustration",
+            "revenue_b": 15,
+            "net_margin": 0.25,
+            "diluted_shares_m": 55,
+            "pe": 30,
+            "net_income_b": 3.75,
+            "share_price": 2045.4545454545455,
+            "price_multiple": 10.501897342786597,
+            "annualized_price_return_percent": 26.51055962793196
+          }
+        ],
+        "ten_x_share_price": 1947.7,
+        "required_eps": 64.92333333333333,
+        "required_net_income_b": 3.5707833333333334,
+        "required_revenue_b": 14.283133333333334,
+        "required_revenue_cagr_percent": 33.59942924988049,
+        "minimum_serviceable_market_b_at_20_percent_share": 71.41566666666667,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 21.4247
+      }
+    ],
+    "comparison_universe": [
       {
         "ticker": "FORM",
         "reference_price": 101.11,
-        "reference_date": "2026-10-26",
         "terminal_pe": 30,
-        "required_eps": 33.703,
         "assumed_terminal_diluted_shares_m": 95,
-        "required_net_income_b": 3.202,
         "assumed_terminal_net_margin": 0.3,
-        "required_revenue_b": 10.673,
-        "base": "HBM probe demand and optical-engine test broaden the business, but growth decelerates and 10x is not reached.",
-        "bull_requirement": "Reach roughly $10.67B revenue and $3.20B annual profit with 95M diluted shares; current quarterly revenue $258.2M.",
-        "bear": "Memory capex reversal, customer concentration or failure to scale optical testing.",
-        "next_check": "October 28 company-announced earnings; verify shipments, margin and cash conversion.",
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm"
+        "baseline_revenue_b": 1.032968,
+        "baseline_basis": "Q2 2026 revenue x 4",
+        "decision": "Demoted from priority 10x research",
+        "reason": "HBM and CPO test demand are real, but the current price requires roughly $10.67B annual revenue. Such scale must be justified against the narrower probe/test market; October 28 results remain pending.",
+        "source": "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/form/history/",
+        "ten_x_share_price": 1011.1,
+        "required_eps": 33.70333333333333,
+        "required_net_income_b": 3.2018166666666668,
+        "required_revenue_b": 10.672722222222223,
+        "required_revenue_cagr_percent": 26.304502874480672,
+        "minimum_serviceable_market_b_at_20_percent_share": 53.36361111111111,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 16.009083333333336
       },
       {
-        "ticker": "PDFS",
-        "reference_price": 40.82,
-        "reference_date": "2026-10-26",
+        "ticker": "ALAB",
+        "reference_price": 259.51,
         "terminal_pe": 30,
-        "required_eps": 13.607,
-        "assumed_terminal_diluted_shares_m": 50,
-        "required_net_income_b": 0.68,
-        "assumed_terminal_net_margin": 0.2,
-        "required_revenue_b": 3.402,
-        "base": "Yield analytics and recurring platform adoption grow, but platform integration and dilution keep returns below 10x.",
-        "bull_requirement": "Reach roughly $3.40B revenue and $680M annual profit with 50M diluted shares; current quarterly revenue $61.5M.",
-        "bear": "SecureWISE integration, customer concentration, weak recurring mix or rising dilution.",
-        "next_check": "Next quarterly filing; verify platform revenue rebounds, recurring mix and per-share cash flow.",
-        "filing_url": "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm"
+        "assumed_terminal_diluted_shares_m": 230,
+        "assumed_terminal_net_margin": 0.3,
+        "baseline_revenue_b": 1.5696,
+        "baseline_basis": "Q2 2026 revenue x 4",
+        "decision": "Strong technology; valuation-constrained 10x watch",
+        "reason": "Scorpio and Orion widen rack-scale connectivity. Q2 net income $153.088M included a $50.263M tax benefit, versus $89.248M operating profit. The starting price creates an exceptionally large tenfold earnings hurdle.",
+        "source": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/alab/history/",
+        "ten_x_share_price": 2595.1,
+        "required_eps": 86.50333333333333,
+        "required_net_income_b": 19.895766666666667,
+        "required_revenue_b": 66.31922222222222,
+        "required_revenue_cagr_percent": 45.406909312845386,
+        "minimum_serviceable_market_b_at_20_percent_share": 331.5961111111111,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 99.47883333333334
+      },
+      {
+        "ticker": "CRDO",
+        "reference_price": 151.15,
+        "terminal_pe": 30,
+        "assumed_terminal_diluted_shares_m": 250,
+        "assumed_terminal_net_margin": 0.3,
+        "baseline_revenue_b": 1.916012,
+        "baseline_basis": "FY27 Q1 revenue x 4",
+        "decision": "Platform optionality; not a priority tenfold selection",
+        "reason": "Copper, optical and memory connectivity can grow, but the tenfold hurdle is around $42B annual revenue under these assumptions. Concentration, stock compensation and competition remain material.",
+        "source": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm",
+        "reference_date": "2026-10-26",
+        "quote_url": "https://stockanalysis.com/stocks/crdo/history/",
+        "ten_x_share_price": 1511.5,
+        "required_eps": 50.38333333333333,
+        "required_net_income_b": 12.595833333333333,
+        "required_revenue_b": 41.986111111111114,
+        "required_revenue_cagr_percent": 36.16664674205019,
+        "minimum_serviceable_market_b_at_20_percent_share": 209.93055555555557,
+        "market_size_status": "Unvalidated: implied market size at 20% share is an arithmetic hurdle, not an external TAM estimate. No 2036 serviceable-market forecast has been independently established.",
+        "required_revenue_b_at_20_pe": 62.97916666666667
+      },
+      {
+        "ticker": "POET",
+        "reference_price": 5.37,
+        "reference_date": "2026-10-26",
+        "decision": "Excluded until production economics are demonstrated",
+        "reason": "Optical integration is promising, but Q2 revenue was only $0.570M against an $11.3M loss. Orders, cash and technical roadmaps do not establish scalable unit economics; warrants and financing require a fuller dilution model.",
+        "source": "https://rss.globenewswire.com/news-release/2026/08/13/3344383/0/en/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth.html",
+        "quote_url": "https://stockanalysis.com/stocks/poet/history/"
       }
+    ],
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm",
+      "https://www.pdf.com/resources/introducing-exensio-aurora-pdf-solutions-unveils-highly-scalable-architecture-for-exensio-analytics/",
+      "https://www.pdf.com/resources/pdf-solutions-to-report-third-quarter-fiscal-2026-financial-results-on-november-5-2026/",
+      "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm",
+      "https://www.aehr.com/2026/07/aehr-test-systems-reports-fiscal-2026-fourth-quarter-and-full-year-financial-results-with-record-quarterly-bookings-and-100-million-effective-backlog/",
+      "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
+      "https://www.aehr.com/2026/10/aehr-test-systems-to-announce-first-quarter-fiscal-2027-financial-results-on-november-2-2026/",
+      "https://vicorcorporation.gcs-web.com/node/17966/html",
+      "https://vicorcorporation.gcs-web.com/node/17956",
+      "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/",
+      "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html",
+      "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+      "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-unveils-orion-compute-agnostic-rack-scale",
+      "https://rss.globenewswire.com/news-release/2026/08/13/3344383/0/en/poet-technologies-reports-second-quarter-2026-results-revenue-up-112-year-over-year-in-sixth-consecutive-quarter-of-sequential-growth.html",
+      "https://stockanalysis.com/stocks/pdfs/history/",
+      "https://stockanalysis.com/stocks/aehr/history/",
+      "https://stockanalysis.com/stocks/vicr/history/",
+      "https://stockanalysis.com/stocks/form/history/",
+      "https://stockanalysis.com/stocks/alab/history/",
+      "https://stockanalysis.com/stocks/crdo/history/",
+      "https://www.sec.gov/Archives/edgar/data/1039399/000103939926000033/form-20260627.htm",
+      "https://www.sec.gov/Archives/edgar/data/1807794/000162828026060111/crdo-20260801.htm"
     ]
   },
   "watchlist_history": {
