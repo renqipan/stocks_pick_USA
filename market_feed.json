@@ -12,11 +12,46 @@
     "as_of": "2026-11-20T16:00:00-05:00",
     "note": "November 20 regular-session closes in USD; November 23 premarket/intraday prices excluded. SOXX completed a 3-for-1 split effective November 5; do not compare its raw close with October's pre-split price. Reference prices are not executable orders or fills.",
     "premarket_context": {
-      "observed_at": "2026-11-23T04:43:00-05:00",
+      "observed_at": "2026-11-23T05:17:00-05:00",
       "session": "premarket",
-      "summary": "Micron, Lam Research and Marvell each rose more than 7% in early U.S. premarket trading on November 23.",
-      "interpretation": "The rebound adds entry-price risk. The November 20 regular-session closes remain the valuation references, and the short-term stabilization rule counts completed regular sessions.",
-      "source_url": "https://uk.investing.com/news/stock-market-news/us-chip-and-neocloud-stocks-rally-premarket-after-last-weeks-selloff-4998656"
+      "summary": "Reuters reported S&P 500 E-minis up 2.72% and Nasdaq-100 E-minis up 3.52% at 5:17 a.m. ET.",
+      "interpretation": "The short-term stabilization rule counts completed regular sessions. The close data are from November 20.",
+      "source_url": "https://www.marketscreener.com/news/wall-street-futures-rebound-as-battered-ai-stocks-gain-ground-ce7851dad88ff021"
+    },
+    "index_context": {
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-20",
+      "basis": "Comparable local-session closes. CSI 300 is included as market context.",
+      "indices": [
+        {
+          "index": "S&P 500",
+          "start_close": 7549.94,
+          "end_close": 6910.39,
+          "change_percent": -8.47,
+          "source_url": "https://portfolio-terminal.com/markets/stock-market-close"
+        },
+        {
+          "index": "Nasdaq Composite",
+          "start_close": 25253.14,
+          "end_close": 22617.73,
+          "change_percent": -10.44,
+          "source_url": "https://portfolio-terminal.com/markets/stock-market-close"
+        },
+        {
+          "index": "PHLX Semiconductor",
+          "start_close": 10033.93,
+          "end_close": 8408.59,
+          "change_percent": -16.2,
+          "source_url": "https://closelooknet.pages.dev/indices/stock/sox.indx/price-history/"
+        },
+        {
+          "index": "CSI 300",
+          "start_close": 4056.11,
+          "end_close": 3954.57,
+          "change_percent": -2.5,
+          "source_url": "https://wanfang888.com/en/stock/sh/000300"
+        }
+      ]
     }
   },
   "quotes": {
@@ -211,9 +246,9 @@
         "reason": "AEC and optical connectivity retain architectural value. Four end customers generated 84% of FY27 Q1 revenue; $87.979M stock compensation versus $90.231M operating cash flow limits owner-cash confidence. December 1 results are pending; demonstrations are not production revenue."
       },
       "PDFS": {
-        "score": 73,
+        "score": 74,
         "decision": "watch_or_caution",
-        "reason": "Q3 revenue $68.3M and GAAP net income $6.841M improve the earnings base, but backlog fell from $270.7M to $247.2M. Software adoption, cash per share and dilution remain key; a new Q3 10-Q was not independently verified."
+        "reason": "The November 5 10-Q verifies nine-month operating cash flow of $31.8M versus $6.7M a year earlier. Backlog fell sequentially, and recurring software economics and cash per share still require scrutiny."
       },
       "MRVL": {
         "score": 72,
@@ -296,8 +331,8 @@
         "supply_chain_moat_and_diffusion": 14,
         "valuation_and_reaction_gap": 10,
         "financial_quality_and_positioning_risk": 10,
-        "evidence_integrity_and_uncertainty": 7,
-        "total": 73
+        "evidence_integrity_and_uncertainty": 8,
+        "total": 74
       },
       "MRVL": {
         "forward_fundamental_surprise": 20,
@@ -328,7 +363,7 @@
       "MU": -6,
       "AVGO": -2,
       "CRDO": -2,
-      "PDFS": 4,
+      "PDFS": 5,
       "MRVL": -7,
       "NVDA": -15
     }
@@ -366,75 +401,6 @@
       "ASML": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
       "LRCX": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
       "KLAC": "The October 29 Form 10-Q has been reviewed. Require three completed regular sessions without a new closing low, an orderly hold, and a fresh demand, funding and valuation check."
-    },
-    "investment_outlook": {
-      "reviewed_on": "2026-11-23",
-      "reference_quote_date": "2026-11-20",
-      "holding_period_years": [
-        2,
-        3
-      ],
-      "entry_context": "Consider partial positions near the reference valuations and reassess after a sharp rebound.",
-      "picks": [
-        {
-          "ticker": "TSM",
-          "rank": 1,
-          "close": 318.71,
-          "trailing_pe": 20.51,
-          "thesis": "Leading-edge foundry and packaging demand across GPUs and custom chips.",
-          "risk": "Taiwan production concentration and capital intensity."
-        },
-        {
-          "ticker": "ASML",
-          "rank": 2,
-          "close": 1266.22,
-          "trailing_pe": 31.19,
-          "thesis": "EUV lithography and installed-base productivity upgrades.",
-          "risk": "Premium valuation, customer fab delays and export controls."
-        },
-        {
-          "ticker": "MU",
-          "rank": 3,
-          "close": 594.51,
-          "trailing_pe": 8.0,
-          "valuation_basis": "FY2026 GAAP diluted EPS of $74.33",
-          "thesis": "Smaller cyclical position supported by HBM and server DRAM.",
-          "risk": "Elevated memory margins and declining NAND prices in the industry forecast.",
-          "illustrative_annual_eps_pe": {
-            "40": 14.86,
-            "30": 19.82
-          }
-        }
-      ],
-      "watch": [
-        {
-          "ticker": "NVDA",
-          "trailing_pe": 13.49,
-          "reason": "Await the Q3 10-Q and clarity on the reported SEC accounting inquiry."
-        },
-        {
-          "ticker": "AVGO",
-          "trailing_pe": 38.86,
-          "reason": "Await clarity on retained exposure under the Anthropic financing."
-        },
-        {
-          "ticker": "AMD",
-          "trailing_pe": 92.24,
-          "reason": "Await a better entry or sustained accelerator earnings growth."
-        }
-      ],
-      "short_term_status": "No setup qualifies under the three-session stabilization rule.",
-      "sources": [
-        "https://ycharts.com/companies/TSM/pe_ratio",
-        "https://ycharts.com/companies/ASML/pe_ratio",
-        "https://ycharts.com/companies/NVDA/pe_ratio",
-        "https://ycharts.com/companies/AVGO/pe_ratio",
-        "https://ycharts.com/companies/AMD/pe_ratio",
-        "https://www.semi.org/en/semi-press-release/worldwide-silicon-wafer-shipments-increase-13.4-percent-year-on-year-in-q3-2026-semi-reports",
-        "https://inferencex.semianalysis.com/hardware",
-        "https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/",
-        "https://www.hpcwire.com/off-the-wire/hpe-built-lux-ai-cluster-debuts-at-no-14-on-the-top500/"
-      ]
     }
   },
   "capital_flow": [
@@ -479,7 +445,18 @@
       "value": "$63B",
       "signal": "SPV buys XPU/networking and leases to Anthropic, with deliveries expected from 2027. Broadcom provides residual-value support equal to first-lien portion; tranche amount and loss mechanics not quantified in the short release. Not recognized revenue, not automatically all Broadcom debt, and not additional hyperscaler capex.",
       "evidence_period": "October 26 issuer-hosted announcement",
-      "source_url": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
+      "source_url": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
+      "conditional_note_financing": {
+        "summary": "Anthropic’s November 18 prospectus discloses up to $42B of conditional convertible-note financing from Broadcom or a designated financial partner, with zero notes issued as of the prospectus.",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
+      }
+    },
+    {
+      "name": "Hewlett Packard Enterprise",
+      "metric": "FY2026 Q4 earnings catalyst",
+      "evidence_period": "Scheduled for November 23",
+      "signal": "Watch for AI server orders, delivery timing and cash conversion.",
+      "source_url": "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html"
     }
   ],
   "supply_chain_view": {
@@ -493,7 +470,12 @@
       "1.6T links, optical packaging, lasers, link reliability and memory-pooling economics; prototypes are not volume wins",
       "Grid connections, transformers, 800V conversion, liquid cooling and powered sites"
     ],
-    "trend": "Strong AI demand coexists with funding, governance and commodity-cycle risk. Over 2027-2028 bottlenecks should migrate from devices toward qualified deployment and useful system economics. TrendForce forecasts NAND price declines in 2027; this is a forecast about NAND, not proof that HBM scarcity has ended. Manufacturing complexity can support tool/test content even as later capex cycles reverse. Optical memory pooling and CPO are technology paths, not automatic revenue for every component supplier."
+    "trend": "Strong AI demand coexists with funding, governance and commodity-cycle risk. Over 2027-2028 bottlenecks should migrate from devices toward qualified deployment and useful system economics. TrendForce forecasts NAND price declines in 2027; this is a forecast about NAND, not proof that HBM scarcity has ended. Manufacturing complexity can support tool/test content even as later capex cycles reverse. Optical memory pooling and CPO are technology paths, not automatic revenue for every component supplier.",
+    "export_control_update": {
+      "effective_date": "2026-11-19",
+      "summary": "The November 19 BIS rule changes due diligence and licensing for certain advanced-chip transactions involving foundries and packaging providers. Shipment timing and customer eligibility are additional variables for foundry revenue.",
+      "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm"
+    }
   },
   "filing_screen": {
     "AVGO": {
@@ -652,7 +634,7 @@
       "dilution_risk": "Planned $300M Teradyne placement of 2,234,887 shares; expected Q4 close, not independently verified as closed"
     },
     "PDFS": {
-      "period": "Q3 2026; November 5 issuer release",
+      "period": "Q3 ended September 30, 2026; November 5 earnings and Form 10-Q",
       "revenue": "$68.3M, +20% YoY",
       "gaap_net_income": "$6.841M versus $1.294M",
       "backlog": "$247.2M versus $270.7M in Q2",
@@ -660,12 +642,15 @@
       "profit_quality": "GAAP gross margin 73%; operating margin 12%, versus 8% Q2. Backlog declined; paid software adoption and per-share cash need continued review.",
       "sources": [
         "https://www.pdf.com/resources/pdf-solutions-reports-third-quarter-2026-financial-results/",
-        "https://ir.pdf.com/static-files/25982eb6-14d1-43ad-989f-742c80e090b0"
+        "https://ir.pdf.com/static-files/25982eb6-14d1-43ad-989f-742c80e090b0",
+        "https://www.sec.gov/Archives/edgar/data/1120914/000143774926035296/pdfs20260930_10q.htm"
       ],
       "data_stale": false,
       "reviewed_on": "2026-11-23",
       "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings.",
-      "filing_review_status": "New release reviewed; new Q3 10-Q not independently verified"
+      "filing_review_status": "November 5 Form 10-Q reviewed.",
+      "nine_month_operating_cash_flow": "$31.834M, versus $6.712M a year earlier",
+      "nine_month_property_equipment_purchases_and_prepayments": "$39.7M, including capitalized software development"
     },
     "ASML": {
       "period": "Q3 2026 ended September 27; October 14 6-K exhibit",
@@ -707,18 +692,21 @@
       "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings."
     },
     "AEHR": {
-      "period": "FY2027 Q1 ended September 25; November 2 release",
+      "period": "FY2027 Q1 ended September 25, 2026; November 2 earnings and November 6 Form 10-Q",
       "revenue": "$33.007M, +200% YoY",
       "gaap_net_income": "$7.181M",
       "gaap_eps": "$0.21",
       "operating_cash_flow": "-$3.054M",
       "next_guide": "FY2027 revenue approximately $150M; non-GAAP net-income margin at least 20%, not GAAP guidance",
       "bookings": "$46.7M; quarter-end backlog $100.9M, effective backlog $109.3M including November 1 orders",
-      "filing_review_status": "Release verified; new Q1 10-Q not independently reviewed",
+      "filing_review_status": "November 6 Form 10-Q reviewed.",
       "reviewed_on": "2026-11-23",
       "sources": [
-        "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm"
-      ]
+        "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm",
+        "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009601/aehr_10q.htm"
+      ],
+      "operating_cash_flow_driver": "Higher receivables and increased cash used for prepaid expenses",
+      "data_stale": false
     },
     "TSM": {
       "period": "Calendar Q3 ended September 30, 2026; October 15 earnings and November 6-K financial statements",
@@ -734,8 +722,10 @@
         "https://investor.cld.tsmc.com/english/quarterly-results/2026/q3",
         "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/a2026q3consolidatedreport-.htm",
         "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
-        "https://pr.tsmc.com/english/news/3349"
-      ]
+        "https://pr.tsmc.com/english/news/3349",
+        "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm"
+      ],
+      "export_control_update": "The November 19 BIS rule changes due diligence and licensing for certain advanced-chip transactions involving foundries and packaging providers. Shipment timing and customer eligibility are additional variables for foundry revenue."
     },
     "AMD": {
       "period": "Q3 ended September 26, 2026; November 3 earnings and November 10-Q",
@@ -755,10 +745,10 @@
   "source_intelligence": [
     {
       "publisher": "Benzinga",
-      "date": "2026-11-20",
-      "url": "https://www.benzinga.com/markets/market-summary/26/11/63510066/this-week-on-wall-street-semiconductor-worst-two-months-since-2001-nvidia-correction",
-      "access": "Public market coverage",
-      "signal": "Broad semiconductor selling spread across AI accelerators, memory and foundry stocks on November 20.",
+      "date": "2026-11-23",
+      "url": "https://www.benzinga.com/markets/equities/26/11/63520253/stock-market-today-dow-jones-sp-500-nasdaq-100-futures-rise-after-fridays-ai-rout-orcl-zs-zm-in-focus",
+      "access": "Public Monday market coverage",
+      "signal": "U.S. equity futures rose after Friday’s semiconductor selloff. The first regular-session close of the week remains ahead.",
       "checked_on": "2026-11-23"
     },
     {
@@ -835,10 +825,10 @@
     },
     {
       "publisher": "Yahoo Finance",
-      "date": "2026-11-20",
-      "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html",
-      "access": "Public market coverage",
-      "signal": "NVIDIA, AMD, Broadcom and memory shares sold off. Coverage also highlighted Broadcom’s role in Anthropic financing.",
+      "date": "2026-11-23",
+      "url": "https://ca.finance.yahoo.com/news/asian-shares-mostly-fall-p-042755048.html",
+      "access": "AP market coverage via Yahoo Finance",
+      "signal": "Taiwan’s market rebounded while Korea’s KOSPI fell 3.3%, with Samsung Electronics and SK hynix lower. U.S. futures rose.",
       "checked_on": "2026-11-23"
     }
   ],
@@ -909,7 +899,19 @@
     "https://stockanalysis.com/stocks/lrcx/history/",
     "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm",
     "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm",
-    "https://uk.investing.com/news/stock-market-news/us-chip-and-neocloud-stocks-rally-premarket-after-last-weeks-selloff-4998656"
+    "https://uk.investing.com/news/stock-market-news/us-chip-and-neocloud-stocks-rally-premarket-after-last-weeks-selloff-4998656",
+    "https://www.sec.gov/Archives/edgar/data/1120914/000143774926035296/pdfs20260930_10q.htm",
+    "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009601/aehr_10q.htm",
+    "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+    "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html",
+    "https://www.marketscreener.com/news/wall-street-futures-rebound-as-battered-ai-stocks-gain-ground-ce7851dad88ff021",
+    "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm",
+    "https://portfolio-terminal.com/markets/stock-market-close",
+    "https://closelooknet.pages.dev/indices/stock/sox.indx/price-history/",
+    "https://wanfang888.com/en/stock/sh/000300",
+    "https://www.benzinga.com/markets/equities/26/11/63520253/stock-market-today-dow-jones-sp-500-nasdaq-100-futures-rise-after-fridays-ai-rout-orcl-zs-zm-in-focus",
+    "https://seekingalpha.com/news/4675206-micron-leads-semiconductor-and-ai-stocks-down-as-sox-plunges-7",
+    "https://ca.finance.yahoo.com/news/asian-shares-mostly-fall-p-042755048.html"
   ],
   "profit_growth_screen": {
     "scope": "Historical research retained only. Not a current ranking; the user removed the visible section. Current reported figures live in filing_screen.",
@@ -1068,7 +1070,7 @@
         "baseline_basis": "Q3 2026 revenue $68.3M x 4; illustrative scaling reference, not annual guidance",
         "technology_thesis": "Chiplets, 3D integration and hybrid packaging increase cross-fab data complexity. Exensio Aurora could make yield analytics, equipment connectivity and workflow automation more valuable.",
         "market_expansion": "Must expand from a specialist analytics supplier into a cross-fab manufacturing data/workflow platform. Semiconductor sales or cloud AI spending is not its serviceable software market.",
-        "reported_evidence": "November 5 Q3 release: revenue $68.3M, +20% YoY; GAAP net income $6.841M and EPS $0.16. Backlog fell to $247.2M from $270.7M. New Q3 periodic filing was not independently reviewed.",
+        "reported_evidence": "November 5 Q3 release: revenue $68.3M, +20% YoY; GAAP net income $6.841M and EPS $0.16. Backlog fell to $247.2M from $270.7M. The November 5 Form 10-Q showed nine-month operating cash flow of $31.8M versus $6.7M a year earlier.",
         "valuation_warning": "At $30.44, annualizing Q3 GAAP EPS $0.16 produces about 47.6x, not a consensus forward multiple. Backlog contraction and uncertain recurring-software economics prevent a fresh buy.",
         "milestones": [
           "Rebuild backlog and disclose paid Aurora adoption with recurring software growth",
@@ -1079,7 +1081,8 @@
         "sources": [
           "https://www.pdf.com/resources/pdf-solutions-reports-third-quarter-2026-financial-results/",
           "https://www.pdf.com/resources/introducing-exensio-aurora-pdf-solutions-unveils-highly-scalable-architecture-for-exensio-analytics/",
-          "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm"
+          "https://www.sec.gov/Archives/edgar/data/1120914/000143774926026294/pdfs20260630_10q.htm",
+          "https://www.sec.gov/Archives/edgar/data/1120914/000143774926035296/pdfs20260930_10q.htm"
         ],
         "scenarios": [
           {
@@ -1140,7 +1143,7 @@
         "baseline_basis": "FY27 Q1 revenue $33.007M x 4; illustrative scaling reference, not annual guidance",
         "technology_thesis": "Higher-power AI packages and photonic devices increase the cost of latent failures. Wafer/package-level burn-in and device-specific consumables could capture more test content.",
         "market_expansion": "Needs many customers and device generations across AI, photonics and other reliability-critical chips. The AI chip market itself is not the burn-in equipment market.",
-        "reported_evidence": "November 2 FY27 Q1 release: revenue $33.007M, +200% YoY; GAAP net income $7.181M and EPS $0.21. Operating cash flow was -$3.054M. FY27 ~$150M revenue and at least 20% non-GAAP net margin are management guidance, not realized GAAP results.",
+        "reported_evidence": "November 2 FY27 Q1 release: revenue $33.007M, +200% YoY; GAAP net income $7.181M and EPS $0.21. Operating cash flow was -$3.054M. FY27 ~$150M revenue and at least 20% non-GAAP net margin are management guidance, not realized GAAP results. The November 6 Form 10-Q attributes the increased cash use primarily to receivables and prepaid expenses.",
         "valuation_warning": "At $39.84, Q1 EPS annualization gives about 47.4x. Positive profit with negative operating cash flow, concentrated orders and dilution need scrutiny. Orders and pilot systems do not guarantee accepted volume shipments.",
         "milestones": [
           "Convert $100.9M quarter-end backlog into accepted shipments and collected cash",
@@ -1150,7 +1153,8 @@
         "failure": "Benchmark wins do not convert, major customers delay capex, burn-in methods change, or concentration and dilution overwhelm revenue growth.",
         "sources": [
           "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm",
-          "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm"
+          "https://www.sec.gov/Archives/edgar/data/1040470/000165495426006919/aehr_10k.htm",
+          "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009601/aehr_10q.htm"
         ],
         "scenarios": [
           {
@@ -1369,7 +1373,9 @@
       "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-03-16-ti-unveils-complete-800-vdc-power-architecture-for-future-generation-ai-data-centers-with-nvidia.html",
       "https://stockanalysis.com/stocks/vicr/history/",
       "https://www.aehr.com/2026/10/aehr-receives-follow-on-sonoma-production-orders-for-lead-hyperscale-customer-s-next-generation-ai-processor/",
-      "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-unveils-orion-compute-agnostic-rack-scale"
+      "https://asteralabs.gcs-web.com/news-releases/news-release-details/astera-labs-unveils-orion-compute-agnostic-rack-scale",
+      "https://www.sec.gov/Archives/edgar/data/1120914/000143774926035296/pdfs20260930_10q.htm",
+      "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009601/aehr_10q.htm"
     ]
   },
   "watchlist_history": {
@@ -1377,15 +1383,7 @@
     "snapshot_date": "2026-11-23",
     "reference_quote_date": "2026-11-20",
     "record_type": "Empty recommendation snapshot; NONE is a sentinel, not a security, trade or fill.",
-    "tickers": [],
-    "investment_picks": {
-      "watchlist_name": "Two- to Three-Year Investment Picks",
-      "tickers": [
-        "TSM",
-        "ASML",
-        "MU"
-      ]
-    }
+    "tickers": []
   },
   "valuation_checks": {
     "basis": "Illustrative annual or annualized-quarter EPS multiples, not consensus forward P/E or intrinsic value. No inference that peak margins persist.",
