@@ -8,7 +8,7 @@
   },
   "safe_harbor": "Educational information only. Not financial advice. Prices can move materially around earnings.",
   "quote_source": {
-    "name": "Stock Analysis historical regular-session closes; issuer releases and SEC filings for fundamentals",
+    "name": "Historical regular-session closes with ticker-level sources; issuer releases and SEC filings for fundamentals",
     "as_of": "2026-11-20T16:00:00-05:00",
     "note": "November 20 regular-session closes in USD; November 23 premarket/intraday prices excluded. SOXX completed a 3-for-1 split effective November 5; do not compare its raw close with October's pre-split price. Reference prices are not executable orders or fills."
   },
@@ -115,6 +115,22 @@
       "change_percent": -11.61,
       "quote_status": "regular_close",
       "source_url": "https://stockanalysis.com/stocks/vicr/history/",
+      "data_stale": false
+    },
+    "TSM": {
+      "date": "2026-11-20",
+      "last": 318.71,
+      "change_percent": -9.48,
+      "quote_status": "regular_close",
+      "source_url": "https://ycharts.com/companies/TSM/price",
+      "data_stale": false
+    },
+    "AMD": {
+      "date": "2026-11-20",
+      "last": 424.39,
+      "change_percent": -13.25,
+      "quote_status": "regular_close",
+      "source_url": "https://ycharts.com/companies/AMD/price",
       "data_stale": false
     }
   },
@@ -343,6 +359,75 @@
       "ASML": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
       "LRCX": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
       "KLAC": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred."
+    },
+    "investment_outlook": {
+      "reviewed_on": "2026-11-23",
+      "reference_quote_date": "2026-11-20",
+      "holding_period_years": [
+        2,
+        3
+      ],
+      "entry_context": "Consider partial positions near the reference valuations and reassess after a sharp rebound.",
+      "picks": [
+        {
+          "ticker": "TSM",
+          "rank": 1,
+          "close": 318.71,
+          "trailing_pe": 20.51,
+          "thesis": "Leading-edge foundry and packaging demand across GPUs and custom chips.",
+          "risk": "Taiwan production concentration and capital intensity."
+        },
+        {
+          "ticker": "ASML",
+          "rank": 2,
+          "close": 1266.22,
+          "trailing_pe": 31.19,
+          "thesis": "EUV lithography and installed-base productivity upgrades.",
+          "risk": "Premium valuation, customer fab delays and export controls."
+        },
+        {
+          "ticker": "MU",
+          "rank": 3,
+          "close": 594.51,
+          "trailing_pe": 8.0,
+          "valuation_basis": "FY2026 GAAP diluted EPS of $74.33",
+          "thesis": "Smaller cyclical position supported by HBM and server DRAM.",
+          "risk": "Elevated memory margins and declining NAND prices in the industry forecast.",
+          "illustrative_annual_eps_pe": {
+            "40": 14.86,
+            "30": 19.82
+          }
+        }
+      ],
+      "watch": [
+        {
+          "ticker": "NVDA",
+          "trailing_pe": 13.49,
+          "reason": "Await the Q3 10-Q and clarity on the reported SEC accounting inquiry."
+        },
+        {
+          "ticker": "AVGO",
+          "trailing_pe": 38.86,
+          "reason": "Await clarity on retained exposure under the Anthropic financing."
+        },
+        {
+          "ticker": "AMD",
+          "trailing_pe": 92.24,
+          "reason": "Await a better entry or sustained accelerator earnings growth."
+        }
+      ],
+      "short_term_status": "No setup qualifies under the three-session stabilization rule.",
+      "sources": [
+        "https://ycharts.com/companies/TSM/pe_ratio",
+        "https://ycharts.com/companies/ASML/pe_ratio",
+        "https://ycharts.com/companies/NVDA/pe_ratio",
+        "https://ycharts.com/companies/AVGO/pe_ratio",
+        "https://ycharts.com/companies/AMD/pe_ratio",
+        "https://www.semi.org/en/semi-press-release/worldwide-silicon-wafer-shipments-increase-13.4-percent-year-on-year-in-q3-2026-semi-reports",
+        "https://inferencex.semianalysis.com/hardware",
+        "https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/",
+        "https://www.hpcwire.com/off-the-wire/hpe-built-lux-ai-cluster-debuts-at-no-14-on-the-top500/"
+      ]
     }
   },
   "capital_flow": [
@@ -417,12 +502,16 @@
       "sources": [
         "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial",
         "https://www.sec.gov/Archives/edgar/data/1730168/000173016826000080/avgo-20260802.htm",
-        "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce"
+        "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
+        "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/anthropicpbc-424b4.htm"
       ],
       "data_stale": false,
       "new_financing_risk": "SPV buys XPU/networking and leases to Anthropic, with deliveries expected from 2027. Broadcom provides residual-value support equal to first-lien portion; tranche amount and loss mechanics not quantified in the short release. Not recognized revenue, not automatically all Broadcom debt, and not additional hyperscaler capex.",
       "reviewed_on": "2026-11-23",
-      "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings."
+      "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings.",
+      "customer_concentration": "About 55% of Q3 net revenue came from the five largest end customers",
+      "conditional_note_financing": "Anthropic disclosed up to $42B in conditional convertible notes from Broadcom or a designated financial partner. Zero notes issued as of the prospectus."
     },
     "NVDA": {
       "period": "FY2027 Q3 ended October 25; November 17 release and 8-K unaudited supplement",
@@ -431,21 +520,24 @@
       "gaap_net_income": "$65.3B, +105% YoY (rounded issuer table)",
       "gaap_gross_margin": "74.8%",
       "next_guide": "Q4 revenue $130B +/- 3%, including an additional week; gross margin 71%-72%; no China data-center compute revenue assumed",
-      "supply_signal": "Prior Q2 10-Q disclosed $279B purchase/capacity commitments, primarily memory; not independently refreshed to Q3.",
-      "commitment_risk": "Historical Q2 disclosure: $366B formal commitments plus $36B AI-cloud agreements and selected guarantees; not asserted as current Q3 balances.",
+      "supply_signal": "Q3 CFO commentary reported $390B of supply commitments versus $279B in Q2, primarily related to multi-year memory procurement",
+      "commitment_risk": "Q3 CFO commentary reported $102B of combined cloud service agreements and data center lease commitments",
       "profit_quality": "Q3 operating income $77.5B, +115% YoY; operating cash flow $48.253B. Lower guided gross margin and extra-week comparison require normalization.",
       "sources": [
         "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx",
         "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
         "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/supplementalfinancialinfor.htm",
-        "https://s201.q4cdn.com/141608511/files/content_files/NVDA-3Q27-Earnings-Transcript.pdf"
+        "https://s201.q4cdn.com/141608511/files/content_files/NVDA-3Q27-Earnings-Transcript.pdf",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/0001045810-26-000075-index.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
       ],
       "data_stale": false,
       "reviewed_on": "2026-11-23",
       "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings.",
       "gaap_diluted_eps": "$2.70",
       "governance": "Issuer release names Colette Kress interim CEO. Reuters/Yahoo report accounting scrutiny; no primary finding of wrongdoing was verified.",
-      "filing_review_status": "Q3 release and unaudited 8-K exhibit reviewed; new Q3 10-Q not independently verified. Prior Q2 commitment figures below are historical, not refreshed Q3 balances."
+      "filing_review_status": "Q3 release, CFO commentary and unaudited 8-K supplement reviewed. July 26 was the latest 10-Q verified."
     },
     "CRDO": {
       "period": "FY2027 Q1 and 10-Q filed September 2",
@@ -524,7 +616,8 @@
       "risk": "Peak memory margins, competing supply, capex, customer concentration and SCA enforceability. The 53-week fiscal year affects comparisons. November 19 TrendForce forecasts 2027 NAND oversupply; this does not establish the same pricing path for DRAM/HBM.",
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/a2026q4ex991-pressrelease.htm",
-        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm",
+        "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
       ],
       "data_stale": false,
       "reviewed_on": "2026-11-23",
@@ -571,11 +664,15 @@
       "next_guide": "Q4 revenue EUR14.2B-EUR15.2B; FY2026 revenue EUR44B-EUR45B",
       "risk": "Supply chain ramp, export controls, customer funding, order deferrals and valuation. ASML is a foreign issuer using 20-F / 6-K, not 10-K / 10-Q.",
       "sources": [
-        "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm"
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/pressreleasefinancialresul.htm",
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026065813/form6-kquarterlyfilings.htm",
+        "https://www.sec.gov/Archives/edgar/data/937966/000162828026011378/asml-20251231.htm"
       ],
       "data_stale": false,
       "reviewed_on": "2026-11-23",
-      "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings."
+      "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings.",
+      "installed_base_management_sales": "€3.289B in Q3",
+      "supply_signal": "Management expects planned supply to fall short of customer demand in 2027 and 2028"
     },
     "LRCX": {
       "period": "FY2027 Q1 ended September 27, 2026; release October 21; 10-Q filed October 22",
@@ -611,15 +708,46 @@
       "sources": [
         "https://www.sec.gov/Archives/edgar/data/1040470/000165495426009385/aehr_ex991.htm"
       ]
+    },
+    "TSM": {
+      "period": "Calendar Q3 ended September 30, 2026; October 15 earnings and November 6-K financial statements",
+      "revenue": "US$46.72B, +41.2% YoY",
+      "gross_margin": "66.4%",
+      "operating_cash_flow": "NT$2.402T for the first nine months, about +55% YoY",
+      "next_guide": "Q4 revenue US$52.3B–US$54.3B",
+      "october_revenue": "NT$586.89B, +59.7% YoY",
+      "risk": "Production concentration in Taiwan and capital intensity",
+      "reviewed_on": "2026-11-23",
+      "data_stale": false,
+      "sources": [
+        "https://investor.cld.tsmc.com/english/quarterly-results/2026/q3",
+        "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000801/a2026q3consolidatedreport-.htm",
+        "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+        "https://pr.tsmc.com/english/news/3349"
+      ]
+    },
+    "AMD": {
+      "period": "Q3 ended September 26, 2026; November 3 earnings and November 10-Q",
+      "revenue": "$13.377B, +45% YoY",
+      "data_center_revenue": "$8.5B, +97% YoY",
+      "gaap_diluted_eps": "$1.46",
+      "risk": "Valuation assumes sustained earnings growth from the EPYC and Instinct ramp",
+      "reviewed_on": "2026-11-23",
+      "data_stale": false,
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/q32026991.htm",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+      ]
     }
   },
   "source_intelligence": [
     {
       "publisher": "Benzinga",
-      "date": "2026-11-23",
-      "url": "https://www.benzinga.com/money/best-semiconductor-stocks",
-      "access": "General guide checked; not a new earnings report",
-      "signal": "General stock-selection coverage is context only. No independent score credit or new issuer result is inferred from a refreshed guide.",
+      "date": "2026-11-20",
+      "url": "https://www.benzinga.com/markets/market-summary/26/11/63510066/this-week-on-wall-street-semiconductor-worst-two-months-since-2001-nvidia-correction",
+      "access": "Public market coverage",
+      "signal": "Broad semiconductor selling spread across AI accelerators, memory and foundry stocks on November 20.",
       "checked_on": "2026-11-23"
     },
     {
@@ -640,18 +768,18 @@
     },
     {
       "publisher": "Seeking Alpha",
-      "date": "2026-10-22",
-      "url": "https://seekingalpha.com/news/4655710-lam-projects-more-than-200b-2027-wfe-as-aether-revenue-target-rises-to-2_5b-by-decade-end",
-      "access": "Older public preview retained; current paid coverage not verified",
-      "signal": "Lam's preliminary 2027 WFE outlook exceeds $200B. This older item is not fresh November research; issuer filings/call independently support operating figures. No incremental score credit.",
+      "date": "2026-11-20",
+      "url": "https://seekingalpha.com/news/4675206-micron-leads-semiconductor-and-ai-stocks-down-as-sox-plunges-7",
+      "access": "Public intraday news summary",
+      "signal": "Micron led semiconductor losses during Friday trading. The article’s intraday figures precede the regular-session close.",
       "checked_on": "2026-11-23"
     },
     {
       "publisher": "TechInsights",
       "date": "2026-10-23",
       "url": "https://www.techinsights.com/chip-observer/october-2026",
-      "access": "October briefing rechecked; newer November briefing not verified",
-      "signal": "Memory pricing can boost market value faster than unit shipments. This is retained historical industry context, not a newly verified November forecast.",
+      "access": "Public October briefing",
+      "signal": "TechInsights projected roughly 73% foundry market share for TSMC in 2026. Memory pricing can raise market value faster than unit shipments.",
       "checked_on": "2026-11-23"
     },
     {
@@ -697,9 +825,9 @@
     {
       "publisher": "Yahoo Finance",
       "date": "2026-11-20",
-      "url": "https://finance.yahoo.com/markets/article/nvidia-extends-25-trillion-rout-as-sec-probe-reportedly-investigates-its-accounting-194254356.html",
-      "access": "Search preview checked; full article rate-limited",
-      "signal": "Coverage flags the semiconductor selloff and reported NVIDIA scrutiny. Full text was not available; prices are independently checked against historical closes, not inferred from the headline.",
+      "url": "https://finance.yahoo.com/markets/article/nvidia-amd-and-broadcom-lead-chip-stocks-lower-133658985.html",
+      "access": "Public market coverage",
+      "signal": "NVIDIA, AMD, Broadcom and memory shares sold off. Coverage also highlighted Broadcom’s role in Anthropic financing.",
       "checked_on": "2026-11-23"
     }
   ],
@@ -1236,7 +1364,15 @@
     "snapshot_date": "2026-11-23",
     "reference_quote_date": "2026-11-20",
     "record_type": "Empty recommendation snapshot; NONE is a sentinel, not a security, trade or fill.",
-    "tickers": []
+    "tickers": [],
+    "investment_picks": {
+      "watchlist_name": "Two- to Three-Year Investment Picks",
+      "tickers": [
+        "TSM",
+        "ASML",
+        "MU"
+      ]
+    }
   },
   "valuation_checks": {
     "basis": "Illustrative annual or annualized-quarter EPS multiples, not consensus forward P/E or intrinsic value. No inference that peak margins persist.",
