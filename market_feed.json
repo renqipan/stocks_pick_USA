@@ -10,7 +10,14 @@
   "quote_source": {
     "name": "Historical regular-session closes with ticker-level sources; issuer releases and SEC filings for fundamentals",
     "as_of": "2026-11-20T16:00:00-05:00",
-    "note": "November 20 regular-session closes in USD; November 23 premarket/intraday prices excluded. SOXX completed a 3-for-1 split effective November 5; do not compare its raw close with October's pre-split price. Reference prices are not executable orders or fills."
+    "note": "November 20 regular-session closes in USD; November 23 premarket/intraday prices excluded. SOXX completed a 3-for-1 split effective November 5; do not compare its raw close with October's pre-split price. Reference prices are not executable orders or fills.",
+    "premarket_context": {
+      "observed_at": "2026-11-23T04:43:00-05:00",
+      "session": "premarket",
+      "summary": "Micron, Lam Research and Marvell each rose more than 7% in early U.S. premarket trading on November 23.",
+      "interpretation": "The rebound adds entry-price risk. The November 20 regular-session closes remain the valuation references, and the short-term stabilization rule counts completed regular sessions.",
+      "source_url": "https://uk.investing.com/news/stock-market-news/us-chip-and-neocloud-stocks-rally-premarket-after-last-weeks-selloff-4998656"
+    }
   },
   "quotes": {
     "SOXX": {
@@ -179,9 +186,9 @@
         "reason": "The reviewed October 22 10-Q verifies $8.219B revenue, $2.753B GAAP profit and $3.240B calculated free cash flow. Etch/deposition complexity supports demand; cleanrooms, components, China exposure and NAND capex cyclicality constrain conviction."
       },
       "KLAC": {
-        "score": 82,
+        "score": 83,
         "decision": "research_only_gate_not_cleared",
-        "reason": "October 28 FY27 Q1 release reports $4.14B revenue, $1.55B GAAP profit and $1.34B company-defined free cash flow. Process-control intensity is attractive. New periodic filing was not independently reviewed; release evidence is not relabeled a 10-Q."
+        "reason": "The October 29 Form 10-Q confirms $4.14B of Q1 revenue, up 29% YoY, and $1.53B in operating cash flow. China accounted for 34.5% of quarterly revenue."
       },
       "FORM": {
         "score": 81,
@@ -244,8 +251,8 @@
         "supply_chain_moat_and_diffusion": 17,
         "valuation_and_reaction_gap": 13,
         "financial_quality_and_positioning_risk": 10,
-        "evidence_integrity_and_uncertainty": 7,
-        "total": 82
+        "evidence_integrity_and_uncertainty": 8,
+        "total": 83
       },
       "FORM": {
         "forward_fundamental_surprise": 22,
@@ -316,7 +323,7 @@
       "prior_date": "2026-10-27",
       "ASML": 0,
       "LRCX": 1,
-      "KLAC": 4,
+      "KLAC": 5,
       "FORM": 8,
       "MU": -6,
       "AVGO": -2,
@@ -330,7 +337,7 @@
     "highest_confidence_buys": [],
     "ranking_status": "empty_best_buy_watchlist",
     "actionable_buys": [],
-    "actionable_status": "No fresh buys as of November 23; November 20 close does not establish stabilization after liquidation.",
+    "actionable_status": "No qualifying short-term entries on November 23. The premarket rebound does not add a completed session to the three-session stabilization rule.",
     "research_priority": [
       "ASML",
       "LRCX",
@@ -358,7 +365,7 @@
     "execution_conditions": {
       "ASML": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
       "LRCX": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred.",
-      "KLAC": "Not cleared. Require the three-session stabilization rule, subsequent orderly hold, unchanged demand/funding thesis and a completed current filing review. No numerical buy limit or fill is inferred."
+      "KLAC": "The October 29 Form 10-Q has been reviewed. Require three completed regular sessions without a new closing low, an orderly hold, and a fresh demand, funding and valuation check."
     },
     "investment_outlook": {
       "reviewed_on": "2026-11-23",
@@ -589,20 +596,24 @@
       "merger_risk": "November 2 announced Lumentum combination: $115B enterprise value at announcement, 4.5 MRVL shares per LITE share, expected H1 2028 closing subject to approvals. Not closed; no assumed recognized synergies."
     },
     "KLAC": {
-      "period": "FY2027 Q1; October 28 release",
-      "quarter_revenue": "$4.14B",
+      "period": "FY2027 Q1 ended September 30, 2026; October 28 earnings and October 29 Form 10-Q",
+      "quarter_revenue": "$4.136B, +29% YoY",
       "quarter_gaap_net_income": "$1.55B",
       "fiscal_year_free_cash_flow": "$3.77B",
       "next_guide": "Revenue $4.7B +/- $0.2B; GAAP EPS $1.41 +/- $0.11; gross margin 61.8% +/- 1 point",
       "reviewed_on": "2026-11-23",
       "freshness_note": "Review date does not change the reported period. New releases and 8-K exhibits are distinguished from independently reviewed periodic filings.",
       "gaap_eps": "$1.18",
-      "operating_cash_flow": "$1.53B",
+      "operating_cash_flow": "$1.531B",
       "free_cash_flow": "$1.34B, company-defined",
       "sources": [
-        "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000032/exhibit991earningsrelease0.htm"
+        "https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-26-000032/exhibit991earningsrelease0.htm",
+        "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm"
       ],
-      "filing_review_status": "New release verified; new Q1 10-Q not independently reviewed. FY26 annual free cash flow below is historical."
+      "filing_review_status": "Earnings release and FY2027 Q1 Form 10-Q reviewed.",
+      "capital_expenditures": "$194.8M",
+      "china_revenue_share_percent": 34.5,
+      "data_stale": false
     },
     "MU": {
       "period": "FY2026 Q4 ended September 3, 2026; September 30 release and FY2026 10-K",
@@ -896,7 +907,9 @@
     "https://stockanalysis.com/stocks/mrvl/history/",
     "https://stockanalysis.com/stocks/form/history/",
     "https://stockanalysis.com/stocks/lrcx/history/",
-    "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm"
+    "https://www.sec.gov/Archives/edgar/data/1100663/000119312526430480/d156277d497.htm",
+    "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm",
+    "https://uk.investing.com/news/stock-market-news/us-chip-and-neocloud-stocks-rally-premarket-after-last-weeks-selloff-4998656"
   ],
   "profit_growth_screen": {
     "scope": "Historical research retained only. Not a current ranking; the user removed the visible section. Current reported figures live in filing_screen.",
